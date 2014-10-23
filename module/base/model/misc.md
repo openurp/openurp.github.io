@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 基础信息 数据库设计说明
-description: "基础信息数据库设计说明"
+title: 基础信息 其他
+description: "基础信息其他"
 categories: [model-1.0.0]
 version: ["1.0.0"]
 ---
@@ -10,6 +10,12 @@ version: ["1.0.0"]
 
 * toc
 {:toc}
+
+
+### 关系图 1. 教学场所
+  * 关系图
+  
+![教学场所](images/space.png)
 
 
 
@@ -190,7 +196,6 @@ version: ["1.0.0"]
 <tr><td>4</td><td>setting_id</td><td>int4</td><td>否</td><td>时间设置 ID</td><td>time_settings</td>  </tr>
 <tr><td>5</td><td>start_time</td><td>int2</td><td>否</td><td>开始时间</td><td></td>  </tr>
 <tr><td>6</td><td>end_time</td><td>int2</td><td>否</td><td>结束时间</td><td></td>  </tr>
-<tr><td>7</td><td>calendar_id</td><td>int4</td><td>是</td><td></td><td>time_settings</td>  </tr>
 </table>
 
  

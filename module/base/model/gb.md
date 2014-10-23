@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 基础信息 数据库设计说明
-description: "基础信息数据库设计说明"
+title: 基础信息 国标
+description: "基础信息国标"
 categories: [model-1.0.0]
 version: ["1.0.0"]
 ---
