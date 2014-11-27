@@ -6,7 +6,7 @@ categories: [model-1.0.0]
 version: ["1.0.0"]
 ---
 {% include JB/setup %}
-数据库共计55个表，分别如下:
+数据库共计78个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>
@@ -18,169 +18,235 @@ version: ["1.0.0"]
   <tr>
     <td>1</td>
     <td>adminclasses<br>学生行政班级信息</td>
-    <td>29</td>
+    <td>40</td>
     <td>project_classrooms_departs<br>项目教室配置-固定使用部门</td>
   </tr>
   <tr>
     <td>2</td>
-    <td>course_ability_rates<br>课程能力等级</td>
-    <td>30</td>
-    <td>project_codes<br>ProjectCode</td>
+    <td>adminclasses_instructors<br>学生行政班级信息-辅导员</td>
+    <td>41</td>
+    <td>project_codes<br>项目基础代码配置</td>
   </tr>
   <tr>
     <td>3</td>
-    <td>course_categories<br>课程种类</td>
-    <td>31</td>
-    <td>project_configs<br>项目配置</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>course_grades<br>课程成绩实现</td>
-    <td>32</td>
-    <td>project_properties<br>项目配置属性</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>course_hour_types<br>课时类别代码</td>
-    <td>33</td>
+    <td>adminclasses_tutors<br>学生行政班级信息-班导师</td>
+    <td>42</td>
     <td>projects<br>项目</td>
   </tr>
   <tr>
-    <td>6</td>
-    <td>course_hours<br>课程分类课时信息</td>
-    <td>34</td>
+    <td>4</td>
+    <td>course_activities<br>CourseActivityBean</td>
+    <td>43</td>
     <td>projects_campuses<br>项目-校区列表</td>
   </tr>
   <tr>
-    <td>7</td>
-    <td>course_take_types<br>修课类别</td>
-    <td>35</td>
+    <td>5</td>
+    <td>course_activities_rooms<br>CourseActivityBean-rooms</td>
+    <td>44</td>
     <td>projects_departments<br>项目-部门列表</td>
   </tr>
   <tr>
-    <td>8</td>
-    <td>course_types<br>课程类别</td>
-    <td>36</td>
+    <td>6</td>
+    <td>course_activities_teachers<br>CourseActivityBean-teachers</td>
+    <td>45</td>
     <td>projects_educations<br>项目-学历层次列表</td>
   </tr>
   <tr>
-    <td>9</td>
-    <td>courses<br>课程基本信息</td>
-    <td>37</td>
+    <td>7</td>
+    <td>course_grades<br>CourseGradeBean</td>
+    <td>46</td>
     <td>projects_labels<br>项目-学生分类列表</td>
   </tr>
   <tr>
-    <td>10</td>
-    <td>courses_majors<br>课程基本信息-针对专业</td>
-    <td>38</td>
+    <td>8</td>
+    <td>course_hours<br>课程分类课时信息</td>
+    <td>47</td>
+    <td>projects_properties<br>项目-properties</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>course_limit_groups<br>CourseLimitGroupBean</td>
+    <td>48</td>
     <td>projects_time_settings<br>项目-小节设置</td>
   </tr>
   <tr>
-    <td>11</td>
-    <td>courses_prerequisites<br>课程基本信息-先修课程</td>
-    <td>39</td>
+    <td>10</td>
+    <td>course_limit_items<br>CourseLimitItemBean</td>
+    <td>49</td>
     <td>projects_types<br>项目-学生类别列表</td>
   </tr>
   <tr>
+    <td>11</td>
+    <td>course_limit_metas<br>CourseLimitMetaBean</td>
+    <td>50</td>
+    <td>share_course_groups<br>ShareCourseGroupBean</td>
+  </tr>
+  <tr>
     <td>12</td>
-    <td>courses_subcourses<br>课程基本信息-subcourses</td>
-    <td>40</td>
-    <td>score_mark_styles<br>成绩记录方式</td>
+    <td>course_takes<br>CourseTakeBean</td>
+    <td>51</td>
+    <td>share_plan_courses<br>SharePlanCourseBean</td>
   </tr>
   <tr>
     <td>13</td>
-    <td>courses_xmajors<br>课程基本信息-排除专业</td>
-    <td>41</td>
-    <td>std_people<br>学生基本信息</td>
+    <td>courses<br>课程基本信息</td>
+    <td>52</td>
+    <td>share_plans<br>SharePlanBean</td>
   </tr>
   <tr>
     <td>14</td>
-    <td>direction_journals<br>专业方向建设过程</td>
-    <td>42</td>
-    <td>student_journals<br>学籍状态日志</td>
+    <td>courses_majors<br>课程基本信息-针对专业</td>
+    <td>53</td>
+    <td>std_course_groups<br>StdCourseGroupBean</td>
   </tr>
   <tr>
     <td>15</td>
-    <td>directions<br>方向信息 专业领域</td>
-    <td>43</td>
-    <td>students<br>学籍信息实现</td>
+    <td>courses_prerequisites<br>课程基本信息-先修课程</td>
+    <td>54</td>
+    <td>std_plan_courses<br>StdPlanCourseBean</td>
   </tr>
   <tr>
     <td>16</td>
-    <td>exam_grades<br>考试成绩</td>
-    <td>44</td>
-    <td>teacher_journals<br>教师日志信息</td>
+    <td>courses_subcourses<br>课程基本信息-小项课程</td>
+    <td>55</td>
+    <td>std_plans<br>StdPlanBean</td>
   </tr>
   <tr>
     <td>17</td>
-    <td>exam_modes<br>考核方式</td>
-    <td>45</td>
-    <td>teachers<br>教师信息默认实现</td>
+    <td>courses_xmajors<br>课程基本信息-排除专业</td>
+    <td>56</td>
+    <td>student_journals<br>学籍状态日志</td>
   </tr>
   <tr>
     <td>18</td>
-    <td>exam_statuses<br>考试情况</td>
-    <td>46</td>
-    <td>xb_discipline_catalogs<br>学科目录</td>
+    <td>direction_journals<br>专业方向建设过程</td>
+    <td>57</td>
+    <td>students<br>学籍信息实现</td>
   </tr>
   <tr>
     <td>19</td>
-    <td>exam_types<br>考试类型</td>
-    <td>47</td>
-    <td>xb_disciplines<br>学科</td>
+    <td>directions<br>方向信息 专业领域</td>
+    <td>58</td>
+    <td>students_labels<br>学籍信息实现-学生分类标签</td>
   </tr>
   <tr>
     <td>20</td>
-    <td>gb_degrees<br>学位</td>
-    <td>48</td>
-    <td>xb_std_label_types<br>学生分类标签类型</td>
+    <td>exam_activities<br>ExamActivityBean</td>
+    <td>59</td>
+    <td>xb_course_ability_rates<br>课程能力等级</td>
   </tr>
   <tr>
     <td>21</td>
-    <td>gb_study_types<br>学习形式</td>
-    <td>49</td>
-    <td>xb_std_labels<br>学生分类标签</td>
+    <td>exam_activities_rooms<br>ExamRoomBean-activities</td>
+    <td>60</td>
+    <td>xb_course_categories<br>课程种类</td>
   </tr>
   <tr>
     <td>22</td>
-    <td>gb_teacher_title_levels<br>教师职称等级</td>
-    <td>50</td>
-    <td>xb_std_statuses<br>学生学籍状态</td>
+    <td>exam_grades<br>ExamGradeBean</td>
+    <td>61</td>
+    <td>xb_course_hour_types<br>课时类别代码</td>
   </tr>
   <tr>
     <td>23</td>
-    <td>gb_teacher_titles<br>教师职称</td>
-    <td>51</td>
-    <td>xb_std_types<br>学生类别</td>
+    <td>exam_monitors<br>ExamMonitorBean</td>
+    <td>62</td>
+    <td>xb_course_take_types<br>修课类别</td>
   </tr>
   <tr>
     <td>24</td>
-    <td>grade_types<br>成绩类型</td>
-    <td>52</td>
-    <td>xb_teacher_states<br>教师在职状态</td>
+    <td>exam_rooms<br>ExamRoomBean</td>
+    <td>63</td>
+    <td>xb_course_types<br>课程类别</td>
   </tr>
   <tr>
     <td>25</td>
-    <td>habilitations<br>授课资格</td>
-    <td>53</td>
-    <td>xb_teacher_types<br>教职工类别</td>
+    <td>exam_takes<br>ExamTakeBean</td>
+    <td>64</td>
+    <td>xb_discipline_catalogs<br>学科目录</td>
   </tr>
   <tr>
     <td>26</td>
-    <td>major_journals<br>专业建设过程</td>
-    <td>54</td>
-    <td>xb_teacher_unit_types<br>外聘教师单位类别</td>
+    <td>gb_study_types<br>学习形式</td>
+    <td>65</td>
+    <td>xb_disciplines<br>学科</td>
   </tr>
   <tr>
     <td>27</td>
-    <td>majors<br>专业</td>
-    <td>55</td>
-    <td>xb_tutor_types<br>导师类型</td>
+    <td>habilitations<br>授课资格</td>
+    <td>66</td>
+    <td>xb_election_modes<br>ElectionModeBean</td>
   </tr>
   <tr>
     <td>28</td>
+    <td>lesson_groups<br>LessonGroupBean</td>
+    <td>67</td>
+    <td>xb_exam_forms<br>ExamFormBean</td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>lessons<br>LessonBean</td>
+    <td>68</td>
+    <td>xb_exam_modes<br>考核方式</td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>lessons_tags<br>LessonBean-tags</td>
+    <td>69</td>
+    <td>xb_exam_statuses<br>考试情况</td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>lessons_teachers<br>LessonBean-teachers</td>
+    <td>70</td>
+    <td>xb_exam_types<br>考试类型</td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>major_course_groups<br>MajorCourseGroupBean</td>
+    <td>71</td>
+    <td>xb_grade_types<br>成绩类型</td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>major_journals<br>专业建设过程</td>
+    <td>72</td>
+    <td>xb_lesson_tags<br>LessonTagBean</td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>major_plan_courses<br>MajorPlanCourseBean</td>
+    <td>73</td>
+    <td>xb_score_mark_styles<br>成绩记录方式</td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>major_plans<br>MajorPlanBean</td>
+    <td>74</td>
+    <td>xb_std_label_types<br>学生分类标签类型</td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>majors<br>专业</td>
+    <td>75</td>
+    <td>xb_std_labels<br>学生分类标签</td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>majors_educations<br>专业-培养层次</td>
+    <td>76</td>
+    <td>xb_std_statuses<br>学生学籍状态</td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td>programs<br>ProgramBean</td>
+    <td>77</td>
+    <td>xb_std_types<br>学生类别</td>
+  </tr>
+  <tr>
+    <td>39</td>
     <td>project_classrooms<br>项目教室配置</td>
-    <td></td>
-    <td></td>
+    <td>78</td>
+    <td>xb_teach_lang_types<br>TeachLangTypeBean</td>
   </tr>
 </table>

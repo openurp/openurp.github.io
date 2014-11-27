@@ -22,7 +22,12 @@ version: ["1.0.0"]
 * [3.1 国标](gb.html)
 * [3.2 校标](xb.html)
 * [3.3 部标](jb.html)
-* [3.4 其他](misc.html)
+* [3.4 核心部分](core.html)
+* [3.5 培养计划](plan.html)
+* [3.6 教学任务](lesson.html)
+* [3.7 课程安排](schedule.html)
+* [3.8 考务安排](exam.html)
+* [3.9 其他](misc.html)
 
 ##### 4. 数据库维护说明
   * 4.1 [数据库管理要点](mantain.html)
