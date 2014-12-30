@@ -12,6 +12,12 @@ version: ["1.0.0"]
 {:toc}
 
 
+### 关系图 1. 教师
+  * 关系图
+  
+![教师](images/teacher.png)
+
+
 
 ### 表格 teacher_journals
 

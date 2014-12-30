@@ -11,3 +11,27 @@ version: ["1.0.0"]
 * toc
 {:toc}
 
+
+#### 1. 行政班级
+  * 关系图
+  
+![行政班级](images/adminclasses.png)
+
+
+#### 2. 专业
+  * 关系图
+  
+![专业](images/majors.png)
+
+
+#### 3. 学生
+  * 关系图
+  
+![学生](images/student.png)
+
+
+#### 4. 教师
+  * 关系图
+  
+![教师](images/teacher.png)
+

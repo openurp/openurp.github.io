@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 基础信息 数据库维护说明
-description: "基础信息数据库维护说明"
+title: 教务信息 数据库维护说明
+description: "教务信息数据库维护说明"
 categories: [model-1.0.0]
 version: ["1.0.0"]
 ---

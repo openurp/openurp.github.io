@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 基础信息 培养计划
-description: "基础信息培养计划"
+title: 教务信息 培养计划
+description: "教务信息培养计划"
 categories: [model-1.0.0]
 version: ["1.0.0"]
 ---

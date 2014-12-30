@@ -12,6 +12,24 @@ version: ["1.0.0"]
 {:toc}
 
 
+### 关系图 1. 行政班级
+  * 关系图
+  
+![行政班级](images/adminclasses.png)
+
+
+### 关系图 2. 专业
+  * 关系图
+  
+![专业](images/majors.png)
+
+
+### 关系图 3. 学生
+  * 关系图
+  
+![学生](images/student.png)
+
+
 
 ### 表格 adminclasses
 

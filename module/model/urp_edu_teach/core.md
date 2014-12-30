@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 基础信息 核心部分
-description: "基础信息核心部分"
+title: 教务信息 核心部分
+description: "教务信息核心部分"
 categories: [model-1.0.0]
 version: ["1.0.0"]
 ---
@@ -10,6 +10,12 @@ version: ["1.0.0"]
 
 * toc
 {:toc}
+
+
+### 关系图 1. 课程
+  * 关系图
+  
+![课程](images/course.png)
 
 
 

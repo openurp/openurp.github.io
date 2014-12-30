@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report title="数据库设计说明">
+  <system name="教务信息" version="1.0.0"/>
+  <db>
+    <dialect>org.beangle.data.jdbc.dialect.PostgreSQLDialect
+    </dialect>
+    <driver>org.postgresql.Driver</driver>
+    <url>jdbc:postgresql://192.168.11.46:5432/urp</url>
+    <schema>edu_teach</schema>
+    <user>urp</user>
+    <password>urp</password>
+  </db>
+  <pages template="jekyll" extension=".md">
+    <page name="env" />
+    <page name="rules" />
+    <page name="index" />
+    <page name="tables" />
+    <page name="sequences" />
+    <page name="images" />
+    <page name="module" iterator="true"/>
+    <page name="mantain" />
+  </pages>
+
+  <modules>
+    <module name="xb" title="校标" tables="xb_*"/>
+    <module name="core" title="核心部分" tables="adminclasses*,project*,courses*,course_hour*,majors*,major_journals*,direction*,program*,students*,student_journal*,habilitation*">
+      <image name="course" title="课程" tables="courses"/>
+    </module>
+
+    <module name="plan" title="培养计划" tables="major_plan*,major_course*,share_plan*,share_course*,std_plan*,std_course*"/>
+    <module name="lesson" title="教学任务" tables="lessons*,course_take*,course_limit*">
+      <image name="lesson" title="教学任务" tables="lessons"/>
+    </module>
+    <module name="schedule" title="课程安排" tables="course_activities*,lesson_group*">
+      <image name="schedule" title="排课" tables="course_activities"/>
+    </module>
+    <module name="exam" title="考务安排" tables="exam_activities*"/>
+    <module name="misc" title="其他" tables="*">
+    </module>
+  </modules>
+</report>

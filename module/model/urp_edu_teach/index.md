@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 基础信息 
-description: "基础信息"
+title: 教务信息 
+description: "教务信息"
 categories: [model-1.0.0]
 version: ["1.0.0"]
 ---
