@@ -25,7 +25,8 @@ version: ["1.0.0"]
 * [3.4 教学任务](lesson.html)
 * [3.5 课程安排](schedule.html)
 * [3.6 考务安排](exam.html)
-* [3.7 其他](misc.html)
+* [3.7 学生成绩](exam.html)
+* [3.8 其他](misc.html)
 
 ##### 4. 数据库维护说明
   * 4.1 [数据库管理要点](mantain.html)

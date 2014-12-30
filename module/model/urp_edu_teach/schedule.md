@@ -15,7 +15,7 @@ version: ["1.0.0"]
 ### 关系图 1. 排课
   * 关系图
   
-![排课](images/schedule.png)
+![排课](images/course_activities.png)
 
 
 

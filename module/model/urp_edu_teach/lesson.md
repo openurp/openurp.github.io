@@ -18,6 +18,12 @@ version: ["1.0.0"]
 ![教学任务](images/lesson.png)
 
 
+### 关系图 2. 学生修读课程
+  * 关系图
+  
+![学生修读课程](images/course_take.png)
+
+
 
 ### 表格 course_limit_groups
 

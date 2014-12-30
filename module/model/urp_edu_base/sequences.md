@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 基础信息 数据序列一览
-description: "基础信息数据序列一览"
+title: 教学类基础信息 数据序列一览
+description: "教学类基础信息数据序列一览"
 categories: [model-1.0.0]
 version: ["1.0.0"]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 基础信息 核心部分
-description: "基础信息核心部分"
+title: 教学类基础信息 核心部分
+description: "教学类基础信息核心部分"
 categories: [model-1.0.0]
 version: ["1.0.0"]
 ---

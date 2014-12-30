@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 基础信息 数据库环境要求
-description: "基础信息数据库环境要求"
+title: 教学类基础信息 数据库环境要求
+description: "教学类基础信息数据库环境要求"
 categories: [model-1.0.0]
 version: ["1.0.0"]
 ---

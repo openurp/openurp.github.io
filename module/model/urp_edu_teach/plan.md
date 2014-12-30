@@ -12,6 +12,24 @@ version: ["1.0.0"]
 {:toc}
 
 
+### 关系图 1. 专业培养计划
+  * 关系图
+  
+![专业培养计划](images/major.png)
+
+
+### 关系图 2. 公共课计划
+  * 关系图
+  
+![公共课计划](images/share.png)
+
+
+### 关系图 3. 个人计划
+  * 关系图
+  
+![个人计划](images/std_plan.png)
+
+
 
 ### 表格 major_course_groups
 
