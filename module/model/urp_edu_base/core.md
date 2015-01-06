@@ -59,6 +59,7 @@ version: ["1.0.0"]
 <tr><td>13</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
 <tr><td>14</td><td>remark</td><td>varchar(30)</td><td>是</td><td>备注</td><td></td>  </tr>
 <tr><td>15</td><td>std_count</td><td>int4</td><td>是</td><td>学籍有效人数</td><td></td>  </tr>
+<tr><td>16</td><td>project_id</td><td>int4</td><td>是</td><td></td><td></td>  </tr>
 </table>
 
  
@@ -191,6 +192,7 @@ version: ["1.0.0"]
 <tr><td>3</td><td>effective_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
 <tr><td>4</td><td>invalid_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
 <tr><td>5</td><td>qualified</td><td>bit</td><td>是</td><td>是否合格</td><td></td>  </tr>
+<tr><td>6</td><td>project_id</td><td>int4</td><td>是</td><td></td><td></td>  </tr>
 </table>
 
  
