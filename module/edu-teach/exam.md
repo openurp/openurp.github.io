@@ -49,6 +49,7 @@ version: ["1.0.0"]
 <tr><td>15</td><td>std_id</td><td>int8</td><td>否</td><td>学生 ID</td><td>students</td>  </tr>
 <tr><td>16</td><td>mark_style_id</td><td>int4</td><td>否</td><td>成绩记录方式 ID</td><td>xb_score_mark_styles</td>  </tr>
 <tr><td>17</td><td>lesson_id</td><td>int4</td><td>是</td><td></td><td>lessons</td>  </tr>
+<tr><td>18</td><td>project_id</td><td>int4</td><td>否</td><td></td><td></td>  </tr>
 </table>
 
  

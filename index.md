@@ -10,11 +10,11 @@ OpenURP 轻量级校园信息化解决方案.
 
 ## 项目列表
 
-* [Urp Base](/module/model/urp_base/index.html)
-* [Edu Base](/module/model/urp_edu_base/index.html)
-* [Edu Teach](/module/model/urp_edu_teach/index.html)
-* [Edu Quality](/module/model/urp_edu_quality/index.html)
-* [Edu Award](/module/model/urp_edu_award/index.html)
+* [Urp Base](/module/model/base/index.html)
+* [Edu Base](/module/model/edu-base/index.html)
+* [Edu Teach](/module/model/edu-teach/index.html)
+* [Edu Quality](/module/model/edu-quality/index.html)
+* [Edu Award](/module/model/edu-award/index.html)
 
 ## 设计思路
 

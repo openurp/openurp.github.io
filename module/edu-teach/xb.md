@@ -450,7 +450,7 @@ version: ["1.0.0"]
 <tr><td>6</td><td>end_on</td><td>date</td><td>是</td><td>失效时间</td><td></td>  </tr>
 <tr><td>7</td><td>updated_at</td><td>timestamp</td><td>是</td><td>修改时间</td><td></td>  </tr>
 <tr><td>8</td><td>remark</td><td>varchar(30)</td><td>是</td><td>备注</td><td></td>  </tr>
-<tr><td>9</td><td>num_style</td><td>bit</td><td>是</td><td>是否为数字类型</td><td></td>  </tr>
+<tr><td>9</td><td>num_style</td><td>bit</td><td>否</td><td>是否为数字类型</td><td></td>  </tr>
 </table>
 
  
