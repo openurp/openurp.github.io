@@ -5,10 +5,10 @@
     <dialect>org.beangle.data.jdbc.dialect.PostgreSQLDialect
     </dialect>
     <driver>org.postgresql.Driver</driver>
-    <url>jdbc:postgresql://192.168.11.46:5432/urp</url>
+    <url>jdbc:postgresql://{db.server}:5432/urp</url>
     <schema>edu_award</schema>
-    <user>urp</user>
-    <password>urp</password>
+    <user>{db.username}</user>
+    <password>{db.password}</password>
   </db>
   <pages template="jekyll" extension=".md">
     <page name="env" />
