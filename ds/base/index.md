@@ -271,7 +271,7 @@ title: OpenURP 基础数据服务
  <td>/base/buildings/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -297,7 +297,7 @@ title: OpenURP 基础数据服务
  <td>/base/calendars/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -323,7 +323,7 @@ title: OpenURP 基础数据服务
  <td>/base/campuses/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -349,7 +349,7 @@ title: OpenURP 基础数据服务
  <td>/base/code/countries/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -375,7 +375,7 @@ title: OpenURP 基础数据服务
  <td>/base/code/degrees/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -401,7 +401,7 @@ title: OpenURP 基础数据服务
  <td>/base/code/discipline-categories/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -427,7 +427,7 @@ title: OpenURP 基础数据服务
  <td>/base/code/divisions/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -453,7 +453,7 @@ title: OpenURP 基础数据服务
  <td>/base/code/educations/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -479,7 +479,7 @@ title: OpenURP 基础数据服务
  <td>/base/code/family-relations/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -505,7 +505,7 @@ title: OpenURP 基础数据服务
  <td>/base/code/genders/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -531,7 +531,7 @@ title: OpenURP 基础数据服务
  <td>/base/code/id-types/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -557,7 +557,7 @@ title: OpenURP 基础数据服务
  <td>/base/code/institutions/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -583,7 +583,7 @@ title: OpenURP 基础数据服务
  <td>/base/code/languages/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -609,7 +609,7 @@ title: OpenURP 基础数据服务
  <td>/base/code/nations/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -635,7 +635,7 @@ title: OpenURP 基础数据服务
  <td>/base/code/person-categories/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -661,7 +661,7 @@ title: OpenURP 基础数据服务
  <td>/base/code/political-affiliations/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -687,7 +687,7 @@ title: OpenURP 基础数据服务
  <td>/base/code/professional-title-levels/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -713,7 +713,7 @@ title: OpenURP 基础数据服务
  <td>/base/code/professional-titles/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -739,7 +739,7 @@ title: OpenURP 基础数据服务
  <td>/base/code/room-types/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -765,7 +765,7 @@ title: OpenURP 基础数据服务
  <td>/base/course-units/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -798,7 +798,7 @@ title: OpenURP 基础数据服务
  <td>/base/departments/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -824,7 +824,7 @@ title: OpenURP 基础数据服务
  <td>/base/holidays/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -850,7 +850,7 @@ title: OpenURP 基础数据服务
  <td>/base/rooms/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -876,7 +876,7 @@ title: OpenURP 基础数据服务
  <td>/base/schools/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -902,7 +902,7 @@ title: OpenURP 基础数据服务
  <td>/base/semesters/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
 
@@ -928,6 +928,6 @@ title: OpenURP 基础数据服务
  <td>/base/time-settings/{id}</td>
  <td>GET</td>
  <td>@param(id)*</td>
- <td>info</td>
+ <td>查看单个实体</td>
  </tr>
 </table>
