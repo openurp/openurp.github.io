@@ -12,6 +12,7 @@ OpenURP 轻量级校园信息化解决方案.
 
 * [总体要求](/model/index.html)
 * [Schema规划](/model/schema.html)
+* [ID生成及分区策略](/model/partition.html)
 
 * 基础信息[Urp Base](/model/base/index.html)
 * 教学-基础信息[Edu Base](/model/edu-base/index.html)
