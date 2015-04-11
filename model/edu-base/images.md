@@ -2,8 +2,8 @@
 layout: page
 title: 教学类基础信息 模块关系图
 description: "教学类基础信息模块关系图"
-categories: [model-1.0.0]
-version: ["1.0.0"]
+categories: [model-0.0.1]
+version: ["0.0.1"]
 ---
 {% include JB/setup %}
  目  录

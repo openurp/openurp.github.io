@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report title="数据库设计说明">
+  <system name="教学类基础信息" version="0.0.1"/>
+  <db>
+    <dialect>org.beangle.data.jdbc.dialect.PostgreSQLDialect
+    </dialect>
+    <driver>org.postgresql.Driver</driver>
+    <url>jdbc:postgresql://localhost:5432/urp_sample</url>
+    <schema>edu_base</schema>
+    <user>postgres</user>
+    <password>postgres</password>
+  </db>
+  <pages template="jekyll" extension=".md">
+    <page name="index" />
+    <page name="tables" />
+    <page name="images" />
+    <page name="module" iterator="true"/>
+  </pages>
+
+  <modules>
+    <module name="hb" title="行标" tables="hb_*"/>
+    <module name="xb" title="校标" tables="xb_*"/>
+    <module name="core" title="核心部分" tables="adminclasses*,project*,courses*,course_hour*,majors*,major_journals*,direction*,program*,students*,student_journal*">
+      <image name="adminclasses" title="行政班级" tables="adminclasses*"/>
+      <image name="majors" title="专业" tables="major*,direction*"/>
+      <image name="student" title="学生" tables="student*"/>
+    </module>
+    <module name="misc" title="其他" tables="*">
+      <image name="teacher" title="教师" tables="teacher*"/>
+    </module>
+  </modules>
+</report>

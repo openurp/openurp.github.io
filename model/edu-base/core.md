@@ -2,8 +2,8 @@
 layout: page
 title: 教学类基础信息 核心部分
 description: "教学类基础信息核心部分"
-categories: [model-1.0.0]
-version: ["1.0.0"]
+categories: [model-0.0.1]
+version: ["0.0.1"]
 ---
 {% include JB/setup %}
  目  录
@@ -44,22 +44,22 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:code</td><td></td>  </tr>
-<tr><td>2</td><td>code</td><td>varchar(20)</td><td>否</td><td>编码代码</td><td></td>  </tr>
-<tr><td>3</td><td>name</td><td>varchar(20)</td><td>否</td><td>名称</td><td></td>  </tr>
-<tr><td>4</td><td>abbreviation</td><td>varchar(255)</td><td>是</td><td>简称</td><td></td>  </tr>
-<tr><td>5</td><td>grade</td><td>varchar(255)</td><td>是</td><td>年级</td><td></td>  </tr>
-<tr><td>6</td><td>department_id</td><td>int4</td><td>否</td><td>院系 ID</td><td>departments</td>  </tr>
-<tr><td>7</td><td>major_id</td><td>int4</td><td>是</td><td>专业 ID</td><td>majors</td>  </tr>
-<tr><td>8</td><td>direction_id</td><td>int4</td><td>是</td><td>方向 ID</td><td>directions</td>  </tr>
-<tr><td>9</td><td>std_type_id</td><td>int4</td><td>否</td><td>学生类别 ID</td><td>xb_std_types</td>  </tr>
-<tr><td>10</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
-<tr><td>11</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
-<tr><td>12</td><td>plan_count</td><td>int4</td><td>是</td><td>计划人数</td><td></td>  </tr>
-<tr><td>13</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
-<tr><td>14</td><td>remark</td><td>varchar(30)</td><td>是</td><td>备注</td><td></td>  </tr>
-<tr><td>15</td><td>std_count</td><td>int4</td><td>是</td><td>学籍有效人数</td><td></td>  </tr>
-<tr><td>16</td><td>project_id</td><td>int4</td><td>是</td><td></td><td></td>  </tr>
+<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td>2</td><td>code</td><td>varchar</td><td>否</td><td>编码代码</td><td></td>  </tr>
+<tr><td>3</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
+<tr><td>4</td><td>abbreviation</td><td>varchar</td><td>是</td><td>简称</td><td></td>  </tr>
+<tr><td>5</td><td>grade</td><td>varchar</td><td>是</td><td>年级</td><td></td>  </tr>
+<tr><td>6</td><td>project_id</td><td>int4</td><td>否</td><td>项目 ID</td><td>projects</td>  </tr>
+<tr><td>7</td><td>department_id</td><td>int4</td><td>否</td><td>院系 ID</td><td>departments</td>  </tr>
+<tr><td>8</td><td>major_id</td><td>int8</td><td>是</td><td>专业 ID</td><td>majors</td>  </tr>
+<tr><td>9</td><td>direction_id</td><td>int8</td><td>是</td><td>方向 ID</td><td>directions</td>  </tr>
+<tr><td>10</td><td>std_type_id</td><td>int4</td><td>否</td><td>学生类别 ID</td><td>xb_std_types</td>  </tr>
+<tr><td>11</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
+<tr><td>12</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
+<tr><td>13</td><td>plan_count</td><td>int4</td><td>是</td><td>计划人数</td><td></td>  </tr>
+<tr><td>14</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
+<tr><td>15</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>16</td><td>std_count</td><td>int4</td><td>是</td><td>学籍有效人数</td><td></td>  </tr>
 </table>
 
  
@@ -85,8 +85,8 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>adminclass_id</td><td>int4</td><td>否</td><td>学生行政班级信息 ID</td><td>adminclasses</td>  </tr>
-<tr><td>2</td><td>instructor_id</td><td>int4</td><td>否</td><td>TeacherBean ID</td><td>teachers</td>  </tr>
+<tr><td>1</td><td>adminclass_id</td><td>int8</td><td>否</td><td>学生行政班级信息 ID</td><td>adminclasses</td>  </tr>
+<tr><td>2</td><td>instructor_id</td><td>int8</td><td>否</td><td>通用人员信息 ID</td><td>users</td>  </tr>
 </table>
 
  
@@ -104,11 +104,164 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>adminclass_id</td><td>int4</td><td>否</td><td>学生行政班级信息 ID</td><td>adminclasses</td>  </tr>
-<tr><td>2</td><td>tutor_id</td><td>int4</td><td>否</td><td>TeacherBean ID</td><td>teachers</td>  </tr>
+<tr><td>1</td><td>adminclass_id</td><td>int8</td><td>否</td><td>学生行政班级信息 ID</td><td>adminclasses</td>  </tr>
+<tr><td>2</td><td>tutor_id</td><td>int8</td><td>否</td><td>通用人员信息 ID</td><td>users</td>  </tr>
 </table>
 
  
+
+### 表格 course_hours
+
+  * 表格说明
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
+<tr><td>course_hours</td><td>id</td><td>课程分类课时信息</td>  </tr>
+</table>
+
+  * 表格中的列
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
+<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td>2</td><td>period</td><td>int4</td><td>是</td><td>学时/总课时</td><td></td>  </tr>
+<tr><td>3</td><td>week_hour</td><td>int4</td><td>是</td><td>周课时</td><td></td>  </tr>
+<tr><td>4</td><td>weeks</td><td>int4</td><td>是</td><td>周数</td><td></td>  </tr>
+<tr><td>5</td><td>hour_type_id</td><td>int4</td><td>否</td><td>课时类别代码 ID</td><td>xb_course_hour_types</td>  </tr>
+<tr><td>6</td><td>course_id</td><td>int8</td><td>否</td><td>课程 ID</td><td>courses</td>  </tr>
+</table>
+
+ 
+  * 表格的索引
+
+<table class="table table-bordered table-striped table-condensed">
+  <tr>
+<th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
+<tr><td>course_hours_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
+</table>
+
+### 表格 courses
+
+  * 表格说明
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
+<tr><td>courses</td><td>id</td><td>课程基本信息</td>  </tr>
+</table>
+
+  * 表格中的列
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
+<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td>2</td><td>code</td><td>varchar</td><td>否</td><td>课程代码</td><td></td>  </tr>
+<tr><td>3</td><td>name</td><td>varchar</td><td>否</td><td>课程名称</td><td></td>  </tr>
+<tr><td>4</td><td>en_name</td><td>varchar</td><td>是</td><td>课程英文名</td><td></td>  </tr>
+<tr><td>5</td><td>project_id</td><td>int4</td><td>否</td><td>项目 ID</td><td>projects</td>  </tr>
+<tr><td>6</td><td>education_id</td><td>int4</td><td>是</td><td>学历层次 ID</td><td>gb_educations</td>  </tr>
+<tr><td>7</td><td>category_id</td><td>int4</td><td>是</td><td>课程种类代码 ID</td><td>xb_course_categories</td>  </tr>
+<tr><td>8</td><td>credits</td><td>float4</td><td>是</td><td>学分</td><td></td>  </tr>
+<tr><td>9</td><td>period</td><td>int4</td><td>是</td><td>学时/总课时</td><td></td>  </tr>
+<tr><td>10</td><td>week_hour</td><td>int4</td><td>是</td><td>周课时</td><td></td>  </tr>
+<tr><td>11</td><td>weeks</td><td>int4</td><td>是</td><td>周数</td><td></td>  </tr>
+<tr><td>12</td><td>department_id</td><td>int4</td><td>是</td><td>院系 ID</td><td>departments</td>  </tr>
+<tr><td>13</td><td>establish_on</td><td>date</td><td>是</td><td>设立时间</td><td></td>  </tr>
+<tr><td>14</td><td>course_type_id</td><td>int4</td><td>是</td><td>建议课程类别 ID</td><td>xb_course_types</td>  </tr>
+<tr><td>15</td><td>exam_mode_id</td><td>int4</td><td>是</td><td>考试方式 ID</td><td>xb_exam_modes</td>  </tr>
+<tr><td>16</td><td>mark_style_id</td><td>int4</td><td>是</td><td>成绩记录方式 ID</td><td>xb_score_mark_styles</td>  </tr>
+<tr><td>17</td><td>enabled</td><td>bool</td><td>否</td><td>课程使用状态</td><td></td>  </tr>
+<tr><td>18</td><td>remark</td><td>varchar</td><td>是</td><td>课程备注</td><td></td>  </tr>
+<tr><td>19</td><td>cal_gp</td><td>bool</td><td>否</td><td>是否计算绩点</td><td></td>  </tr>
+<tr><td>20</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
+</table>
+
+ 
+  * 表格的索引
+
+<table class="table table-bordered table-striped table-condensed">
+  <tr>
+<th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
+<tr><td>courses_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
+<tr><td>uk_61og8rbqdd2y28rx2et5fdnxd</td><td>code&nbsp;</td><td>是</td>  </tr>
+</table>
+
+### 表格 courses_majors
+
+  * 表格说明
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
+<tr><td>courses_majors</td><td>course_id,major_id</td><td>课程基本信息-针对专业</td>  </tr>
+</table>
+
+  * 表格中的列
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
+<tr><td>1</td><td>course_id</td><td>int8</td><td>否</td><td>课程基本信息 ID</td><td>courses</td>  </tr>
+<tr><td>2</td><td>major_id</td><td>int8</td><td>否</td><td>专业 ID</td><td>majors</td>  </tr>
+</table>
+
+ 
+  * 表格的索引
+
+<table class="table table-bordered table-striped table-condensed">
+  <tr>
+<th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
+<tr><td>courses_majors_pkey</td><td>course_id&nbsp;major_id&nbsp;</td><td>是</td>  </tr>
+</table>
+
+### 表格 courses_prerequisites
+
+  * 表格说明
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
+<tr><td>courses_prerequisites</td><td>course_id,prerequisite_id</td><td>课程基本信息-先修课程</td>  </tr>
+</table>
+
+  * 表格中的列
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
+<tr><td>1</td><td>course_id</td><td>int8</td><td>否</td><td>课程基本信息 ID</td><td>courses</td>  </tr>
+<tr><td>2</td><td>prerequisite_id</td><td>int8</td><td>否</td><td>课程基本信息 ID</td><td>courses</td>  </tr>
+</table>
+
+ 
+  * 表格的索引
+
+<table class="table table-bordered table-striped table-condensed">
+  <tr>
+<th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
+<tr><td>courses_prerequisites_pkey</td><td>course_id&nbsp;prerequisite_id&nbsp;</td><td>是</td>  </tr>
+</table>
+
+### 表格 courses_xmajors
+
+  * 表格说明
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
+<tr><td>courses_xmajors</td><td>course_id,xmajor_id</td><td>课程基本信息-排除专业</td>  </tr>
+</table>
+
+  * 表格中的列
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
+<tr><td>1</td><td>course_id</td><td>int8</td><td>否</td><td>课程基本信息 ID</td><td>courses</td>  </tr>
+<tr><td>2</td><td>xmajor_id</td><td>int8</td><td>否</td><td>专业 ID</td><td>majors</td>  </tr>
+</table>
+
+ 
+  * 表格的索引
+
+<table class="table table-bordered table-striped table-condensed">
+  <tr>
+<th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
+<tr><td>courses_xmajors_pkey</td><td>course_id&nbsp;xmajor_id&nbsp;</td><td>是</td>  </tr>
+</table>
 
 ### 表格 direction_journals
 
@@ -123,13 +276,13 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
-<tr><td>2</td><td>direction_id</td><td>int4</td><td>是</td><td>专业方向 ID</td><td>directions</td>  </tr>
+<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td>2</td><td>direction_id</td><td>int8</td><td>是</td><td>专业方向 ID</td><td>directions</td>  </tr>
 <tr><td>3</td><td>education_id</td><td>int4</td><td>是</td><td>培养层次 ID</td><td>gb_educations</td>  </tr>
 <tr><td>4</td><td>depart_id</td><td>int4</td><td>是</td><td>部门 ID</td><td>departments</td>  </tr>
 <tr><td>5</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
 <tr><td>6</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
-<tr><td>7</td><td>remark</td><td>varchar(500)</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>7</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
 </table>
 
  
@@ -154,14 +307,14 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
-<tr><td>2</td><td>code</td><td>varchar(32)</td><td>否</td><td>专业方向编码</td><td></td>  </tr>
-<tr><td>3</td><td>name</td><td>varchar(100)</td><td>否</td><td>专业方向名称</td><td></td>  </tr>
-<tr><td>4</td><td>en_name</td><td>varchar(255)</td><td>是</td><td>专业方向英文名</td><td></td>  </tr>
+<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td>2</td><td>code</td><td>varchar</td><td>否</td><td>专业方向编码</td><td></td>  </tr>
+<tr><td>3</td><td>name</td><td>varchar</td><td>否</td><td>专业方向名称</td><td></td>  </tr>
+<tr><td>4</td><td>en_name</td><td>varchar</td><td>是</td><td>专业方向英文名</td><td></td>  </tr>
 <tr><td>5</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
 <tr><td>6</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
-<tr><td>7</td><td>remark</td><td>varchar(500)</td><td>是</td><td>备注</td><td></td>  </tr>
-<tr><td>8</td><td>major_id</td><td>int4</td><td>是</td><td>所属专业 ID</td><td>majors</td>  </tr>
+<tr><td>7</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>8</td><td>major_id</td><td>int8</td><td>是</td><td>所属专业 ID</td><td>majors</td>  </tr>
 </table>
 
  
@@ -172,36 +325,6 @@ version: ["1.0.0"]
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
 <tr><td>directions_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
 <tr><td>uk_90d4g7vk0kov7ohapyq9u844</td><td>code&nbsp;</td><td>是</td>  </tr>
-</table>
-
-### 表格 habilitations
-
-  * 表格说明
-
-<table class="table table-bordered table-striped table-condensed">
-<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
-<tr><td>habilitations</td><td>id</td><td>授课资格</td>  </tr>
-</table>
-
-  * 表格中的列
-
-<table class="table table-bordered table-striped table-condensed">
-<tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:code</td><td></td>  </tr>
-<tr><td>2</td><td>teacher_id</td><td>int4</td><td>是</td><td>教师 ID</td><td>teachers</td>  </tr>
-<tr><td>3</td><td>effective_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
-<tr><td>4</td><td>invalid_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
-<tr><td>5</td><td>qualified</td><td>bit</td><td>是</td><td>是否合格</td><td></td>  </tr>
-<tr><td>6</td><td>project_id</td><td>int4</td><td>是</td><td></td><td></td>  </tr>
-</table>
-
- 
-  * 表格的索引
-
-<table class="table table-bordered table-striped table-condensed">
-  <tr>
-<th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>habilitations_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
 </table>
 
 ### 表格 major_journals
@@ -217,16 +340,16 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
-<tr><td>2</td><td>major_id</td><td>int4</td><td>是</td><td>专业 ID</td><td>majors</td>  </tr>
-<tr><td>3</td><td>discipline_code</td><td>varchar(50)</td><td>是</td><td>教育部代码</td><td></td>  </tr>
-<tr><td>4</td><td>category_id</td><td>int4</td><td>是</td><td>学科门类 ID</td><td>jb_discipline_categories</td>  </tr>
+<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td>2</td><td>major_id</td><td>int8</td><td>是</td><td>专业 ID</td><td>majors</td>  </tr>
+<tr><td>3</td><td>discipline_code</td><td>varchar</td><td>是</td><td>教育部代码</td><td></td>  </tr>
+<tr><td>4</td><td>category_id</td><td>int4</td><td>是</td><td>学科门类 ID</td><td>gb_discipline_categories</td>  </tr>
 <tr><td>5</td><td>duration</td><td>float4</td><td>是</td><td>修读年限</td><td></td>  </tr>
 <tr><td>6</td><td>education_id</td><td>int4</td><td>是</td><td>培养层次 ID</td><td>gb_educations</td>  </tr>
 <tr><td>7</td><td>depart_id</td><td>int4</td><td>是</td><td>部门 ID</td><td>departments</td>  </tr>
 <tr><td>8</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
 <tr><td>9</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
-<tr><td>10</td><td>remark</td><td>varchar(255)</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>10</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
 </table>
 
  
@@ -251,18 +374,18 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
-<tr><td>2</td><td>code</td><td>varchar(20)</td><td>否</td><td>专业编码</td><td></td>  </tr>
-<tr><td>3</td><td>name</td><td>varchar(20)</td><td>否</td><td>专业名称</td><td></td>  </tr>
-<tr><td>4</td><td>project_id</td><td>int4</td><td>是</td><td>项目 ID</td><td>projects</td>  </tr>
-<tr><td>5</td><td>category_id</td><td>int4</td><td>是</td><td>学科门类 ID</td><td>jb_discipline_categories</td>  </tr>
-<tr><td>6</td><td>duration</td><td>float4</td><td>是</td><td>修读年限</td><td></td>  </tr>
-<tr><td>7</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
-<tr><td>8</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
-<tr><td>9</td><td>remark</td><td>varchar(30)</td><td>是</td><td>备注</td><td></td>  </tr>
-<tr><td>10</td><td>abbreviation</td><td>varchar(255)</td><td>是</td><td>简称</td><td></td>  </tr>
-<tr><td>11</td><td>en_name</td><td>varchar(150)</td><td>是</td><td></td><td></td>  </tr>
-<tr><td>12</td><td>updated_at</td><td>timestamp</td><td>是</td><td></td><td></td>  </tr>
+<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td>2</td><td>code</td><td>varchar</td><td>否</td><td>专业编码</td><td></td>  </tr>
+<tr><td>3</td><td>name</td><td>varchar</td><td>否</td><td>专业名称</td><td></td>  </tr>
+<tr><td>4</td><td>en_name</td><td>varchar</td><td>是</td><td>专业英文名</td><td></td>  </tr>
+<tr><td>5</td><td>project_id</td><td>int4</td><td>是</td><td>项目 ID</td><td>projects</td>  </tr>
+<tr><td>6</td><td>category_id</td><td>int4</td><td>是</td><td>学科门类 ID</td><td>gb_discipline_categories</td>  </tr>
+<tr><td>7</td><td>duration</td><td>float4</td><td>是</td><td>修读年限</td><td></td>  </tr>
+<tr><td>8</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
+<tr><td>9</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
+<tr><td>10</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>11</td><td>short_name</td><td>varchar</td><td>是</td><td>shortName</td><td></td>  </tr>
+<tr><td>12</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
 </table>
 
  
@@ -288,7 +411,7 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>major_id</td><td>int4</td><td>否</td><td>专业 ID</td><td>majors</td>  </tr>
+<tr><td>1</td><td>major_id</td><td>int8</td><td>否</td><td>专业 ID</td><td>majors</td>  </tr>
 <tr><td>2</td><td>education_id</td><td>int4</td><td>否</td><td>学历 ID</td><td>gb_educations</td>  </tr>
 </table>
 
@@ -314,13 +437,13 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
-<tr><td>2</td><td>name</td><td>varchar(100)</td><td>否</td><td>名称</td><td></td>  </tr>
-<tr><td>3</td><td>grade</td><td>varchar(10)</td><td>否</td><td>年级</td><td></td>  </tr>
+<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td>2</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
+<tr><td>3</td><td>grade</td><td>varchar</td><td>否</td><td>年级</td><td></td>  </tr>
 <tr><td>4</td><td>department_id</td><td>int4</td><td>否</td><td>部门 ID</td><td>departments</td>  </tr>
 <tr><td>5</td><td>education_id</td><td>int4</td><td>否</td><td>培养层次 ID</td><td>gb_educations</td>  </tr>
-<tr><td>6</td><td>major_id</td><td>int4</td><td>否</td><td>专业 ID</td><td>majors</td>  </tr>
-<tr><td>7</td><td>direction_id</td><td>int4</td><td>是</td><td>专业方向 ID</td><td>directions</td>  </tr>
+<tr><td>6</td><td>major_id</td><td>int8</td><td>否</td><td>专业 ID</td><td>majors</td>  </tr>
+<tr><td>7</td><td>direction_id</td><td>int8</td><td>是</td><td>专业方向 ID</td><td>directions</td>  </tr>
 <tr><td>8</td><td>std_type_id</td><td>int4</td><td>是</td><td>学生类别 ID</td><td>xb_std_types</td>  </tr>
 <tr><td>9</td><td>duration</td><td>float4</td><td>否</td><td>学制</td><td></td>  </tr>
 <tr><td>10</td><td>degree_id</td><td>int4</td><td>是</td><td>毕业授予学位 ID</td><td>gb_degrees</td>  </tr>
@@ -328,7 +451,7 @@ version: ["1.0.0"]
 <tr><td>12</td><td>begin_on</td><td>date</td><td>否</td><td>生效日期</td><td></td>  </tr>
 <tr><td>13</td><td>end_on</td><td>date</td><td>否</td><td>失效日期</td><td></td>  </tr>
 <tr><td>14</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
-<tr><td>15</td><td>remark</td><td>varchar(200)</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>15</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
 </table>
 
  
@@ -353,7 +476,7 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
+<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 <tr><td>2</td><td>room_id</td><td>int4</td><td>是</td><td>教室 ID</td><td>rooms</td>  </tr>
 <tr><td>3</td><td>project_id</td><td>int4</td><td>否</td><td>项目 ID</td><td>projects</td>  </tr>
 </table>
@@ -380,7 +503,7 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>project_classroom_id</td><td>int4</td><td>否</td><td>项目教室配置 ID</td><td>project_classrooms</td>  </tr>
+<tr><td>1</td><td>project_classroom_id</td><td>int8</td><td>否</td><td>项目教室配置 ID</td><td>project_classrooms</td>  </tr>
 <tr><td>2</td><td>depart_id</td><td>int4</td><td>否</td><td>部门组织机构信息 ID</td><td>departments</td>  </tr>
 </table>
 
@@ -406,7 +529,7 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
+<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 <tr><td>2</td><td>project_id</td><td>int4</td><td>否</td><td>项目 ID</td><td>projects</td>  </tr>
 <tr><td>3</td><td>meta_id</td><td>int4</td><td>否</td><td>代码元 ID</td><td>code_metas</td>  </tr>
 <tr><td>4</td><td>code_id</td><td>int4</td><td>否</td><td>代码ID</td><td></td>  </tr>
@@ -435,14 +558,14 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td>1</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
-<tr><td>2</td><td>name</td><td>varchar(100)</td><td>否</td><td>名称</td><td></td>  </tr>
-<tr><td>3</td><td>school_id</td><td>int4</td><td>否</td><td>适用学校 ID</td><td>schools</td>  </tr>
-<tr><td>4</td><td>calendar_id</td><td>int4</td><td>否</td><td>使用校历 ID</td><td>calendars</td>  </tr>
-<tr><td>5</td><td>description</td><td>varchar(500)</td><td>是</td><td>描述</td><td></td>  </tr>
-<tr><td>6</td><td>minor</td><td>bit</td><td>是</td><td>是否辅修</td><td></td>  </tr>
-<tr><td>7</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
-<tr><td>8</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
-<tr><td>9</td><td>code</td><td>varchar(10)</td><td>否</td><td></td><td></td>  </tr>
+<tr><td>2</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
+<tr><td>3</td><td>code</td><td>varchar</td><td>否</td><td>代码</td><td></td>  </tr>
+<tr><td>4</td><td>school_id</td><td>int4</td><td>否</td><td>适用学校 ID</td><td>schools</td>  </tr>
+<tr><td>5</td><td>calendar_id</td><td>int4</td><td>否</td><td>使用校历 ID</td><td>calendars</td>  </tr>
+<tr><td>6</td><td>description</td><td>varchar</td><td>是</td><td>描述</td><td></td>  </tr>
+<tr><td>7</td><td>minor</td><td>bool</td><td>是</td><td>是否辅修</td><td></td>  </tr>
+<tr><td>8</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
+<tr><td>9</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
 </table>
 
  
@@ -452,7 +575,7 @@ version: ["1.0.0"]
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
 <tr><td>projects_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
-<tr><td>uk_1e447b96pedrvtxw44ot4qxem</td><td>name&nbsp;</td><td>是</td>  </tr>
+<tr><td>uk_clujw4wu21d33ssgde022aymk</td><td>code&nbsp;</td><td>是</td>  </tr>
 </table>
 
 ### 表格 projects_campuses
@@ -537,7 +660,7 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
-<tr><td>projects_properties</td><td>project_id,name</td><td>项目-properties</td>  </tr>
+<tr><td>projects_properties</td><td>project_id,name</td><td>项目-项目属性/项目参数</td>  </tr>
 </table>
 
   * 表格中的列
@@ -545,8 +668,8 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td>1</td><td>project_id</td><td>int4</td><td>否</td><td>项目 ID</td><td>projects</td>  </tr>
-<tr><td>2</td><td>value</td><td>varchar(255)</td><td>是</td><td></td><td></td>  </tr>
-<tr><td>3</td><td>name</td><td>varchar(255)</td><td>否</td><td></td><td></td>  </tr>
+<tr><td>2</td><td>value</td><td>varchar</td><td>是</td><td></td><td></td>  </tr>
+<tr><td>3</td><td>name</td><td>varchar</td><td>否</td><td></td><td></td>  </tr>
 </table>
 
  
@@ -557,6 +680,25 @@ version: ["1.0.0"]
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
 <tr><td>projects_properties_pkey</td><td>project_id&nbsp;name&nbsp;</td><td>是</td>  </tr>
 </table>
+
+### 表格 projects_std_types
+
+  * 表格说明
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
+<tr><td>projects_std_types</td><td></td><td>项目-学生类别</td>  </tr>
+</table>
+
+  * 表格中的列
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
+<tr><td>1</td><td>project_id</td><td>int4</td><td>否</td><td>项目 ID</td><td>projects</td>  </tr>
+<tr><td>2</td><td>std_type_id</td><td>int4</td><td>否</td><td>学生类别 ID</td><td>xb_std_types</td>  </tr>
+</table>
+
+ 
 
 ### 表格 projects_time_settings
 
@@ -577,25 +719,6 @@ version: ["1.0.0"]
 
  
 
-### 表格 projects_types
-
-  * 表格说明
-
-<table class="table table-bordered table-striped table-condensed">
-<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
-<tr><td>projects_types</td><td></td><td>项目-学生类别列表</td>  </tr>
-</table>
-
-  * 表格中的列
-
-<table class="table table-bordered table-striped table-condensed">
-<tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>project_id</td><td>int4</td><td>否</td><td>项目 ID</td><td>projects</td>  </tr>
-<tr><td>2</td><td>std_type_id</td><td>int4</td><td>否</td><td>学生类别 ID</td><td>xb_std_types</td>  </tr>
-</table>
-
- 
-
 ### 表格 student_journals
 
   * 表格说明
@@ -609,18 +732,18 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 <tr><td>2</td><td>std_id</td><td>int8</td><td>是</td><td>学生 ID</td><td>students</td>  </tr>
-<tr><td>3</td><td>grade</td><td>varchar(255)</td><td>否</td><td>年级</td><td></td>  </tr>
+<tr><td>3</td><td>grade</td><td>varchar</td><td>否</td><td>年级</td><td></td>  </tr>
 <tr><td>4</td><td>department_id</td><td>int4</td><td>是</td><td>管理院系 ID</td><td>departments</td>  </tr>
-<tr><td>5</td><td>major_id</td><td>int4</td><td>是</td><td>专业 ID</td><td>majors</td>  </tr>
-<tr><td>6</td><td>direction_id</td><td>int4</td><td>是</td><td>方向 ID</td><td>directions</td>  </tr>
-<tr><td>7</td><td>adminclass_id</td><td>int4</td><td>是</td><td>行政班级 ID</td><td>adminclasses</td>  </tr>
-<tr><td>8</td><td>inschool</td><td>bit</td><td>是</td><td>是否在校</td><td></td>  </tr>
+<tr><td>5</td><td>major_id</td><td>int8</td><td>是</td><td>专业 ID</td><td>majors</td>  </tr>
+<tr><td>6</td><td>direction_id</td><td>int8</td><td>是</td><td>方向 ID</td><td>directions</td>  </tr>
+<tr><td>7</td><td>adminclass_id</td><td>int8</td><td>是</td><td>行政班级 ID</td><td>adminclasses</td>  </tr>
+<tr><td>8</td><td>inschool</td><td>bool</td><td>是</td><td>是否在校</td><td></td>  </tr>
 <tr><td>9</td><td>status_id</td><td>int4</td><td>是</td><td>学籍状态 ID</td><td>xb_std_statuses</td>  </tr>
 <tr><td>10</td><td>begin_on</td><td>date</td><td>是</td><td>起始日期</td><td></td>  </tr>
 <tr><td>11</td><td>end_on</td><td>date</td><td>是</td><td>结束日期</td><td></td>  </tr>
-<tr><td>12</td><td>remark</td><td>varchar(2000)</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>12</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
 </table>
 
  
@@ -646,27 +769,27 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>2</td><td>code</td><td>varchar(32)</td><td>否</td><td>学号</td><td></td>  </tr>
-<tr><td>3</td><td>grade</td><td>varchar(255)</td><td>否</td><td>年级</td><td></td>  </tr>
-<tr><td>4</td><td>project_id</td><td>int4</td><td>是</td><td>project ID</td><td>projects</td>  </tr>
+<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td>2</td><td>code</td><td>varchar</td><td>否</td><td>学号</td><td></td>  </tr>
+<tr><td>3</td><td>grade</td><td>varchar</td><td>否</td><td>年级</td><td></td>  </tr>
+<tr><td>4</td><td>project_id</td><td>int4</td><td>是</td><td>项目 ID</td><td>projects</td>  </tr>
 <tr><td>5</td><td>department_id</td><td>int4</td><td>是</td><td>管理院系 行政管理院系 ID</td><td>departments</td>  </tr>
-<tr><td>6</td><td>major_id</td><td>int4</td><td>是</td><td>专业 当前修读专业 ID</td><td>majors</td>  </tr>
-<tr><td>7</td><td>direction_id</td><td>int4</td><td>是</td><td>方向 当前修读方向 ID</td><td>directions</td>  </tr>
-<tr><td>8</td><td>major_depart_id</td><td>int4</td><td>是</td><td>专业所在院系 ID</td><td>departments</td>  </tr>
-<tr><td>9</td><td>std_type_id</td><td>int4</td><td>是</td><td>stdType ID</td><td>xb_std_types</td>  </tr>
-<tr><td>10</td><td>campus_id</td><td>int4</td><td>是</td><td>校区 ID</td><td>campuses</td>  </tr>
-<tr><td>11</td><td>duration</td><td>float4</td><td>否</td><td>学制/学习年限</td><td></td>  </tr>
-<tr><td>12</td><td>registed</td><td>bit</td><td>是</td><td>是否有学籍</td><td></td>  </tr>
-<tr><td>13</td><td>enroll_on</td><td>date</td><td>否</td><td>入学报到日期</td><td></td>  </tr>
-<tr><td>14</td><td>regist_on</td><td>date</td><td>是</td><td>学籍生效日期</td><td></td>  </tr>
-<tr><td>15</td><td>graduate_on</td><td>date</td><td>否</td><td>应毕业时间 预计毕业日期</td><td></td>  </tr>
-<tr><td>16</td><td>adminclass_id</td><td>int4</td><td>是</td><td>行政班级 ID</td><td>adminclasses</td>  </tr>
-<tr><td>17</td><td>remark</td><td>varchar(2000)</td><td>是</td><td>备注</td><td></td>  </tr>
-<tr><td>18</td><td>study_type_id</td><td>int4</td><td>是</td><td>学习形式 ID</td><td>gb_study_types</td>  </tr>
-<tr><td>19</td><td>tutor_id</td><td>int4</td><td>是</td><td>导师 ID</td><td>teachers</td>  </tr>
-<tr><td>20</td><td>person_id</td><td>int8</td><td>是</td><td>基本信息 ID</td><td>people</td>  </tr>
-<tr><td>21</td><td>education_id</td><td>int4</td><td>是</td><td></td><td></td>  </tr>
+<tr><td>6</td><td>major_id</td><td>int8</td><td>是</td><td>专业 当前修读专业 ID</td><td>majors</td>  </tr>
+<tr><td>7</td><td>education_id</td><td>int4</td><td>是</td><td>培养层次 ID</td><td>gb_educations</td>  </tr>
+<tr><td>8</td><td>direction_id</td><td>int8</td><td>是</td><td>方向 当前修读方向 ID</td><td>directions</td>  </tr>
+<tr><td>9</td><td>major_depart_id</td><td>int4</td><td>是</td><td>专业所在院系 ID</td><td>departments</td>  </tr>
+<tr><td>10</td><td>std_type_id</td><td>int4</td><td>是</td><td>学生类别 所在项目内的学生类别 ID</td><td>xb_std_types</td>  </tr>
+<tr><td>11</td><td>campus_id</td><td>int4</td><td>是</td><td>校区 ID</td><td>campuses</td>  </tr>
+<tr><td>12</td><td>duration</td><td>float4</td><td>否</td><td>学制/学习年限</td><td></td>  </tr>
+<tr><td>13</td><td>registed</td><td>bool</td><td>是</td><td>是否有学籍</td><td></td>  </tr>
+<tr><td>14</td><td>enroll_on</td><td>date</td><td>否</td><td>入学报到日期</td><td></td>  </tr>
+<tr><td>15</td><td>regist_on</td><td>date</td><td>是</td><td>学籍生效日期</td><td></td>  </tr>
+<tr><td>16</td><td>graduate_on</td><td>date</td><td>否</td><td>应毕业时间 预计毕业日期</td><td></td>  </tr>
+<tr><td>17</td><td>adminclass_id</td><td>int8</td><td>是</td><td>行政班级 ID</td><td>adminclasses</td>  </tr>
+<tr><td>18</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>19</td><td>study_type_id</td><td>int4</td><td>是</td><td>学习形式 ID</td><td>gb_study_types</td>  </tr>
+<tr><td>20</td><td>tutor_id</td><td>int8</td><td>是</td><td>导师 ID</td><td>teachers</td>  </tr>
+<tr><td>21</td><td>person_id</td><td>int8</td><td>是</td><td>基本信息 ID</td><td>people</td>  </tr>
 </table>
 
  
