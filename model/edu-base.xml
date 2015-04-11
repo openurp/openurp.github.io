@@ -18,7 +18,7 @@
   </pages>
 
   <modules>
-    <module name="gb" title="国标" tables="gb_*"/>
+    <module name="hb" title="行标" tables="hb_*"/>
     <module name="xb" title="校标" tables="xb_*"/>
     <module name="core" title="核心部分" tables="adminclasses*,project*,courses*,course_hour*,majors*,major_journals*,direction*,program*,students*,student_journal*">
       <image name="adminclasses" title="行政班级" tables="adminclasses*"/>

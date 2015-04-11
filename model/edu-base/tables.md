@@ -77,13 +77,13 @@ version: ["0.0.1"]
   </tr>
   <tr>
     <td>11</td>
-    <td><a href="misc.html#hbadmissionways">hb_admission_ways</a> 入学方式</td>
+    <td><a href="hb.html#hbadmissionways">hb_admission_ways</a> 入学方式</td>
     <td>33</td>
     <td><a href="xb.html#xbcourseabilityrates">xb_course_ability_rates</a> 课程能力等级</td>
   </tr>
   <tr>
     <td>12</td>
-    <td><a href="misc.html#hbpresses">hb_presses</a> 出版社</td>
+    <td><a href="hb.html#hbpresses">hb_presses</a> 出版社</td>
     <td>34</td>
     <td><a href="xb.html#xbcoursecategories">xb_course_categories</a> 课程种类</td>
   </tr>
