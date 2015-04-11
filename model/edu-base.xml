@@ -25,10 +25,6 @@
       <image name="majors" title="专业" tables="major*,direction*"/>
       <image name="student" title="学生" tables="student*"/>
     </module>
-    <module name="plan" title="培养计划" tables="major_plan*,major_course*,share_plan*,share_course*,std_plan*,std_course*"/>
-    <module name="lesson" title="教学任务" tables="lessons*,course_take*,course_limit*"/>
-    <module name="schedule" title="课程安排" tables="course_activities*,lesson_group*"/>
-    <module name="exam" title="考务安排" tables="exam_activities*"/>
     <module name="misc" title="其他" tables="*">
       <image name="teacher" title="教师" tables="teacher*"/>
     </module>
