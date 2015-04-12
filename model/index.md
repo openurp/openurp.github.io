@@ -9,7 +9,7 @@ version: ["1.0.0"]
 
 #### 数据库总体要求:
 
-  1. 数据库采用了PostgreSQL 9以上的版本
+  1. 数据库采用了PostgreSQL 9以上,Maria/MySQL 5以上，Oracle 10g以上的版本
   2. 对于维护十年以上的数据，默认表空间最少要4G
   3. 数据库编程客户端，可以采用pgAdmin或者phpPgAdmin
 
@@ -31,4 +31,4 @@ version: ["1.0.0"]
 
 #### 说明:
 
-  1. 本系统未在postgresql之外的系统上进行测试
+  1. 本系统未在MS SQL Server，DB2等系统上进行测试过。

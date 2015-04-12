@@ -1,0 +1,52 @@
+---
+layout: page
+title: 数据模型
+header: 数据模型
+group: navigation
+---
+{% include JB/setup %}
+
+##### 1. 总体要求和schema划分
+
+* [总体要求](/model/index.html)
+* [Schema规划](/model/schema.html)
+* [ID生成及分区策略](/model/partition.html)
+
+##### 2. 代码和人员信息
+
+* [基础代码Code](/model/code/index.html)
+* [人员-基本信息Base](/model/people/base/index.html)
+* [人员-扩展信息Info](/model/people/info/index.html)
+
+##### 3. 基础信息
+
+* [基础信息Base](/model/base/index.html)
+
+##### 4. 教育相关
+
+* [基础信息Base](/model/edu/base/index.html)
+* [评奖评优Award](/model/edu/award/index.html)
+* [校外考试Otherexam](/model/edu/otherexam/index.html)
+* [质量监控Quality](/model/edu/quality/index.html)
+* [学籍信息Std](/model/edu/std/index.html)
+* [教务信息Teach](/model/edu/teach/index.html)
+* [教材信息Textbook](/model/edu/textbook/index.html)
+* [工作量Workload](/model/edu/workload/index.html)
+
+##### 5.人事相关
+
+* [基础信息Base](/model/hr/base/index.html)
+
+##### 6.学工相关
+
+* [基础信息Base](/model/std/base/index.html)
+* [就业信息Job](/model/std/job/index.html)
+
+##### 7.科研相关
+
+* [成果信息Harvest](/model/sin/harvest/index.html)
+
+##### 8.后勤相关
+
+* [教室管理](/model/lg/room/index.html)
+

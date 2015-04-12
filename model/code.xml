@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report title="数据库设计说明">
+  <system name="基础代码" version="0.0.2"/>
+  <db>
+    <dialect>org.beangle.data.jdbc.dialect.PostgreSQLDialect
+    </dialect>
+    <driver>org.postgresql.Driver</driver>
+    <url>jdbc:postgresql://localhost:5432/urp_sample</url>
+    <schema>code</schema>
+    <user>postgres</user>
+    <password>postgres</password>
+  </db>
+  <pages template="jekyll" extension=".md">
+    <page name="index" />
+    <page name="tables" />
+    <page name="images" />
+    <page name="module" iterator="true"/>
+  </pages>
+
+  <modules>
+    <module name="gb" title="国标" tables="gb_*"/>
+    <module name="hb" title="行标" tables="hb_*"/>
+  </modules>
+</report>

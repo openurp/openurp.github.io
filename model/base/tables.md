@@ -2,11 +2,11 @@
 layout: page
 title: 基础信息 数据表格一览
 description: "基础信息数据表格一览"
-categories: [model-1.0.0]
-version: ["1.0.0"]
+categories: [model-0.0.2]
+version: ["0.0.2"]
 ---
 {% include JB/setup %}
-数据库共计29个表，分别如下:
+数据库共计17个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>
@@ -17,91 +17,55 @@ version: ["1.0.0"]
   </tr>
   <tr>
     <td>1</td>
-    <td>buildings<br>建筑</td>
-    <td>16</td>
-    <td>gb_political_affiliations<br>政治面貌</td>
+    <td><a href="space.html#buildings">buildings</a> 建筑</td>
+    <td>10</td>
+    <td><a href="space.html#schools">schools</a> 学校信息</td>
   </tr>
   <tr>
     <td>2</td>
-    <td>calendars<br>日历方案</td>
-    <td>17</td>
-    <td>gb_professional_title_levels<br>TeacherTitleLevelBean</td>
+    <td><a href="time.html#calendars">calendars</a> 日历方案</td>
+    <td>11</td>
+    <td><a href="time.html#semesters">semesters</a> 学年学期</td>
   </tr>
   <tr>
     <td>3</td>
-    <td>campuses<br>校区信息</td>
-    <td>18</td>
-    <td>gb_professional_titles<br>TeacherTitleBean</td>
+    <td><a href="space.html#campuses">campuses</a> 校区信息</td>
+    <td>12</td>
+    <td><a href="time.html#timesettings">time_settings</a> 每个小节的时间设置</td>
   </tr>
   <tr>
     <td>4</td>
-    <td>code_categories<br>代码分类</td>
-    <td>19</td>
-    <td>holidays<br>法定假日</td>
+    <td><a href="misc.html#codecategories">code_categories</a> 代码分类</td>
+    <td>13</td>
+    <td><a href="user.html#users">users</a> 通用人员信息</td>
   </tr>
   <tr>
     <td>5</td>
-    <td>code_metas<br>基础代码</td>
-    <td>20</td>
-    <td>jb_discipline_categories<br>学科门类</td>
+    <td><a href="misc.html#codemetas">code_metas</a> 基础代码</td>
+    <td>14</td>
+    <td><a href="xb.html#xbdepartmentcategories">xb_department_categories</a> 部门分类</td>
   </tr>
   <tr>
     <td>6</td>
-    <td>course_units<br>默认作息时间</td>
-    <td>21</td>
-    <td>jb_institutions<br>科研机构</td>
+    <td><a href="time.html#courseunits">course_units</a> 默认作息时间</td>
+    <td>15</td>
+    <td><a href="xb.html#xbroomtypes">xb_room_types</a> 房间类型</td>
   </tr>
   <tr>
     <td>7</td>
-    <td>departments<br>部门组织机构信息</td>
-    <td>22</td>
-    <td>people<br>通用人员信息</td>
+    <td><a href="user.html#departments">departments</a> 部门组织机构信息</td>
+    <td>16</td>
+    <td><a href="xb.html#xbroomusages">xb_room_usages</a> 房间使用用途</td>
   </tr>
   <tr>
     <td>8</td>
-    <td>gb_countries<br>国家地区</td>
-    <td>23</td>
-    <td>rooms<br>房间</td>
+    <td><a href="time.html#holidays">holidays</a> 法定假日</td>
+    <td>17</td>
+    <td><a href="xb.html#xbusercategories">xb_user_categories</a> 人员分类</td>
   </tr>
   <tr>
     <td>9</td>
-    <td>gb_degrees<br>DegreeBean</td>
-    <td>24</td>
-    <td>schools<br>学校信息</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>gb_divisions<br>行政区划</td>
-    <td>25</td>
-    <td>semesters<br>学年学期</td>
-  </tr>
-  <tr>
-    <td>11</td>
-    <td>gb_educations<br>学历</td>
-    <td>26</td>
-    <td>time_settings<br>每个小节的时间设置</td>
-  </tr>
-  <tr>
-    <td>12</td>
-    <td>gb_family_relations<br>人员关系</td>
-    <td>27</td>
-    <td>xb_id_types<br>证件类型</td>
-  </tr>
-  <tr>
-    <td>13</td>
-    <td>gb_genders<br>性别</td>
-    <td>28</td>
-    <td>xb_person_categories<br>人员分类</td>
-  </tr>
-  <tr>
-    <td>14</td>
-    <td>gb_languages<br>语种</td>
-    <td>29</td>
-    <td>xb_room_types<br>房间类型</td>
-  </tr>
-  <tr>
-    <td>15</td>
-    <td>gb_nations<br>民族</td>
+    <td><a href="space.html#rooms">rooms</a> 房间</td>
     <td></td>
     <td></td>
   </tr>

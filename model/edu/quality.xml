@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report title="数据库设计说明">
+  <system name="评教信息" version="0.0.1"/>
+  <db>
+    <dialect>org.beangle.data.jdbc.dialect.PostgreSQLDialect
+    </dialect>
+    <driver>org.postgresql.Driver</driver>
+    <url>jdbc:postgresql://localhost:5432/urp_sample</url>
+    <schema>edu_quality</schema>
+    <user>postgres</user>
+    <password>postgres</password>
+  </db>
+  <pages template="jekyll" extension=".md">
+    <page name="index" />
+    <page name="tables" />
+    <page name="images" />
+    <page name="module" iterator="true"/>
+  </pages>
+
+  <modules>
+    <module name="questionnaires" title="问卷" tables="options,option_groups,questions,questionnaires,opposite_questions,questionnaires_questions,question_types">
+      <image name="questionnaires" title="问卷" tables="options,option_groups,questions,questionnaires,opposite_questions,questionnaires_questions"/>      
+    </module>
+    <module name="results" title="评教统计结果" tables="lesson_*">
+      <image name="results" title="问卷" tables="lesson_*"/>      
+    </module>
+    <module name="detail_results" title="评教明细" tables="evaluate_results,question_results,questionnaire_lessons">
+      <image name="detail_results" title="评教明细" tables="evaluate_results,question_results,questionnaire_lessons"/>      
+    </module>
+    <module name="college_results" title="全校排名" tables="college_detail_stats,college_option_stats,evaluate_college_stats">
+      <image name="college_results" title="全校排名" tables="college_detail_stats,college_option_stats,evaluate_college_stats"/>      
+    </module>
+    <module name="depart_results" title="院系排名" tables="depart_evaluations,department_detail_stats,department_option_stats,evaluate_department_stats">
+      <image name="depart_results" title="院系排名" tables="depart_evaluations,department_detail_stats,department_option_stats,evaluate_department_stats"/>      
+    </module>
+    <module name="teacher_results" title="教师排名" tables="teacher_detail_stats,teacher_option_stats,course_evaluate_stats">
+      <image name="teacher_results" title="教师排名" tables="teacher_detail_stats,teacher_option_stats,course_evaluate_stats"/>      
+    </module>
+    <module name="misc" title="其他" tables="*">
+    </module>
+  </modules>
+</report>
