@@ -65,7 +65,7 @@ version: ["0.0.1"]
 <tr><td>2</td><td>room_id</td><td>int4</td><td>是</td><td>教室 ID</td><td>rooms</td>  </tr>
 <tr><td>3</td><td>usage_id</td><td>int4</td><td>是</td><td>用途 ID</td><td>xb_room_usages</td>  </tr>
 <tr><td>4</td><td>capacity</td><td>int2</td><td>是</td><td>容量</td><td></td>  </tr>
-<tr><td>5</td><td>max_capacity</td><td>int2</td><td>是</td><td>maxCapacity</td><td></td>  </tr>
+<tr><td>5</td><td>max_capacity</td><td>int2</td><td>是</td><td>最大容量</td><td></td>  </tr>
 </table>
 
  
