@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 工作量信息 
-description: "工作量信息"
+title: 教室管理 
+description: "教室管理"
 categories: [model-0.0.1]
 version: ["0.0.1"]
 ---
@@ -13,4 +13,4 @@ version: ["0.0.1"]
   * 1.1 [表格一览](tables.html)
 
 ##### 2. 具体模块明细
-* [2.1 核心部分](core.html)
+* [2.1 占用信息](room.html)
