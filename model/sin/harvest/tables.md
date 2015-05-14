@@ -17,25 +17,25 @@ version: ["0.0.2"]
   </tr>
   <tr>
     <td>1</td>
-    <td><a href="info.html#assumeroles">assume_roles</a> 参与角色</td>
+    <td><a href="info.html#assumeroles">assume_roles</a> 角色</td>
     <td>5</td>
-    <td><a href="info.html#publishedranges">published_ranges</a> 发表位置</td>
+    <td><a href="info.html#publishedranges">published_ranges</a> 发表范围</td>
   </tr>
   <tr>
     <td>2</td>
     <td><a href="info.html#harvesttypes">harvest_types</a> 成果类型</td>
     <td>6</td>
-    <td><a href="info.html#publishedsituations">published_situations</a> 发表出处</td>
+    <td><a href="info.html#publishedsituations">published_situations</a> 发表情况</td>
   </tr>
   <tr>
     <td>3</td>
-    <td><a href="info.html#literaturemembers">literature_members</a> 著作成员</td>
+    <td><a href="info.html#literaturemembers">literature_members</a> 专著参与人员</td>
     <td>7</td>
-    <td><a href="info.html#researchers">researchers</a> 研究人员</td>
+    <td><a href="info.html#researchers">researchers</a> 研究员</td>
   </tr>
   <tr>
     <td>4</td>
-    <td><a href="info.html#literatures">literatures</a> 著作</td>
+    <td><a href="info.html#literatures">literatures</a> 专著</td>
     <td>8</td>
     <td><a href="info.html#thesisharvests">thesis_harvests</a> 论文成果</td>
   </tr>

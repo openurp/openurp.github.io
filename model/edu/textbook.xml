@@ -5,7 +5,7 @@
     <dialect>org.beangle.data.jdbc.dialect.PostgreSQLDialect
     </dialect>
     <driver>org.postgresql.Driver</driver>
-    <url>jdbc:postgresql://db.urp:5432/urp_sample</url>
+    <url>jdbc:postgresql://localhost:5432/urp_sample</url>
     <schema>edu_textbook</schema>
     <user>postgres</user>
     <password>postgres</password>

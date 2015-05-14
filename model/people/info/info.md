@@ -34,7 +34,7 @@ version: ["0.0.1"]
 <tr><td>6</td><td>total_num</td><td>int4</td><td>是</td><td>家庭人口</td><td></td>  </tr>
 <tr><td>7</td><td>labor_num</td><td>int4</td><td>是</td><td>劳动力人口</td><td></td>  </tr>
 <tr><td>8</td><td>supported_num</td><td>int4</td><td>是</td><td>赡养人口</td><td></td>  </tr>
-<tr><td>9</td><td>is_mini_security</td><td>bool</td><td>是</td><td>是否低保</td><td></td>  </tr>
+<tr><td>9</td><td>mini_security</td><td>bool</td><td>是</td><td>是否低保</td><td></td>  </tr>
 <tr><td>10</td><td>monthly_income</td><td>float4</td><td>是</td><td>家庭人均月收入</td><td></td>  </tr>
 <tr><td>11</td><td>minimum_security</td><td>float4</td><td>是</td><td>就学地低保线</td><td></td>  </tr>
 <tr><td>12</td><td>income_source</td><td>varchar</td><td>是</td><td>家庭主要收入来源</td><td></td>  </tr>
@@ -71,7 +71,7 @@ version: ["0.0.1"]
 <tr><td>7</td><td>sid</td><td>varchar</td><td>否</td><td>证件号码</td><td></td>  </tr>
 <tr><td>8</td><td>birthday</td><td>date</td><td>是</td><td>出生日期</td><td></td>  </tr>
 <tr><td>9</td><td>political_status_id</td><td>int4</td><td>否</td><td>政治面貌 ID</td><td>gb_political_statuses</td>  </tr>
-<tr><td>10</td><td>job_status_id</td><td>int4</td><td>否</td><td>从业状况 ID</td><td>gb_job_statuses</td>  </tr>
+<tr><td>10</td><td>job_status_id</td><td>int4</td><td>否</td><td>从业状况 ID</td><td>job_statuses</td>  </tr>
 <tr><td>11</td><td>email</td><td>varchar</td><td>是</td><td>邮箱</td><td></td>  </tr>
 <tr><td>12</td><td>mobile</td><td>varchar</td><td>是</td><td>联系电话</td><td></td>  </tr>
 <tr><td>13</td><td>job</td><td>varchar</td><td>是</td><td>工作</td><td></td>  </tr>
@@ -79,9 +79,8 @@ version: ["0.0.1"]
 <tr><td>15</td><td>country_id</td><td>int4</td><td>否</td><td>国籍/地区 ID</td><td>gb_countries</td>  </tr>
 <tr><td>16</td><td>health_status_id</td><td>int4</td><td>否</td><td>健康状况 ID</td><td>gb_health_statuses</td>  </tr>
 <tr><td>17</td><td>tech_position_id</td><td>int4</td><td>否</td><td>专业技术职务 ID</td><td>gb_professional_titles</td>  </tr>
-<tr><td>18</td><td>position_level_id</td><td>int4</td><td>否</td><td>专业技术职务级别 ID</td><td>gb_professional_title_grades</td>  </tr>
-<tr><td>19</td><td>work_place</td><td>varchar</td><td>是</td><td>工作地点</td><td></td>  </tr>
-<tr><td>20</td><td>annual_income</td><td>float4</td><td>是</td><td>年收入</td><td></td>  </tr>
+<tr><td>18</td><td>work_place</td><td>varchar</td><td>是</td><td>工作地点</td><td></td>  </tr>
+<tr><td>19</td><td>annual_income</td><td>float4</td><td>是</td><td>年收入</td><td></td>  </tr>
 </table>
 
  
@@ -200,7 +199,7 @@ version: ["0.0.1"]
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 <tr><td>2</td><td>person_id</td><td>int8</td><td>否</td><td>人员信息 ID</td><td>people</td>  </tr>
-<tr><td>3</td><td>education_id</td><td>int4</td><td>是</td><td>学历 ID</td><td>gb_educations</td>  </tr>
+<tr><td>3</td><td>education_degree_id</td><td>int4</td><td>是</td><td>学历 ID</td><td>gb_education_degrees</td>  </tr>
 <tr><td>4</td><td>degree_id</td><td>int4</td><td>是</td><td>学位 ID</td><td>gb_degrees</td>  </tr>
 <tr><td>5</td><td>discipline_category_id</td><td>int4</td><td>是</td><td>学科门类 ID</td><td>gb_discipline_categories</td>  </tr>
 <tr><td>6</td><td>study_type_id</td><td>int4</td><td>是</td><td>学习形式 ID</td><td>gb_study_types</td>  </tr>
@@ -209,9 +208,9 @@ version: ["0.0.1"]
 <tr><td>9</td><td>major</td><td>varchar</td><td>是</td><td>专业</td><td></td>  </tr>
 <tr><td>10</td><td>direction</td><td>varchar</td><td>是</td><td>专业方向</td><td></td>  </tr>
 <tr><td>11</td><td>duration</td><td>float4</td><td>是</td><td>学制</td><td></td>  </tr>
-<tr><td>12</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
-<tr><td>13</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
-<tr><td>14</td><td>is_first</td><td>bool</td><td>否</td><td>是否第一学历</td><td></td>  </tr>
+<tr><td>12</td><td>begin_on</td><td>date</td><td>是</td><td>开始时间</td><td></td>  </tr>
+<tr><td>13</td><td>end_on</td><td>date</td><td>是</td><td>结束时间</td><td></td>  </tr>
+<tr><td>14</td><td>first</td><td>bool</td><td>否</td><td>是否第一学历</td><td></td>  </tr>
 <tr><td>15</td><td>witness</td><td>varchar</td><td>是</td><td>证明人</td><td></td>  </tr>
 <tr><td>16</td><td>content</td><td>varchar</td><td>是</td><td>学生内容</td><td></td>  </tr>
 <tr><td>17</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>

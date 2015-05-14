@@ -17,13 +17,13 @@ version: ["0.0.1"]
   </tr>
   <tr>
     <td>1</td>
-    <td><a href="core.html#otherexamgrades">other_exam_grades</a> 考试成绩</td>
+    <td><a href="core.html#otherexamcategories">other_exam_categories</a> 校外考试种类</td>
     <td>3</td>
-    <td><a href="xb.html#xbotherexamsubjects">xb_other_exam_subjects</a> 校外考试科目</td>
+    <td><a href="core.html#otherexamsubjects">other_exam_subjects</a> 校外考试科目</td>
   </tr>
   <tr>
     <td>2</td>
-    <td><a href="xb.html#xbotherexamcategories">xb_other_exam_categories</a> 校外考试种类</td>
+    <td><a href="core.html#otherexamgrades">other_exam_grades</a> 考试成绩</td>
     <td></td>
     <td></td>
   </tr>

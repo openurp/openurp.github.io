@@ -32,9 +32,9 @@ version: ["0.0.2"]
 <tr><td>4</td><td>en_name</td><td>varchar</td><td>是</td><td>英文名称</td><td></td>  </tr>
 <tr><td>5</td><td>teaching</td><td>bool</td><td>否</td><td>是否教学</td><td></td>  </tr>
 <tr><td>6</td><td>research</td><td>bool</td><td>否</td><td>是否科研</td><td></td>  </tr>
-<tr><td>7</td><td>begin_on</td><td>date</td><td>是</td><td>生效时间</td><td></td>  </tr>
-<tr><td>8</td><td>end_on</td><td>date</td><td>是</td><td>失效时间</td><td></td>  </tr>
-<tr><td>9</td><td>updated_at</td><td>timestamp</td><td>是</td><td>修改时间</td><td></td>  </tr>
+<tr><td>7</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
+<tr><td>8</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
+<tr><td>9</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
 <tr><td>10</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
 <tr><td>11</td><td>parent_id</td><td>int4</td><td>是</td><td>上级分类 ID</td><td>xb_department_categories</td>  </tr>
 </table>
@@ -45,7 +45,6 @@ version: ["0.0.2"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>uk_a8y2odvfd15ui72grgipq1vkr</td><td>name&nbsp;</td><td>是</td>  </tr>
 <tr><td>uk_smpn67iuls3xb3m2f8lmdlhhk</td><td>code&nbsp;</td><td>是</td>  </tr>
 <tr><td>xb_department_categories_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
 </table>
@@ -67,9 +66,9 @@ version: ["0.0.2"]
 <tr><td>2</td><td>code</td><td>varchar</td><td>否</td><td>代码</td><td></td>  </tr>
 <tr><td>3</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
 <tr><td>4</td><td>en_name</td><td>varchar</td><td>是</td><td>英文名称</td><td></td>  </tr>
-<tr><td>5</td><td>begin_on</td><td>date</td><td>是</td><td>生效时间</td><td></td>  </tr>
-<tr><td>6</td><td>end_on</td><td>date</td><td>是</td><td>失效时间</td><td></td>  </tr>
-<tr><td>7</td><td>updated_at</td><td>timestamp</td><td>是</td><td>修改时间</td><td></td>  </tr>
+<tr><td>5</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
+<tr><td>6</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
+<tr><td>7</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
 <tr><td>8</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
 </table>
 
@@ -79,7 +78,6 @@ version: ["0.0.2"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>uk_idkthyyqvufjh9uc114x0w2y7</td><td>name&nbsp;</td><td>是</td>  </tr>
 <tr><td>uk_m2mm418n1p1oebs0bsfsgqgkm</td><td>code&nbsp;</td><td>是</td>  </tr>
 <tr><td>xb_room_types_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
 </table>
@@ -101,9 +99,9 @@ version: ["0.0.2"]
 <tr><td>2</td><td>code</td><td>varchar</td><td>否</td><td>代码</td><td></td>  </tr>
 <tr><td>3</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
 <tr><td>4</td><td>en_name</td><td>varchar</td><td>是</td><td>英文名称</td><td></td>  </tr>
-<tr><td>5</td><td>begin_on</td><td>date</td><td>是</td><td>生效时间</td><td></td>  </tr>
-<tr><td>6</td><td>end_on</td><td>date</td><td>是</td><td>失效时间</td><td></td>  </tr>
-<tr><td>7</td><td>updated_at</td><td>timestamp</td><td>是</td><td>修改时间</td><td></td>  </tr>
+<tr><td>5</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
+<tr><td>6</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
+<tr><td>7</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
 <tr><td>8</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
 </table>
 
@@ -113,7 +111,6 @@ version: ["0.0.2"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>uk_j3s0cnbcoc31bu4d4w89n2y5g</td><td>name&nbsp;</td><td>是</td>  </tr>
 <tr><td>uk_r7kj03bjfuw2swglif9lx2evm</td><td>code&nbsp;</td><td>是</td>  </tr>
 <tr><td>xb_room_usages_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
 </table>
@@ -135,9 +132,9 @@ version: ["0.0.2"]
 <tr><td>2</td><td>code</td><td>varchar</td><td>否</td><td>代码</td><td></td>  </tr>
 <tr><td>3</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
 <tr><td>4</td><td>en_name</td><td>varchar</td><td>是</td><td>英文名称</td><td></td>  </tr>
-<tr><td>5</td><td>begin_on</td><td>date</td><td>是</td><td>生效时间</td><td></td>  </tr>
-<tr><td>6</td><td>end_on</td><td>date</td><td>是</td><td>失效时间</td><td></td>  </tr>
-<tr><td>7</td><td>updated_at</td><td>timestamp</td><td>是</td><td>修改时间</td><td></td>  </tr>
+<tr><td>5</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
+<tr><td>6</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
+<tr><td>7</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
 <tr><td>8</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
 </table>
 
@@ -148,6 +145,5 @@ version: ["0.0.2"]
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
 <tr><td>uk_1bq5otdy0thhstiq95kxf1xp6</td><td>code&nbsp;</td><td>是</td>  </tr>
-<tr><td>uk_il07rbyk0m5lplrk8e556apws</td><td>name&nbsp;</td><td>是</td>  </tr>
 <tr><td>xb_user_categories_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
 </table>

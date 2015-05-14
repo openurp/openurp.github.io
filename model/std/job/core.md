@@ -66,7 +66,6 @@ version: ["0.0.1"]
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
 <tr><td>graduate_batches_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
 <tr><td>uk_cxae6o60xrcc6fcsd98vydlqu</td><td>code&nbsp;</td><td>是</td>  </tr>
-<tr><td>uk_o9pymktm22e22ff7s0vfl9sot</td><td>name&nbsp;</td><td>是</td>  </tr>
 </table>
 
 ### 表格 graduates

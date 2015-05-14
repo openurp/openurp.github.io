@@ -47,7 +47,7 @@ version: ["1.0.0"]
 <tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 <tr><td>2</td><td>plan_id</td><td>int8</td><td>否</td><td>计划 ID</td><td>major_plans</td>  </tr>
 <tr><td>3</td><td>parent_id</td><td>int8</td><td>是</td><td>上级组 ID</td><td>major_course_groups</td>  </tr>
-<tr><td>4</td><td>course_type_id</td><td>int4</td><td>否</td><td>课程类别 ID</td><td>xb_course_types</td>  </tr>
+<tr><td>4</td><td>course_type_id</td><td>int4</td><td>否</td><td>课程类别 ID</td><td>course_types</td>  </tr>
 <tr><td>5</td><td>credits</td><td>float4</td><td>否</td><td>要求学分</td><td></td>  </tr>
 <tr><td>6</td><td>course_num</td><td>int2</td><td>否</td><td>要求门数</td><td></td>  </tr>
 <tr><td>7</td><td>group_num</td><td>int2</td><td>否</td><td>要求完成组数</td><td></td>  </tr>
@@ -85,7 +85,7 @@ version: ["1.0.0"]
 <tr><td>4</td><td>terms</td><td>varchar</td><td>否</td><td>开课学期</td><td></td>  </tr>
 <tr><td>5</td><td>compulsory</td><td>bool</td><td>否</td><td>是否必修</td><td></td>  </tr>
 <tr><td>6</td><td>department_id</td><td>int4</td><td>是</td><td>开课部门 ID</td><td>departments</td>  </tr>
-<tr><td>7</td><td>exam_mode_id</td><td>int4</td><td>是</td><td>开课部门 ID</td><td>xb_exam_modes</td>  </tr>
+<tr><td>7</td><td>exam_mode_id</td><td>int4</td><td>是</td><td>开课部门 ID</td><td>exam_modes</td>  </tr>
 <tr><td>8</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
 </table>
 
@@ -144,7 +144,7 @@ version: ["1.0.0"]
 <tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 <tr><td>2</td><td>plan_id</td><td>int8</td><td>否</td><td>计划 ID</td><td>share_plans</td>  </tr>
 <tr><td>3</td><td>parent_id</td><td>int8</td><td>是</td><td>上级组 ID</td><td>share_course_groups</td>  </tr>
-<tr><td>4</td><td>course_type_id</td><td>int4</td><td>否</td><td>课程类别 ID</td><td>xb_course_types</td>  </tr>
+<tr><td>4</td><td>course_type_id</td><td>int4</td><td>否</td><td>课程类别 ID</td><td>course_types</td>  </tr>
 <tr><td>5</td><td>credits</td><td>float4</td><td>否</td><td>要求学分</td><td></td>  </tr>
 <tr><td>6</td><td>course_num</td><td>int2</td><td>否</td><td>要求门数</td><td></td>  </tr>
 <tr><td>7</td><td>group_num</td><td>int2</td><td>否</td><td>要求完成组数</td><td></td>  </tr>
@@ -181,7 +181,7 @@ version: ["1.0.0"]
 <tr><td>4</td><td>terms</td><td>varchar</td><td>否</td><td>开课学期</td><td></td>  </tr>
 <tr><td>5</td><td>compulsory</td><td>bool</td><td>否</td><td>是否必修</td><td></td>  </tr>
 <tr><td>6</td><td>department_id</td><td>int4</td><td>是</td><td>开课部门 ID</td><td>departments</td>  </tr>
-<tr><td>7</td><td>exam_mode_id</td><td>int4</td><td>是</td><td>开课部门 ID</td><td>xb_exam_modes</td>  </tr>
+<tr><td>7</td><td>exam_mode_id</td><td>int4</td><td>是</td><td>开课部门 ID</td><td>exam_modes</td>  </tr>
 <tr><td>8</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
 </table>
 
@@ -209,7 +209,7 @@ version: ["1.0.0"]
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 <tr><td>2</td><td>project_id</td><td>int4</td><td>否</td><td>项目 ID</td><td>projects</td>  </tr>
-<tr><td>3</td><td>education_id</td><td>int4</td><td>否</td><td>培养层次 ID</td><td>gb_educations</td>  </tr>
+<tr><td>3</td><td>education_id</td><td>int4</td><td>否</td><td>培养层次 ID</td><td>xb_educations</td>  </tr>
 <tr><td>4</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
 <tr><td>5</td><td>grades</td><td>varchar</td><td>否</td><td>适用年级</td><td></td>  </tr>
 <tr><td>6</td><td>credits</td><td>float4</td><td>否</td><td>要求学分</td><td></td>  </tr>
@@ -243,7 +243,7 @@ version: ["1.0.0"]
 <tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 <tr><td>2</td><td>plan_id</td><td>int8</td><td>否</td><td>计划 ID</td><td>std_plans</td>  </tr>
 <tr><td>3</td><td>parent_id</td><td>int8</td><td>是</td><td>上级组 ID</td><td>std_course_groups</td>  </tr>
-<tr><td>4</td><td>course_type_id</td><td>int4</td><td>否</td><td>课程类别 ID</td><td>xb_course_types</td>  </tr>
+<tr><td>4</td><td>course_type_id</td><td>int4</td><td>否</td><td>课程类别 ID</td><td>course_types</td>  </tr>
 <tr><td>5</td><td>credits</td><td>float4</td><td>否</td><td>要求学分</td><td></td>  </tr>
 <tr><td>6</td><td>course_num</td><td>int2</td><td>否</td><td>要求门数</td><td></td>  </tr>
 <tr><td>7</td><td>group_num</td><td>int2</td><td>否</td><td>要求完成组数</td><td></td>  </tr>
@@ -280,7 +280,7 @@ version: ["1.0.0"]
 <tr><td>4</td><td>terms</td><td>varchar</td><td>否</td><td>开课学期</td><td></td>  </tr>
 <tr><td>5</td><td>compulsory</td><td>bool</td><td>否</td><td>是否必修</td><td></td>  </tr>
 <tr><td>6</td><td>department_id</td><td>int4</td><td>是</td><td>开课部门 ID</td><td>departments</td>  </tr>
-<tr><td>7</td><td>exam_mode_id</td><td>int4</td><td>是</td><td>开课部门 ID</td><td>xb_exam_modes</td>  </tr>
+<tr><td>7</td><td>exam_mode_id</td><td>int4</td><td>是</td><td>开课部门 ID</td><td>exam_modes</td>  </tr>
 <tr><td>8</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
 </table>
 

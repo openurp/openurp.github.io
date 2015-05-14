@@ -100,7 +100,7 @@ version: ["0.0.2"]
 <tr><td>3</td><td>department_id</td><td>int4</td><td>是</td><td>部门 ID</td><td>departments</td>  </tr>
 <tr><td>4</td><td>work_start_on</td><td>date</td><td>是</td><td>参见工作日期</td><td></td>  </tr>
 <tr><td>5</td><td>employ_on</td><td>date</td><td>是</td><td>来校日期</td><td></td>  </tr>
-<tr><td>6</td><td>education_id</td><td>int4</td><td>是</td><td>最高学历 ID</td><td>gb_educations</td>  </tr>
+<tr><td>6</td><td>education_level_id</td><td>int4</td><td>是</td><td>最高学历 ID</td><td>gb_education_levels</td>  </tr>
 <tr><td>7</td><td>graduate_on</td><td>date</td><td>是</td><td>毕业日期</td><td></td>  </tr>
 <tr><td>8</td><td>major</td><td>varchar</td><td>是</td><td>专业</td><td></td>  </tr>
 <tr><td>9</td><td>school</td><td>varchar</td><td>是</td><td>毕业学校</td><td></td>  </tr>

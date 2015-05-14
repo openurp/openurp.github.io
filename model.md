@@ -27,7 +27,7 @@ group: navigation
 * [基础信息Base](/model/edu/base/index.html)
 * [评奖评优Award](/model/edu/award/index.html)
 * [校外考试Otherexam](/model/edu/otherexam/index.html)
-* [质量监控Quality](/model/edu/quality/index.html)
+* [课程评教Evaluation](/model/edu/evaluation/index.html)
 * [学籍信息Std](/model/edu/std/index.html)
 * [教务信息Teach](/model/edu/teach/index.html)
 * [教材信息Textbook](/model/edu/textbook/index.html)

@@ -13,4 +13,4 @@ version: ["0.0.1"]
   * 1.1 [表格一览](tables.html)
 
 ##### 2. 具体模块明细
-* [2.4 全部](info.html)
+* [2.1 全部](info.html)

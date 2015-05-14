@@ -31,7 +31,7 @@ version: ["0.0.1"]
 <tr><td>3</td><td>admission_way_id</td><td>int4</td><td>是</td><td>入学方式 ID</td><td>hb_admission_ways</td>  </tr>
 <tr><td>4</td><td>former_division_id</td><td>int4</td><td>是</td><td>入学前户口所在区划 ID</td><td>gb_divisions</td>  </tr>
 <tr><td>5</td><td>current_division_id</td><td>int4</td><td>是</td><td>入学后户口所在区划 ID</td><td>gb_divisions</td>  </tr>
-<tr><td>6</td><td>register_category_id</td><td>int4</td><td>是</td><td>原户口性质 ID</td><td>gb_register_categories</td>  </tr>
+<tr><td>6</td><td>register_category_id</td><td>int4</td><td>是</td><td>原户口性质 ID</td><td>register_categories</td>  </tr>
 <tr><td>7</td><td>ticket_no</td><td>varchar</td><td>是</td><td>准考证号</td><td></td>  </tr>
 <tr><td>8</td><td>province</td><td>varchar</td><td>是</td><td>报考省市</td><td></td>  </tr>
 <tr><td>9</td><td>preparatory</td><td>bool</td><td>否</td><td>是否预科生</td><td></td>  </tr>

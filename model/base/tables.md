@@ -6,7 +6,7 @@ categories: [model-0.0.2]
 version: ["0.0.2"]
 ---
 {% include JB/setup %}
-数据库共计17个表，分别如下:
+数据库共计15个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>
@@ -18,54 +18,48 @@ version: ["0.0.2"]
   <tr>
     <td>1</td>
     <td><a href="space.html#buildings">buildings</a> 建筑</td>
-    <td>10</td>
-    <td><a href="space.html#schools">schools</a> 学校信息</td>
+    <td>9</td>
+    <td><a href="time.html#semesters">semesters</a> 学年学期</td>
   </tr>
   <tr>
     <td>2</td>
     <td><a href="time.html#calendars">calendars</a> 日历方案</td>
-    <td>11</td>
-    <td><a href="time.html#semesters">semesters</a> 学年学期</td>
+    <td>10</td>
+    <td><a href="time.html#timesettings">time_settings</a> 每个小节的时间设置</td>
   </tr>
   <tr>
     <td>3</td>
     <td><a href="space.html#campuses">campuses</a> 校区信息</td>
-    <td>12</td>
-    <td><a href="time.html#timesettings">time_settings</a> 每个小节的时间设置</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td><a href="misc.html#codecategories">code_categories</a> 代码分类</td>
-    <td>13</td>
+    <td>11</td>
     <td><a href="user.html#users">users</a> 通用人员信息</td>
   </tr>
   <tr>
-    <td>5</td>
-    <td><a href="misc.html#codemetas">code_metas</a> 基础代码</td>
-    <td>14</td>
+    <td>4</td>
+    <td><a href="time.html#courseunits">course_units</a> 默认作息时间</td>
+    <td>12</td>
     <td><a href="xb.html#xbdepartmentcategories">xb_department_categories</a> 部门分类</td>
   </tr>
   <tr>
-    <td>6</td>
-    <td><a href="time.html#courseunits">course_units</a> 默认作息时间</td>
-    <td>15</td>
+    <td>5</td>
+    <td><a href="user.html#departments">departments</a> 部门组织机构信息</td>
+    <td>13</td>
     <td><a href="xb.html#xbroomtypes">xb_room_types</a> 房间类型</td>
   </tr>
   <tr>
-    <td>7</td>
-    <td><a href="user.html#departments">departments</a> 部门组织机构信息</td>
-    <td>16</td>
+    <td>6</td>
+    <td><a href="time.html#holidays">holidays</a> 法定假日</td>
+    <td>14</td>
     <td><a href="xb.html#xbroomusages">xb_room_usages</a> 房间使用用途</td>
   </tr>
   <tr>
-    <td>8</td>
-    <td><a href="time.html#holidays">holidays</a> 法定假日</td>
-    <td>17</td>
+    <td>7</td>
+    <td><a href="space.html#rooms">rooms</a> 房间</td>
+    <td>15</td>
     <td><a href="xb.html#xbusercategories">xb_user_categories</a> 人员分类</td>
   </tr>
   <tr>
-    <td>9</td>
-    <td><a href="space.html#rooms">rooms</a> 房间</td>
+    <td>8</td>
+    <td><a href="space.html#schools">schools</a> 学校信息</td>
     <td></td>
     <td></td>
   </tr>

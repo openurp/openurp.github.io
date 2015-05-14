@@ -18,4 +18,3 @@ version: ["0.0.2"]
 * [2.2 空间相关](space.html)
 * [2.3 时间相关](time.html)
 * [2.4 用户相关](user.html)
-* [2.5 其他](misc.html)

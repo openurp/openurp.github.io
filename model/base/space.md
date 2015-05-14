@@ -51,7 +51,6 @@ version: ["0.0.2"]
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
 <tr><td>buildings_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
 <tr><td>uk_5p2f0a6h1y6f82infqwoq1pu5</td><td>code&nbsp;</td><td>是</td>  </tr>
-<tr><td>uk_lf8jhhsls7j5q6n95vlbnlhe7</td><td>name&nbsp;</td><td>是</td>  </tr>
 </table>
 
 ### 表格 campuses
@@ -85,7 +84,6 @@ version: ["0.0.2"]
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
 <tr><td>campuses_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
 <tr><td>uk_9ljsirem1etjvtkc7jv50775x</td><td>code&nbsp;</td><td>是</td>  </tr>
-<tr><td>uk_ktt8n9q8i91q62mymn0x3e7ch</td><td>name&nbsp;</td><td>是</td>  </tr>
 </table>
 
 ### 表格 rooms
@@ -104,15 +102,17 @@ version: ["0.0.2"]
 <tr><td>1</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 <tr><td>2</td><td>code</td><td>varchar</td><td>否</td><td>代码</td><td></td>  </tr>
 <tr><td>3</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
-<tr><td>4</td><td>campus_id</td><td>int4</td><td>否</td><td>所在校区 ID</td><td>campuses</td>  </tr>
-<tr><td>5</td><td>department_id</td><td>int4</td><td>是</td><td>管理部门 ID</td><td>departments</td>  </tr>
-<tr><td>6</td><td>room_type_id</td><td>int4</td><td>是</td><td>房间类型 ID</td><td>xb_room_types</td>  </tr>
-<tr><td>7</td><td>building_id</td><td>int4</td><td>是</td><td>所在教学楼 ID</td><td>buildings</td>  </tr>
-<tr><td>8</td><td>floor</td><td>int4</td><td>否</td><td>教室所处楼层</td><td></td>  </tr>
-<tr><td>9</td><td>capacity</td><td>int4</td><td>否</td><td>实际容量</td><td></td>  </tr>
-<tr><td>10</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
-<tr><td>11</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
-<tr><td>12</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
+<tr><td>4</td><td>en_name</td><td>varchar</td><td>是</td><td>英文名称</td><td></td>  </tr>
+<tr><td>5</td><td>campus_id</td><td>int4</td><td>否</td><td>所在校区 ID</td><td>campuses</td>  </tr>
+<tr><td>6</td><td>department_id</td><td>int4</td><td>是</td><td>管理部门 ID</td><td>departments</td>  </tr>
+<tr><td>7</td><td>room_type_id</td><td>int4</td><td>是</td><td>房间类型 ID</td><td>xb_room_types</td>  </tr>
+<tr><td>8</td><td>building_id</td><td>int4</td><td>是</td><td>所在教学楼 ID</td><td>buildings</td>  </tr>
+<tr><td>9</td><td>floor</td><td>int4</td><td>否</td><td>教室所处楼层</td><td></td>  </tr>
+<tr><td>10</td><td>capacity</td><td>int4</td><td>否</td><td>实际容量</td><td></td>  </tr>
+<tr><td>11</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
+<tr><td>12</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
+<tr><td>13</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
+<tr><td>14</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
 </table>
 
  
@@ -122,7 +122,6 @@ version: ["0.0.2"]
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
 <tr><td>rooms_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
-<tr><td>uk_1kuqhbfxed2e8t571uo82n545</td><td>name&nbsp;</td><td>是</td>  </tr>
 <tr><td>uk_pwsjifwofg0y1ux7gtd8sveqq</td><td>code&nbsp;</td><td>是</td>  </tr>
 </table>
 
@@ -152,6 +151,5 @@ version: ["0.0.2"]
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
 <tr><td>schools_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
-<tr><td>uk_ehwqlfa7xseucba45p6wlqfgn</td><td>name&nbsp;</td><td>是</td>  </tr>
 <tr><td>uk_m5x8j64nhdcprk9ghc6622swx</td><td>code&nbsp;</td><td>是</td>  </tr>
 </table>

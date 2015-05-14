@@ -16,4 +16,9 @@ version: ["0.0.1"]
 ##### 2. 具体模块明细
 * [2.1 问卷](questionnaires.html)
 * [2.2 评教统计结果](results.html)
-* [2.7 其他](misc.html)
+* [2.3 评教明细](detail_results.html)
+* [2.4 全校排名](college_results.html)
+* [2.5 院系排名](depart_results.html)
+* [2.6 教师排名](teacher_results.html)
+* [2.7 教师课程排名](course_results.html)
+* [2.8 其他](misc.html)

@@ -35,9 +35,10 @@ version: ["0.0.2"]
 <tr><td>1</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 <tr><td>2</td><td>code</td><td>varchar</td><td>否</td><td>代码</td><td></td>  </tr>
 <tr><td>3</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
-<tr><td>4</td><td>first_day</td><td>int4</td><td>否</td><td>每周开始时间</td><td></td>  </tr>
+<tr><td>4</td><td>first_weekday</td><td>int4</td><td>否</td><td>每周开始时间</td><td></td>  </tr>
 <tr><td>5</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
 <tr><td>6</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
+<tr><td>7</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
 </table>
 
  
@@ -47,7 +48,6 @@ version: ["0.0.2"]
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
 <tr><td>calendars_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
-<tr><td>uk_6li3adlkeys9uil7kw5weqssi</td><td>name&nbsp;</td><td>是</td>  </tr>
 <tr><td>uk_8m1c6quax6tc0f5v76tqrfxmf</td><td>code&nbsp;</td><td>是</td>  </tr>
 </table>
 
@@ -70,6 +70,7 @@ version: ["0.0.2"]
 <tr><td>4</td><td>setting_id</td><td>int4</td><td>否</td><td>时间设置 ID</td><td>time_settings</td>  </tr>
 <tr><td>5</td><td>begin_at</td><td>int2</td><td>否</td><td>开始分钟</td><td></td>  </tr>
 <tr><td>6</td><td>end_at</td><td>int2</td><td>否</td><td>结束分钟</td><td></td>  </tr>
+<tr><td>7</td><td>en_name</td><td>varchar</td><td>否</td><td>英文名称</td><td></td>  </tr>
 </table>
 
  
