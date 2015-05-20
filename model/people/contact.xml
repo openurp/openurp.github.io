@@ -19,7 +19,7 @@
 
   <modules>
     <module name="contact" title="联系信息" tables="*">
-      <images name="all" title="总体" tables="addresses,contacts,emails,geos,impps,nicknames,notes,orgs,photos,relateds,roles,telephones,timezones,titles,urls,xtendeds"/>
+      <image name="all" title="总体" tables="addresses,contacts,emails,geos,impps,nicknames,notes,orgs,photos,relateds,roles,telephones,timezones,titles,urls,xtendeds"/>
     </module>
   </modules>
 </report>
