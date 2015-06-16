@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 教室管理 
-description: "教室管理"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+title: 人事信息 
+description: "人事信息"
+categories: [model-0.0.2]
+version: ["0.0.2"]
 ---
 {% include JB/setup %}
 
@@ -13,4 +13,4 @@ version: ["0.0.1"]
   * 1.1 [表格一览](tables.html)
 
 ##### 2. 具体模块明细
-* [2.1 占用信息](room.html)
+* [2.1 基本信息](info.html)

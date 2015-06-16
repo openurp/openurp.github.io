@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 教室管理 占用信息
-description: "教室管理占用信息"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+title: 人事信息 基本信息
+description: "人事信息基本信息"
+categories: [model-0.0.2]
+version: ["0.0.2"]
 ---
 {% include JB/setup %}
  目  录
@@ -13,13 +13,13 @@ version: ["0.0.1"]
 
 
 
-### 表格 occupancies
+### 表格 duty_infoes
 
   * 表格说明
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
-<tr><td>occupancies</td><td>id</td><td>教室占用情况</td>  </tr>
+<tr><td>duty_infoes</td><td>id</td><td>教职工职务信息</td>  </tr>
 </table>
 
   * 表格中的列
@@ -27,16 +27,14 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
-<tr><td>2</td><td>room_id</td><td>int4</td><td>是</td><td>教室 ID</td><td>rooms</td>  </tr>
-<tr><td>3</td><td>year</td><td>int4</td><td>是</td><td>年份</td><td></td>  </tr>
-<tr><td>4</td><td>day</td><td>int4</td><td>是</td><td>周几</td><td></td>  </tr>
-<tr><td>5</td><td>begin_at</td><td>bytea</td><td>是</td><td>开始时间</td><td></td>  </tr>
-<tr><td>6</td><td>end_at</td><td>bytea</td><td>是</td><td>结束时间</td><td></td>  </tr>
-<tr><td>7</td><td>state</td><td>int8</td><td>否</td><td>周状态</td><td></td>  </tr>
-<tr><td>8</td><td>usage_id</td><td>int4</td><td>是</td><td>用途 ID</td><td>xb_room_usages</td>  </tr>
-<tr><td>9</td><td>userid</td><td>varchar</td><td>是</td><td>使用者</td><td></td>  </tr>
-<tr><td>10</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
-<tr><td>11</td><td>comments</td><td>varchar</td><td>是</td><td>说明</td><td></td>  </tr>
+<tr><td>2</td><td>staff_id</td><td>int8</td><td>否</td><td>教职工ID</td><td>staffs</td>  </tr>
+<tr><td>3</td><td>department_id</td><td>int4</td><td>否</td><td>部门ID</td><td>departments</td>  </tr>
+<tr><td>4</td><td>parttime</td><td>bool</td><td>否</td><td>是否兼任</td><td></td>  </tr>
+<tr><td>5</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
+<tr><td>6</td><td>duty_type_id</td><td>int4</td><td>否</td><td>职务类别ID</td><td>duty_types</td>  </tr>
+<tr><td>7</td><td>duty_grade_id</td><td>int4</td><td>否</td><td>职务等级ID</td><td>duty_grades</td>  </tr>
+<tr><td>8</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
+<tr><td>9</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
 </table>
 
  
@@ -45,16 +43,16 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>occupancies_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
+<tr><td>duty_infoes_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
 </table>
 
-### 表格 usage_capacities
+### 表格 post_infoes
 
   * 表格说明
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
-<tr><td>usage_capacities</td><td>id</td><td>教室信息</td>  </tr>
+<tr><td>post_infoes</td><td>id</td><td>教职工岗位信息</td>  </tr>
 </table>
 
   * 表格中的列
@@ -62,10 +60,14 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
-<tr><td>2</td><td>room_id</td><td>int4</td><td>是</td><td>教室 ID</td><td>rooms</td>  </tr>
-<tr><td>3</td><td>usage_id</td><td>int4</td><td>是</td><td>用途 ID</td><td>xb_room_usages</td>  </tr>
-<tr><td>4</td><td>capacity</td><td>int2</td><td>是</td><td>容量</td><td></td>  </tr>
-<tr><td>5</td><td>max_capacity</td><td>int2</td><td>是</td><td>最大容量</td><td></td>  </tr>
+<tr><td>2</td><td>staff_id</td><td>int8</td><td>否</td><td>教职工ID</td><td>staffs</td>  </tr>
+<tr><td>3</td><td>department_id</td><td>int4</td><td>否</td><td>部门ID</td><td>departments</td>  </tr>
+<tr><td>4</td><td>post_type_id</td><td>int4</td><td>是</td><td>岗位类别ID</td><td>post_types</td>  </tr>
+<tr><td>5</td><td>post_grade_id</td><td>int4</td><td>是</td><td>岗位等级ID</td><td>post_grades</td>  </tr>
+<tr><td>6</td><td>title_id</td><td>int4</td><td>是</td><td>职称ID</td><td>professional_titles</td>  </tr>
+<tr><td>7</td><td>tutor_type_id</td><td>int4</td><td>否</td><td>导师类型ID</td><td>tutor_types</td>  </tr>
+<tr><td>8</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
+<tr><td>9</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
 </table>
 
  
@@ -74,5 +76,5 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>usage_capacities_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
+<tr><td>post_infoes_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
 </table>

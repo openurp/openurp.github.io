@@ -14,7 +14,6 @@ version: ["0.0.1"]
   * 1.3 [模块关系图](images.html)
 
 ##### 2. 具体模块明细
-* [2.1 行标](hb.html)
-* [2.2 校标](xb.html)
-* [2.3 核心部分](core.html)
-* [2.4 其他](misc.html)
+* [2.1 校标](xb.html)
+* [2.2 核心部分](core.html)
+* [2.3 其他](misc.html)

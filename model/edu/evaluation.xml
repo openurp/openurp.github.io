@@ -14,30 +14,30 @@
     <page name="index" />
     <page name="tables" />
     <page name="images" />
-    <page name="module" iterator="true"/>
+    <page name="module" iterable="true"/>
   </pages>
 
   <modules>
     <module name="questionnaires" title="问卷" tables="options,option_groups,questions,questionnaires,questionnaires_questions,question_types">
-      <image name="questionnaires" title="问卷" tables="options,option_groups,questions,questionnaires,questionnaires_questions"/>      
+      <image name="questionnaires" title="问卷" tables="options,option_groups,questions,questionnaires,questionnaires_questions"/>
     </module>
     <module name="results" title="评教统计结果" tables="lesson_*">
       <image name="results" title="问卷" tables="lesson_*"/>
     </module>
     <module name="detail_results" title="评教明细" tables="evaluate_results,question_results">
-      <image name="detail_results" title="评教明细" tables="evaluate_results,question_results"/>      
+      <image name="detail_results" title="评教明细" tables="evaluate_results,question_results"/>
     </module>
     <module name="college_results" title="全校排名" tables="school_*">
-      <image name="college_results" title="全校排名" tables="school_*"/>      
+      <image name="college_results" title="全校排名" tables="school_*"/>
     </module>
     <module name="depart_results" title="院系排名" tables="depart_*">
-      <image name="depart_results" title="院系排名" tables="depart_*"/>      
+      <image name="depart_results" title="院系排名" tables="depart_*"/>
     </module>
     <module name="teacher_results" title="教师排名" tables="teacher_*">
-      <image name="teacher_results" title="教师排名" tables="teacher_*"/>      
+      <image name="teacher_results" title="教师排名" tables="teacher_*"/>
     </module>
     <module name="course_results" title="教师课程排名" tables="course_*">
-      <image name="course_results" title="教师课程排名" tables="course_*"/>      
+      <image name="course_results" title="教师课程排名" tables="course_*"/>
     </module>
     <module name="misc" title="其他" tables="*">
     </module>

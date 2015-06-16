@@ -6,7 +6,7 @@
     </dialect>
     <driver>org.postgresql.Driver</driver>
     <url>jdbc:postgresql://localhost:5432/urp_sample</url>
-    <schema>code</schema>
+    <schema>code_hb</schema>
     <user>postgres</user>
     <password>postgres</password>
   </db>
@@ -14,11 +14,10 @@
     <page name="index" />
     <page name="tables" />
     <page name="images" />
-    <page name="module" iterator="true"/>
+    <page name="module" iterable="true"/>
   </pages>
 
   <modules>
-    <module name="gb" title="国标" tables="gb_*"/>
-    <module name="hb" title="行标" tables="hb_*"/>
+    <module name="hb" title="行标" tables="*"/>
   </modules>
 </report>

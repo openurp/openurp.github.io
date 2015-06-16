@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report title="数据库设计说明">
+  <system name="人事信息" version="0.0.2"/>
+  <db>
+    <dialect>org.beangle.data.jdbc.dialect.PostgreSQLDialect
+    </dialect>
+    <driver>org.postgresql.Driver</driver>
+    <url>jdbc:postgresql://localhost:5432/urp_sample</url>
+    <schema>hr_info</schema>
+    <user>postgres</user>
+    <password>postgres</password>
+  </db>
+  <pages template="jekyll" extension=".md">
+    <page name="index" />
+    <page name="tables" />
+    <page name="images" />
+    <page name="module" iterable="true"/>
+  </pages>
+
+  <modules>
+    <module name="xb" title="校标" tables="xb_*"/>
+    <module name="info" title="基本信息" tables="*"/>
+  </modules>
+</report>

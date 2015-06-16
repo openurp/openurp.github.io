@@ -15,7 +15,7 @@
     <page name="tables" />
     <page name="sequences" />
     <page name="images" />
-    <page name="module" iterator="true"/>
+    <page name="module" iterable="true"/>
   </pages>
 
   <modules>

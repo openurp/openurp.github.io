@@ -14,7 +14,7 @@
     <page name="index" />
     <page name="tables" />
     <page name="images" />
-    <page name="module" iterator="true"/>
+    <page name="module" iterable="true"/>
   </pages>
 
   <modules>
@@ -25,9 +25,9 @@
       <image name="share" title="公共课计划" tables="share*"/>
       <image name="std_plan" title="个人计划" tables="std_*"/>
     </module>
-    <module name="lesson" title="教学任务" tables="lessons*,course_take*,course_limit*">
+    <module name="lesson" title="教学任务" tables="lessons*,course_take*,lesson_limit*">
       <image name="lesson" title="教学任务" tables="lessons*"/>
-      <image name="course_take" title="学生修读课程" tables="course_take*,course_limit*"/>
+      <image name="course_take" title="学生修读课程" tables="course_take*,lesson_limit*"/>
     </module>
     <module name="schedule" title="课程安排" tables="course_activities*,lesson_group*">
       <image name="course_activities" title="排课" tables="course_activities*"/>

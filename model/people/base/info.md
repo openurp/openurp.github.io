@@ -27,22 +27,24 @@ version: ["0.0.2"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
-<tr><td>2</td><td>code</td><td>varchar</td><td>否</td><td>代码</td><td></td>  </tr>
-<tr><td>3</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
-<tr><td>4</td><td>en_name</td><td>varchar</td><td>是</td><td>英文名/拼音</td><td></td>  </tr>
-<tr><td>5</td><td>former_name</td><td>varchar</td><td>是</td><td>曾用名</td><td></td>  </tr>
-<tr><td>6</td><td>id_type_id</td><td>int4</td><td>否</td><td>身份证件类型 ID</td><td>gb_id_types</td>  </tr>
-<tr><td>7</td><td>gender_id</td><td>int4</td><td>是</td><td>性别 ID</td><td>gb_genders</td>  </tr>
-<tr><td>8</td><td>nation_id</td><td>int4</td><td>是</td><td>民族 ID</td><td>gb_nations</td>  </tr>
-<tr><td>9</td><td>birthday</td><td>timestamp</td><td>是</td><td>出生日期</td><td></td>  </tr>
-<tr><td>10</td><td>birth_place</td><td>varchar</td><td>是</td><td>出生地</td><td></td>  </tr>
-<tr><td>11</td><td>country_id</td><td>int4</td><td>是</td><td>国籍/地区 ID</td><td>gb_countries</td>  </tr>
-<tr><td>12</td><td>sid_expired_on</td><td>date</td><td>是</td><td>身份证件有效期</td><td></td>  </tr>
-<tr><td>13</td><td>marital_status_id</td><td>int4</td><td>是</td><td>婚姻状况 ID</td><td>gb_marital_statuses</td>  </tr>
-<tr><td>14</td><td>political_status_id</td><td>int4</td><td>是</td><td>政治面貌 ID</td><td>gb_political_statuses</td>  </tr>
-<tr><td>15</td><td>home_town</td><td>varchar</td><td>是</td><td>籍贯</td><td></td>  </tr>
-<tr><td>16</td><td>overseas_chn_id</td><td>int4</td><td>是</td><td>港澳台侨外 ID</td><td>gb_overseas_chns</td>  </tr>
-<tr><td>17</td><td>religion_id</td><td>int4</td><td>是</td><td>宗教信仰 ID</td><td>gb_religions</td>  </tr>
+<tr><td>2</td><td>code</td><td>varchar</td><td>否</td><td>证件号码</td><td></td>  </tr>
+<tr><td>3</td><td>id_type_id</td><td>int4</td><td>否</td><td>身份证件类型ID</td><td>id_types</td>  </tr>
+<tr><td>4</td><td>given_name</td><td>varchar</td><td>是</td><td>名</td><td></td>  </tr>
+<tr><td>5</td><td>middle_name</td><td>varchar</td><td>是</td><td>中间名</td><td></td>  </tr>
+<tr><td>6</td><td>family_name</td><td>varchar</td><td>是</td><td>姓</td><td></td>  </tr>
+<tr><td>7</td><td>former_name</td><td>varchar</td><td>是</td><td>曾用名</td><td></td>  </tr>
+<tr><td>8</td><td>phonetic_name</td><td>varchar</td><td>是</td><td>姓名拼音</td><td></td>  </tr>
+<tr><td>9</td><td>formated_name</td><td>varchar</td><td>是</td><td>姓名</td><td></td>  </tr>
+<tr><td>10</td><td>gender_id</td><td>int4</td><td>是</td><td>性别ID</td><td>genders</td>  </tr>
+<tr><td>11</td><td>nation_id</td><td>int4</td><td>是</td><td>民族ID</td><td>nations</td>  </tr>
+<tr><td>12</td><td>birthday</td><td>timestamp</td><td>是</td><td>出生日期</td><td></td>  </tr>
+<tr><td>13</td><td>language_id</td><td>int4</td><td>是</td><td>首要使用语言ID</td><td>languages</td>  </tr>
+<tr><td>14</td><td>country_id</td><td>int4</td><td>是</td><td>国籍/地区ID</td><td>countries</td>  </tr>
+<tr><td>15</td><td>marital_status_id</td><td>int4</td><td>是</td><td>婚姻状况ID</td><td>marital_statuses</td>  </tr>
+<tr><td>16</td><td>political_status_id</td><td>int4</td><td>是</td><td>政治面貌ID</td><td>political_statuses</td>  </tr>
+<tr><td>17</td><td>home_town</td><td>varchar</td><td>是</td><td>籍贯</td><td></td>  </tr>
+<tr><td>18</td><td>compatriot_type_id</td><td>int4</td><td>是</td><td>港澳台侨外ID</td><td>compatriot_types</td>  </tr>
+<tr><td>19</td><td>religion_id</td><td>int4</td><td>是</td><td>宗教信仰ID</td><td>religions</td>  </tr>
 </table>
 
  

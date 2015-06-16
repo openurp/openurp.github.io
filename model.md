@@ -14,7 +14,8 @@ group: navigation
 
 ##### 2. 代码和人员信息
 
-* [基础代码Code](/model/code/index.html)
+* [代码-国标GBCode](/model/code/gb/index.html)
+* [代码-行标HBCode](/model/code/hb/index.html)
 * [人员-基本信息Base](/model/people/base/index.html)
 * [人员-扩展信息Info](/model/people/info/index.html)
 
@@ -36,6 +37,7 @@ group: navigation
 ##### 5.人事相关
 
 * [基础信息Base](/model/hr/base/index.html)
+* [人事信息Info](/model/hr/info/index.html)
 
 ##### 6.学工相关
 
@@ -46,7 +48,4 @@ group: navigation
 
 * [成果信息Harvest](/model/sin/harvest/index.html)
 
-##### 8.后勤相关
-
-* [教室管理](/model/lg/room/index.html)
 

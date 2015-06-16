@@ -33,23 +33,25 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>2</td><td>course_id</td><td>int8</td><td>否</td><td>课程 ID</td><td>courses</td>  </tr>
+<tr><td>2</td><td>course_id</td><td>int8</td><td>否</td><td>课程ID</td><td>courses</td>  </tr>
 <tr><td>3</td><td>lesson_no</td><td>varchar</td><td>是</td><td>课程序号</td><td></td>  </tr>
-<tr><td>4</td><td>lesson_id</td><td>int8</td><td>是</td><td>教学任务 ID</td><td>lessons</td>  </tr>
-<tr><td>5</td><td>course_take_type_id</td><td>int4</td><td>否</td><td>修读类别 ID</td><td>course_take_types</td>  </tr>
-<tr><td>6</td><td>project_id</td><td>int4</td><td>否</td><td>项目 ID</td><td>projects</td>  </tr>
-<tr><td>7</td><td>course_type_id</td><td>int4</td><td>是</td><td>课程类别 ID</td><td>course_types</td>  </tr>
+<tr><td>4</td><td>lesson_id</td><td>int8</td><td>是</td><td>教学任务ID</td><td>lessons</td>  </tr>
+<tr><td>5</td><td>course_take_type_id</td><td>int4</td><td>否</td><td>修读类别ID</td><td>xb_course_take_types</td>  </tr>
+<tr><td>6</td><td>project_id</td><td>int4</td><td>否</td><td>项目ID</td><td>projects</td>  </tr>
+<tr><td>7</td><td>course_type_id</td><td>int4</td><td>是</td><td>课程类别ID</td><td>xb_course_types</td>  </tr>
 <tr><td>8</td><td>gp</td><td>float4</td><td>是</td><td>绩点</td><td></td>  </tr>
-<tr><td>9</td><td>exam_mode_id</td><td>int4</td><td>是</td><td>考核方式 ID</td><td>exam_modes</td>  </tr>
+<tr><td>9</td><td>exam_mode_id</td><td>int4</td><td>是</td><td>考核方式ID</td><td>xb_exam_modes</td>  </tr>
 <tr><td>10</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
 <tr><td>11</td><td>operator</td><td>varchar</td><td>是</td><td>操作者</td><td></td>  </tr>
 <tr><td>12</td><td>passed</td><td>bool</td><td>否</td><td>是否通过</td><td></td>  </tr>
 <tr><td>13</td><td>score</td><td>float4</td><td>是</td><td>得分</td><td></td>  </tr>
 <tr><td>14</td><td>score_text</td><td>varchar</td><td>是</td><td>得分字面值</td><td></td>  </tr>
-<tr><td>15</td><td>semester_id</td><td>int4</td><td>否</td><td>学期 ID</td><td>semesters</td>  </tr>
-<tr><td>16</td><td>status</td><td>int4</td><td>否</td><td>成绩状态</td><td></td>  </tr>
-<tr><td>17</td><td>std_id</td><td>int8</td><td>否</td><td>学生 ID</td><td>students</td>  </tr>
-<tr><td>18</td><td>mark_style_id</td><td>int4</td><td>否</td><td>成绩记录方式 ID</td><td>score_mark_styles</td>  </tr>
+<tr><td>15</td><td>bonus</td><td>float4</td><td>是</td><td>加分成绩</td><td></td>  </tr>
+<tr><td>16</td><td>semester_id</td><td>int4</td><td>否</td><td>学期ID</td><td>semesters</td>  </tr>
+<tr><td>17</td><td>status</td><td>int4</td><td>否</td><td>成绩状态</td><td></td>  </tr>
+<tr><td>18</td><td>std_id</td><td>int8</td><td>否</td><td>学生ID</td><td>students</td>  </tr>
+<tr><td>19</td><td>mark_style_id</td><td>int4</td><td>否</td><td>成绩记录方式ID</td><td>xb_score_mark_styles</td>  </tr>
+<tr><td>20</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
 </table>
 
  
@@ -75,16 +77,17 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>2</td><td>grade_type_id</td><td>int4</td><td>否</td><td>成绩类型 ID</td><td>grade_types</td>  </tr>
-<tr><td>3</td><td>mark_style_id</td><td>int4</td><td>否</td><td>成绩记录方式 ID</td><td>score_mark_styles</td>  </tr>
-<tr><td>4</td><td>exam_status_id</td><td>int4</td><td>否</td><td>考试情况 ID</td><td>exam_statuses</td>  </tr>
+<tr><td>2</td><td>grade_type_id</td><td>int4</td><td>否</td><td>成绩类型ID</td><td>xb_grade_types</td>  </tr>
+<tr><td>3</td><td>mark_style_id</td><td>int4</td><td>否</td><td>成绩记录方式ID</td><td>xb_score_mark_styles</td>  </tr>
+<tr><td>4</td><td>exam_status_id</td><td>int4</td><td>否</td><td>考试情况ID</td><td>xb_exam_statuses</td>  </tr>
 <tr><td>5</td><td>score</td><td>float4</td><td>是</td><td>得分</td><td></td>  </tr>
 <tr><td>6</td><td>score_text</td><td>varchar</td><td>是</td><td>得分字面值</td><td></td>  </tr>
-<tr><td>7</td><td>course_grade_id</td><td>int8</td><td>否</td><td>对应的课程成绩 ID</td><td>course_grades</td>  </tr>
+<tr><td>7</td><td>course_grade_id</td><td>int8</td><td>否</td><td>对应的课程成绩ID</td><td>course_grades</td>  </tr>
 <tr><td>8</td><td>status</td><td>int4</td><td>否</td><td>成绩状态</td><td></td>  </tr>
 <tr><td>9</td><td>passed</td><td>bool</td><td>否</td><td>是否通过</td><td></td>  </tr>
 <tr><td>10</td><td>operator</td><td>varchar</td><td>是</td><td>操作者</td><td></td>  </tr>
 <tr><td>11</td><td>percent</td><td>int2</td><td>是</td><td>百分比描述</td><td></td>  </tr>
+<tr><td>12</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
 </table>
 
  
@@ -110,16 +113,17 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>2</td><td>grade_type_id</td><td>int4</td><td>否</td><td>成绩类型 ID</td><td>grade_types</td>  </tr>
-<tr><td>3</td><td>mark_style_id</td><td>int4</td><td>否</td><td>成绩记录方式 ID</td><td>score_mark_styles</td>  </tr>
+<tr><td>2</td><td>grade_type_id</td><td>int4</td><td>否</td><td>成绩类型ID</td><td>xb_grade_types</td>  </tr>
+<tr><td>3</td><td>mark_style_id</td><td>int4</td><td>否</td><td>成绩记录方式ID</td><td>xb_score_mark_styles</td>  </tr>
 <tr><td>4</td><td>score</td><td>float4</td><td>是</td><td>得分</td><td></td>  </tr>
 <tr><td>5</td><td>score_text</td><td>varchar</td><td>是</td><td>得分字面值</td><td></td>  </tr>
-<tr><td>6</td><td>course_grade_id</td><td>int8</td><td>否</td><td>对应的课程成绩 ID</td><td>course_grades</td>  </tr>
+<tr><td>6</td><td>course_grade_id</td><td>int8</td><td>否</td><td>对应的课程成绩ID</td><td>course_grades</td>  </tr>
 <tr><td>7</td><td>status</td><td>int4</td><td>否</td><td>成绩状态</td><td></td>  </tr>
 <tr><td>8</td><td>passed</td><td>bool</td><td>否</td><td>是否通过</td><td></td>  </tr>
 <tr><td>9</td><td>operator</td><td>varchar</td><td>是</td><td>操作者</td><td></td>  </tr>
 <tr><td>10</td><td>gp</td><td>float4</td><td>是</td><td>绩点</td><td></td>  </tr>
 <tr><td>11</td><td>ratio</td><td>int2</td><td>否</td><td>比例</td><td></td>  </tr>
+<tr><td>12</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
 </table>
 
  

@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 教室管理 数据表格一览
-description: "教室管理数据表格一览"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+title: 人事信息 数据表格一览
+description: "人事信息数据表格一览"
+categories: [model-0.0.2]
+version: ["0.0.2"]
 ---
 {% include JB/setup %}
 数据库共计2个表，分别如下:
@@ -17,8 +17,8 @@ version: ["0.0.1"]
   </tr>
   <tr>
     <td>1</td>
-    <td><a href="room.html#occupancies">occupancies</a> 教室占用情况</td>
+    <td><a href="info.html#dutyinfoes">duty_infoes</a> 教职工职务信息</td>
     <td>2</td>
-    <td><a href="room.html#usagecapacities">usage_capacities</a> 教室信息</td>
+    <td><a href="info.html#postinfoes">post_infoes</a> 教职工岗位信息</td>
   </tr>
 </table>

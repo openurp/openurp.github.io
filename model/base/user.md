@@ -40,8 +40,8 @@ version: ["0.0.2"]
 <tr><td>6</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
 <tr><td>7</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
 <tr><td>8</td><td>indexno</td><td>varchar</td><td>否</td><td>索引号</td><td></td>  </tr>
-<tr><td>9</td><td>parent_id</td><td>int4</td><td>是</td><td>上级单位 ID</td><td>departments</td>  </tr>
-<tr><td>10</td><td>category_id</td><td>int4</td><td>是</td><td>部门分类 ID</td><td>xb_department_categories</td>  </tr>
+<tr><td>9</td><td>parent_id</td><td>int4</td><td>是</td><td>上级单位ID</td><td>departments</td>  </tr>
+<tr><td>10</td><td>category_id</td><td>int4</td><td>是</td><td>部门分类ID</td><td>xb_department_categories</td>  </tr>
 <tr><td>11</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
 <tr><td>12</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
 </table>
@@ -74,8 +74,8 @@ version: ["0.0.2"]
 <tr><td>2</td><td>code</td><td>varchar</td><td>否</td><td>人员帐号</td><td></td>  </tr>
 <tr><td>3</td><td>name</td><td>varchar</td><td>否</td><td>姓名</td><td></td>  </tr>
 <tr><td>4</td><td>email</td><td>varchar</td><td>否</td><td>邮箱</td><td></td>  </tr>
-<tr><td>5</td><td>department_id</td><td>int4</td><td>是</td><td>所在部门 ID</td><td>departments</td>  </tr>
-<tr><td>6</td><td>category_id</td><td>int4</td><td>是</td><td>人员分类 ID</td><td>xb_user_categories</td>  </tr>
+<tr><td>5</td><td>department_id</td><td>int4</td><td>是</td><td>所在部门ID</td><td>departments</td>  </tr>
+<tr><td>6</td><td>category_id</td><td>int4</td><td>是</td><td>人员分类ID</td><td>xb_user_categories</td>  </tr>
 <tr><td>7</td><td>mobile</td><td>varchar</td><td>是</td><td>电话</td><td></td>  </tr>
 <tr><td>8</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
 <tr><td>9</td><td>person_id</td><td>int8</td><td>是</td><td>人员ID</td><td></td>  </tr>

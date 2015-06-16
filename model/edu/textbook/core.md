@@ -27,7 +27,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>2</td><td>lesson_id</td><td>int8</td><td>否</td><td>课程 ID</td><td>lessons</td>  </tr>
+<tr><td>2</td><td>lesson_id</td><td>int8</td><td>否</td><td>课程ID</td><td>lessons</td>  </tr>
 <tr><td>3</td><td>reference_books</td><td>varchar</td><td>是</td><td>参考书</td><td></td>  </tr>
 <tr><td>4</td><td>extra</td><td>varchar</td><td>是</td><td>其他书</td><td></td>  </tr>
 <tr><td>5</td><td>passed</td><td>bool</td><td>是</td><td>是否通过</td><td></td>  </tr>
@@ -59,8 +59,8 @@ version: ["0.0.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>lesson_material_id</td><td>int8</td><td>否</td><td>课程材料 ID</td><td>lesson_materials</td>  </tr>
-<tr><td>2</td><td>book_id</td><td>int8</td><td>否</td><td>教材 ID</td><td>textbooks</td>  </tr>
+<tr><td>1</td><td>lesson_material_id</td><td>int8</td><td>否</td><td>课程材料ID</td><td>lesson_materials</td>  </tr>
+<tr><td>2</td><td>book_id</td><td>int8</td><td>否</td><td>教材ID</td><td>textbooks</td>  </tr>
 </table>
 
  

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report title="数据库设计说明">
-  <system name="教室管理" version="0.0.1"/>
+  <system name="基础代码" version="0.0.2"/>
   <db>
     <dialect>org.beangle.data.jdbc.dialect.PostgreSQLDialect
     </dialect>
     <driver>org.postgresql.Driver</driver>
     <url>jdbc:postgresql://localhost:5432/urp_sample</url>
-    <schema>lg_room</schema>
+    <schema>code_gb</schema>
     <user>postgres</user>
     <password>postgres</password>
   </db>
@@ -14,13 +14,10 @@
     <page name="index" />
     <page name="tables" />
     <page name="images" />
-    <page name="module" iterator="true"/>
+    <page name="module" iterable="true"/>
   </pages>
 
   <modules>
-    <module name="gb" title="国标" tables="gb_*"/>
-    <module name="hb" title="行标" tables="hb_*"/>
-    <module name="xb" title="校标" tables="xb_*"/>
-    <module name="room" title="占用信息" tables="*"/>
+    <module name="gb" title="国标" tables="*"/>
   </modules>
 </report>
