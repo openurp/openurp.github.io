@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report title="数据库设计说明">
+  <system name="人员联系方式" version="0.0.2"/>
+  <db>
+    <dialect>org.beangle.data.jdbc.dialect.PostgreSQLDialect
+    </dialect>
+    <driver>org.postgresql.Driver</driver>
+    <url>jdbc:postgresql://localhost:5432/urp_sample</url>
+    <schema>ppl_contact</schema>
+    <user>urp</user>
+    <password>urp</password>
+  </db>
+  <pages template="jekyll" extension=".md">
+    <page name="index" />
+    <page name="tables" />
+    <page name="images" />
+    <page name="module" iterable="true"/>
+  </pages>
+
+  <modules>
+    <module name="contact" title="联系信息" tables="*">
+      <image name="all" title="总体" tables="addresses,contacts,emails,geos,impps,nicknames,notes,orgs,photos,relateds,roles,telephones,timezones,titles,urls,xtendeds"/>
+    </module>
+  </modules>
+</report>

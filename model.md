@@ -17,6 +17,7 @@ group: navigation
 * [代码-国标GBCode](/model/code/gb/index.html)
 * [代码-行标HBCode](/model/code/hb/index.html)
 * [人员-基本信息Base](/model/people/base/index.html)
+* [人员-联系信息Contact](/model/people/contact/index.html)
 * [人员-扩展信息Info](/model/people/info/index.html)
 
 ##### 3. 基础信息
