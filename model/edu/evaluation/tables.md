@@ -6,7 +6,7 @@ categories: [model-0.0.1]
 version: ["0.0.1"]
 ---
 {% include JB/setup %}
-数据库共计32个表，分别如下:
+数据库共计31个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>
@@ -55,60 +55,60 @@ version: ["0.0.1"]
     <td>7</td>
     <td><a href="depart_results.html#departoptionstats">depart_option_stats</a> 开课院系评教选项统计结果</td>
     <td>23</td>
-    <td><a href="questionnaires.html#questionnairesquestions">questionnaires_questions</a> 评教问卷-相关联的问题</td>
+    <td><a href="questionnaires.html#questions">questions</a> 评教问题</td>
   </tr>
   <tr>
     <td>8</td>
     <td><a href="depart_results.html#departquestionstats">depart_question_stats</a> 开课院系评教问题统计结果</td>
     <td>24</td>
-    <td><a href="questionnaires.html#questions">questions</a> 评教问题</td>
+    <td><a href="college_results.html#schoolevalstats">school_eval_stats</a> 学校评教问卷统计结果</td>
   </tr>
   <tr>
     <td>9</td>
     <td><a href="depart_results.html#departquestiontypestats">depart_question_type_stats</a> 开课院系评教问题类别统计结果</td>
     <td>25</td>
-    <td><a href="college_results.html#schoolevalstats">school_eval_stats</a> 学校评教问卷统计结果</td>
+    <td><a href="college_results.html#schooloptionstats">school_option_stats</a> 学校评教选项统计结果</td>
   </tr>
   <tr>
     <td>10</td>
     <td><a href="detail_results.html#evaluateresults">evaluate_results</a> 问卷评教结果</td>
     <td>26</td>
-    <td><a href="college_results.html#schooloptionstats">school_option_stats</a> 学校评教选项统计结果</td>
+    <td><a href="college_results.html#schoolquestionstats">school_question_stats</a> 学校评教问题统计结果</td>
   </tr>
   <tr>
     <td>11</td>
     <td><a href="misc.html#evaluationcriteriaitems">evaluation_criteria_items</a> 评价名称对应项</td>
     <td>27</td>
-    <td><a href="college_results.html#schoolquestionstats">school_question_stats</a> 学校评教问题统计结果</td>
+    <td><a href="college_results.html#schoolquestiontypestats">school_question_type_stats</a> 学校评教问题类别统计结果</td>
   </tr>
   <tr>
     <td>12</td>
     <td><a href="misc.html#evaluationcriterias">evaluation_criterias</a> 评教对照标准</td>
     <td>28</td>
-    <td><a href="college_results.html#schoolquestiontypestats">school_question_type_stats</a> 学校评教问题类别统计结果</td>
+    <td><a href="teacher_results.html#teacherevalstats">teacher_eval_stats</a> 教师评教问卷统计结果</td>
   </tr>
   <tr>
     <td>13</td>
     <td><a href="results.html#lessonevalstats">lesson_eval_stats</a> 任务评教问卷统计结果</td>
     <td>29</td>
-    <td><a href="teacher_results.html#teacherevalstats">teacher_eval_stats</a> 教师评教问卷统计结果</td>
+    <td><a href="teacher_results.html#teacheroptionstats">teacher_option_stats</a> 教师评教选项统计结果</td>
   </tr>
   <tr>
     <td>14</td>
     <td><a href="results.html#lessonoptionstats">lesson_option_stats</a> 任务评教选项统计结果</td>
     <td>30</td>
-    <td><a href="teacher_results.html#teacheroptionstats">teacher_option_stats</a> 教师评教选项统计结果</td>
+    <td><a href="teacher_results.html#teacherquestionstats">teacher_question_stats</a> 教师评教问题统计结果</td>
   </tr>
   <tr>
     <td>15</td>
     <td><a href="results.html#lessonquestionstats">lesson_question_stats</a> 任务评教问题统计结果</td>
     <td>31</td>
-    <td><a href="teacher_results.html#teacherquestionstats">teacher_question_stats</a> 教师评教问题统计结果</td>
+    <td><a href="teacher_results.html#teacherquestiontypestats">teacher_question_type_stats</a> 教师评教问题类别统计结果</td>
   </tr>
   <tr>
     <td>16</td>
     <td><a href="results.html#lessonquestiontypestats">lesson_question_type_stats</a> 任务评教问题类别统计结果</td>
-    <td>32</td>
-    <td><a href="teacher_results.html#teacherquestiontypestats">teacher_question_type_stats</a> 教师评教问题类别统计结果</td>
+    <td></td>
+    <td></td>
   </tr>
 </table>

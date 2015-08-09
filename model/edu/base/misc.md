@@ -32,12 +32,15 @@ version: ["0.0.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
-<tr><td>2</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
-<tr><td>3</td><td>room_id</td><td>int4</td><td>是</td><td>房间ID</td><td>rooms</td>  </tr>
-<tr><td>4</td><td>classroom_type_id</td><td>int4</td><td>是</td><td>教室类型ID</td><td>classroom_types</td>  </tr>
+<tr><td>1</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
+<tr><td>2</td><td>classroom_type_id</td><td>int4</td><td>否</td><td>教室类型ID</td><td>classroom_types</td>  </tr>
+<tr><td>3</td><td>short_name</td><td>varchar</td><td>是</td><td>简称</td><td></td>  </tr>
+<tr><td>4</td><td>room_id</td><td>int4</td><td>否</td><td>房间ID</td><td>rooms</td>  </tr>
 <tr><td>5</td><td>exam_capacity</td><td>int4</td><td>否</td><td>考试容量</td><td></td>  </tr>
-<tr><td>6</td><td>course_capacity</td><td>int4</td><td>否</td><td>上课容量</td><td></td>  </tr>
+<tr><td>6</td><td>en_name</td><td>varchar</td><td>是</td><td>英文名</td><td></td>  </tr>
+<tr><td>7</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
+<tr><td>8</td><td>course_capacity</td><td>int4</td><td>否</td><td>上课容量</td><td></td>  </tr>
+<tr><td>9</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 </table>
 
  
@@ -62,12 +65,12 @@ version: ["0.0.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
-<tr><td>2</td><td>major_id</td><td>int8</td><td>是</td><td>专业ID</td><td>majors</td>  </tr>
-<tr><td>3</td><td>discipline_code</td><td>varchar</td><td>是</td><td>教育部代码</td><td></td>  </tr>
+<tr><td>1</td><td>begin_on</td><td>date</td><td>否</td><td>生效日期</td><td></td>  </tr>
+<tr><td>2</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
+<tr><td>3</td><td>discipline_code</td><td>varchar</td><td>否</td><td>教育部代码</td><td></td>  </tr>
 <tr><td>4</td><td>category_id</td><td>int4</td><td>否</td><td>学科门类ID</td><td>discipline_categories</td>  </tr>
-<tr><td>5</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
-<tr><td>6</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
+<tr><td>5</td><td>major_id</td><td>int8</td><td>否</td><td>专业ID</td><td>majors</td>  </tr>
+<tr><td>6</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 </table>
 
  
@@ -92,17 +95,17 @@ version: ["0.0.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
-<tr><td>2</td><td>classroom_id</td><td>int4</td><td>是</td><td>教室ID</td><td>classrooms</td>  </tr>
-<tr><td>3</td><td>start_on</td><td>date</td><td>否</td><td>开始日期</td><td></td>  </tr>
-<tr><td>4</td><td>weekday</td><td>int4</td><td>是</td><td>周几</td><td></td>  </tr>
-<tr><td>5</td><td>begin_at</td><td>bytea</td><td>是</td><td>开始时间</td><td></td>  </tr>
-<tr><td>6</td><td>end_at</td><td>bytea</td><td>是</td><td>结束时间</td><td></td>  </tr>
-<tr><td>7</td><td>weekstate</td><td>int8</td><td>否</td><td>周状态</td><td></td>  </tr>
-<tr><td>8</td><td>usage_id</td><td>int4</td><td>是</td><td>用途ID</td><td>classroom_usages</td>  </tr>
-<tr><td>9</td><td>userid</td><td>varchar</td><td>是</td><td>使用者</td><td></td>  </tr>
-<tr><td>10</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
-<tr><td>11</td><td>comments</td><td>varchar</td><td>是</td><td>说明</td><td></td>  </tr>
+<tr><td>1</td><td>usage_id</td><td>int4</td><td>否</td><td>用途ID</td><td>classroom_usages</td>  </tr>
+<tr><td>2</td><td>updated_at</td><td>timestamp</td><td>否</td><td>更新时间</td><td></td>  </tr>
+<tr><td>3</td><td>comments</td><td>varchar</td><td>是</td><td>说明</td><td></td>  </tr>
+<tr><td>4</td><td>classroom_id</td><td>int8</td><td>否</td><td>教室ID</td><td>classrooms</td>  </tr>
+<tr><td>5</td><td>weekstate</td><td>int8</td><td>否</td><td>周状态</td><td></td>  </tr>
+<tr><td>6</td><td>end_at</td><td>int2</td><td>否</td><td>结束时间</td><td></td>  </tr>
+<tr><td>7</td><td>begin_at</td><td>int2</td><td>否</td><td>开始时间</td><td></td>  </tr>
+<tr><td>8</td><td>weekday</td><td>int4</td><td>否</td><td>周几</td><td></td>  </tr>
+<tr><td>9</td><td>start_on</td><td>date</td><td>否</td><td>开始日期</td><td></td>  </tr>
+<tr><td>10</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td>11</td><td>userid</td><td>varchar</td><td>是</td><td>使用者</td><td></td>  </tr>
 </table>
 
  
@@ -127,21 +130,21 @@ version: ["0.0.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
-<tr><td>2</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
-<tr><td>3</td><td>isbn</td><td>varchar</td><td>是</td><td>ISBN</td><td></td>  </tr>
-<tr><td>4</td><td>author</td><td>varchar</td><td>是</td><td>作者</td><td></td>  </tr>
-<tr><td>5</td><td>press_id</td><td>int4</td><td>是</td><td>出版社ID</td><td>presses</td>  </tr>
-<tr><td>6</td><td>version</td><td>varchar</td><td>是</td><td>版本</td><td></td>  </tr>
-<tr><td>7</td><td>price</td><td>int4</td><td>是</td><td>价格</td><td></td>  </tr>
-<tr><td>8</td><td>description</td><td>varchar</td><td>是</td><td>描述</td><td></td>  </tr>
+<tr><td>1</td><td>price</td><td>int4</td><td>是</td><td>价格</td><td></td>  </tr>
+<tr><td>2</td><td>published</td><td>bool</td><td>否</td><td>是否出版</td><td></td>  </tr>
+<tr><td>3</td><td>begin_on</td><td>date</td><td>否</td><td>生效日期</td><td></td>  </tr>
+<tr><td>4</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
+<tr><td>5</td><td>description</td><td>varchar</td><td>是</td><td>描述</td><td></td>  </tr>
+<tr><td>6</td><td>published_on</td><td>date</td><td>是</td><td>出版日期</td><td></td>  </tr>
+<tr><td>7</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
+<tr><td>8</td><td>author</td><td>varchar</td><td>是</td><td>作者</td><td></td>  </tr>
 <tr><td>9</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
-<tr><td>10</td><td>book_type_id</td><td>int4</td><td>是</td><td>教材类型ID</td><td>xb_book_types</td>  </tr>
-<tr><td>11</td><td>published_on</td><td>date</td><td>是</td><td>出版日期</td><td></td>  </tr>
-<tr><td>12</td><td>award_type_id</td><td>int4</td><td>是</td><td>教材获奖类型ID</td><td>xb_book_award_types</td>  </tr>
-<tr><td>13</td><td>published</td><td>bool</td><td>是</td><td>是否出版</td><td></td>  </tr>
-<tr><td>14</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
-<tr><td>15</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
+<tr><td>10</td><td>award_type_id</td><td>int4</td><td>是</td><td>教材获奖类型ID</td><td>xb_book_award_types</td>  </tr>
+<tr><td>11</td><td>book_type_id</td><td>int4</td><td>是</td><td>教材类型ID</td><td>xb_book_types</td>  </tr>
+<tr><td>12</td><td>isbn</td><td>varchar</td><td>是</td><td>ISBN</td><td></td>  </tr>
+<tr><td>13</td><td>press_id</td><td>int4</td><td>是</td><td>出版社ID</td><td>presses</td>  </tr>
+<tr><td>14</td><td>version</td><td>varchar</td><td>是</td><td>版本</td><td></td>  </tr>
+<tr><td>15</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 </table>
 
  

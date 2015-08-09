@@ -7,8 +7,8 @@
     <driver>org.postgresql.Driver</driver>
     <url>jdbc:postgresql://localhost:5432/urp_sample</url>
     <schema>ppl_contact</schema>
-    <user>urp</user>
-    <password>urp</password>
+    <user>postgres</user>
+    <password>postgres</password>
   </db>
   <pages template="jekyll" extension=".md">
     <page name="index" />

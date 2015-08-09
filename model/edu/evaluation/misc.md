@@ -26,12 +26,11 @@ version: ["0.0.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>2</td><td>min</td><td>float4</td><td>是</td><td>最小分值</td><td></td>  </tr>
-<tr><td>3</td><td>max</td><td>float4</td><td>是</td><td>最大分值</td><td></td>  </tr>
-<tr><td>4</td><td>name</td><td>varchar</td><td>是</td><td>对应的评价名称</td><td></td>  </tr>
-<tr><td>5</td><td>criteria_id</td><td>int8</td><td>否</td><td>评价ID</td><td>evaluation_criterias</td>  </tr>
-<tr><td>6</td><td>evaluation_criteria_id</td><td>int8</td><td>是</td><td></td><td>evaluation_criterias</td>  </tr>
+<tr><td>1</td><td>max</td><td>float4</td><td>否</td><td>最大分值</td><td></td>  </tr>
+<tr><td>2</td><td>criteria_id</td><td>int8</td><td>否</td><td>评价ID</td><td>evaluation_criterias</td>  </tr>
+<tr><td>3</td><td>name</td><td>varchar</td><td>是</td><td>对应的评价名称</td><td></td>  </tr>
+<tr><td>4</td><td>min</td><td>float4</td><td>否</td><td>最小分值</td><td></td>  </tr>
+<tr><td>5</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 </table>
 
  
@@ -56,9 +55,9 @@ version: ["0.0.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>2</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
-<tr><td>3</td><td>depart_id</td><td>int4</td><td>否</td><td>制作部门ID</td><td>departments</td>  </tr>
+<tr><td>1</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
+<tr><td>2</td><td>depart_id</td><td>int4</td><td>是</td><td>制作部门ID</td><td>departments</td>  </tr>
+<tr><td>3</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 </table>
 
  
@@ -83,10 +82,10 @@ version: ["0.0.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>2</td><td>evaluate_by_teacher</td><td>bool</td><td>是</td><td>评教人</td><td></td>  </tr>
-<tr><td>3</td><td>lesson_id</td><td>int8</td><td>是</td><td>任务ID</td><td>lessons</td>  </tr>
-<tr><td>4</td><td>questionnaire_id</td><td>int8</td><td>是</td><td>问卷ID</td><td>questionnaires</td>  </tr>
+<tr><td>1</td><td>questionnaire_id</td><td>int8</td><td>否</td><td>问卷ID</td><td>questionnaires</td>  </tr>
+<tr><td>2</td><td>evaluate_by_teacher</td><td>bool</td><td>否</td><td>评教人</td><td></td>  </tr>
+<tr><td>3</td><td>lesson_id</td><td>int8</td><td>否</td><td>任务ID</td><td>lessons</td>  </tr>
+<tr><td>4</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 </table>
 
  

@@ -83,25 +83,25 @@ version: ["0.0.2"]
   </tr>
   <tr>
     <td>12</td>
-    <td><a href="gb.html#familyrelationships">family_relationships</a> 家庭关系</td>
+    <td><a href="gb.html#employtypes">employ_types</a> 用工形式</td>
     <td>27</td>
     <td><a href="gb.html#religions">religions</a> 宗教信仰</td>
   </tr>
   <tr>
     <td>13</td>
-    <td><a href="gb.html#genders">genders</a> 性别</td>
+    <td><a href="gb.html#familyrelationships">family_relationships</a> 家庭关系</td>
     <td>28</td>
     <td><a href="gb.html#socialunittypes">social_unit_types</a> 社会单位性质</td>
   </tr>
   <tr>
     <td>14</td>
-    <td><a href="gb.html#healthstatuses">health_statuses</a> 健康状况</td>
+    <td><a href="gb.html#genders">genders</a> 性别</td>
     <td>29</td>
     <td><a href="gb.html#studytypes">study_types</a> 学习形式</td>
   </tr>
   <tr>
     <td>15</td>
-    <td><a href="gb.html#householdtypes">household_types</a> 户口类别</td>
+    <td><a href="gb.html#healthstatuses">health_statuses</a> 健康状况</td>
     <td></td>
     <td></td>
   </tr>

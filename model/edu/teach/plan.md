@@ -44,17 +44,19 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>2</td><td>plan_id</td><td>int8</td><td>否</td><td>计划ID</td><td>major_plans</td>  </tr>
-<tr><td>3</td><td>parent_id</td><td>int8</td><td>是</td><td>上级组ID</td><td>major_course_groups</td>  </tr>
+<tr><td>1</td><td>plan_id</td><td>int8</td><td>是</td><td>计划ID</td><td>major_plans</td>  </tr>
+<tr><td>2</td><td>group_num</td><td>int2</td><td>否</td><td>要求完成组数</td><td></td>  </tr>
+<tr><td>3</td><td>alias</td><td>varchar</td><td>是</td><td>自定义别名</td><td></td>  </tr>
 <tr><td>4</td><td>course_type_id</td><td>int4</td><td>否</td><td>课程类别ID</td><td>xb_course_types</td>  </tr>
-<tr><td>5</td><td>credits</td><td>float4</td><td>否</td><td>要求学分</td><td></td>  </tr>
-<tr><td>6</td><td>course_num</td><td>int2</td><td>否</td><td>要求门数</td><td></td>  </tr>
-<tr><td>7</td><td>group_num</td><td>int2</td><td>否</td><td>要求完成组数</td><td></td>  </tr>
-<tr><td>8</td><td>term_credits</td><td>varchar</td><td>否</td><td>学期学分分布</td><td></td>  </tr>
-<tr><td>9</td><td>indexno</td><td>varchar</td><td>否</td><td>索引号</td><td></td>  </tr>
-<tr><td>10</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
-<tr><td>11</td><td>alias</td><td>varchar</td><td>是</td><td>自定义别名</td><td></td>  </tr>
+<tr><td>5</td><td>course_num</td><td>int2</td><td>否</td><td>要求门数</td><td></td>  </tr>
+<tr><td>6</td><td>name</td><td>varchar</td><td>是</td><td>名称</td><td></td>  </tr>
+<tr><td>7</td><td>term_credits</td><td>varchar</td><td>否</td><td>学期学分分布</td><td></td>  </tr>
+<tr><td>8</td><td>credits</td><td>float4</td><td>否</td><td>要求学分</td><td></td>  </tr>
+<tr><td>9</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>10</td><td>direction_id</td><td>int8</td><td>是</td><td>该组针对的专业方向ID</td><td>directions</td>  </tr>
+<tr><td>11</td><td>indexno</td><td>varchar</td><td>否</td><td>索引号</td><td></td>  </tr>
+<tr><td>12</td><td>parent_id</td><td>int8</td><td>是</td><td>上级组ID</td><td>major_course_groups</td>  </tr>
+<tr><td>13</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 </table>
 
  
@@ -79,16 +81,16 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>2</td><td>group_id</td><td>int8</td><td>否</td><td>课程组ID</td><td>major_course_groups</td>  </tr>
-<tr><td>3</td><td>course_id</td><td>int8</td><td>否</td><td>课程ID</td><td>courses</td>  </tr>
-<tr><td>4</td><td>terms</td><td>int4</td><td>是</td><td>开课学期</td><td></td>  </tr>
-<tr><td>5</td><td>weekstate</td><td>int8</td><td>是</td><td>开课周</td><td></td>  </tr>
-<tr><td>6</td><td>suggest_terms</td><td>int4</td><td>是</td><td>建议修读学期</td><td></td>  </tr>
-<tr><td>7</td><td>compulsory</td><td>bool</td><td>否</td><td>是否必修</td><td></td>  </tr>
-<tr><td>8</td><td>department_id</td><td>int4</td><td>是</td><td>开课部门ID</td><td>departments</td>  </tr>
-<tr><td>9</td><td>exam_mode_id</td><td>int4</td><td>是</td><td>考核方式ID</td><td>xb_exam_modes</td>  </tr>
-<tr><td>10</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>1</td><td>weekstate</td><td>int8</td><td>是</td><td>开课周</td><td></td>  </tr>
+<tr><td>2</td><td>compulsory</td><td>bool</td><td>否</td><td>是否必修</td><td></td>  </tr>
+<tr><td>3</td><td>terms</td><td>int4</td><td>是</td><td>开课学期</td><td></td>  </tr>
+<tr><td>4</td><td>group_id</td><td>int8</td><td>是</td><td>课程组ID</td><td>major_course_groups</td>  </tr>
+<tr><td>5</td><td>course_id</td><td>int8</td><td>否</td><td>课程ID</td><td>courses</td>  </tr>
+<tr><td>6</td><td>department_id</td><td>int4</td><td>是</td><td>开课部门ID</td><td>departments</td>  </tr>
+<tr><td>7</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>8</td><td>exam_mode_id</td><td>int4</td><td>是</td><td>考核方式ID</td><td>xb_exam_modes</td>  </tr>
+<tr><td>9</td><td>suggest_terms</td><td>int4</td><td>是</td><td>建议修读学期</td><td></td>  </tr>
+<tr><td>10</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 </table>
 
  
@@ -113,14 +115,16 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>2</td><td>program_id</td><td>int8</td><td>否</td><td>培养方案ID</td><td>programs</td>  </tr>
-<tr><td>3</td><td>credits</td><td>float4</td><td>否</td><td>要求学分</td><td></td>  </tr>
-<tr><td>4</td><td>start_term</td><td>int2</td><td>否</td><td>起始学期</td><td></td>  </tr>
-<tr><td>5</td><td>end_term</td><td>int2</td><td>否</td><td>结束学期</td><td></td>  </tr>
-<tr><td>6</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
-<tr><td>7</td><td>begin_on</td><td>date</td><td>否</td><td>生效日期</td><td></td>  </tr>
-<tr><td>8</td><td>end_on</td><td>date</td><td>否</td><td>失效日期</td><td></td>  </tr>
+<tr><td>1</td><td>begin_on</td><td>date</td><td>否</td><td>生效日期</td><td></td>  </tr>
+<tr><td>2</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
+<tr><td>3</td><td>end_on</td><td>date</td><td>否</td><td>失效日期</td><td></td>  </tr>
+<tr><td>4</td><td>end_term</td><td>int2</td><td>否</td><td>结束学期</td><td></td>  </tr>
+<tr><td>5</td><td>state</td><td>int4</td><td>是</td><td>审核状态</td><td></td>  </tr>
+<tr><td>6</td><td>start_term</td><td>int2</td><td>否</td><td>起始学期</td><td></td>  </tr>
+<tr><td>7</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>8</td><td>credits</td><td>float4</td><td>否</td><td>要求学分</td><td></td>  </tr>
+<tr><td>9</td><td>program_id</td><td>int8</td><td>否</td><td>培养方案ID</td><td>programs</td>  </tr>
+<tr><td>10</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 </table>
 
  
@@ -145,18 +149,19 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>2</td><td>plan_id</td><td>int8</td><td>否</td><td>计划ID</td><td>share_plans</td>  </tr>
-<tr><td>3</td><td>parent_id</td><td>int8</td><td>是</td><td>上级组ID</td><td>share_course_groups</td>  </tr>
-<tr><td>4</td><td>course_type_id</td><td>int4</td><td>否</td><td>课程类别ID</td><td>xb_course_types</td>  </tr>
+<tr><td>1</td><td>plan_id</td><td>int8</td><td>是</td><td>计划ID</td><td>share_plans</td>  </tr>
+<tr><td>2</td><td>group_num</td><td>int2</td><td>否</td><td>要求完成组数</td><td></td>  </tr>
+<tr><td>3</td><td>course_type_id</td><td>int4</td><td>否</td><td>课程类别ID</td><td>xb_course_types</td>  </tr>
+<tr><td>4</td><td>course_num</td><td>int2</td><td>否</td><td>要求门数</td><td></td>  </tr>
 <tr><td>5</td><td>course_ability_rate_id</td><td>int4</td><td>是</td><td>要求能力等级ID</td><td>xb_course_ability_rates</td>  </tr>
-<tr><td>6</td><td>language_id</td><td>int4</td><td>是</td><td>要求外语语种ID</td><td>languages</td>  </tr>
-<tr><td>7</td><td>credits</td><td>float4</td><td>否</td><td>要求学分</td><td></td>  </tr>
-<tr><td>8</td><td>course_num</td><td>int2</td><td>否</td><td>要求门数</td><td></td>  </tr>
-<tr><td>9</td><td>group_num</td><td>int2</td><td>否</td><td>要求完成组数</td><td></td>  </tr>
-<tr><td>10</td><td>term_credits</td><td>varchar</td><td>否</td><td>学期学分分布</td><td></td>  </tr>
-<tr><td>11</td><td>indexno</td><td>varchar</td><td>否</td><td>索引号</td><td></td>  </tr>
-<tr><td>12</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>6</td><td>name</td><td>varchar</td><td>是</td><td>名称</td><td></td>  </tr>
+<tr><td>7</td><td>term_credits</td><td>varchar</td><td>是</td><td>学期学分分布</td><td></td>  </tr>
+<tr><td>8</td><td>credits</td><td>float4</td><td>否</td><td>要求学分</td><td></td>  </tr>
+<tr><td>9</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>10</td><td>indexno</td><td>varchar</td><td>否</td><td>索引号</td><td></td>  </tr>
+<tr><td>11</td><td>parent_id</td><td>int8</td><td>是</td><td>上级组ID</td><td>share_course_groups</td>  </tr>
+<tr><td>12</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
+<tr><td>13</td><td>language_id</td><td>int4</td><td>是</td><td>要求外语语种ID</td><td>languages</td>  </tr>
 </table>
 
  
@@ -181,15 +186,15 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>2</td><td>group_id</td><td>int8</td><td>否</td><td>课程组ID</td><td>share_course_groups</td>  </tr>
-<tr><td>3</td><td>course_id</td><td>int8</td><td>否</td><td>课程ID</td><td>courses</td>  </tr>
-<tr><td>4</td><td>terms</td><td>int4</td><td>是</td><td>开课学期</td><td></td>  </tr>
-<tr><td>5</td><td>weekstate</td><td>int8</td><td>是</td><td>开课周</td><td></td>  </tr>
-<tr><td>6</td><td>compulsory</td><td>bool</td><td>否</td><td>是否必修</td><td></td>  </tr>
-<tr><td>7</td><td>department_id</td><td>int4</td><td>是</td><td>开课部门ID</td><td>departments</td>  </tr>
+<tr><td>1</td><td>weekstate</td><td>int8</td><td>是</td><td>开课周</td><td></td>  </tr>
+<tr><td>2</td><td>compulsory</td><td>bool</td><td>否</td><td>是否必修</td><td></td>  </tr>
+<tr><td>3</td><td>terms</td><td>int4</td><td>是</td><td>开课学期</td><td></td>  </tr>
+<tr><td>4</td><td>group_id</td><td>int8</td><td>是</td><td>课程组ID</td><td>share_course_groups</td>  </tr>
+<tr><td>5</td><td>course_id</td><td>int8</td><td>否</td><td>课程ID</td><td>courses</td>  </tr>
+<tr><td>6</td><td>department_id</td><td>int4</td><td>是</td><td>开课部门ID</td><td>departments</td>  </tr>
+<tr><td>7</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
 <tr><td>8</td><td>exam_mode_id</td><td>int4</td><td>是</td><td>考核方式ID</td><td>xb_exam_modes</td>  </tr>
-<tr><td>9</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>9</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 </table>
 
  
@@ -214,18 +219,20 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>2</td><td>project_id</td><td>int4</td><td>否</td><td>项目ID</td><td>projects</td>  </tr>
-<tr><td>3</td><td>education_id</td><td>int4</td><td>否</td><td>培养层次ID</td><td>xb_educations</td>  </tr>
-<tr><td>4</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
-<tr><td>5</td><td>from_grade</td><td>varchar</td><td>否</td><td>起始适用年级</td><td></td>  </tr>
-<tr><td>6</td><td>to_grade</td><td>varchar</td><td>否</td><td>截止适用年级</td><td></td>  </tr>
-<tr><td>7</td><td>credits</td><td>float4</td><td>否</td><td>要求学分</td><td></td>  </tr>
-<tr><td>8</td><td>start_term</td><td>int2</td><td>否</td><td>起始学期</td><td></td>  </tr>
-<tr><td>9</td><td>end_term</td><td>int2</td><td>否</td><td>结束学期</td><td></td>  </tr>
-<tr><td>10</td><td>begin_on</td><td>date</td><td>否</td><td>生效日期</td><td></td>  </tr>
-<tr><td>11</td><td>end_on</td><td>date</td><td>否</td><td>失效日期</td><td></td>  </tr>
+<tr><td>1</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
+<tr><td>2</td><td>begin_on</td><td>date</td><td>否</td><td>生效日期</td><td></td>  </tr>
+<tr><td>3</td><td>end_on</td><td>date</td><td>否</td><td>失效日期</td><td></td>  </tr>
+<tr><td>4</td><td>to_grade</td><td>varchar</td><td>否</td><td>截止适用年级</td><td></td>  </tr>
+<tr><td>5</td><td>state</td><td>int4</td><td>是</td><td>审核状态</td><td></td>  </tr>
+<tr><td>6</td><td>end_term</td><td>int2</td><td>否</td><td>结束学期</td><td></td>  </tr>
+<tr><td>7</td><td>start_term</td><td>int2</td><td>否</td><td>起始学期</td><td></td>  </tr>
+<tr><td>8</td><td>name</td><td>varchar</td><td>是</td><td>名称</td><td></td>  </tr>
+<tr><td>9</td><td>from_grade</td><td>varchar</td><td>否</td><td>起始适用年级</td><td></td>  </tr>
+<tr><td>10</td><td>project_id</td><td>int4</td><td>否</td><td>项目ID</td><td>projects</td>  </tr>
+<tr><td>11</td><td>credits</td><td>float4</td><td>否</td><td>要求学分</td><td></td>  </tr>
 <tr><td>12</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>13</td><td>education_id</td><td>int4</td><td>否</td><td>培养层次ID</td><td>xb_educations</td>  </tr>
+<tr><td>14</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 </table>
 
  
@@ -250,16 +257,17 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>2</td><td>plan_id</td><td>int8</td><td>否</td><td>计划ID</td><td>std_plans</td>  </tr>
-<tr><td>3</td><td>parent_id</td><td>int8</td><td>是</td><td>上级组ID</td><td>std_course_groups</td>  </tr>
-<tr><td>4</td><td>course_type_id</td><td>int4</td><td>否</td><td>课程类别ID</td><td>xb_course_types</td>  </tr>
-<tr><td>5</td><td>credits</td><td>float4</td><td>否</td><td>要求学分</td><td></td>  </tr>
-<tr><td>6</td><td>course_num</td><td>int2</td><td>否</td><td>要求门数</td><td></td>  </tr>
-<tr><td>7</td><td>group_num</td><td>int2</td><td>否</td><td>要求完成组数</td><td></td>  </tr>
-<tr><td>8</td><td>term_credits</td><td>varchar</td><td>否</td><td>学期学分分布</td><td></td>  </tr>
+<tr><td>1</td><td>group_num</td><td>int2</td><td>否</td><td>要求完成组数</td><td></td>  </tr>
+<tr><td>2</td><td>plan_id</td><td>int8</td><td>是</td><td>计划ID</td><td>std_plans</td>  </tr>
+<tr><td>3</td><td>course_type_id</td><td>int4</td><td>否</td><td>课程类别ID</td><td>xb_course_types</td>  </tr>
+<tr><td>4</td><td>course_num</td><td>int2</td><td>否</td><td>要求门数</td><td></td>  </tr>
+<tr><td>5</td><td>name</td><td>varchar</td><td>是</td><td>名称</td><td></td>  </tr>
+<tr><td>6</td><td>term_credits</td><td>varchar</td><td>是</td><td>学期学分分布</td><td></td>  </tr>
+<tr><td>7</td><td>credits</td><td>float4</td><td>否</td><td>要求学分</td><td></td>  </tr>
+<tr><td>8</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
 <tr><td>9</td><td>indexno</td><td>varchar</td><td>否</td><td>索引号</td><td></td>  </tr>
-<tr><td>10</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>10</td><td>parent_id</td><td>int8</td><td>是</td><td>上级组ID</td><td>std_course_groups</td>  </tr>
+<tr><td>11</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 </table>
 
  
@@ -284,12 +292,12 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>2</td><td>group_id</td><td>int8</td><td>否</td><td>课程组ID</td><td>std_course_groups</td>  </tr>
-<tr><td>3</td><td>course_id</td><td>int8</td><td>否</td><td>课程ID</td><td>courses</td>  </tr>
-<tr><td>4</td><td>terms</td><td>int4</td><td>是</td><td>开课学期</td><td></td>  </tr>
-<tr><td>5</td><td>compulsory</td><td>bool</td><td>否</td><td>是否必修</td><td></td>  </tr>
-<tr><td>6</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>1</td><td>compulsory</td><td>bool</td><td>否</td><td>是否必修</td><td></td>  </tr>
+<tr><td>2</td><td>terms</td><td>int4</td><td>是</td><td>开课学期</td><td></td>  </tr>
+<tr><td>3</td><td>group_id</td><td>int8</td><td>是</td><td>课程组ID</td><td>std_course_groups</td>  </tr>
+<tr><td>4</td><td>course_id</td><td>int8</td><td>否</td><td>课程ID</td><td>courses</td>  </tr>
+<tr><td>5</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>6</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 </table>
 
  
@@ -314,14 +322,16 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>2</td><td>std_id</td><td>int8</td><td>否</td><td>学生ID</td><td>students</td>  </tr>
-<tr><td>3</td><td>credits</td><td>float4</td><td>否</td><td>要求学分</td><td></td>  </tr>
-<tr><td>4</td><td>start_term</td><td>int2</td><td>否</td><td>起始学期</td><td></td>  </tr>
-<tr><td>5</td><td>end_term</td><td>int2</td><td>否</td><td>结束学期</td><td></td>  </tr>
-<tr><td>6</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
-<tr><td>7</td><td>begin_on</td><td>date</td><td>否</td><td>生效日期</td><td></td>  </tr>
-<tr><td>8</td><td>end_on</td><td>date</td><td>否</td><td>失效日期</td><td></td>  </tr>
+<tr><td>1</td><td>begin_on</td><td>date</td><td>否</td><td>生效日期</td><td></td>  </tr>
+<tr><td>2</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
+<tr><td>3</td><td>end_on</td><td>date</td><td>否</td><td>失效日期</td><td></td>  </tr>
+<tr><td>4</td><td>end_term</td><td>int2</td><td>否</td><td>结束学期</td><td></td>  </tr>
+<tr><td>5</td><td>state</td><td>int4</td><td>是</td><td>审核状态</td><td></td>  </tr>
+<tr><td>6</td><td>start_term</td><td>int2</td><td>否</td><td>起始学期</td><td></td>  </tr>
+<tr><td>7</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>8</td><td>credits</td><td>float4</td><td>否</td><td>要求学分</td><td></td>  </tr>
+<tr><td>9</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
+<tr><td>10</td><td>std_id</td><td>int8</td><td>否</td><td>学生ID</td><td>students</td>  </tr>
 </table>
 
  
