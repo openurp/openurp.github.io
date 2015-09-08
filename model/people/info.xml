@@ -2,10 +2,9 @@
 <report title="数据库设计说明">
   <system name="人员扩展信息" version="0.0.1"/>
   <db>
-    <dialect>org.beangle.data.jdbc.dialect.PostgreSQLDialect
-    </dialect>
-    <driver>org.postgresql.Driver</driver>
-    <url>jdbc:postgresql://localhost:5432/urp_sample</url>
+    <driver>postgresql</driver>
+    <serverName>localhost</serverName>
+    <databaseName>urp_sample</databaseName>
     <schema>ppl_info</schema>
     <user>postgres</user>
     <password>postgres</password>
