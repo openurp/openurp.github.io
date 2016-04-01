@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 学籍信息 数据表格一览
-description: "学籍信息数据表格一览"
+title: 学生信息 数据表格一览
+description: "学生信息数据表格一览"
 categories: [model-0.0.1]
 version: ["0.0.1"]
 ---

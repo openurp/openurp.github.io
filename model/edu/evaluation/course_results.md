@@ -34,14 +34,14 @@ version: ["0.0.1"]
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td>1</td><td>rank</td><td>int4</td><td>否</td><td>全校排名</td><td></td>  </tr>
 <tr><td>2</td><td>published</td><td>int4</td><td>是</td><td>是否发布</td><td></td>  </tr>
-<tr><td>3</td><td>staff_id</td><td>int8</td><td>否</td><td>教师ID</td><td>staffs</td>  </tr>
-<tr><td>4</td><td>questionnaire_id</td><td>int8</td><td>否</td><td>问卷ID</td><td>questionnaires</td>  </tr>
-<tr><td>5</td><td>all_tickets</td><td>int4</td><td>是</td><td>所有样本</td><td></td>  </tr>
-<tr><td>6</td><td>course_id</td><td>int8</td><td>否</td><td>课程ID</td><td>courses</td>  </tr>
-<tr><td>7</td><td>stat_at</td><td>timestamp</td><td>否</td><td>统计时间</td><td></td>  </tr>
-<tr><td>8</td><td>semester_id</td><td>int4</td><td>否</td><td>教学日历ID</td><td>semesters</td>  </tr>
-<tr><td>9</td><td>depart_rank</td><td>int4</td><td>否</td><td>院系排名</td><td></td>  </tr>
-<tr><td>10</td><td>valid_score</td><td>float8</td><td>否</td><td>有效总分</td><td></td>  </tr>
+<tr><td>3</td><td>questionnaire_id</td><td>int8</td><td>否</td><td>问卷ID</td><td>questionnaires</td>  </tr>
+<tr><td>4</td><td>all_tickets</td><td>int4</td><td>是</td><td>所有样本</td><td></td>  </tr>
+<tr><td>5</td><td>course_id</td><td>int8</td><td>否</td><td>课程ID</td><td>courses</td>  </tr>
+<tr><td>6</td><td>stat_at</td><td>timestamp</td><td>否</td><td>统计时间</td><td></td>  </tr>
+<tr><td>7</td><td>semester_id</td><td>int4</td><td>否</td><td>教学日历ID</td><td>semesters</td>  </tr>
+<tr><td>8</td><td>depart_rank</td><td>int4</td><td>否</td><td>院系排名</td><td></td>  </tr>
+<tr><td>9</td><td>valid_score</td><td>float8</td><td>否</td><td>有效总分</td><td></td>  </tr>
+<tr><td>10</td><td>teacher_id</td><td>int8</td><td>否</td><td>教师ID</td><td>teachers</td>  </tr>
 <tr><td>11</td><td>score</td><td>float4</td><td>否</td><td>总得分</td><td></td>  </tr>
 <tr><td>12</td><td>add_score</td><td>float8</td><td>否</td><td>附加题总分</td><td></td>  </tr>
 <tr><td>13</td><td>valid_tickets</td><td>int4</td><td>是</td><td>有效票数</td><td></td>  </tr>

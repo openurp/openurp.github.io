@@ -6,7 +6,7 @@ categories: [model-0.0.2]
 version: ["0.0.2"]
 ---
 {% include JB/setup %}
-数据库共计1个表，分别如下:
+数据库共计2个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>
@@ -18,7 +18,7 @@ version: ["0.0.2"]
   <tr>
     <td>1</td>
     <td><a href="info.html#people">people</a> 人员信息</td>
-    <td></td>
-    <td></td>
+    <td>2</td>
+    <td><a href="info.html#politicalstates">political_states</a> 政治面貌信息</td>
   </tr>
 </table>

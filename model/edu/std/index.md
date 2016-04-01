@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 学籍信息 
-description: "学籍信息"
+title: 学生信息 
+description: "学生信息"
 categories: [model-0.0.1]
 version: ["0.0.1"]
 ---

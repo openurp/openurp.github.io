@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report title="数据库设计说明">
-  <system name="教务信息" version="1.0.0"/>
+  <system name="成绩信息" version="1.0.0"/>
   <db>
     <driver>postgresql</driver>
     <serverName>localhost</serverName>
     <databaseName>urp_sample</databaseName>
-    <schema>edu_teach</schema>
+    <schema>edu_lesson</schema>
     <user>postgres</user>
     <password>postgres</password>
   </db>
@@ -18,12 +18,6 @@
 
   <modules>
     <module name="xb" title="校标" tables="xb_*"/>
-    <module name="core" title="核心部分" tables="adminclasses*,project*,majors*,major_journals*,direction*,program*,students*,student_journal*"/>
-    <module name="plan" title="培养计划" tables="major_plan*,major_course*,share_plan*,share_course*,std_plan*,std_course*">
-      <image name="major" title="专业培养计划" tables="major*"/>
-      <image name="share" title="公共课计划" tables="share*"/>
-      <image name="std_plan" title="个人计划" tables="std_*"/>
-    </module>
     <module name="lesson" title="教学任务" tables="lessons*,course_take*,lesson_limit*">
       <image name="lesson" title="教学任务" tables="lessons*"/>
       <image name="course_take" title="学生修读课程" tables="course_take*,lesson_limit*"/>
@@ -33,9 +27,6 @@
     </module>
     <module name="exam" title="考务安排" tables="exam_activities*,exam_rooms,exam_monitors,exam_takes">
       <image name="exam_activities" title="考务安排" tables="exam_activities*,exam_rooms,exam_monitors"/>
-    </module>
-    <module name="exam" title="学生成绩" tables="exam_grades,course_grades,ga_grades">
-      <image name="grades" title="学生成绩" tables="exam_grades,course_grades,ga_grades"/>
     </module>
     <module name="misc" title="其他" tables="*"/>
   </modules>

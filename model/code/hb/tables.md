@@ -6,7 +6,7 @@ categories: [model-0.0.2]
 version: ["0.0.2"]
 ---
 {% include JB/setup %}
-数据库共计30个表，分别如下:
+数据库共计32个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>
@@ -17,92 +17,98 @@ version: ["0.0.2"]
   </tr>
   <tr>
     <td>1</td>
-    <td><a href="hb.html#admissiontypes">admission_types</a> 录取类别</td>
-    <td>16</td>
-    <td><a href="hb.html#pressgrades">press_grades</a> 出版社级别</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td><a href="hb.html#bloodtypes">blood_types</a> 血型</td>
+    <td><a href="hb.html#activitytypes">activity_types</a> 活动类型</td>
     <td>17</td>
     <td><a href="hb.html#presses">presses</a> 出版社</td>
   </tr>
   <tr>
-    <td>3</td>
-    <td><a href="hb.html#classroomtypes">classroom_types</a> 教室类型</td>
+    <td>2</td>
+    <td><a href="hb.html#admissiontypes">admission_types</a> 录取类别</td>
     <td>18</td>
     <td><a href="hb.html#publicationgrades">publication_grades</a> 刊物级别</td>
   </tr>
   <tr>
-    <td>4</td>
-    <td><a href="hb.html#classroomusages">classroom_usages</a> 教室占用情况</td>
+    <td>3</td>
+    <td><a href="hb.html#bloodtypes">blood_types</a> 血型</td>
     <td>19</td>
     <td><a href="hb.html#publications">publications</a> 刊物</td>
   </tr>
   <tr>
-    <td>5</td>
-    <td><a href="hb.html#difficultycauses">difficulty_causes</a> 困难原因</td>
+    <td>4</td>
+    <td><a href="hb.html#classroomtypes">classroom_types</a> 教室类型</td>
     <td>20</td>
     <td><a href="hb.html#railwaystations">railway_stations</a> 火车站</td>
   </tr>
   <tr>
+    <td>5</td>
+    <td><a href="hb.html#difficultycauses">difficulty_causes</a> 困难原因</td>
+    <td>21</td>
+    <td><a href="hb.html#roomtypes">room_types</a> 房间用途类型</td>
+  </tr>
+  <tr>
     <td>6</td>
     <td><a href="hb.html#difficultydegrees">difficulty_degrees</a> 困难程度</td>
-    <td>21</td>
-    <td><a href="hb.html#staffsourcetypes">staff_source_types</a> 教职工来源</td>
+    <td>22</td>
+    <td><a href="hb.html#socialunittypes">social_unit_types</a> 社会单位性质</td>
   </tr>
   <tr>
     <td>7</td>
     <td><a href="hb.html#disciplinecatalogs">discipline_catalogs</a> 学科目录</td>
-    <td>22</td>
-    <td><a href="hb.html#stafftypes">staff_types</a> 教职工类别</td>
+    <td>23</td>
+    <td><a href="hb.html#staffsourcetypes">staff_source_types</a> 教职工来源</td>
   </tr>
   <tr>
     <td>8</td>
     <td><a href="hb.html#disciplines">disciplines</a> 学科</td>
-    <td>23</td>
-    <td><a href="hb.html#studentalterreasons">student_alter_reasons</a> 学籍异动原因</td>
+    <td>24</td>
+    <td><a href="hb.html#stafftypes">staff_types</a> 教职工类别</td>
   </tr>
   <tr>
     <td>9</td>
     <td><a href="hb.html#educationmodes">education_modes</a> 培养方式</td>
-    <td>24</td>
-    <td><a href="hb.html#studentaltertypes">student_alter_types</a> 学籍异动类别</td>
+    <td>25</td>
+    <td><a href="hb.html#studentalterreasons">student_alter_reasons</a> 学籍异动原因</td>
   </tr>
   <tr>
     <td>10</td>
     <td><a href="hb.html#enrollmodes">enroll_modes</a> 入学方式</td>
-    <td>25</td>
-    <td><a href="hb.html#studentpunishmenttypes">student_punishment_types</a> 学生处分类型</td>
+    <td>26</td>
+    <td><a href="hb.html#studentaltertypes">student_alter_types</a> 学籍异动类别</td>
   </tr>
   <tr>
     <td>11</td>
     <td><a href="hb.html#familycategories">family_categories</a> 家庭类别</td>
-    <td>26</td>
-    <td><a href="hb.html#studentstatuses">student_statuses</a> 学生学籍状态</td>
+    <td>27</td>
+    <td><a href="hb.html#studentpunishmenttypes">student_punishment_types</a> 学生处分类型</td>
   </tr>
   <tr>
     <td>12</td>
     <td><a href="hb.html#householdtypes">household_types</a> 户口类别</td>
-    <td>27</td>
-    <td><a href="hb.html#tutortypes">tutor_types</a> 导师类别</td>
+    <td>28</td>
+    <td><a href="hb.html#studentstatuses">student_statuses</a> 学生学籍状态</td>
   </tr>
   <tr>
     <td>13</td>
     <td><a href="hb.html#hsklevels">hsk_levels</a> 汉语水平考试等级</td>
-    <td>28</td>
-    <td><a href="hb.html#ueesubjecttypes">uee_subject_types</a> 高考科目</td>
+    <td>29</td>
+    <td><a href="hb.html#tutortypes">tutor_types</a> 导师类别</td>
   </tr>
   <tr>
     <td>14</td>
     <td><a href="hb.html#institutions">institutions</a> 科研机构</td>
-    <td>29</td>
-    <td><a href="hb.html#visatypes">visa_types</a> 中国签证类别</td>
+    <td>30</td>
+    <td><a href="hb.html#ueesubjecttypes">uee_subject_types</a> 高考科目</td>
   </tr>
   <tr>
     <td>15</td>
     <td><a href="hb.html#passporttypes">passport_types</a> 护照类别</td>
-    <td>30</td>
+    <td>31</td>
+    <td><a href="hb.html#visatypes">visa_types</a> 中国签证类别</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td><a href="hb.html#pressgrades">press_grades</a> 出版社级别</td>
+    <td>32</td>
     <td><a href="hb.html#workstatuses">work_statuses</a> 在职状态</td>
   </tr>
 </table>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report title="数据库设计说明">
-  <system name="人员扩展信息" version="0.0.1"/>
+  <system name="成绩信息" version="1.0.0"/>
   <db>
     <driver>postgresql</driver>
     <serverName>localhost</serverName>
     <databaseName>urp_sample</databaseName>
-    <schema>ppl_info</schema>
+    <schema>edu_grade</schema>
     <user>postgres</user>
     <password>postgres</password>
   </db>
@@ -17,9 +17,10 @@
   </pages>
 
   <modules>
-    <module name="gb" title="国标" tables="gb_*"/>
-    <module name="hb" title="行标" tables="hb_*"/>
     <module name="xb" title="校标" tables="xb_*"/>
-    <module name="info" title="全部" tables="*"/>
+    <module name="grade" title="学生成绩" tables="exam_grade*,course_grade*,ga_grade*,grade_rate*,std_gpas,std_semester_gpas,std_year_gpas">
+      <image name="grades" title="学生成绩" tables="exam_grades,course_grades,ga_grades"/>
+    </module>
+    <module name="misc" title="其他" tables="*"/>
   </modules>
 </report>

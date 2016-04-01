@@ -33,12 +33,12 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td>1</td><td>evaluate_at</td><td>timestamp</td><td>否</td><td>评教时间</td><td></td>  </tr>
-<tr><td>2</td><td>staff_id</td><td>int8</td><td>是</td><td>教师ID</td><td>staffs</td>  </tr>
-<tr><td>3</td><td>stat_type</td><td>int4</td><td>否</td><td>1正常 2 无效 3异常(互斥)</td><td></td>  </tr>
-<tr><td>4</td><td>questionnaire_id</td><td>int8</td><td>否</td><td>问卷信息ID</td><td>questionnaires</td>  </tr>
-<tr><td>5</td><td>department_id</td><td>int4</td><td>否</td><td>开课院系ID</td><td>departments</td>  </tr>
-<tr><td>6</td><td>lesson_id</td><td>int8</td><td>否</td><td>教学任务ID</td><td>lessons</td>  </tr>
-<tr><td>7</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>2</td><td>stat_type</td><td>int4</td><td>否</td><td>1正常 2 无效 3异常(互斥)</td><td></td>  </tr>
+<tr><td>3</td><td>questionnaire_id</td><td>int8</td><td>否</td><td>问卷信息ID</td><td>questionnaires</td>  </tr>
+<tr><td>4</td><td>department_id</td><td>int4</td><td>否</td><td>开课院系ID</td><td>departments</td>  </tr>
+<tr><td>5</td><td>lesson_id</td><td>int8</td><td>否</td><td>教学任务ID</td><td>lessons</td>  </tr>
+<tr><td>6</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>7</td><td>teacher_id</td><td>int8</td><td>是</td><td>教师ID</td><td>teachers</td>  </tr>
 <tr><td>8</td><td>student_id</td><td>int8</td><td>否</td><td>学生ID</td><td>students</td>  </tr>
 <tr><td>9</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 </table>

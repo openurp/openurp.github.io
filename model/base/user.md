@@ -35,15 +35,17 @@ version: ["0.0.2"]
 <tr><td>1</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
 <tr><td>2</td><td>begin_on</td><td>date</td><td>是</td><td>生效日期</td><td></td>  </tr>
 <tr><td>3</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
-<tr><td>4</td><td>short_name</td><td>varchar</td><td>是</td><td>简称</td><td></td>  </tr>
-<tr><td>5</td><td>en_name</td><td>varchar</td><td>是</td><td>英文名称</td><td></td>  </tr>
-<tr><td>6</td><td>category_id</td><td>int4</td><td>是</td><td>部门分类ID</td><td>xb_department_categories</td>  </tr>
-<tr><td>7</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
-<tr><td>8</td><td>code</td><td>varchar</td><td>否</td><td>代码</td><td></td>  </tr>
-<tr><td>9</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
-<tr><td>10</td><td>indexno</td><td>varchar</td><td>否</td><td>顺序号</td><td></td>  </tr>
-<tr><td>11</td><td>parent_id</td><td>int4</td><td>是</td><td>上级单位ID</td><td>departments</td>  </tr>
-<tr><td>12</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td>4</td><td>teaching</td><td>bool</td><td>否</td><td>是否教学部门</td><td></td>  </tr>
+<tr><td>5</td><td>short_name</td><td>varchar</td><td>是</td><td>简称</td><td></td>  </tr>
+<tr><td>6</td><td>en_name</td><td>varchar</td><td>是</td><td>英文名称</td><td></td>  </tr>
+<tr><td>7</td><td>category_id</td><td>int4</td><td>是</td><td>部门分类ID</td><td>xb_department_categories</td>  </tr>
+<tr><td>8</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
+<tr><td>9</td><td>code</td><td>varchar</td><td>否</td><td>代码</td><td></td>  </tr>
+<tr><td>10</td><td>research</td><td>bool</td><td>否</td><td>是否科研部门</td><td></td>  </tr>
+<tr><td>11</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
+<tr><td>12</td><td>indexno</td><td>varchar</td><td>否</td><td>顺序号</td><td></td>  </tr>
+<tr><td>13</td><td>parent_id</td><td>int4</td><td>是</td><td>上级单位ID</td><td>departments</td>  </tr>
+<tr><td>14</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 </table>
 
  

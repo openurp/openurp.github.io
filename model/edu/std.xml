@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report title="数据库设计说明">
-  <system name="学籍信息" version="0.0.1"/>
+  <system name="学生信息" version="0.0.1"/>
   <db>
     <driver>postgresql</driver>
     <serverName>localhost</serverName>

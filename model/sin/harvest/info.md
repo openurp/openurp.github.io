@@ -87,7 +87,7 @@ version: ["0.0.2"]
 <tr><td>4</td><td>sign</td><td>int4</td><td>否</td><td>排名</td><td></td>  </tr>
 <tr><td>5</td><td>department_id</td><td>int4</td><td>是</td><td>部门ID</td><td>departments</td>  </tr>
 <tr><td>6</td><td>name</td><td>varchar</td><td>是</td><td>姓名</td><td></td>  </tr>
-<tr><td>7</td><td>researcher_id</td><td>int4</td><td>是</td><td>研究员ID</td><td>researchers</td>  </tr>
+<tr><td>7</td><td>researcher_id</td><td>int8</td><td>是</td><td>研究员ID</td><td>researchers</td>  </tr>
 <tr><td>8</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 </table>
 
@@ -121,7 +121,7 @@ version: ["0.0.2"]
 <tr><td>6</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
 <tr><td>7</td><td>publish_date</td><td>date</td><td>是</td><td>发表时间</td><td></td>  </tr>
 <tr><td>8</td><td>translated</td><td>bool</td><td>否</td><td>是否翻译</td><td></td>  </tr>
-<tr><td>9</td><td>researcher_id</td><td>int4</td><td>否</td><td>研究员ID</td><td>researchers</td>  </tr>
+<tr><td>9</td><td>researcher_id</td><td>int8</td><td>否</td><td>研究员ID</td><td>researchers</td>  </tr>
 <tr><td>10</td><td>harvest_type_id</td><td>int4</td><td>是</td><td>成果类型ID</td><td>harvest_types</td>  </tr>
 <tr><td>11</td><td>isbn</td><td>varchar</td><td>是</td><td>ISBN</td><td></td>  </tr>
 <tr><td>12</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
@@ -211,8 +211,8 @@ version: ["0.0.2"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>staff_id</td><td>int8</td><td>否</td><td>人员ID</td><td>staffs</td>  </tr>
-<tr><td>2</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
+<tr><td>1</td><td>person_id</td><td>int8</td><td>否</td><td>人员ID</td><td>people</td>  </tr>
+<tr><td>2</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 </table>
 
  
@@ -244,7 +244,7 @@ version: ["0.0.2"]
 <tr><td>5</td><td>department_id</td><td>int4</td><td>否</td><td>部门ID</td><td>departments</td>  </tr>
 <tr><td>6</td><td>name</td><td>varchar</td><td>是</td><td>名称</td><td></td>  </tr>
 <tr><td>7</td><td>published_situation_id</td><td>int4</td><td>否</td><td>发表情况ID</td><td>published_situations</td>  </tr>
-<tr><td>8</td><td>researcher_id</td><td>int4</td><td>否</td><td>研究员ID</td><td>researchers</td>  </tr>
+<tr><td>8</td><td>researcher_id</td><td>int8</td><td>否</td><td>研究员ID</td><td>researchers</td>  </tr>
 <tr><td>9</td><td>id</td><td>int4</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 </table>
 

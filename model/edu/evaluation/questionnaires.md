@@ -33,9 +33,8 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td>1</td><td>name</td><td>varchar</td><td>否</td><td>名称</td><td></td>  </tr>
-<tr><td>2</td><td>depart_id</td><td>int4</td><td>否</td><td>创建部门ID</td><td>departments</td>  </tr>
-<tr><td>3</td><td>oppo_val</td><td>float4</td><td>否</td><td>倾向性权重 必须在0和1之间</td><td></td>  </tr>
-<tr><td>4</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td>2</td><td>oppo_val</td><td>float4</td><td>否</td><td>倾向性权重 必须在0和1之间</td><td></td>  </tr>
+<tr><td>3</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 </table>
 
  
@@ -142,6 +141,25 @@ version: ["0.0.1"]
 <tr><td>questionnaires_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
 </table>
 
+### 表格 questionnaires_questions
+
+  * 表格说明
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
+<tr><td>questionnaires_questions</td><td></td><td>评教问卷-相关联的问题</td>  </tr>
+</table>
+
+  * 表格中的列
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
+<tr><td>1</td><td>question_id</td><td>int8</td><td>否</td><td>评教问题ID</td><td>questions</td>  </tr>
+<tr><td>2</td><td>questionnaire_id</td><td>int8</td><td>否</td><td>评教问卷ID</td><td>questionnaires</td>  </tr>
+</table>
+
+ 
+
 ### 表格 questions
 
   * 表格说明
@@ -166,9 +184,8 @@ version: ["0.0.1"]
 <tr><td>9</td><td>remark</td><td>varchar</td><td>是</td><td>注释</td><td></td>  </tr>
 <tr><td>10</td><td>score</td><td>float4</td><td>否</td><td>分值</td><td></td>  </tr>
 <tr><td>11</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
-<tr><td>12</td><td>option_group_id</td><td>int8</td><td>否</td><td>选项组ID</td><td>option_groups</td>  </tr>
+<tr><td>12</td><td>option_group_id</td><td>int8</td><td>是</td><td>选项组ID</td><td>option_groups</td>  </tr>
 <tr><td>13</td><td>question_type_id</td><td>int8</td><td>否</td><td>问题类型ID</td><td>question_types</td>  </tr>
-<tr><td>14</td><td>questionnaire_id</td><td>int8</td><td>是</td><td></td><td>questionnaires</td>  </tr>
 </table>
 
  

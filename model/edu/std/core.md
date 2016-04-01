@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 学籍信息 核心部分
-description: "学籍信息核心部分"
+title: 学生信息 核心部分
+description: "学生信息核心部分"
 categories: [model-0.0.1]
 version: ["0.0.1"]
 ---

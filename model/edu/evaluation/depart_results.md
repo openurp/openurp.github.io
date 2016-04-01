@@ -67,12 +67,12 @@ version: ["0.0.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>staff_id</td><td>int8</td><td>否</td><td>被评教师ID</td><td>staffs</td>  </tr>
-<tr><td>2</td><td>update_at</td><td>timestamp</td><td>否</td><td>评测日期</td><td></td>  </tr>
-<tr><td>3</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
-<tr><td>4</td><td>user_name</td><td>varchar</td><td>否</td><td>评测人</td><td></td>  </tr>
-<tr><td>5</td><td>course_id</td><td>int8</td><td>否</td><td>被评课程ID</td><td>courses</td>  </tr>
-<tr><td>6</td><td>semester_id</td><td>int4</td><td>否</td><td>学年学期ID</td><td>semesters</td>  </tr>
+<tr><td>1</td><td>update_at</td><td>timestamp</td><td>否</td><td>评测日期</td><td></td>  </tr>
+<tr><td>2</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
+<tr><td>3</td><td>user_name</td><td>varchar</td><td>否</td><td>评测人</td><td></td>  </tr>
+<tr><td>4</td><td>course_id</td><td>int8</td><td>否</td><td>被评课程ID</td><td>courses</td>  </tr>
+<tr><td>5</td><td>semester_id</td><td>int4</td><td>否</td><td>学年学期ID</td><td>semesters</td>  </tr>
+<tr><td>6</td><td>teacher_id</td><td>int8</td><td>否</td><td>被评教师ID</td><td>teachers</td>  </tr>
 <tr><td>7</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 <tr><td>8</td><td>score</td><td>float4</td><td>否</td><td>得分</td><td></td>  </tr>
 </table>
