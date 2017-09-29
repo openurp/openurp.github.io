@@ -2,10 +2,8 @@
 layout: page
 title: 自增ID生成策略
 header: 自增ID生成策略
-group: navigation
 ---
 {% include JB/setup %}
-
 
 OpenURP中在数据库层面实现了基于表的自增生成策略，以Oracle数据库作为例子，首先创建一个table_sequences的表。
 
