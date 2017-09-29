@@ -28,14 +28,14 @@ version: ["0.0.2"]
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td>1</td><td>former_name</td><td>varchar</td><td>是</td><td>曾用名</td><td></td>  </tr>
 <tr><td>2</td><td>religion_id</td><td>int4</td><td>是</td><td>宗教信仰ID</td><td>religions</td>  </tr>
-<tr><td>3</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
+<tr><td>3</td><td>updated_at</td><td>timestamp</td><td>否</td><td>更新时间</td><td></td>  </tr>
 <tr><td>4</td><td>home_town</td><td>varchar</td><td>是</td><td>籍贯</td><td></td>  </tr>
-<tr><td>5</td><td>birthplace_id</td><td>int4</td><td>是</td><td>出生地ID</td><td>divisions</td>  </tr>
-<tr><td>6</td><td>birthday</td><td>date</td><td>是</td><td>出生日期</td><td></td>  </tr>
+<tr><td>5</td><td>birthplace</td><td>varchar</td><td>是</td><td>出生地</td><td></td>  </tr>
+<tr><td>6</td><td>birthday</td><td>date</td><td>否</td><td>出生日期</td><td></td>  </tr>
 <tr><td>7</td><td>country_id</td><td>int4</td><td>是</td><td>国籍/地区ID</td><td>countries</td>  </tr>
 <tr><td>8</td><td>id_type_id</td><td>int4</td><td>否</td><td>身份证件类型ID</td><td>id_types</td>  </tr>
 <tr><td>9</td><td>given_name</td><td>varchar</td><td>是</td><td>名</td><td></td>  </tr>
-<tr><td>10</td><td>formated_name</td><td>varchar</td><td>是</td><td>姓名</td><td></td>  </tr>
+<tr><td>10</td><td>formated_name</td><td>varchar</td><td>否</td><td>姓名</td><td></td>  </tr>
 <tr><td>11</td><td>family_name</td><td>varchar</td><td>是</td><td>姓</td><td></td>  </tr>
 <tr><td>12</td><td>middle_name</td><td>varchar</td><td>是</td><td>中间名</td><td></td>  </tr>
 <tr><td>13</td><td>code</td><td>varchar</td><td>否</td><td>证件号码</td><td></td>  </tr>
@@ -71,7 +71,7 @@ version: ["0.0.2"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td>1</td><td>begin_on</td><td>date</td><td>否</td><td>生效日期</td><td></td>  </tr>
-<tr><td>2</td><td>updated_at</td><td>timestamp</td><td>是</td><td>更新时间</td><td></td>  </tr>
+<tr><td>2</td><td>updated_at</td><td>timestamp</td><td>否</td><td>更新时间</td><td></td>  </tr>
 <tr><td>3</td><td>end_on</td><td>date</td><td>是</td><td>失效日期</td><td></td>  </tr>
 <tr><td>4</td><td>status_id</td><td>int4</td><td>否</td><td>政治面貌ID</td><td>political_statuses</td>  </tr>
 <tr><td>5</td><td>person_id</td><td>int8</td><td>否</td><td>人员ID</td><td>people</td>  </tr>

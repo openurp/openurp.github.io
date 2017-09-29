@@ -37,8 +37,8 @@ version: ["0.0.1"]
 <tr><td>3</td><td>questionnaire_id</td><td>int8</td><td>否</td><td>问卷信息ID</td><td>questionnaires</td>  </tr>
 <tr><td>4</td><td>department_id</td><td>int4</td><td>否</td><td>开课院系ID</td><td>departments</td>  </tr>
 <tr><td>5</td><td>lesson_id</td><td>int8</td><td>否</td><td>教学任务ID</td><td>lessons</td>  </tr>
-<tr><td>6</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
-<tr><td>7</td><td>teacher_id</td><td>int8</td><td>是</td><td>教师ID</td><td>teachers</td>  </tr>
+<tr><td>6</td><td>remark</td><td>varchar</td><td>否</td><td>备注</td><td></td>  </tr>
+<tr><td>7</td><td>teacher_id</td><td>int8</td><td>否</td><td>教师ID</td><td>teachers</td>  </tr>
 <tr><td>8</td><td>student_id</td><td>int8</td><td>否</td><td>学生ID</td><td>students</td>  </tr>
 <tr><td>9</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 </table>
@@ -69,9 +69,8 @@ version: ["0.0.1"]
 <tr><td>2</td><td>question_id</td><td>int8</td><td>否</td><td>问题ID</td><td>questions</td>  </tr>
 <tr><td>3</td><td>question_type_id</td><td>int8</td><td>否</td><td>问题类别ID</td><td>question_types</td>  </tr>
 <tr><td>4</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>5</td><td>option_id</td><td>int8</td><td>是</td><td>问题选项ID</td><td>options</td>  </tr>
+<tr><td>5</td><td>option_id</td><td>int8</td><td>否</td><td>问题选项ID</td><td>options</td>  </tr>
 <tr><td>6</td><td>score</td><td>float4</td><td>否</td><td>得分</td><td></td>  </tr>
-<tr><td>7</td><td>evaluate_result_id</td><td>int8</td><td>是</td><td></td><td>evaluate_results</td>  </tr>
 </table>
 
  

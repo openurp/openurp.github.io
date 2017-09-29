@@ -29,11 +29,11 @@ group: navigation
 * [培养方案Program](/model/edu/program/index.html)
 * [课程安排Lesson](/model/edu/lesson/index.html)
 * [成绩信息Grade](/model/edu/grade/index.html)
-* [学生信息Stdinfo](/model/edu/std/index.html)
+* [学生信息Student](/model/edu/student/index.html)
 * [课程评教Evaluation](/model/edu/evaluation/index.html)
 * [教材信息Textbook](/model/edu/textbook/index.html)
 * [评奖评优Award](/model/edu/award/index.html)
-* [校外考试Otherexam](/model/edu/otherexam/index.html)
+* [校外考试Extern](/model/edu/extern/index.html)
 * [工作量Workload](/model/edu/workload/index.html)
 
 ##### 5.人事相关

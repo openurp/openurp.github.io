@@ -5,7 +5,7 @@
     <driver>postgresql</driver>
     <serverName>localhost</serverName>
     <databaseName>urp_sample</databaseName>
-    <schema>edu_otherexam</schema>
+    <schema>edu_extern</schema>
     <user>postgres</user>
     <password>postgres</password>
   </db>

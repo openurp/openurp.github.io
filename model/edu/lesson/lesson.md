@@ -25,13 +25,13 @@ version: ["1.0.0"]
 
 
 
-### 表格 course_takes
+### 表格 course_takers
 
   * 表格说明
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
-<tr><td>course_takes</td><td>id</td><td>学生修读课程信息</td>  </tr>
+<tr><td>course_takers</td><td>id</td><td>学生修读课程信息</td>  </tr>
 </table>
 
   * 表格中的列
@@ -46,9 +46,8 @@ version: ["1.0.0"]
 <tr><td>6</td><td>limit_group_id</td><td>int8</td><td>是</td><td>授课对象组ID</td><td>lesson_limit_groups</td>  </tr>
 <tr><td>7</td><td>lesson_id</td><td>int8</td><td>否</td><td>教学任务ID</td><td>lessons</td>  </tr>
 <tr><td>8</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
-<tr><td>9</td><td>turn</td><td>int4</td><td>是</td><td>选课轮次</td><td></td>  </tr>
-<tr><td>10</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-<tr><td>11</td><td>std_id</td><td>int8</td><td>否</td><td>学生ID</td><td>students</td>  </tr>
+<tr><td>9</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
+<tr><td>10</td><td>std_id</td><td>int8</td><td>否</td><td>学生ID</td><td>students</td>  </tr>
 </table>
 
  
@@ -57,7 +56,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>course_takes_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
+<tr><td>course_takers_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
 </table>
 
 ### 表格 lesson_limit_groups
@@ -132,31 +131,31 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>campus_id</td><td>int4</td><td>是</td><td>开课校区ID</td><td>campuses</td>  </tr>
-<tr><td>2</td><td>female_weight</td><td>int4</td><td>否</td><td>女生比重</td><td></td>  </tr>
-<tr><td>3</td><td>cur_male_count</td><td>int4</td><td>否</td><td>当前男生人数</td><td></td>  </tr>
-<tr><td>4</td><td>cur_female_count</td><td>int4</td><td>否</td><td>当前女生人数</td><td></td>  </tr>
-<tr><td>5</td><td>male_weight</td><td>int4</td><td>否</td><td>男生比重</td><td></td>  </tr>
-<tr><td>6</td><td>std_count</td><td>int4</td><td>否</td><td>学生人数</td><td></td>  </tr>
-<tr><td>7</td><td>limit_count</td><td>int4</td><td>否</td><td>人数上限</td><td></td>  </tr>
-<tr><td>8</td><td>name</td><td>varchar</td><td>是</td><td>教学班名称</td><td></td>  </tr>
-<tr><td>9</td><td>depart_id</td><td>int4</td><td>是</td><td>学生所在部门ID</td><td>departments</td>  </tr>
-<tr><td>10</td><td>limit_locked</td><td>bool</td><td>否</td><td>是否锁定上限</td><td></td>  </tr>
-<tr><td>11</td><td>reserved_count</td><td>int4</td><td>否</td><td>保留人数</td><td></td>  </tr>
-<tr><td>12</td><td>exam_form_id</td><td>int4</td><td>是</td><td>考试形式ID</td><td>xb_exam_forms</td>  </tr>
-<tr><td>13</td><td>exam_mode_id</td><td>int4</td><td>是</td><td>考试方式ID</td><td>xb_exam_modes</td>  </tr>
+<tr><td>1</td><td>weekstate</td><td>int8</td><td>否</td><td>周状态</td><td></td>  </tr>
+<tr><td>2</td><td>room_type_id</td><td>int4</td><td>否</td><td>教室类型ID</td><td>classroom_types</td>  </tr>
+<tr><td>3</td><td>period</td><td>int4</td><td>否</td><td>已安排课时</td><td></td>  </tr>
+<tr><td>4</td><td>publish_state</td><td>int4</td><td>否</td><td>发布状态</td><td></td>  </tr>
+<tr><td>5</td><td>std_count</td><td>int4</td><td>否</td><td>学生人数</td><td></td>  </tr>
+<tr><td>6</td><td>limit_count</td><td>int4</td><td>否</td><td>人数上限</td><td></td>  </tr>
+<tr><td>7</td><td>class_name</td><td>varchar</td><td>否</td><td>教学班名称</td><td></td>  </tr>
+<tr><td>8</td><td>depart_id</td><td>int4</td><td>是</td><td>学生所在部门ID</td><td>departments</td>  </tr>
+<tr><td>9</td><td>limit_locked</td><td>bool</td><td>否</td><td>是否锁定上限</td><td></td>  </tr>
+<tr><td>10</td><td>reserved_count</td><td>int4</td><td>否</td><td>保留人数</td><td></td>  </tr>
+<tr><td>11</td><td>grade</td><td>varchar</td><td>是</td><td>年级</td><td></td>  </tr>
+<tr><td>12</td><td>gender_ratio</td><td>int2</td><td>否</td><td>男女比</td><td></td>  </tr>
+<tr><td>13</td><td>campus_id</td><td>int4</td><td>否</td><td>开课校区ID</td><td>campuses</td>  </tr>
 <tr><td>14</td><td>updated_at</td><td>timestamp</td><td>否</td><td>更新时间</td><td></td>  </tr>
-<tr><td>15</td><td>weekstate</td><td>int8</td><td>是</td><td>周状态</td><td></td>  </tr>
-<tr><td>16</td><td>classroom_type_id</td><td>int4</td><td>是</td><td>教室类型ID</td><td>classroom_types</td>  </tr>
-<tr><td>17</td><td>period</td><td>int4</td><td>否</td><td>已安排课时</td><td></td>  </tr>
-<tr><td>18</td><td>publish_state</td><td>int4</td><td>否</td><td>发布状态</td><td></td>  </tr>
-<tr><td>19</td><td>course_type_id</td><td>int4</td><td>否</td><td>课程类别ID</td><td>xb_course_types</td>  </tr>
-<tr><td>20</td><td>state</td><td>int4</td><td>否</td><td>审核状态</td><td></td>  </tr>
-<tr><td>21</td><td>lang_type_id</td><td>int4</td><td>否</td><td>授课语言类型ID</td><td>xb_teach_lang_types</td>  </tr>
-<tr><td>22</td><td>group_id</td><td>int8</td><td>是</td><td>所属课程组ID</td><td>lesson_groups</td>  </tr>
-<tr><td>23</td><td>course_id</td><td>int8</td><td>否</td><td>课程ID</td><td>courses</td>  </tr>
-<tr><td>24</td><td>no</td><td>varchar</td><td>是</td><td>课程序号</td><td></td>  </tr>
-<tr><td>25</td><td>semester_id</td><td>int4</td><td>否</td><td>教学日历ID</td><td>semesters</td>  </tr>
+<tr><td>15</td><td>course_type_id</td><td>int4</td><td>否</td><td>课程类别ID</td><td>xb_course_types</td>  </tr>
+<tr><td>16</td><td>state</td><td>int4</td><td>否</td><td>审核状态</td><td></td>  </tr>
+<tr><td>17</td><td>lang_type_id</td><td>int4</td><td>否</td><td>授课语言类型ID</td><td>xb_teach_lang_types</td>  </tr>
+<tr><td>18</td><td>group_id</td><td>int8</td><td>是</td><td>所属课程组ID</td><td>lesson_groups</td>  </tr>
+<tr><td>19</td><td>course_id</td><td>int8</td><td>否</td><td>课程ID</td><td>courses</td>  </tr>
+<tr><td>20</td><td>no</td><td>varchar</td><td>否</td><td>课程序号</td><td></td>  </tr>
+<tr><td>21</td><td>semester_id</td><td>int4</td><td>否</td><td>教学日历ID</td><td>semesters</td>  </tr>
+<tr><td>22</td><td>exam_on</td><td>date</td><td>是</td><td>考试日期</td><td></td>  </tr>
+<tr><td>23</td><td>exam_end_at</td><td>int2</td><td>否</td><td>考试结束时间</td><td></td>  </tr>
+<tr><td>24</td><td>exam_begin_at</td><td>int2</td><td>否</td><td>考试开始时间</td><td></td>  </tr>
+<tr><td>25</td><td>exam_mode_id</td><td>int4</td><td>否</td><td>考核方式ID</td><td>xb_exam_modes</td>  </tr>
 <tr><td>26</td><td>project_id</td><td>int4</td><td>否</td><td>项目ID</td><td>projects</td>  </tr>
 <tr><td>27</td><td>remark</td><td>varchar</td><td>是</td><td>备注</td><td></td>  </tr>
 <tr><td>28</td><td>teach_depart_id</td><td>int4</td><td>否</td><td>开课院系ID</td><td>departments</td>  </tr>

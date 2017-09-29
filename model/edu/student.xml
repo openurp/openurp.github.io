@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report title="数据库设计说明">
+  <system name="学生信息" version="0.0.1"/>
+  <db>
+    <driver>postgresql</driver>
+    <serverName>localhost</serverName>
+    <databaseName>urp_sample</databaseName>
+    <schema>edu_student</schema>
+    <user>postgres</user>
+    <password>postgres</password>
+  </db>
+  <pages template="jekyll" extension=".md">
+    <page name="index" />
+    <page name="tables" />
+    <page name="images" />
+    <page name="module" iterable="true"/>
+  </pages>
+
+  <modules>
+    <module name="hb" title="行标" tables="hb_*"/>
+    <module name="xb" title="校标" tables="xb_*"/>
+    <module name="core" title="核心部分" tables="*"/>
+  </modules>
+</report>

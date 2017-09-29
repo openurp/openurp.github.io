@@ -36,10 +36,9 @@ version: ["1.0.0"]
 <tr><td>2</td><td>weekstate</td><td>int8</td><td>否</td><td>周状态</td><td></td>  </tr>
 <tr><td>3</td><td>end_at</td><td>int2</td><td>否</td><td>结束时间</td><td></td>  </tr>
 <tr><td>4</td><td>begin_at</td><td>int2</td><td>否</td><td>开始时间</td><td></td>  </tr>
-<tr><td>5</td><td>weekday</td><td>int4</td><td>否</td><td>周几</td><td></td>  </tr>
-<tr><td>6</td><td>start_on</td><td>date</td><td>否</td><td>开始日期</td><td></td>  </tr>
-<tr><td>7</td><td>remark</td><td>varchar</td><td>是</td><td>排课备注</td><td></td>  </tr>
-<tr><td>8</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
+<tr><td>5</td><td>start_on</td><td>date</td><td>否</td><td>开始日期</td><td></td>  </tr>
+<tr><td>6</td><td>remark</td><td>varchar</td><td>是</td><td>排课备注</td><td></td>  </tr>
+<tr><td>7</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 </table>
 
  
@@ -116,11 +115,11 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>semester_id</td><td>int4</td><td>否</td><td>学期ID</td><td>semesters</td>  </tr>
-<tr><td>2</td><td>lesson_size</td><td>int4</td><td>否</td><td>教学任务数目</td><td></td>  </tr>
+<tr><td>1</td><td>course_id</td><td>int8</td><td>是</td><td>课程ID</td><td>courses</td>  </tr>
+<tr><td>2</td><td>semester_id</td><td>int4</td><td>否</td><td>学期ID</td><td>semesters</td>  </tr>
 <tr><td>3</td><td>name</td><td>varchar</td><td>否</td><td>组名称</td><td></td>  </tr>
-<tr><td>4</td><td>teach_depart_id</td><td>int4</td><td>否</td><td>开课部门ID</td><td>departments</td>  </tr>
-<tr><td>5</td><td>project_id</td><td>int4</td><td>是</td><td>项目ID</td><td>projects</td>  </tr>
+<tr><td>4</td><td>teach_depart_id</td><td>int4</td><td>是</td><td>开课部门ID</td><td>departments</td>  </tr>
+<tr><td>5</td><td>project_id</td><td>int4</td><td>否</td><td>项目ID</td><td>projects</td>  </tr>
 <tr><td>6</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
 </table>
 

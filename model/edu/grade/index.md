@@ -14,6 +14,5 @@ version: ["1.0.0"]
   * 1.2 [模块关系图](images.html)
 
 ##### 2. 具体模块明细
-* [2.1 校标](xb.html)
-* [2.2 学生成绩](grade.html)
-* [2.3 其他](misc.html)
+* [2.1 学生成绩](grade.html)
+* [2.2 其他](misc.html)
