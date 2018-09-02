@@ -24,7 +24,7 @@ version: ["1.0.0"]
 各个服务组件的GAV(groupId:artifactId:version)是：
 
 * cas      org.openurp.platform:openurp-platform-casapp:0.2.0
-* portal   org.openurp.portal:openurp-portal-webapp:0.1.0
+* portal   org.openurp.portal:openurp-portal-webapp:0.0.1
 * static   org.beangle.micdn:beangle-micdn-server:0.0.2
 * ws       org.openurp.platform:openurp-platform-ws:0.2.0
 * adminapp org.openurp.platform:openurp-platform-adminapp:0.2.0
@@ -59,7 +59,7 @@ version: ["1.0.0"]
 
   <Webapps>
     <Webapp name="platform-cas"  gav="org.openurp.platform:openurp-platform-casapp:0.2.0" />
-    <Webapp name="platform-portal"  gav="org.openurp.portal:openurp-portal-webapp:0.1.0" />
+    <Webapp name="platform-portal"  gav="org.openurp.portal:openurp-portal-webapp:0.0.1" />
     <Webapp name="platform-ws"  gav="org.openurp.platform:openurp-platform-ws:0.2.0" />
     <Webapp name="platform-adminapp"  gav="org.openurp.platform:openurp-platform-adminapp:0.2.0" />
     <Webapp name="platform-userapp"  gav="org.openurp.platform:openurp-platform-userapp:0.2.0" />
@@ -160,7 +160,7 @@ version: ["1.0.0"]
     [openurp@centos7 ~]$ mkdir -p .openurp/platform/
     [openurp@centos7 ~]$ touch .openurp/platform/casapp.xml
 
-将以下内容复制到文件casapp.xml中.
+将以下内容复制到文件cas.xml中.
 {% highlight xml %}
 <?xml version="1.0"?>
 <app secret="openurp-platform-casapp">
