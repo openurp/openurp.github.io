@@ -150,6 +150,11 @@ version: ["1.0.0"]
 
     $ \q
 
+执行数据库schema初始化
+* [创建schema](/ddl/platform/0-schemas.sql)
+* [创建表格](/ddl/platform/1-tables.sql)
+* [创建约束](/ddl/platform/2-constraints.sql)
+* [注释](/ddl/platform/5-comments.sql)
 
 ### 4. 配置数据源
 
