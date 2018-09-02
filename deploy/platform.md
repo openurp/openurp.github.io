@@ -15,7 +15,7 @@ version: ["1.0.0"]
 1.1 平台组成
 
 * 统一身份认证cas(0.2.0)
-* 门户首页portal(0.0.1)
+* 门户首页portal(0.0.2)
 * 静态资源伺服static(0.0.2)
 * 平台服务ws(0.2.0)
 * 平台管理adminapp(0.2.0)
@@ -24,7 +24,7 @@ version: ["1.0.0"]
 各个服务组件的GAV(groupId:artifactId:version)是：
 
 * cas      org.openurp.platform:openurp-platform-casapp:0.2.0
-* portal   org.openurp.portal:openurp-portal-webapp:0.0.1
+* portal   org.openurp.portal:openurp-portal-webapp:0.0.2
 * static   org.beangle.micdn:beangle-micdn-server:0.0.2
 * ws       org.openurp.platform:openurp-platform-ws:0.2.0
 * adminapp org.openurp.platform:openurp-platform-adminapp:0.2.0
@@ -59,7 +59,7 @@ version: ["1.0.0"]
 
   <Webapps>
     <Webapp name="platform-cas"  gav="org.openurp.platform:openurp-platform-casapp:0.2.0" />
-    <Webapp name="platform-portal"  gav="org.openurp.portal:openurp-portal-webapp:0.0.1" />
+    <Webapp name="platform-portal"  gav="org.openurp.portal:openurp-portal-webapp:0.0.2" />
     <Webapp name="platform-ws"  gav="org.openurp.platform:openurp-platform-ws:0.2.0" />
     <Webapp name="platform-adminapp"  gav="org.openurp.platform:openurp-platform-adminapp:0.2.0" />
     <Webapp name="platform-userapp"  gav="org.openurp.platform:openurp-platform-userapp:0.2.0" />
