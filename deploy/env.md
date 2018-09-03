@@ -23,9 +23,9 @@ version: ["1.0.0"]
 
 用root运行命令进行配置
 
-    [root@centos7 ~]# yum -y install openjdk haproxy varnish redis wget unzip
+    [root@centos7 ~]# yum -y install openjdk haproxy redis wget unzip
     [root@centos7 ~]# systemctl disable firewalld
-    [root@centos7 ~]# systemctl enable haproxy varnish redis
+    [root@centos7 ~]# systemctl enable haproxy redis
 
 安装PostgreSQL 10
 
@@ -34,6 +34,13 @@ version: ["1.0.0"]
     [root@centos7 ~]# /usr/pgsql-10/bin/postgresql-10-setup initdb
     [root@centos7 ~]# systemctl start postgresql-10.service
     [root@centos7 ~]# systemctl enable postgresql-10.service
+
+安装Varnish 4
+
+    [root@centos7 ~]# yum install -y epel-release
+    [root@centos7 ~]# yum install -y varnish
+    [root@centos7 ~]# systemctl enable varnish
+    [root@centos7 ~]# systemctl start varnish
 
 1.2 配置环境
 

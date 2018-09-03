@@ -50,7 +50,7 @@ version: ["1.0.0"]
       <Server name="server1"  http="7080"  />
     </Farm>
 
-    <Farm name="cdn" engine="tomcat85">
+    <Farm name="static" engine="tomcat85">
       <JvmArgs opts="-noverify -Xmx500M -Xms500M -Djava.security.egd=file:/dev/./urandom  -Dbeangle.micdn.config=~/.openurp/static/cdn.xml"/>
       <Http acceptCount="100" maxThreads="200"  minSpareThreads="10"  compression="off" /> 
       <Server name="server1" http="8080"/>
@@ -172,7 +172,7 @@ version: ["1.0.0"]
   <resources>
     <datasource name="default">
       <serverName>localhost</serverName>
-      <databaseName>openurp</databaseName>
+      <databaseName>platform</databaseName>
       <driver>postgresql</driver>
       <user>openurp</user>
       <password>openurp</password>
@@ -200,7 +200,7 @@ version: ["1.0.0"]
   <resources>
     <datasource name="default">
       <serverName>localhost</serverName>
-      <databaseName>openurp</databaseName>
+      <databaseName>platform</databaseName>
       <driver>postgresql</driver>
       <user>openurp</user>
       <password>openurp</password>
@@ -220,7 +220,7 @@ version: ["1.0.0"]
   <resources>
     <datasource name="default">
       <serverName>localhost</serverName>
-      <databaseName>openurp</databaseName>
+      <databaseName>platform</databaseName>
       <driver>postgresql</driver>
       <user>openurp</user>
       <password>openurp</password>
@@ -240,7 +240,7 @@ version: ["1.0.0"]
   <resources>
     <datasource name="default">
       <serverName>localhost</serverName>
-      <databaseName>openurp</databaseName>
+      <databaseName>platform</databaseName>
       <driver>postgresql</driver>
       <user>openurp</user>
       <password>openurp</password>
@@ -260,7 +260,7 @@ version: ["1.0.0"]
   <resources>
     <datasource name="default">
       <serverName>localhost</serverName>
-      <databaseName>openurp</databaseName>
+      <databaseName>platform</databaseName>
       <driver>postgresql</driver>
       <user>openurp</user>
       <password>openurp</password>
