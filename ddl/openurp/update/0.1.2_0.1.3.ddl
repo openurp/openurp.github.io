@@ -1,0 +1,60 @@
+
+
+alter table edu_base.xb_book_award_types rename to book_award_types ; 
+alter table edu_base.xb_book_types rename to  book_types; 
+alter table edu_base.xb_course_ability_rates rename to course_ability_rates  ; 
+alter table edu_base.xb_course_categories rename to course_categories; 
+alter table edu_base.xb_course_hour_types rename to course_hour_types ; 
+alter table edu_base.xb_course_take_types rename to course_take_types; 
+alter table edu_base.xb_course_types rename to  course_types; 
+alter table edu_base.xb_edu_spans rename to edu_spans ; 
+alter table edu_base.xb_election_modes rename to election_modes; 
+alter table edu_base.xb_exam_modes rename to exam_modes; 
+alter table edu_base.xb_exam_statuses rename to exam_statuses; 
+alter table edu_base.xb_exam_types rename to exam_types; 
+alter table edu_base.xb_grade_types rename to grade_types; 
+alter table edu_base.xb_grading_modes rename to grading_modes; 
+alter table edu_base.xb_std_label_types rename to std_label_types; 
+alter table edu_base.xb_std_labels rename to std_labels ; 
+alter table edu_base.xb_std_types rename to  std_types; 
+alter table edu_base.xb_students_labels rename to  student_labels; 
+alter table edu_base.xb_teach_lang_types rename to  teach_lang_types; 
+alter table edu_base.xb_teacher_types rename to  teacher_types; 
+ 
+alter table base.xb_day_parts  rename to day_parts;
+alter table base.xb_department_categories  rename to department_categories ;
+alter table base.xb_room_usages  rename to room_usages;
+alter table base.xb_user_categories  rename to user_categories;
+alter table edu_award.xb_honor_categories  rename to honor_categories;
+alter table edu_award.xb_honor_levels  rename to honor_levels;
+alter table edu_award.xb_honor_types  rename to honor_types;
+alter table edu_award.xb_scholarship_categories  rename to scholarship_categories;
+alter table edu_award.xb_scholarship_levels  rename to scholarship_levels;
+alter table edu_award.xb_scholarship_types  rename to scholarship_types;
+alter table edu_award.xb_stipend_categories  rename to stipend_categories;
+alter table edu_award.xb_stipend_levels  rename to stipend_levels;
+alter table edu_award.xb_subsidy_categories  rename to subsidy_categories;
+alter table edu_award.xb_subsidy_levels  rename to subsidy_levels;
+alter table edu_extern.xb_exam_categories  rename to exam_categories;
+alter table edu_extern.xb_exam_subjects  rename to exam_subjects;
+alter table edu_lesson.xb_lesson_tags  rename to lesson_tags;
+alter table edu_student.xb_examinee_types  rename to examinee_types  ;
+alter table edu_student.xb_family_economic_states  rename to family_economic_states ;
+alter table edu_student.xb_std_award_types  rename to std_award_types;
+alter table edu_student.xb_std_punish_types  rename to std_punish_types;
+alter table edu_student.xb_uncheckin_reasons  rename to uncheckin_reasons;
+alter table edu_student.xb_unregister_reasons  rename to unregister_reasons;
+alter table fn_fee.xb_fee_types  rename to fee_types;
+alter table fn_fee.xb_pay_states  rename to pay_states;
+alter table fn_fee.xb_pay_types  rename to pay_types;
+alter table hr_base.xb_employ_types  rename to employ_types;
+alter table hr_base.xb_teacher_types  rename to teacher_types ;
+alter table hr_base.xb_tutor_types  rename to tutor_types;
+alter table hr_base.xb_work_states rename to work_states;
+
+alter table edu_base.courses add has_makeup bool;
+update edu_base.courses set has_makeup=true;
+alter table edu_base.courses alter column has_makeup set not null;
+alter table edu_base.course_hours rename column period to credit_hours;
+alter table edu_base.course_hours drop column week_hour;
+

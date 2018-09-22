@@ -163,7 +163,7 @@ version: ["1.0.0"]
 4.1 建立cas数据源
 
     [openurp@centos7 ~]$ mkdir -p .openurp/platform/
-    [openurp@centos7 ~]$ touch .openurp/platform/casapp.xml
+    [openurp@centos7 ~]$ touch .openurp/platform/cas.xml
 
 将以下内容复制到文件cas.xml中.
 {% highlight xml %}
