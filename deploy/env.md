@@ -23,9 +23,11 @@ version: ["1.0.0"]
 
 用root运行命令进行配置
 
-    [root@centos7 ~]# yum -y install openjdk haproxy redis wget unzip
+    [root@centos7 ~]# yum install -y epel-release
+    [root@centos7 ~]# yum -y install openjdk haproxy redis wget unzip varnish
     [root@centos7 ~]# systemctl disable firewalld
-    [root@centos7 ~]# systemctl enable haproxy redis
+    [root@centos7 ~]# systemctl enable haproxy redis varnish
+    [root@centos7 ~]# systemctl start haproxy redis varnish
 
 安装PostgreSQL 10
 
@@ -34,13 +36,6 @@ version: ["1.0.0"]
     [root@centos7 ~]# /usr/pgsql-10/bin/postgresql-10-setup initdb
     [root@centos7 ~]# systemctl start postgresql-10.service
     [root@centos7 ~]# systemctl enable postgresql-10.service
-
-安装Varnish 4
-
-    [root@centos7 ~]# yum install -y epel-release
-    [root@centos7 ~]# yum install -y varnish
-    [root@centos7 ~]# systemctl enable varnish
-    [root@centos7 ~]# systemctl start varnish
 
 1.2 配置环境
 
@@ -65,22 +60,22 @@ version: ["1.0.0"]
 
     [openurp@centos7 ~]$ wget http://beangle.github.io/sas/netinstall.sh
     [openurp@centos7 ~]$ chmod +x ./netinstall.sh
-    [openurp@centos7 ~]$ ./netinstall.sh
+    [openurp@centos7 ~]$ ./netinstall.sh 0.4.2
 
 
-之后在用户主目录会创建一个beangle-sas-server-0.3.2的目录。
+之后在用户主目录会创建一个beangle-sas-server-0.4.2的目录。
 
 2.2 配置sas
 
-创建beangle-sas-server-0.3.2/conf/server.xml，编辑该文件，按照以下内容。
+创建beangle-sas-server-0.4.2/conf/server.xml，编辑该文件，按照以下内容。
 
 {% highlight xml%}
 <?xml version='1.0' encoding='utf-8'?>
-<Sas version="0.3.2">
+<Sas version="0.4.2">
   <Repository remote="http://repo1.maven.org/maven2"/>
   <Engines>
-    <Engine name="tomcat85" type="tomcat" version="8.5.29" jspSupport="false">
-	  <Jar gav="org.postgresql:postgresql:42.2.2"/>
+    <Engine name="tomcat9" type="tomcat" version="9.0.13" jspSupport="false">
+</th><th>  <Jar gav="org.postgresql:postgresql:42.2.2"/>
     </Engine>
   </Engines>
 </Sas>
