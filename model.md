@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 数据模型<sup>0.0.7</sup>
+title: 数据模型<sup>0.4.0</sup>
 header: 数据模型
 group: navigation
 ---
@@ -25,16 +25,18 @@ group: navigation
 
 ##### 4. 教育教学
 
-* [基础信息Base](/model/edu/base/index.html)
-* [培养方案Program](/model/edu/program/index.html)
-* [课程安排Lesson](/model/edu/lesson/index.html)
-* [成绩信息Grade](/model/edu/grade/index.html)
-* [学生信息Student](/model/edu/student/index.html)
-* [课程评教Evaluation](/model/edu/evaluation/index.html)
-* [教材信息Textbook](/model/edu/textbook/index.html)
-* [评奖评优Award](/model/edu/award/index.html)
-* [校外考试Extern](/model/edu/extern/index.html)
-* [工作量Workload](/model/edu/workload/index.html)
+* [1. 基础信息 Base](/model/edu/base/index.html)
+* [2. 培养方案 Program](/model/edu/program/index.html)
+* [3. 课程信息 Curricula](/model/edu/curricula/index.html)
+* [4. 课程安排 Course](/model/edu/course/index.html)
+* [5. 成绩信息 Grade](/model/edu/grade/index.html)
+* [6. 学生信息 Student](/model/edu/student/index.html)
+* [7. 课程评教 Evaluation](/model/edu/evaluation/index.html)
+* [8. 教材信息 Textbook](/model/edu/textbook/index.html)
+* [9. 毕业信息 Graduation](/model/edu/graduation/index.html)
+* [10. 评奖评优 Award](/model/edu/award/index.html)
+* [11. 校外考试 Extern](/model/edu/extern/index.html)
+* [12. 工作量   Workload](/model/edu/workload/index.html)
 
 ##### 5.人事相关
 
