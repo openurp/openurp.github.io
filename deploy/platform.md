@@ -14,21 +14,21 @@ version: ["1.0.0"]
 
 1.1 平台组成
 
-* 统一身份认证cas(0.2.2)
+* 统一身份认证cas(0.2.19)
 * 门户首页portal(0.0.3)
-* 静态资源伺服static(0.0.2)
-* 平台服务ws(0.2.2)
-* 平台管理adminapp(0.2.2)
-* 个人中心userapp(0.2.2)
+* 静态资源伺服static(0.1.3)
+* 平台服务ws(0.2.19)
+* 平台管理adminapp(0.2.19)
+* 个人中心userapp(0.2.19)
 
 各个服务组件的GAV(groupId:artifactId:version)是：
 
-* cas      org.openurp.platform:openurp-platform-casapp:0.2.2
+* cas      org.openurp.platform:openurp-platform-casapp:0.2.19
 * portal   org.openurp.portal:openurp-portal-webapp:0.0.3
-* static   org.beangle.micdn:beangle-micdn-server:0.0.2
-* ws       org.openurp.platform:openurp-platform-ws:0.2.2
-* adminapp org.openurp.platform:openurp-platform-adminapp:0.2.2
-* userapp  org.openurp.platform:openurp-platform-userapp:0.2.2
+* static   org.beangle.micdn:beangle-micdn-server:0.1.3
+* ws       org.openurp.platform:openurp-platform-ws:0.2.19
+* adminapp org.openurp.platform:openurp-platform-adminapp:0.2.19
+* userapp  org.openurp.platform:openurp-platform-userapp:0.2.19
 
 各个服务组件的部署路径如下：
 * cas      /cas
@@ -40,7 +40,7 @@ version: ["1.0.0"]
 
 1.2 配置Sas环境
 
-修改beangle-sas-0.3.2/conf/server.xml文件在sas标签内部增加如下内容:
+修改beangle-sas-0.5.3/conf/server.xml文件在sas标签内部增加如下内容:
 
 {% highlight xml %}
   <Farms>
@@ -58,12 +58,12 @@ version: ["1.0.0"]
   </Farms>
 
   <Webapps>
-    <Webapp name="platform-cas"  gav="org.openurp.platform:openurp-platform-casapp:0.2.2" />
+    <Webapp name="platform-cas"  gav="org.openurp.platform:openurp-platform-casapp:0.2.19" />
     <Webapp name="platform-portal"  gav="org.openurp.portal:openurp-portal-webapp:0.0.3" />
-    <Webapp name="platform-ws"  gav="org.openurp.platform:openurp-platform-ws:0.2.2" />
-    <Webapp name="platform-adminapp"  gav="org.openurp.platform:openurp-platform-adminapp:0.2.2" />
-    <Webapp name="platform-userapp"  gav="org.openurp.platform:openurp-platform-userapp:0.2.2" />
-    <Webapp name="static" gav="org.beangle.micdn:beangle-micdn-server:0.0.2"/>
+    <Webapp name="platform-ws"  gav="org.openurp.platform:openurp-platform-ws:0.2.19" />
+    <Webapp name="platform-adminapp"  gav="org.openurp.platform:openurp-platform-adminapp:0.2.19" />
+    <Webapp name="platform-userapp"  gav="org.openurp.platform:openurp-platform-userapp:0.2.19" />
+    <Webapp name="static" gav="org.beangle.micdn:beangle-micdn-server:0.1.3"/>
   </Webapps>
 
   <Deployments>
@@ -97,7 +97,7 @@ version: ["1.0.0"]
     </url>
 
     <url prefix="/bui">
-       <s3jar gav="org.beangle.bundles:beangle-bundles-bui:0.0.4"/>
+       <s3jar gav="org.beangle.bundles:beangle-bundles-bui:0.1.4"/>
     </url>
 
     <url prefix="/pdfjs">
@@ -308,5 +308,5 @@ version: ["1.0.0"]
         balance roundrobin
         server static6081 127.0.0.1:6081 check
 
-这里使用了varnish作为静态资源加速器，varnish默认端口是6081,代理后端是8080端口，因此beangle-sas-server-0.3.2中的static端口才是8080。
+这里使用了varnish作为静态资源加速器，varnish默认端口是6081,代理后端是8080端口，因此beangle-sas-server-0.5.3中的static端口才是8080。
 
