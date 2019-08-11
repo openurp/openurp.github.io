@@ -3,7 +3,7 @@ layout: page
 title: 准备环境
 description: "准备环境"
 categories: [deploy]
-version: ["1.0.0"]
+version: ["1.1.0"]
 ---
 {% include JB/setup %}
 
@@ -15,7 +15,7 @@ version: ["1.0.0"]
 1.1 安装操作系统组件
 
 * 使用CentOS 7以上的版本
-* 能够安装Java 8
+* 能够安装Java 11
 * 能够安装PostgreSQL 10
 * 能够安装Haproxy
 * 能够安装Varnish
@@ -60,22 +60,22 @@ version: ["1.0.0"]
 
     [openurp@centos7 ~]$ wget http://beangle.github.io/sas/netinstall.sh
     [openurp@centos7 ~]$ chmod +x ./netinstall.sh
-    [openurp@centos7 ~]$ ./netinstall.sh 0.4.2
+    [openurp@centos7 ~]$ ./netinstall.sh 0.5.3
 
 
-之后在用户主目录会创建一个beangle-sas-server-0.4.2的目录。
+之后在用户主目录会创建一个beangle-sas-server-0.5.3的目录。
 
 2.2 配置sas
 
-创建beangle-sas-server-0.4.2/conf/server.xml，编辑该文件，按照以下内容。
+创建beangle-sas-server-0.5.3/conf/server.xml，编辑该文件，按照以下内容。
 
 {% highlight xml%}
 <?xml version='1.0' encoding='utf-8'?>
-<Sas version="0.4.2">
+<Sas version="0.5.3">
   <Repository remote="http://repo1.maven.org/maven2"/>
   <Engines>
-    <Engine name="tomcat9" type="tomcat" version="9.0.13" jspSupport="false">
-</th><th>  <Jar gav="org.postgresql:postgresql:42.2.2"/>
+    <Engine name="tomcat9" type="tomcat" version="9.0.22" jspSupport="false">
+      <Jar gav="org.postgresql:postgresql:42.2.6"/>
     </Engine>
   </Engines>
 </Sas>
