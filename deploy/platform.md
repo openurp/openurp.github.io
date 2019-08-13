@@ -14,21 +14,21 @@ version: ["1.0.0"]
 
 1.1 平台组成
 
-* 统一身份认证cas(0.2.20)
+* 统一身份认证cas(0.2.21)
 * 门户首页portal(0.0.6)
 * 静态资源伺服static(0.1.3)
-* 平台服务ws(0.2.20)
-* 平台管理adminapp(0.2.20)
-* 个人中心userapp(0.2.20)
+* 平台服务ws(0.2.21)
+* 平台管理adminapp(0.2.21)
+* 个人中心userapp(0.2.21)
 
 各个服务组件的GAV(groupId:artifactId:version)是：
 
-* cas      org.openurp.platform:openurp-platform-casapp:0.2.20
+* cas      org.openurp.platform:openurp-platform-casapp:0.2.21
 * portal   org.openurp.portal:openurp-portal-webapp:0.0.6
 * static   org.beangle.micdn:beangle-micdn-server:0.1.3
-* ws       org.openurp.platform:openurp-platform-ws:0.2.20
-* adminapp org.openurp.platform:openurp-platform-adminapp:0.2.20
-* userapp  org.openurp.platform:openurp-platform-userapp:0.2.20
+* ws       org.openurp.platform:openurp-platform-ws:0.2.21
+* adminapp org.openurp.platform:openurp-platform-adminapp:0.2.21
+* userapp  org.openurp.platform:openurp-platform-userapp:0.2.21
 
 各个服务组件的部署路径如下：
 * cas      /cas
@@ -58,17 +58,17 @@ version: ["1.0.0"]
   </Farms>
 
   <Webapps>
-    <Webapp name="platform-cas"  gav="org.openurp.platform:openurp-platform-casapp:0.2.20" />
-    <Webapp name="platform-portal"  gav="org.openurp.portal:openurp-portal-webapp:0.0.6" />
-    <Webapp name="platform-ws"  gav="org.openurp.platform:openurp-platform-ws:0.2.20" />
-    <Webapp name="platform-adminapp"  gav="org.openurp.platform:openurp-platform-adminapp:0.2.20" />
-    <Webapp name="platform-userapp"  gav="org.openurp.platform:openurp-platform-userapp:0.2.20" />
+    <Webapp name="platform-cas"  gav="org.openurp.platform:openurp-platform-casapp:0.2.21" />
+    <Webapp name="edu-portal"  gav="org.openurp.edu:openurp-edu-portal:0.0.4" />
+    <Webapp name="platform-ws"  gav="org.openurp.platform:openurp-platform-ws:0.2.21" />
+    <Webapp name="platform-adminapp"  gav="org.openurp.platform:openurp-platform-adminapp:0.2.21" />
+    <Webapp name="platform-userapp"  gav="org.openurp.platform:openurp-platform-userapp:0.2.21" />
     <Webapp name="static" gav="org.beangle.micdn:beangle-micdn-server:0.1.3"/>
   </Webapps>
 
   <Deployments>
     <Deployment webapp="platform-cas" on="platform" path="/cas"/>
-    <Deployment webapp="platform-portal" on="platform" path="/portal"/>
+    <Deployment webapp="edu-portal" on="platform" path="/portal"/>
     <Deployment webapp="platform-ws" on="platform" path="/api/platform"/>
     <Deployment webapp="platform-adminapp" on="platform" path="/platform/admin"/>
     <Deployment webapp="platform-userapp" on="platform" path="/platform/user"/>
@@ -183,6 +183,9 @@ version: ["1.0.0"]
       <port>6379</port>
     </redis>
   </resources>
+ <config>
+    <login enableCaptcha="true"  forceHttps="false"></login>
+  </config>
 </app>
 {% endhighlight %}
 

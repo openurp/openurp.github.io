@@ -24,11 +24,17 @@ version: ["1.1.0"]
 用root运行命令进行配置
 
     [root@centos7 ~]# yum install -y epel-release
-    [root@centos7 ~]# yum -y install openjdk haproxy redis wget unzip varnish
+    [root@centos7 ~]# yum -y install java-11-openjdk haproxy redis wget unzip varnish
     [root@centos7 ~]# systemctl disable firewalld
     [root@centos7 ~]# systemctl enable haproxy redis varnish
     [root@centos7 ~]# systemctl start haproxy redis varnish
 
+选择Java 11作为默认JDK
+
+    [root@centos7 ~]# alternative -config java
+
+选择java11的序号
+    
 安装PostgreSQL 10
 
     [root@centos7 ~]# rpm -Uvh https://yum.postgresql.org/10/redhat/rhel-7-x86_64/pgdg-centos10-10-2.noarch.rpm
@@ -60,18 +66,18 @@ version: ["1.1.0"]
 
     [openurp@centos7 ~]$ wget http://beangle.github.io/sas/netinstall.sh
     [openurp@centos7 ~]$ chmod +x ./netinstall.sh
-    [openurp@centos7 ~]$ ./netinstall.sh 0.5.3
+    [openurp@centos7 ~]$ ./netinstall.sh 0.5.4
 
 
-之后在用户主目录会创建一个beangle-sas-server-0.5.3的目录。
+之后在用户主目录会创建一个beangle-sas-server-0.5.4的目录。
 
 2.2 配置sas
 
-创建beangle-sas-server-0.5.3/conf/server.xml，编辑该文件，按照以下内容。
+创建beangle-sas-server-0.5.4/conf/server.xml，编辑该文件，按照以下内容。
 
 {% highlight xml%}
 <?xml version='1.0' encoding='utf-8'?>
-<Sas version="0.5.3">
+<Sas version="0.5.4">
   <Repository remote="http://repo1.maven.org/maven2"/>
   <Engines>
     <Engine name="tomcat9" type="tomcat" version="9.0.22" jspSupport="false">
