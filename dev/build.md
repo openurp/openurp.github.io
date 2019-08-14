@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 自动构建
-description: "自动构建"
+title: 手工构建
+description: "手工构建"
 categories: [dev]
 version: ["1.0.0"]
 ---
@@ -9,7 +9,7 @@ version: ["1.0.0"]
 
 ### 1 使用Maven自动构建
 
-OpenURP虽然是scala项目，依然使用maven作为构建工具，主要看中maven3的强大、成熟和稳定。默认情况下直接在项目执行mvn命令即可进行构建。
+OpenURP虽然是scala项目，依然使用maven作为构建工具。默认情况下直接在项目执行mvn命令即可进行构建。
 
     mvn
 
@@ -47,32 +47,11 @@ OpenURP使用Scalariform的maven插件进行格式化代码，但不是在打包
 
 具体scalariform可以参考[github maven plugin](https://github.com/mdr/scalariform/wiki/Maven-plugin)。
 
-### 4 批量添加许可证声明
+### 4 批量添加许可证声明和去除多余空白字符
 
-为了统一源代码的许可证声明，可以先准备一个许可证头文件,放置在/tmp/header.txt。如下内容:
+在项目中执行
 
-    /*
-     * OpenURP, Agile Development Scaffold and Toolkit
-     *
-     * Copyright (c) 2014-2015, OpenURP Software.
-     *
-     * OpenURP is free software: you can redistribute it and/or modify
-     * it under the terms of the GNU General Public License as published by
-     * the Free Software Foundation, either version 3 of the License, or
-     * (at your option) any later version.
-     *
-     * OpenURP is distributed in the hope that it will be useful.
-     * but WITHOUT ANY WARRANTY; without even the implied warranty of
-     * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-     * GNU General Public License for more details.
-     *
-     * You should have received a copy of the GNU General Public License
-     * along with OpenURP.  If not, see <http://www.gnu.org/licenses/>.
-     */
-
-然后在项目中执行
-
-     mvn license:format -Dlicense.header=/tmp/header.txt
+     mvn license:format style:ws-format
 
 该命令仅在scala和java源代码中添加注释。css和script文件没有添加。
 
