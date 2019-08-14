@@ -33,9 +33,8 @@ version: ["1.1.0"]
 
 将老版本的beangle-sas(以0.5.2为例)中conf中的server.xml和webapps拷贝到新版本中。
 
-    [openurp@centos7 ~]$ cp beangle-0.5.2/conf/server.xml beangle-sas-0.5.4/conf
-    [openurp@centos7 ~]$ cp -r beangle-0.5.2/webapps beangle-sas-0.5.4/
-
+    [openurp@centos7 ~]$ cp beangle-sas-0.5.2/conf/server.xml beangle-sas-0.5.4/conf
+    [openurp@centos7 ~]$ cp -r beangle-sas-0.5.2/webapps beangle-sas-0.5.4/
 
 ### 3 升级platform和其他基础服务
 
@@ -56,6 +55,6 @@ version: ["1.1.0"]
 
     [openurp@centos7 ~]$ wget http://repo.openurp.net/maven/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar
     [openurp@centos7 ~]$ wget http://repo.openurp.net/maven/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar.sha1
-    [openurp@centos7 ~]$ mkdir -p /home/openurp/org/hibernate/hibernate-core/5.4.4.Final/
-    [openurp@centos7 ~]$ mv hibernate-core-5.4.4.Final.* /home/openurp/org/hibernate/hibernate-core/5.4.4.Final/
+    [openurp@centos7 ~]$ mkdir -p /home/openurp/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/
+    [openurp@centos7 ~]$ mv hibernate-core-5.4.4.Final.* /home/openurp/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/
 
