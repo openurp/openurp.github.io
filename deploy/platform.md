@@ -14,21 +14,21 @@ version: ["1.0.0"]
 
 1.1 平台组成
 
-* 统一身份认证cas(0.2.21)
+* 统一身份认证cas(0.2.22)
 * 门户首页portal(0.0.6)
 * 静态资源伺服static(0.1.3)
-* 平台服务ws(0.2.21)
-* 平台管理adminapp(0.2.21)
-* 个人中心userapp(0.2.21)
+* 平台服务ws(0.2.22)
+* 平台管理adminapp(0.2.22)
+* 个人中心userapp(0.2.22)
 
 各个服务组件的GAV(groupId:artifactId:version)是：
 
-* cas      org.openurp.platform:openurp-platform-casapp:0.2.21
+* cas      org.openurp.platform:openurp-platform-casapp:0.2.22
 * portal   org.openurp.portal:openurp-portal-webapp:0.0.6
 * static   org.beangle.micdn:beangle-micdn-server:0.1.3
-* ws       org.openurp.platform:openurp-platform-ws:0.2.21
-* adminapp org.openurp.platform:openurp-platform-adminapp:0.2.21
-* userapp  org.openurp.platform:openurp-platform-userapp:0.2.21
+* ws       org.openurp.platform:openurp-platform-ws:0.2.22
+* adminapp org.openurp.platform:openurp-platform-adminapp:0.2.22
+* userapp  org.openurp.platform:openurp-platform-userapp:0.2.22
 
 各个服务组件的部署路径如下：
 * cas      /cas
@@ -58,11 +58,11 @@ version: ["1.0.0"]
   </Farms>
 
   <Webapps>
-    <Webapp name="platform-cas"  gav="org.openurp.platform:openurp-platform-casapp:0.2.21" />
+    <Webapp name="platform-cas"  gav="org.openurp.platform:openurp-platform-casapp:0.2.22" />
     <Webapp name="edu-portal"  gav="org.openurp.edu:openurp-edu-portal:0.0.4" />
-    <Webapp name="platform-ws"  gav="org.openurp.platform:openurp-platform-ws:0.2.21" />
-    <Webapp name="platform-adminapp"  gav="org.openurp.platform:openurp-platform-adminapp:0.2.21" />
-    <Webapp name="platform-userapp"  gav="org.openurp.platform:openurp-platform-userapp:0.2.21" />
+    <Webapp name="platform-ws"  gav="org.openurp.platform:openurp-platform-ws:0.2.22" />
+    <Webapp name="platform-adminapp"  gav="org.openurp.platform:openurp-platform-adminapp:0.2.22" />
+    <Webapp name="platform-userapp"  gav="org.openurp.platform:openurp-platform-userapp:0.2.22" />
     <Webapp name="static" gav="org.beangle.micdn:beangle-micdn-server:0.1.3"/>
   </Webapps>
 

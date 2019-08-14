@@ -8,5 +8,5 @@ group: navigation
 
 * [准备环境](/deploy/env.html)
 * [部署平台](/deploy/platform.html)
-* [JDK11](/deploy/jdk11.html)
+* [Platform-JDK11](/deploy/platform_jdk11.html)
 
