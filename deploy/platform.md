@@ -44,13 +44,13 @@ version: ["1.0.0"]
 
 {% highlight xml %}
   <Farms>
-    <Farm name="platform" engine="tomcat85">
+    <Farm name="platform" engine="tomcat90">
       <JvmArgs opts="-noverify -Xmx1500M -Xms1500M -Djava.security.egd=file:/dev/./urandom"/>
       <Http acceptCount="100" maxThreads="200"  minSpareThreads="10"  compression="off"  />
       <Server name="server1"  http="7080"  />
     </Farm>
 
-    <Farm name="static" engine="tomcat85">
+    <Farm name="static" engine="tomcat90">
       <JvmArgs opts="-noverify -Xmx500M -Xms500M -Djava.security.egd=file:/dev/./urandom  -Dbeangle.micdn.config=~/.openurp/static/cdn.xml"/>
       <Http acceptCount="100" maxThreads="200"  minSpareThreads="10"  compression="off" /> 
       <Server name="server1" http="8080"/>
