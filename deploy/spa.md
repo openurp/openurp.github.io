@@ -66,5 +66,6 @@ version: ["1.0.0"]
 
 * 安装自动全屏插件https://addons.mozilla.org/en-US/firefox/addon/full-screen-for-firefox/
 * 禁止火狐不安全的网络提示（如果打印服务基于https，需要）
+  *  进入about:config,设置security.insecure_password.ui.enabled为false
 * 禁止火狐保存登陆密码（需查资料）
 
