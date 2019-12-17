@@ -14,21 +14,21 @@ version: ["1.0.0"]
 
 1.1 平台组成
 
-* 统一身份认证cas(0.2.22)
+* 统一身份认证cas(0.2.27)
 * 门户首页portal(0.0.6)
 * 静态资源伺服static(0.1.3)
-* 平台服务ws(0.2.22)
-* 平台管理adminapp(0.2.22)
-* 个人中心userapp(0.2.22)
+* 平台服务ws(0.2.27)
+* 平台管理adminapp(0.2.27)
+* 个人中心userapp(0.2.27)
 
 各个服务组件的GAV(groupId:artifactId:version)是：
 
-* cas      org.openurp.platform:openurp-platform-casapp:0.2.22
+* cas      org.openurp.platform:openurp-platform-casapp:0.2.27
 * portal   org.openurp.portal:openurp-portal-webapp:0.0.6
 * static   org.beangle.micdn:beangle-micdn-server:0.1.3
-* ws       org.openurp.platform:openurp-platform-ws:0.2.22
-* adminapp org.openurp.platform:openurp-platform-adminapp:0.2.22
-* userapp  org.openurp.platform:openurp-platform-userapp:0.2.22
+* ws       org.openurp.platform:openurp-platform-ws:0.2.27
+* adminapp org.openurp.platform:openurp-platform-adminapp:0.2.27
+* userapp  org.openurp.platform:openurp-platform-userapp:0.2.27
 
 各个服务组件的部署路径如下：
 * cas      /cas
@@ -58,11 +58,11 @@ version: ["1.0.0"]
   </Farms>
 
   <Webapps>
-    <Webapp name="platform-cas"  gav="org.openurp.platform:openurp-platform-casapp:0.2.22" />
+    <Webapp name="platform-cas"  gav="org.openurp.platform:openurp-platform-casapp:0.2.27" />
     <Webapp name="edu-portal"  gav="org.openurp.edu:openurp-edu-portal:0.0.4" />
-    <Webapp name="platform-ws"  gav="org.openurp.platform:openurp-platform-ws:0.2.22" />
-    <Webapp name="platform-adminapp"  gav="org.openurp.platform:openurp-platform-adminapp:0.2.22" />
-    <Webapp name="platform-userapp"  gav="org.openurp.platform:openurp-platform-userapp:0.2.22" />
+    <Webapp name="platform-ws"  gav="org.openurp.platform:openurp-platform-ws:0.2.27" />
+    <Webapp name="platform-adminapp"  gav="org.openurp.platform:openurp-platform-adminapp:0.2.27" />
+    <Webapp name="platform-userapp"  gav="org.openurp.platform:openurp-platform-userapp:0.2.27" />
     <Webapp name="static" gav="org.beangle.micdn:beangle-micdn-server:0.1.3"/>
   </Webapps>
 
@@ -93,39 +93,44 @@ version: ["1.0.0"]
        <dir location="/home/openurp/.openurp/static"/>
     </url>
     <url prefix="/my97">
-       <s3jar gav="org.beangle.bundles:beangle-bundles-my97:4.8"/>
+       <jar gav="org.beangle.bundles:beangle-bundles-my97:4.8"/>
     </url>
 
     <url prefix="/bui">
-       <s3jar gav="org.beangle.bundles:beangle-bundles-bui:0.1.4"/>
+       <jar gav="org.beangle.bundles:beangle-bundles-bui:0.1.4"/>
     </url>
 
     <url prefix="/pdfjs">
-       <s3jar gav="org.beangle.bundles:beangle-bundles-pdfjs:1.9.426"/>
+       <jar gav="org.beangle.bundles:beangle-bundles-pdfjs:1.9.426"/>
     </url>
 
     <url prefix="/kindeditor">
-       <s3jar gav="org.beangle.bundles:beangle-bundles-kindeditor:4.1.11"/>
+       <jar gav="org.beangle.bundles:beangle-bundles-kindeditor:4.1.11"/>
     </url>
 
     <url prefix="/bootstrap">
-       <webjar gav="org.webjars:bootstrap:3.3.7"/>
+       <jar gav="org.webjars:bootstrap:3.3.7"/>
     </url>
 
     <url prefix="/font-awesome/">
-       <webjar gav="org.webjars:font-awesome:4.7.0"/>
+       <jar gav="org.webjars:font-awesome:4.7.0"/>
     </url>
 
     <url prefix="/jquery">
-       <webjar gav="org.webjars:jquery:1.10.2"/>
+       <jar gav="org.webjars:jquery:1.10.2"/>
     </url>
+    <url prefix="/jquery-ui/">
+       <jar gav="org.beangle.bundles:beangle-bundles-jquery-ui:1.10.4"/>
+	</url>
 
     <url prefix="/openurp-default/">
-       <s3jar gav="org.openurp.theme:openurp-theme-default:0.0.8"/>
+       <jar gav="org.openurp.theme:openurp-theme-default:0.2.0"/>
     </url>
 
+    <url prefix="/cryptojs"><jar gav="org.webjars:cryptojs:3.1.2"/></url>
+ 
     <url prefix="/jsbarcode">
-       <s3jar gav="org.beangle.bundles:beangle-bundles-jsbarcode:3.9.0"/>
+       <jar gav="org.beangle.bundles:beangle-bundles-jsbarcode:3.9.0"/>
     </url>
   </contents>
 </micdn>
@@ -155,15 +160,16 @@ version: ["1.0.0"]
 * [创建表格](/ddl/platform/1-tables.sql)
 * [创建约束](/ddl/platform/2-constraints.sql)
 * [注释](/ddl/platform/5-comments.sql)
-
+* [其他部分](/ddl/platform/6-misc.sql)
 ### 4. 配置数据源
 
 创建平台各个服务组件使用的数据源
 
 4.1 建立cas数据源
 
-    [openurp@centos7 ~]$ mkdir -p .openurp/platform/
-    [openurp@centos7 ~]$ touch .openurp/platform/cas.xml
+    [openurp@centos7 ~]$ mkdir -p ~/.openurp/platform/
+    [openurp@centos7 ~]$ mkdir -p ~/.openurp/edu/
+    [openurp@centos7 ~]$ touch ~/.openurp/platform/cas.xml
 
 将以下内容复制到文件cas.xml中.
 {% highlight xml %}
@@ -195,7 +201,7 @@ version: ["1.0.0"]
 
 4.2 建立portal数据源
 
-    [openurp@centos7 ~]$ touch .openurp/platform/portal.xml
+    [openurp@centos7 ~]$ touch ~/.openurp/edu/portal.xml
 
 {% highlight xml %}
 <?xml version="1.0"?>
@@ -215,7 +221,7 @@ version: ["1.0.0"]
 
 4.3 建立ws数据源
 
-    [openurp@centos7 ~]$ touch .openurp/platform/ws.xml
+    [openurp@centos7 ~]$ touch ~/.openurp/platform/ws.xml
 
 {% highlight xml %}
 <?xml version="1.0"?>
@@ -235,7 +241,7 @@ version: ["1.0.0"]
 
 4.4 建立adminapp数据源
 
-    [openurp@centos7 ~]$ touch .openurp/platform/adminapp.xml
+    [openurp@centos7 ~]$ touch ~/.openurp/platform/adminapp.xml
 
 {% highlight xml %}
 <?xml version="1.0"?>
@@ -255,7 +261,7 @@ version: ["1.0.0"]
 
 4.5 建立userapp数据源
 
-    [openurp@centos7 ~]$ touch .openurp/platform/userapp.xml
+    [openurp@centos7 ~]$ touch ~/.openurp/platform/userapp.xml
 
 {% highlight xml %}
 <?xml version="1.0"?>
@@ -275,7 +281,7 @@ version: ["1.0.0"]
 
 ### 5. 配置openurp全局属性
 
-    [openurp@centos7 ~]$ touch .openurp/conf.properties
+    [openurp@centos7 ~]$ touch ~/.openurp/conf.properties
 
 修改该文件：
 

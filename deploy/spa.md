@@ -20,9 +20,8 @@ version: ["1.0.0"]
 
 * VC++ 2015 Distributable运行库(vc_redist.x64.exe)
 * PDF打印工具gostscript(gs927w64.exe)
-* PDF编辑工具pdftk(pdftk_server-2.02-win-setup.exe)
 * 转换网页为PDF工具wkhtmltox(wkhtmltox-0.12.5-1.msvc2015-win64.exe)
-* Firefox英文版(https://download-ssl.firefox.com.cn/releases-sha2/stub/official/en-US/Firefox-latest.exe)
+* Beangle Kiosk(https://github.com/beangle/kiosk)
 * 自助打印客户端client(spa.zip)
 
 依次安装上述软件。将自助打印客户端解压到非系统盘(如D:\)。目录以spa命名，内部文件一次是bin、conf、lib
@@ -39,6 +38,7 @@ version: ["1.0.0"]
 
 ### 2. 配置自助打印
 
+解压spa.zip到D:目录下，解压后出现D:\spa\conf等目录。
 编辑D:\spa\conf\spa.xml文件，如下
 
 {% highlight xml %}
@@ -62,10 +62,7 @@ version: ["1.0.0"]
 
 **将bin目录下的start.vbs创建一个快捷方式，剪切到系统的启动目录中。**
 
-### 3. 配置火狐浏览器
+### 3. 配置Kiosk浏览器
 
-* 安装自动全屏插件https://addons.mozilla.org/en-US/firefox/addon/full-screen-for-firefox/
-* 禁止火狐不安全的网络提示（如果打印服务基于https，需要）
-  *  进入about:config,设置security.insecure_password.ui.enabled为false
-* 禁止火狐保存登陆密码（需查资料）
+* 安装Kiosk浏览器,放在D:\spa\下，保证D:\spa\kiosk\kiosk.exe存在。
 
