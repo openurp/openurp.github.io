@@ -47,7 +47,7 @@ version: ["1.1.0"]
     5. base-adminapp的版本更改为 0.0.22
     6. edu-base-adminapp的版本更改为 0.0.27
 
-   [执行更新语句](/deploy/update/platform-0.2.18_0.2.19.sql)
+   [执行更新语句](/ddl/platform/0.2.18_0.2.19.sql)
 
 ### 4 下载特定的hibernate版本
 
