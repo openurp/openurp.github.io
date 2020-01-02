@@ -65,3 +65,4 @@ $BODY$;
 
 create index idx_session_info_principal on session.session_infoes(principal);
 create index idx_session_info_category on session.session_infoes(category_id);
+delete from session.session_infoes;
