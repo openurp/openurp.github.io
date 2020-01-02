@@ -18,7 +18,7 @@ version: ["1.1.0"]
 
 选择Java 11作为默认JDK
 
-    [root@centos7 ~]# alternative --config java
+    [root@centos7 ~]# alternatives --config java
 
 选择java11的序号
 
