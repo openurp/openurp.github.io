@@ -22,7 +22,10 @@ version: ["1.0.0"]
   - 或查看[所有sql](/ddl/ddl.html)
 
 * Openurp 升级
-  - 在server.xml中将edu-base升级到0.0.30。
+  - 在server.xml中将edu-base-adminapp,edu-base-ws升级到0.0.30。
+  - base-adminapp 升级到0.0.23
+  - edu-portal 升级到0.0.7
+  - edu-finalmakeup-adminapp 升级到0.0.2
   - 执行[0.11.0_0.12.0.sql](/ddl/openurp/update/0.11.0_0.12.0.sql)
 
 * ～/.openurp/static/cdn.xml 中增加bui的0.1.7版本,重启static服务。
