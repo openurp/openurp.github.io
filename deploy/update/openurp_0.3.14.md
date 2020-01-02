@@ -9,6 +9,11 @@ version: ["1.0.0"]
 
 ### 升级步骤
 
+* Beangle Sas改动
+
+  - 将tomcat引擎版本改为9.0.30
+  - postgresql驱动版本改为42.2.9
+
 * Platform 升级
 
   - 在server.xml中更改platform版本为0.2.31
