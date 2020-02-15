@@ -29,6 +29,7 @@ version: ["1.1.0"]
 
 
 用root运行命令进行配置
+
     [root@centos ~]# yum -y install java-11-openjdk haproxy redis wget unzip varnish lsof
     [root@centos ~]# systemctl disable firewalld
     [root@centos ~]# systemctl enable haproxy redis varnish
@@ -43,6 +44,7 @@ version: ["1.1.0"]
 安装PostgreSQL 10
 
 如果是Centos 7 需要
+
     [root@centos7 ~]# yum -y install postgresql10 postgresql10-server postgresql10-contrib postgresql10-libs
     [root@centos7 ~]# /usr/pgsql-10/bin/postgresql-10-setup initdb
     [root@centos7 ~]# systemctl start postgresql-10.service
