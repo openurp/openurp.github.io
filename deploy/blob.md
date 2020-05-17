@@ -69,8 +69,8 @@ update  bulletin.docs d set size=(select a.size from bulletin.attachments a wher
 
 下载beangle-micdn-gateway-0.0.1-release.bin到服务器上的指定目录。
 
-    [openurp@centos ~]$ mkdir -p /home/openurp/.m2/repository/org/beangle/micdn/baengle-micdn-gateway/0.0.1
-    [openurp@centos ~]$ cd /home/openurp/.m2/repository/org/beangle/micdn/baengle-micdn-gateway/0.0.1/
+    [openurp@centos ~]$ mkdir -p /home/openurp/.m2/repository/org/beangle/micdn/beangle-micdn-gateway/0.0.1
+    [openurp@centos ~]$ cd /home/openurp/.m2/repository/org/beangle/micdn/beangle-micdn-gateway/0.0.1/
     [openurp@centos ~]$ wget https://github.com/beangle/micdn/releases/download/0.0.1/beangle-micdn-gateway-0.0.1-release.bin
 
 在beangle-sas(>=0.7.3)上注册该应用
