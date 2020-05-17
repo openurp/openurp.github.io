@@ -1,5 +1,6 @@
-create table bulletin.attachments (updated_at timestamp not null, size integer not null, file_name varchar(255) not null, id bigint not null, content bytea not null);
-create table bulletin.docs (archived boolean not null, id bigint not null, app_id integer not null, name varchar(255) not null, updated_at timestamp not null, upload_by_id bigint not null, file_id bigint not null);
+create table blob.blob_metas (id bigint not null, profile_id integer not null, sha varchar(255) not null, owner varchar(100) not null, media_type varchar(60) not null, name varchar(300) not null, updated_at timestamp not null, path varchar(400) not null, size bigint not null);
+create table blob.profiles (name varchar(100) not null, path varchar(100) not null, named_by_sha boolean not null, users varchar(200), public_download boolean not null, id integer not null, public_list boolean not null);
+create table bulletin.docs (archived boolean not null, id bigint not null, app_id integer not null, upload_by_id bigint not null, name varchar(255) not null, updated_at timestamp not null, path varchar(255) not null, size integer not null);
 create table bulletin.docs_user_categories (doc_id bigint not null, user_category_id integer not null);
 create table bulletin.news (url varchar(255) not null, archived boolean not null, published_on date not null, id bigint not null, content text, title varchar(255) not null);
 create table bulletin.notices (updated_at timestamp not null, archived boolean not null, popup boolean not null, id bigint not null, app_id integer not null, title varchar(255) not null, end_on date not null, begin_on date not null, operator_id bigint not null, status integer not null, sticky boolean not null, created_at timestamp not null, content text not null, auditor_id bigint, published_at timestamp);
@@ -23,7 +24,8 @@ create table se.menus (name varchar(100) not null, entry_id integer, id integer 
 create table se.menus_resources (menu_id integer not null, func_resource_id integer not null);
 create table session.session_configs (concurrent integer not null, tti_minutes integer not null, check_concurrent boolean not null, id bigint not null, category_id integer not null, check_capacity boolean not null, capacity integer not null);
 create table session.session_events (username varchar(100) not null, id bigint not null, principal varchar(100) not null, detail varchar(1000) not null, event_type integer not null, name varchar(100) not null, ip varchar(255) not null, updated_at timestamp not null);
-create table usr.avatars (updated_at timestamp not null, image bytea not null, file_name varchar(50) not null, id varchar(50) not null, user_id bigint not null);
+create table usr.avatars (updated_at timestamp not null, path varchar(300) not null, file_name varchar(50) not null, id varchar(50) not null, user_id bigint not null);
+create table usr.credentials (inactive_on date not null, updated_at timestamp not null, id bigint not null, expired_on date not null, user_id bigint not null, password varchar(200) not null);
 create table usr.dimensions (name varchar(40) not null, source varchar(6000) not null, id integer not null, properties varchar(100) not null, key_name varchar(20) not null, type_name varchar(255) not null, multiple boolean not null, title varchar(40) not null, required boolean not null);
 create table usr.dimensions_domains (dimension_id integer not null, domain_id integer not null);
 create table usr.group_members (updated_at timestamp not null, id bigint not null, member boolean not null, manager boolean not null, granter boolean not null, group_id integer not null, user_id bigint not null);
@@ -31,6 +33,7 @@ create table usr.groups (enabled boolean not null, id integer not null, remark v
 create table usr.groups_properties (group_id integer not null, value varchar(2000) not null, dimension_id integer not null);
 create table usr.messages (recipient_id bigint not null, id bigint not null, status integer not null, content varchar(255) not null, sender_id bigint not null, sent_at timestamp not null, title varchar(255) not null);
 create table usr.notifications (recipient_id bigint not null, subject varchar(255) not null, importance integer not null, id bigint not null, content varchar(255) not null, sent_at timestamp not null);
+create table usr.password_configs (mindays integer not null, minclass integer not null, usercheck boolean not null, lcredit integer not null, maxdays integer not null, id integer not null, ucredit integer not null, idledays integer not null, ocredit integer not null, warnage integer not null, minlen integer not null, dcredit integer not null, maxlen integer not null);
 create table usr.role_members (updated_at timestamp not null, role_id integer not null, id bigint not null, member boolean not null, manager boolean not null, granter boolean not null, user_id bigint not null);
 create table usr.roles (enabled boolean not null, id integer not null, remark varchar(255), indexno varchar(255) not null, parent_id integer, name varchar(100) not null, updated_at timestamp not null, creator_id bigint not null);
 create table usr.roles_properties (role_id integer not null, value varchar(2000) not null, dimension_id integer not null);
@@ -39,5 +42,5 @@ create table usr.todoes (updated_at timestamp not null, domain_id integer not nu
 create table usr.user_categories (en_name varchar(255) not null, code varchar(30) not null unique, id integer not null, remark varchar(255), begin_on date not null, end_on date, name varchar(100) not null, updated_at timestamp not null);
 create table usr.user_profiles (domain_id integer not null, id bigint not null, user_id bigint not null);
 create table usr.user_profiles_properties (user_profile_id bigint not null, value varchar(2000) not null, dimension_id integer not null);
-create table usr.users (enabled boolean not null, locked boolean not null, code varchar(30) not null unique, begin_on date not null, category_id integer not null, end_on date, avatar_id varchar(255), password varchar(200) not null, name varchar(100) not null, updated_at timestamp not null, password_expired_on timestamp, id bigint not null, remark varchar(100));
+create table usr.users (enabled boolean not null, locked boolean not null, code varchar(30) not null unique, id bigint not null, begin_on date not null, category_id integer not null, end_on date, avatar_id varchar(255), name varchar(100) not null, updated_at timestamp not null, remark varchar(100));
 create table usr.users_properties (user_id bigint not null, value varchar(2000) not null, dimension_id integer not null);

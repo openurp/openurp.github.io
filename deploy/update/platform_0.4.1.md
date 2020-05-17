@@ -13,6 +13,7 @@ version: ["1.0.0"]
 
   - 将tomcat引擎版本改为9.0.35
   - conf/server.xml中版本改为0.7.3
+  - conf/server.xml中的<JvmArgs opts="-Xmx200m ...."/>改为<Options>-Xmx200m ....</Options>
   - 如果bin目录下存在update.sh,执行beangle-sas下的bin/update 0.7.3
   - 否则在主目录运行install.sh 0.7.3,然后将原版本的conf/server.xml和其他webapps等文件拷贝到新的sas中
 
@@ -33,7 +34,7 @@ version: ["1.0.0"]
   - 在系统管理(/platform/admin)应用中，增加资源和菜单。/blob/meta 文件信息，/blob/profile 文件配置，/blob/upload 文件上传
   - 并将这三个资源放在一个菜单下，授权给超级管理员。菜单可以放在通知公告父菜单下，入口/blob/meta地址。
   - edu-portal 升级到0.0.13
-  - 重启platform后访问${openurp.base}/platform/admin/blob/meta/upload/uploadAvatar 上传照片
-  - 重启platform后访问${openurp.base}/platform/admin/blob/meta/upload/uploadDoc 上传文档
+  - 重启platform后访问${openurp.base}/platform/admin/blob/upload/uploadAvatar 上传照片
+  - 重启platform后访问${openurp.base}/platform/admin/blob/upload/uploadDoc 上传文档
   - 执行[0.3.4_0.4.0.sql](/ddl/platform/update/0.3.4_0.4.0.sql)
 

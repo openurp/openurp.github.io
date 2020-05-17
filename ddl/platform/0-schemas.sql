@@ -1,3 +1,4 @@
+create schema blob;
 create schema bulletin;
 create schema cfg;
 create schema se;
