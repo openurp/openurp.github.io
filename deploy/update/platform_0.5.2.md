@@ -9,14 +9,14 @@ version: ["1.0.0"]
 
 ### 升级步骤
 
-* Beangle Sas改动
+#### Beangle Sas改动
 
   - 将tomcat引擎版本改为9.0.37
   - 确认sas的版本>=0.7.6(bin/sas.sh version),并将conf/server.xml中版本改为0.7.6
-  - 如果不是该版本,则在主目录运行install.sh 0.7.6
+  - 如果不是该版本,则在主目录运行 bin/sas.sh update 0.7.6
   - 停止所有服务 bin/stop.sh all
 
-* .openurp目录迁移
+#### .openurp目录迁移
 
   现有的.openurp隐藏目录命名为.ems，以及：
 
@@ -26,7 +26,6 @@ version: ["1.0.0"]
 
 执行如下命令：
 
-    
     mv ~/.openurp ~/.ems
     mkdir -p ~/.ems/micdn
     mv ~/.ems/static/cdn.xml ~/.ems/micdn/asset.xml
@@ -43,7 +42,7 @@ version: ["1.0.0"]
     session_id_name=URP_SID
     session_id_prefix=URP-
 
-* Platform 升级
+#### Platform 升级
 
   - 在server.xml中更改platform版本为0.5.2
   - 删除server.xml中的platform-adminapp,platform-userapp,platform-indexapp
@@ -63,7 +62,7 @@ version: ["1.0.0"]
     <Deployment webapp="platform-ws" on="platform" path="/api/platform"/>
 {% endhighlight %}
 
-### 升级micdn
+#### 升级micdn
   - 安装micdn.asset和micdn.blob的0.0.4版本
   - 删除原有的static应用及其端口
   - 查看[如何安装文件服务器](/deploy/micdn.html)
