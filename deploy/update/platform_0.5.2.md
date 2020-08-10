@@ -81,7 +81,8 @@ version: ["1.0.0"]
     </context>
 
     <context base="/bui/">
-       <jar gav="org.beangle.bundles:bui:0.3.0"/>
+       <jar gav="org.beangle.bundles:beangle-bundles-bui:0.3.1"/>
+       <jar gav="org.beangle.bundles:beangle-bundles-bui:0.3.0"/>
     </context>
 
     <context base="/bootstrap/">
