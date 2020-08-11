@@ -15,4 +15,4 @@ group: navigation
 
 * [openurp升级0.3.14](/deploy/update/openurp_0.3.14.html)
 * [平台升级0.4.1](/deploy/update/platform_0.4.1.html)
-* [平台升级0.5.2](/deploy/update/platform_0.5.2.html)
+* [平台升级0.5.4](/deploy/update/platform_0.5.4.html)
