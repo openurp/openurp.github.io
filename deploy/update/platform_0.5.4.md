@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 升级platform 0.5.2
-description: "升级platform 0.5.2"
+title: 升级platform 0.5.4
+description: "升级platform 0.5.4"
 categories: [deploy]
 version: ["1.0.0"]
 ---
@@ -45,20 +45,23 @@ version: ["1.0.0"]
 
 * Platform 升级
 
-  - 在server.xml中更改platform版本为0.5.2
-  - 删除server.xml中的platform-adminapp,platform-userapp,platform-indexapp
-  - portal的gav更改为org.openurp.platform:openurp-platform-portal,并取代platform-indexapp,部署在根上下文.
-  - 升级到0.5.2版本所需要的SQL脚本为platform_开头的sql语句。如果原有版本是0.4.0
+  - 在server.xml中更改platform版本为0.5.4
+  - 删除server.xml中的platform-adminapp,platform-userapp
+  - portal的gav更改为org.openurp.platform:openurp-platform-portal(/portal)
+  - ems-indexapp并取代platform-indexapp,部署在根上下文.
+  - 升级到0.5.4版本所需要的SQL脚本为platform_开头的sql语句。如果原有版本是0.4.0
   - 则执行[0.4.0_0.5.2.sql](/ddl/platform/update/0.4.0_0.5.2.sql)
   - 或查看[所有sql](/ddl/ddl.html)
 
 实例如下:
 {% highlight xml %}
-    <Webapp name="platform-cas"  gav="org.openurp.platform:openurp-platform-cas:0.5.2" />
-    <Webapp name="platform-portal"  gav="org.openurp.platform:openurp-platform-portal:0.5.2" />
-    <Webapp name="platform-ws"  gav="org.openurp.platform:openurp-platform-ws:0.5.2" />
+    <Webapp name="platform-cas"  gav="org.openurp.platform:openurp-platform-cas:0.5.4" />
+    <Webapp name="platform-portal"  gav="org.openurp.platform:openurp-platform-portal:0.5.4" />
+    <Webapp name="platform-ws"  gav="org.openurp.platform:openurp-platform-ws:0.5.4" />
+    <Webapp name="platform-index"  gav="org.beangle.ems:beangle-ems-index_2.13:4.1.5" />
     ...
-    <Deployment webapp="platform-portal" on="platform" path=""/>
+    <Deployment webapp="platform-index" on="platform" path=""/>
+    <Deployment webapp="platform-portal" on="platform" path="/potal"/>
     <Deployment webapp="platform-cas" on="platform" path="/cas"/>
     <Deployment webapp="platform-ws" on="platform" path="/api/platform"/>
 {% endhighlight %}
@@ -98,7 +101,7 @@ version: ["1.0.0"]
     </context>
 
     <context base="/ems/">
-       <jar gav="org.beangle.ems:beangle-ems-static:4.0.0"/>
+       <jar gav="org.beangle.ems:beangle-ems-static:4.1.5"/>
     </context>
 
     <context base="/chosen/">
