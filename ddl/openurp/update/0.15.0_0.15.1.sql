@@ -11,3 +11,7 @@
  
 update edu_exam.exam_activities ea set exam_paper_no=(select el.exam_paper_no from edu_exam.exam_clazzes el where el.clazz_id=ea.clazz_id and el.exam_type_id=ea.exam_type_id);
 
+
+alter table edu_program.major_plan_courses add stage_id int4;
+alter table edu_program.major_course_groups add add_addup bool default false;
+

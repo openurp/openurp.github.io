@@ -13,6 +13,11 @@ group: navigation
 * [部署Micdn文件服务器](/deploy/micdn.html)
 
 
-* [openurp升级0.3.14](/deploy/update/openurp_0.3.14.html)
+
 * [平台升级0.4.1](/deploy/update/platform_0.4.1.html)
 * [平台升级0.5.4](/deploy/update/platform_0.5.4.html)
+
+
+* [openurp升级0.3.14](/deploy/update/openurp_0.3.14.html)
+* [openurp升级0.15.1](/deploy/update/openurp_0.15.1.html)
+
