@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report title="数据库设计说明">
   <system name="培养方案" version="1.0.0"/>
-  <db>
-    <driver>postgresql</driver>
-    <serverName>localhost</serverName>
-    <databaseName>urp_sample</databaseName>
-    <schema>edu_program</schema>
-    <user>postgres</user>
-    <password>postgres</password>
-  </db>
+  <database xml="../database.xml" schema="edu_program"/>
   <pages template="jekyll" extension=".md">
     <page name="index" />
-    <page name="tables" />
-    <page name="images" />
     <page name="module" iterable="true"/>
   </pages>
 
   <modules>
-    <module name="xb" title="校标" tables="xb_*"/>
-    <module name="plan" title="培养计划" tables="major_plan*,major_course*,share_plan*,share_course*,std_plan*,std_course*">
+    <module name="plan" title="培养计划" tables="major*,share*,std_*">
       <image name="major" title="专业培养计划" tables="major*"/>
       <image name="share" title="公共课计划" tables="share*"/>
       <image name="std_plan" title="个人计划" tables="std_*"/>

@@ -10,7 +10,51 @@ version: ["0.0.2"]
 #### 目 录
 
 ##### 1. 数据库对象列表
-  * 1.1 [表格一览](tables.html)
+  * [1.1 表格一览](index.html#表格一览)
 
 ##### 2. 具体模块明细
 * [2.1 基本信息](info.html)
+
+
+### 表格一览
+数据库共计10个表，分别如下:
+
+<table class="table table-bordered table-striped table-condensed">
+  <tr>
+    <th style="background-color:#D0D3FF">序号</th>
+    <th style="background-color:#D0D3FF">表名/描述</th>
+    <th style="background-color:#D0D3FF">序号</th>
+    <th style="background-color:#D0D3FF">表名/描述</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><a href="info.html#表格-duty_infoes-教职工职务信息">duty_infoes</a> 教职工职务信息</td>
+    <td>6</td>
+    <td><a href="info.html#表格-staff_states-教工状态日志">staff_states</a> 教工状态日志</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><a href="info.html#表格-education_infoes-学习经历">education_infoes</a> 学习经历</td>
+    <td>7</td>
+    <td><a href="info.html#表格-staffs-教职工信息">staffs</a> 教职工信息</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><a href="info.html#表格-family_members-家庭成员">family_members</a> 家庭成员</td>
+    <td>8</td>
+    <td><a href="info.html#表格-title_infoes-职称信息">title_infoes</a> 职称信息</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><a href="info.html#表格-healths-健康状况">healths</a> 健康状况</td>
+    <td>9</td>
+    <td><a href="info.html#表格-tutor_infoes-导师信息">tutor_infoes</a> 导师信息</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><a href="info.html#表格-post_infoes-教职工岗位信息">post_infoes</a> 教职工岗位信息</td>
+    <td>10</td>
+    <td><a href="info.html#表格-work_infoes-工作经历">work_infoes</a> 工作经历</td>
+  </tr>
+</table>
+

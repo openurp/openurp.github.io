@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report title="数据库设计说明">
   <system name="成绩信息" version="1.0.0"/>
-  <db>
-    <driver>postgresql</driver>
-    <serverName>localhost</serverName>
-    <databaseName>urp_sample</databaseName>
-    <schema>edu_grade</schema>
-    <user>postgres</user>
-    <password>postgres</password>
-  </db>
+  <database xml="../database.xml" schema="edu_grade"/>
   <pages template="jekyll" extension=".md">
     <page name="index" />
-    <page name="tables" />
-    <page name="images" />
     <page name="module" iterable="true"/>
   </pages>
 

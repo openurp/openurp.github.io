@@ -14,12 +14,84 @@ version: ["0.0.1"]
 
 ### 关系图 1. 荣誉称号
   * 关系图
-  
+
 ![荣誉称号](images/honor.png)
 
 
 
-### 表格 std_honor_awards
+### 表格 honor_categories 荣誉称号种类
+
+  * 表格说明
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
+<tr><td>honor_categories</td><td>id</td><td>荣誉称号种类</td>  </tr>
+</table>
+
+  * 表格中的列
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
+<tr><td class="text-center">1</td><td>id</td><td>integer</td><td class="text-center">否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td class="text-center">2</td><td>assess_period</td><td>varchar(255)</td><td class="text-center">否</td><td>评定周期</td><td></td>  </tr>
+<tr><td class="text-center">3</td><td>award_unit</td><td>varchar(255)</td><td class="text-center">否</td><td>颁奖单位</td><td></td>  </tr>
+<tr><td class="text-center">4</td><td>be_rated</td><td>boolean</td><td class="text-center">否</td><td>是否分等级</td><td></td>  </tr>
+<tr><td class="text-center">5</td><td>code</td><td>varchar(255)</td><td class="text-center">否</td><td>荣誉称号代码</td><td></td>  </tr>
+<tr><td class="text-center">6</td><td>discription</td><td>varchar(255)</td><td class="text-center">是</td><td>荣誉称号描述</td><td></td>  </tr>
+<tr><td class="text-center">7</td><td>enabled</td><td>boolean</td><td class="text-center">否</td><td>使用状态</td><td></td>  </tr>
+<tr><td class="text-center">8</td><td>honor_type_id</td><td>integer</td><td class="text-center">否</td><td>荣誉称号类型ID</td><td>edu_award.honor_types</td>  </tr>
+<tr><td class="text-center">9</td><td>name</td><td>varchar(255)</td><td class="text-center">否</td><td>荣誉称号名称</td><td></td>  </tr>
+</table>
+
+
+
+### 表格 honor_levels 荣誉称号等级
+
+  * 表格说明
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
+<tr><td>honor_levels</td><td>id</td><td>荣誉称号等级</td>  </tr>
+</table>
+
+  * 表格中的列
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
+<tr><td class="text-center">1</td><td>id</td><td>integer</td><td class="text-center">否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td class="text-center">2</td><td>award_amount</td><td>float4</td><td class="text-center">否</td><td>奖励金额</td><td></td>  </tr>
+<tr><td class="text-center">3</td><td>code</td><td>varchar(255)</td><td class="text-center">否</td><td>等级代码</td><td></td>  </tr>
+<tr><td class="text-center">4</td><td>discription</td><td>varchar(255)</td><td class="text-center">是</td><td>等级描述</td><td></td>  </tr>
+<tr><td class="text-center">5</td><td>enabled</td><td>boolean</td><td class="text-center">否</td><td>使用状态</td><td></td>  </tr>
+<tr><td class="text-center">6</td><td>honor_category_id</td><td>integer</td><td class="text-center">否</td><td>荣誉称号种类ID</td><td>edu_award.honor_categories</td>  </tr>
+<tr><td class="text-center">7</td><td>name</td><td>varchar(255)</td><td class="text-center">否</td><td>等级名称</td><td></td>  </tr>
+</table>
+
+
+
+### 表格 honor_types 荣誉称号类型
+
+  * 表格说明
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
+<tr><td>honor_types</td><td>id</td><td>荣誉称号类型</td>  </tr>
+</table>
+
+  * 表格中的列
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
+<tr><td class="text-center">1</td><td>id</td><td>integer</td><td class="text-center">否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td class="text-center">2</td><td>code</td><td>varchar(255)</td><td class="text-center">否</td><td>类型代码</td><td></td>  </tr>
+<tr><td class="text-center">3</td><td>enabled</td><td>boolean</td><td class="text-center">否</td><td>使用状态</td><td></td>  </tr>
+<tr><td class="text-center">4</td><td>idx</td><td>varchar(255)</td><td class="text-center">否</td><td>排序序号</td><td></td>  </tr>
+<tr><td class="text-center">5</td><td>name</td><td>varchar(255)</td><td class="text-center">否</td><td>类型名称</td><td></td>  </tr>
+</table>
+
+
+
+### 表格 std_honor_awards 荣誉称号评定结果
 
   * 表格说明
 
@@ -31,21 +103,14 @@ version: ["0.0.1"]
   * 表格中的列
 
 <table class="table table-bordered table-striped table-condensed">
-<tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>honor_category_id</td><td>int4</td><td>否</td><td>荣誉称号种类ID</td><td>xb_honor_categories</td>  </tr>
-<tr><td>2</td><td>honor_level_id</td><td>int4</td><td>否</td><td>获奖等级ID</td><td>xb_honor_levels</td>  </tr>
-<tr><td>3</td><td>be_approved</td><td>bool</td><td>否</td><td>是否审核通过</td><td></td>  </tr>
-<tr><td>4</td><td>semester_id</td><td>int4</td><td>否</td><td>评定学期ID</td><td>semesters</td>  </tr>
-<tr><td>5</td><td>award_amount</td><td>float4</td><td>否</td><td>金额</td><td></td>  </tr>
-<tr><td>6</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
-<tr><td>7</td><td>std_id</td><td>int8</td><td>否</td><td>学生ID</td><td>students</td>  </tr>
+<tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
+<tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
+<tr><td class="text-center">2</td><td>award_amount</td><td>float4</td><td class="text-center">否</td><td>金额</td><td></td>  </tr>
+<tr><td class="text-center">3</td><td>be_approved</td><td>boolean</td><td class="text-center">否</td><td>是否审核通过</td><td></td>  </tr>
+<tr><td class="text-center">4</td><td>honor_category_id</td><td>integer</td><td class="text-center">否</td><td>荣誉称号种类ID</td><td>edu_award.honor_categories</td>  </tr>
+<tr><td class="text-center">5</td><td>honor_level_id</td><td>integer</td><td class="text-center">否</td><td>获奖等级ID</td><td>edu_award.honor_levels</td>  </tr>
+<tr><td class="text-center">6</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>评定学期ID</td><td>edu_base.semesters</td>  </tr>
+<tr><td class="text-center">7</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学生ID</td><td>edu_base.students</td>  </tr>
 </table>
 
- 
-  * 表格的索引
 
-<table class="table table-bordered table-striped table-condensed">
-  <tr>
-<th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>std_honor_awards_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
-</table>

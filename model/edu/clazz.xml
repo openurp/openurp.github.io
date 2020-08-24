@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report title="数据库设计说明">
+  <system name="课程安排" version="1.0.0"/>
+  <database xml="../database.xml" schema="edu_clazz"/>
+  <pages template="jekyll" extension=".md">
+    <page name="index" />
+    <page name="module" iterable="true"/>
+  </pages>
+
+  <modules>
+    <module name="clazz" title="教学任务" tables="clazz*,course_take*,restriction*">
+      <image name="clazz" title="教学任务" tables="clazzes*"/>
+      <image name="course_take" title="学生修读课程" tables="course_taker*,restriction*"/>
+    </module>
+    <module name="schedule" title="课程安排" tables="session*,clazz_group*">
+      <image name="session" title="排课" tables="session*"/>
+    </module>
+    <module name="misc" title="其他" tables="*"/>
+  </modules>
+</report>

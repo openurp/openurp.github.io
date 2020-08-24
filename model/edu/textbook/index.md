@@ -10,7 +10,27 @@ version: ["0.0.1"]
 #### 目 录
 
 ##### 1. 数据库对象列表
-  * 1.1 [表格一览](tables.html)
+  * [1.1 表格一览](index.html#表格一览)
 
 ##### 2. 具体模块明细
 * [2.1 核心部分](core.html)
+
+
+### 表格一览
+数据库共计2个表，分别如下:
+
+<table class="table table-bordered table-striped table-condensed">
+  <tr>
+    <th style="background-color:#D0D3FF">序号</th>
+    <th style="background-color:#D0D3FF">表名/描述</th>
+    <th style="background-color:#D0D3FF">序号</th>
+    <th style="background-color:#D0D3FF">表名/描述</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><a href="core.html#表格-clazz_book_stats-课程教材订购汇总">clazz_book_stats</a> 课程教材订购汇总</td>
+    <td>2</td>
+    <td><a href="core.html#表格-std_book_orders-教材征订单">std_book_orders</a> 教材征订单</td>
+  </tr>
+</table>
+

@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report title="数据库设计说明">
   <system name="基础代码" version="0.0.2"/>
-  <db>
-    <driver>postgresql</driver>
-    <serverName>localhost</serverName>
-    <databaseName>urp_sample</databaseName>
-    <schema>code_gb</schema>
-    <user>postgres</user>
-    <password>postgres</password>
-  </db>
+  <database xml="../database.xml" schema="code_gb"/>
   <pages template="jekyll" extension=".md">
     <page name="index" />
-    <page name="tables" />
-    <page name="images" />
     <page name="module" iterable="true"/>
   </pages>
 

@@ -13,79 +13,54 @@ version: ["0.0.1"]
 
 
 
-### 表格 lesson_materials
+### 表格 clazz_book_stats 课程教材订购汇总
 
   * 表格说明
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
-<tr><td>lesson_materials</td><td>id</td><td>课程材料</td>  </tr>
+<tr><td>clazz_book_stats</td><td>id</td><td>课程教材订购汇总</td>  </tr>
 </table>
 
   * 表格中的列
 
 <table class="table table-bordered table-striped table-condensed">
-<tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>reference_books</td><td>varchar</td><td>否</td><td>参考书</td><td></td>  </tr>
-<tr><td>2</td><td>extra</td><td>varchar</td><td>否</td><td>其他书</td><td></td>  </tr>
-<tr><td>3</td><td>passed</td><td>bool</td><td>否</td><td>是否通过</td><td></td>  </tr>
-<tr><td>4</td><td>use_explain</td><td>varchar</td><td>否</td><td>选用理由</td><td></td>  </tr>
-<tr><td>5</td><td>lesson_id</td><td>int8</td><td>否</td><td>课程ID</td><td>lessons</td>  </tr>
-<tr><td>6</td><td>audit_at</td><td>date</td><td>否</td><td>审核日期</td><td></td>  </tr>
-<tr><td>7</td><td>status</td><td>int4</td><td>否</td><td>教材状态</td><td></td>  </tr>
-<tr><td>8</td><td>remark</td><td>varchar</td><td>否</td><td>备注</td><td></td>  </tr>
-<tr><td>9</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
+<tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
+<tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
+<tr><td class="text-center">2</td><td>clazz_id</td><td>bigint</td><td class="text-center">否</td><td>教学任务ID</td><td>edu_clazz.clazzes</td>  </tr>
+<tr><td class="text-center">3</td><td>stat_at</td><td>timestamp</td><td class="text-center">否</td><td>汇总时间</td><td></td>  </tr>
+<tr><td class="text-center">4</td><td>std_count</td><td>integer</td><td class="text-center">否</td><td>学生用数量</td><td></td>  </tr>
+<tr><td class="text-center">5</td><td>teacher_count</td><td>integer</td><td class="text-center">否</td><td>教师用数量</td><td></td>  </tr>
+<tr><td class="text-center">6</td><td>textbook_id</td><td>bigint</td><td class="text-center">否</td><td>教材ID</td><td>edu_base.textbooks</td>  </tr>
 </table>
 
- 
-  * 表格的索引
 
-<table class="table table-bordered table-striped table-condensed">
-  <tr>
-<th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>lesson_materials_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
-</table>
 
-### 表格 lesson_materials_books
+### 表格 std_book_orders 教材征订单
 
   * 表格说明
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
-<tr><td>lesson_materials_books</td><td></td><td>课程材料-教材</td>  </tr>
+<tr><td>std_book_orders</td><td>id</td><td>教材征订单</td>  </tr>
 </table>
 
   * 表格中的列
 
 <table class="table table-bordered table-striped table-condensed">
-<tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>textbook_id</td><td>int8</td><td>否</td><td>教材ID</td><td>textbooks</td>  </tr>
-<tr><td>2</td><td>lesson_material_id</td><td>int8</td><td>否</td><td>课程材料ID</td><td>lesson_materials</td>  </tr>
+<tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
+<tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
+<tr><td class="text-center">2</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程基本信息ID</td><td>edu_base.courses</td>  </tr>
+<tr><td class="text-center">3</td><td>created_at</td><td>timestamp</td><td class="text-center">否</td><td>创建时间</td><td></td>  </tr>
+<tr><td class="text-center">4</td><td>crn</td><td>varchar(255)</td><td class="text-center">否</td><td>课程序号</td><td></td>  </tr>
+<tr><td class="text-center">5</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>edu_base.projects</td>  </tr>
+<tr><td class="text-center">6</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>学年学期ID</td><td>edu_base.semesters</td>  </tr>
+<tr><td class="text-center">7</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>edu_base.students</td>  </tr>
+<tr><td class="text-center">8</td><td>teach_depart_id</td><td>integer</td><td class="text-center">否</td><td>部门组织机构信息ID</td><td>base.departments</td>  </tr>
+<tr><td class="text-center">9</td><td>teacher_names</td><td>varchar(255)</td><td class="text-center">是</td><td>授课教师</td><td></td>  </tr>
+<tr><td class="text-center">10</td><td>textbook_id</td><td>bigint</td><td class="text-center">否</td><td>教材ID</td><td>edu_base.textbooks</td>  </tr>
+<tr><td class="text-center">11</td><td>withdraw_at</td><td>timestamp</td><td class="text-center">是</td><td>撤销时间</td><td></td>  </tr>
+<tr><td class="text-center">12</td><td>withdrawed</td><td>boolean</td><td class="text-center">否</td><td>是否撤销</td><td></td>  </tr>
 </table>
 
- 
 
-### 表格 textbook_order_lines
-
-  * 表格说明
-
-<table class="table table-bordered table-striped table-condensed">
-<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
-<tr><td>textbook_order_lines</td><td>id</td><td>教材征订单</td>  </tr>
-</table>
-
-  * 表格中的列
-
-<table class="table table-bordered table-striped table-condensed">
-<tr><th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td>1</td><td>id</td><td>int8</td><td>否</td><td>非业务主键:date</td><td></td>  </tr>
-</table>
-
- 
-  * 表格的索引
-
-<table class="table table-bordered table-striped table-condensed">
-  <tr>
-<th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>textbook_order_lines_pkey</td><td>id&nbsp;</td><td>是</td>  </tr>
-</table>

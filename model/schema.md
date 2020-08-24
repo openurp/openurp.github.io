@@ -82,6 +82,6 @@ version: ["1.0.0"]
 以下给出几个例子：
 
 * lg_asset    表示资产
-* edu_teach   表示教务
+* edu_course  表示课程建设
 * edu_std     表示学籍信息
 
