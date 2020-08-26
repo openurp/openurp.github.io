@@ -11,5 +11,5 @@ version: ["1.0.0"]
 
 
 * Openurp 升级
-  - 执行[0.15.0_0.15.1.sql](/ddl/openurp/update/0.15.0_0.15.1.sql)
+  - 执行[0.15.0_0.16.1.sql](/model/ddl/openurp/migrate/0.15.0_0.16.1.sql)
 

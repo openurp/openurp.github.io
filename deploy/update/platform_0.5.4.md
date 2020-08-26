@@ -49,8 +49,8 @@ version: ["1.0.0"]
   - portal的gav更改为org.openurp.platform:openurp-platform-portal(/portal)
   - ems-indexapp并取代platform-indexapp,部署在根上下文.
   - 升级到0.5.4版本所需要的SQL脚本为platform_开头的sql语句。如果原有版本是0.4.0
-  - 则执行[0.4.0_0.5.2.sql](/ddl/platform/update/0.4.0_0.5.2.sql)
-  - 或查看[所有sql](/ddl/ddl.html)
+  - 则执行[0.4.0_0.5.2.sql](/model/ddl/platform/migrate/0.4.0_0.5.2.sql)
+  - 或查看[所有sql](/model/ddl/index.html)
 
 实例如下:
 {% highlight xml %}

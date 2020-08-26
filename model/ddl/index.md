@@ -6,6 +6,8 @@ title: SQL
 
 ### platform
 
+init
+
  * [0-schemas.sql](/model/ddl/platform/0-schemas.sql) 
  * [1-tables.sql](/model/ddl/platform/1-tables.sql) 
  * [2-keys.sql](/model/ddl/platform/2-keys.sql)
@@ -14,7 +16,8 @@ title: SQL
  * [6-comments.sql](/model/ddl/platform/6-comments.sql)
  * [7-auxiliaries.sql](/model/ddl/platform/7-auxiliaries.sql)
 
-update 
+migrate
+ 
  * [0.3.4_0.4.0.sql](/model/ddl/platform/update/0.3.4_0.4.0.sql)
  * [0.3.0_0.3.4.sql](/model/ddl/platform/update/0.3.0_0.3.4.sql)
  * [0.2.31_0.3.0.sql](/model/ddl/platform/update/0.2.31_0.3.0.sql)
@@ -29,6 +32,8 @@ update
 
 ### openurp
 
+init
+
  * [0-schemas.sql](/model/ddl/openurp/0-schemas.sql) 
  * [1-tables.sql](/model/ddl/openurp/1-tables.sql) 
  * [2-constraints.sql](/model/ddl/openurp/2-constraints.sql)
@@ -36,7 +41,7 @@ update
  * [5-comments.sql](/model/ddl/openurp/5-comments.sql)
  * [6-auxiliaries.sql](/model/ddl/openurp/6-auxiliaries.sql)
 
- update
+ migrate
  
  * [0.15.0_0.16.1.sql](/model/ddl/openurp/update/0.15.0_0.16.1.sql) 
  * [0.11.0_0.12.0.sql](/model/ddl/openurp/update/0.11.0_0.12.0.sql) 

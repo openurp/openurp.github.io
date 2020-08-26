@@ -18,15 +18,15 @@ version: ["1.0.0"]
 
   - 在server.xml中更改platform版本为0.2.31
   - 升级到0.2.31版本所需要的SQL脚本为platform_开头的sql语句。如果原有版本是0.2.29
-  - 则执行[0.2.29_0.2.31.sql](/ddl/platform/update/0.2.29_0.2.31.sql)
-  - 或查看[所有sql](/ddl/ddl.html)
+  - 则执行[0.2.29_0.2.31.sql](/model/ddl/platform/migrate/0.2.29_0.2.31.sql)
+  - 或查看[所有sql](/model/ddl/index.html)
 
 * Openurp 升级
   - 在server.xml中将edu-base-adminapp,edu-base-ws升级到0.0.30。
   - base-adminapp 升级到0.0.23
   - edu-portal 升级到0.0.7
   - edu-finalmakeup-adminapp 升级到0.0.2
-  - 执行[0.11.0_0.12.0.sql](/ddl/openurp/update/0.11.0_0.12.0.sql)
+  - 执行[0.11.0_0.12.0.sql](/model/ddl/openurp/migrate/0.11.0_0.12.0.sql)
 
 * ～/.openurp/static/cdn.xml 中增加bui的0.1.7版本,重启static服务。
 * java应用需要更新后重新打包(edu-core4j,edu_course...,但不包括api4j)

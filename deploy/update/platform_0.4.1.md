@@ -22,10 +22,10 @@ version: ["1.0.0"]
   - 在server.xml中更改platform版本为0.4.1
   - 迁移数据，如果该库中存有用户的照片和上传的文档或者公告的附件，则执行sql如下sql语句前，需要查看如下注意事项。
   - 升级到0.4.1版本所需要的SQL脚本为platform_开头的sql语句。如果原有版本是0.2.31
-  - 则执行[0.2.31_0.3.0.sql](/ddl/platform/update/0.2.31_0.3.0.sql)
-  - 则执行[0.3.0_0.3.4.sql](/ddl/platform/update/0.3.0_0.3.4.sql)
-  - 则执行[0.3.4_0.4.0.sql](/ddl/platform/update/0.3.4_0.4.0.sql)
-  - 或查看[所有sql](/ddl/ddl.html)
+  - 则执行[0.2.31_0.3.0.sql](/model/ddl/platform/migrate/0.2.31_0.3.0.sql)
+  - 则执行[0.3.0_0.3.4.sql](/model/ddl/platform/migrate/0.3.0_0.3.4.sql)
+  - 则执行[0.3.4_0.4.0.sql](/model/ddl/platform/migrate/0.3.4_0.4.0.sql)
+  - 或查看[所有sql](/model/ddl/index.html)
 
 ### 注意事项
   - 0.4.0版本开始删除了用户照片和系统文档在数据库中的存储，而是使用了外部存储。因此这些文件还是不能直接删除，需要上传到文件服务器。
@@ -36,5 +36,5 @@ version: ["1.0.0"]
   - edu-portal 升级到0.0.13
   - 重启platform后访问${openurp.base}/platform/admin/blob/upload/uploadAvatar 上传照片
   - 重启platform后访问${openurp.base}/platform/admin/blob/upload/uploadDoc 上传文档
-  - 执行[0.3.4_0.4.0.sql](/ddl/platform/update/0.3.4_0.4.0.sql)
+  - 执行[0.3.4_0.4.0.sql](/model/ddl/platform/migrate/0.3.4_0.4.0.sql)
 
