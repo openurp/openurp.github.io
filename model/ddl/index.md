@@ -18,16 +18,16 @@ init
 
 migrate
  
- * [0.3.4_0.4.0.sql](/model/ddl/platform/update/0.3.4_0.4.0.sql)
- * [0.3.0_0.3.4.sql](/model/ddl/platform/update/0.3.0_0.3.4.sql)
- * [0.2.31_0.3.0.sql](/model/ddl/platform/update/0.2.31_0.3.0.sql)
- * [0.2.29_0.2.31.sql](/model/ddl/platform/update/0.2.29_0.2.31.sql) 
- * [0.2.28_0.2.29.sql](/model/ddl/platform/update/0.2.28_0.2.29.sql) 
- * [0.2.26_0.2.28.sql](/model/ddl/platform/update/0.2.26_0.2.28.sql)
- * [0.2.24_0.2.26.sql](/model/ddl/platform/update/0.2.24_0.2.26.sql)
- * [0.2.23_0.2.24.sql](/model/ddl/platform/update/0.2.23_0.2.24.sql)
- * [0.2.19_0.2.23.sql](/model/ddl/platform/update/0.2.19_0.2.23.sql)
- * [0.2.18_0.2.19.sql](/model/ddl/platform/update/0.2.18_0.2.19.sql)
+ * [0.3.4_0.4.0.sql](/model/ddl/platform/migrate/0.3.4_0.4.0.sql)
+ * [0.3.0_0.3.4.sql](/model/ddl/platform/migrate/0.3.0_0.3.4.sql)
+ * [0.2.31_0.3.0.sql](/model/ddl/platform/migrate/0.2.31_0.3.0.sql)
+ * [0.2.29_0.2.31.sql](/model/ddl/platform/migrate/0.2.29_0.2.31.sql) 
+ * [0.2.28_0.2.29.sql](/model/ddl/platform/migrate/0.2.28_0.2.29.sql) 
+ * [0.2.26_0.2.28.sql](/model/ddl/platform/migrate/0.2.26_0.2.28.sql)
+ * [0.2.24_0.2.26.sql](/model/ddl/platform/migrate/0.2.24_0.2.26.sql)
+ * [0.2.23_0.2.24.sql](/model/ddl/platform/migrate/0.2.23_0.2.24.sql)
+ * [0.2.19_0.2.23.sql](/model/ddl/platform/migrate/0.2.19_0.2.23.sql)
+ * [0.2.18_0.2.19.sql](/model/ddl/platform/migrate/0.2.18_0.2.19.sql)
 
 
 ### openurp
@@ -43,7 +43,7 @@ init
 
  migrate
  
- * [0.15.0_0.16.1.sql](/model/ddl/openurp/update/0.15.0_0.16.1.sql) 
- * [0.11.0_0.12.0.sql](/model/ddl/openurp/update/0.11.0_0.12.0.sql) 
- * [0.1.2_0.1.3.sql](/model/ddl/openurp/update/0.1.2_0.1.3.sql) 
+ * [0.15.0_0.16.1.sql](/model/ddl/openurp/migrate/0.15.0_0.16.1.sql) 
+ * [0.11.0_0.12.0.sql](/model/ddl/openurp/migrate/0.11.0_0.12.0.sql) 
+ * [0.1.2_0.1.3.sql](/model/ddl/openurp/migrate/0.1.2_0.1.3.sql) 
 
