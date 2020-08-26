@@ -10,7 +10,9 @@ group: navigation
 
 * [总体要求](/model/overview.html)
 * [Schema规划](/model/schema.html)
-* [ID生成及分区策略](/model/partition.html)
+* [ID生成](/model/nextid.html)
+* [分区策略](/model/partition.html)
+* [ddl](/model/ddl/index.html)
 
 ##### 2. 代码和人员信息
 
@@ -43,7 +45,6 @@ group: navigation
 
 ##### 6. 学工相关
 
-* [基础信息Base](/model/std/base/index.html)
 * [就业信息Job](/model/std/job/index.html)
 
 ##### 7. 科研相关

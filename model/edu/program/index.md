@@ -108,7 +108,7 @@ version: ["1.0.0"]
 #### 1. 专业培养计划
   * 关系图
 
-![专业培养计划](images/major.png)
+![专业培养计划](images/major.png){:width="100%"}
 
 
 #### 2. 公共课计划
