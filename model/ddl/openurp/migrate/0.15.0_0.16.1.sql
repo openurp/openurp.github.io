@@ -69,6 +69,14 @@ alter table edu_exam.exam_activities add constraint fk_o0v4xff3ok25cj0rnv8or9ydb
 alter table edu_exam.exam_activities alter depart_arranged set not null;
 drop table edu_exam.exam_clazzes cascade;
 
+alter table edu_exam.final_makeup_courses add status int4;
+update edu_exam.final_makeup_courses set status=1 where confirmed=true;
+update edu_exam.final_makeup_courses set status=2 where published=true;
+update edu_exam.final_makeup_courses set status=0 where status is null;
+alter table edu_exam.final_makeup_courses alter status set not null;
+alter table edu_exam.final_makeup_courses drop column confirmed;
+alter table edu_exam.final_makeup_courses drop column published;
+
 alter table edu_program.major_plan_courses add stage_id int4;
 alter table edu_program.major_course_groups add add_addup bool default false;
 
@@ -153,6 +161,22 @@ comment on table edu_extern.certificate_grades_courses is '证书成绩认定结
 comment on table edu_graduation.degree_applies is '学位申请';
 create index idx_3c0fuy04m4yleiot9mvjwnud6 on edu_exam.exam_activities (task_id);
 create index idx_9eb357ua5ig65i2eufrufd9y on edu_exam.exam_activities (clazz_id, exam_type_id);
-create schema edu_innovation;;
+create schema edu_innovation;
+
+update edu_grade.course_grades set updated_at = now() where updated_at is null;
+update edu_grade.course_grades set created_at =updated_at where created_at is null;
+alter table edu_grade.course_grades alter column created_at set not null;
+alter table edu_grade.course_grades alter column updated_at set not null;
+
+update edu_grade.ga_grades set updated_at = now() where updated_at is null;
+update edu_grade.ga_grades set created_at = updated_at where created_at is null;
+alter table edu_grade.ga_grades alter column created_at set not null;
+alter table edu_grade.ga_grades alter column updated_at set not null;
+
+
+update edu_grade.exam_grades set updated_at = now() where updated_at is null;
+update edu_grade.exam_grades set created_at =updated_at where created_at is null;
+alter table edu_grade.exam_grades alter column created_at set not null;
+alter table edu_grade.exam_grades alter column updated_at set not null;
 
 

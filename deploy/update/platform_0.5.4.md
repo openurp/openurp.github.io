@@ -49,6 +49,7 @@ version: ["1.0.0"]
   - portal的gav更改为org.openurp.platform:openurp-platform-portal(/portal)
   - ems-indexapp并取代platform-indexapp,部署在根上下文.
   - 升级到0.5.4版本所需要的SQL脚本为platform_开头的sql语句。如果原有版本是0.4.0
+  - 将原来的adminapp.xml 重新命名为portal.xml(mv adminapp.xml portal.xml)，并更改内部的密钥为platform-portal。
   - 则执行[0.4.0_0.5.2.sql](/model/ddl/platform/migrate/0.4.0_0.5.2.sql)
   - 或查看[所有sql](/model/ddl/index.html)
 
@@ -78,7 +79,7 @@ version: ["1.0.0"]
        <dir location="/home/openurp/.ems/local"/>
     </context>
 
-    <context base="/adminlte/">
+    <context base="/AdminLTE/">
        <jar gav="org.webjars:AdminLTE:3.0.5"/>
     </context>
 
