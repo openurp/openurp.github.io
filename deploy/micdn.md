@@ -13,9 +13,14 @@ Micdn是一个小型的cdn服务器。它包含两个组件，blob是一个集�
 
 安装必要的软件包，适用于centos 7
 
-    [root@centos ~]# yum -y install libssl11 postgresql-libs
+    [root@centos ~]# yum -y install libssl11 postgresql-libs ldc ldc-druntime ldc-phobos
 
-如果不能通过yum安装，可以访问在线资源[openssl11](https://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/o/openssl11-1.1.1c-1.el7.x86_64.rpm),[openssl11-libs](https://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/o/openssl11-libs-1.1.1c-1.el7.x86_64.rpm),[postgresql-libs](http://mirrors.163.com/centos/7/os/x86_64/Packages/postgresql-libs-9.2.24-2.el7.x86_64.rpm)。
+如果不能通过yum安装，可以访问在线资源[openssl11](https://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/o/openssl11-1.1.1c-2.el7.x86_64.rpm),[openssl11-libs](https://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/o/openssl11-libs-1.1.1c-2.el7.x86_64.rpm),[postgresql-libs](http://mirrors.163.com/centos/7/os/x86_64/Packages/postgresql-libs-9.2.24-2.el7.x86_64.rpm)，以及安装ldc环境,[ldc](https://copr-be.cloud.fedoraproject.org/results/harbottle/main/epel-7-x86_64/01619106-ldc/ldc-1.23.0-2.el7.harbottle.x86_64.rpm),
+[ldc-druntime]( 	https://copr-be.cloud.fedoraproject.org/results/harbottle/main/epel-7-x86_64/01619106-ldc/ldc-druntime-1.23.0-2.el7.harbottle.x86_64.rpm),
+[ldc-druntime-devel](https://copr-be.cloud.fedoraproject.org/results/harbottle/main/epel-7-x86_64/01619106-ldc/ldc-druntime-devel-1.23.0-2.el7.harbottle.x86_64.rpm),
+[ldc-phobos](https://copr-be.cloud.fedoraproject.org/results/harbottle/main/epel-7-x86_64/01619106-ldc/ldc-phobos-1.23.0-2.el7.harbottle.x86_64.rpm),
+[ldc-phobos-devel](https://copr-be.cloud.fedoraproject.org/results/harbottle/main/epel-7-x86_64/01619106-ldc/ldc-phobos-devel-1.23.0-2.el7.harbottle.x86_64.rpm).
+[llvm9](https://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/l/llvm9.0-libs-9.0.1-9.el7.x86_64.rpm)
 
 下载到某个目录下（如/tmp/rpms），然后执行安装:
 
@@ -88,15 +93,15 @@ values(1,(select min(id) from cfg.domains),'系统管理','/platform','platform-
 
 ### 3. 安装文件服务器blob和静态资源服务器asset
 
-下载beangle-micdn-blob-0.0.4-dmd.bin到服务器上的指定目录。
+下载beangle-micdn-blob-0.0.8-ldc.bin到服务器上的指定目录。
 
-    [openurp@centos ~]$ mkdir -p /home/openurp/.m2/repository/org/beangle/micdn/beangle-micdn-blob/0.0.4
-    [openurp@centos ~]$ cd /home/openurp/.m2/repository/org/beangle/micdn/beangle-micdn-blob/0.0.4/
-    [openurp@centos ~]$ wget https://github.com/beangle/micdn/releases/download/v0.0.4/beangle-micdn-blob-0.0.4-dmd.bin
+    [openurp@centos ~]$ mkdir -p /home/openurp/.m2/repository/org/beangle/micdn/beangle-micdn-blob/0.0.8
+    [openurp@centos ~]$ cd /home/openurp/.m2/repository/org/beangle/micdn/beangle-micdn-blob/0.0.8/
+    [openurp@centos ~]$ wget https://github.com/beangle/micdn/releases/download/v0.0.8/beangle-micdn-blob-0.0.8-ldc.bin
 
-    [openurp@centos ~]$ mkdir -p /home/openurp/.m2/repository/org/beangle/micdn/beangle-micdn-asset/0.0.4
-    [openurp@centos ~]$ cd /home/openurp/.m2/repository/org/beangle/micdn/beangle-micdn-asset/0.0.4/
-    [openurp@centos ~]$ wget https://github.com/beangle/micdn/releases/download/v0.0.4/beangle-micdn-asset-0.0.4-dmd.bin
+    [openurp@centos ~]$ mkdir -p /home/openurp/.m2/repository/org/beangle/micdn/beangle-micdn-asset/0.0.8
+    [openurp@centos ~]$ cd /home/openurp/.m2/repository/org/beangle/micdn/beangle-micdn-asset/0.0.8/
+    [openurp@centos ~]$ wget https://github.com/beangle/micdn/releases/download/v0.0.8/beangle-micdn-asset-0.0.8-ldc.bin
 
 在beangle-sas(>=0.7.6)上注册该应用
 在server.xml中修改如下：
@@ -122,8 +127,8 @@ values(1,(select min(id) from cfg.domains),'系统管理','/platform','platform-
 
 <Webapps>
   ...
-  <Webapp name="micdn.blob" gav="org.beangle.micdn:beangle-micdn-blob:bin:dmd:0.0.4"/>
-  <Webapp name="micdn.asset" gav="org.beangle.micdn:beangle-micdn-asset:bin:dmd:0.0.4"/>
+  <Webapp name="micdn.blob" gav="org.beangle.micdn:beangle-micdn-blob:bin:ldc:0.0.8"/>
+  <Webapp name="micdn.asset" gav="org.beangle.micdn:beangle-micdn-asset:bin:ldc:0.0.8"/>
 </Webapps>
 <Deployments>
   ...
