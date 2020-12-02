@@ -1,6 +1,4 @@
-create schema session;
-
-CREATE TABLE session.session_infoes
+CREATE TABLE ssn.session_infoes
 (
     id character varying(200) NOT NULL,
     principal character varying(200),
@@ -10,6 +8,7 @@ CREATE TABLE session.session_infoes
     agent character varying(200),
     os character varying(200),
     login_at timestamp without time zone,
+    tti_seconds int4,
     last_access_at timestamp without time zone,
     CONSTRAINT session_infoes_pkey PRIMARY KEY (id)
 )
