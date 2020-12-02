@@ -25,7 +25,9 @@ version: ["1.1.0"]
 
 用root运行命令进行配置
 
-    [root@centos ~]# yum -y install java-11-openjdk haproxy redis wget unzip varnish lsof apr tomcat-native
+    [root@centos ~]# dnf -y install https://download-ib01.fedoraproject.org/pub/epel/8/Everything/x86_64/Packages/e/epel-release-8-9.el8.noarch.rpm
+    [root@centos ~]# dnf -y install java-11-openjdk haproxy redis wget unzip varnish lsof apr tomcat-native 
+    [root@centos ~]# dnf -y install langpacks-zh_CN
     [root@centos ~]# systemctl disable firewalld
     [root@centos ~]# systemctl enable haproxy redis varnish
     [root@centos ~]# systemctl start haproxy redis varnish
@@ -40,10 +42,12 @@ version: ["1.1.0"]
 
 Centos 8 需要
 
-    [root@centos ~]# yum -y install postgresql postgresql-server postgresql-contrib postgresql-libs
-    [root@centos ~]# /usr/bin/postgresql-setup initdb
-    [root@centos ~]# systemctl start postgresql.service
-    [root@centos ~]# systemctl enable postgresql.service
+    [root@centos ~]# yum -y install https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+    [root@centos ~]# dnf -qy module disable postgresql
+    [root@centos ~]# dnf -y install postgresql12 postgresql12-server
+    [root@centos ~]# /usr/pgsql-12/bin/postgresql-12-setup initdb
+    [root@centos ~]# systemctl enable --now postgresql-12
+    [root@centos ~]# systemctl status postgresql-12
 
 1.2 配置环境
 

@@ -95,9 +95,9 @@ version: ["1.0.0"]
 
     [openurp@centos8 ~]$ mkdir -p .ems/local/default/images/
     [openurp@centos8 ~]$ mkdir -p .ems/micdn
-    [openurp@centos8 ~]$ touch .ems/micdn/cdn.xml
+    [openurp@centos8 ~]$ touch .ems/micdn/asset.xml
 
-修改cdn的文件内容如下:
+修改asset.xml的文件内容如下:
 
 {% highlight xml %}
 <asset base="/home/openurp/.ems/static">
@@ -340,8 +340,10 @@ version: ["1.0.0"]
 
 修改该文件：
 
-    openurp.base=学校的教学系统域名
-
+    base=学校的教学系统域名
+    key=openurp
+    session_id_name=URP_SID
+    session_id_prefix=URP-
 
 ### 6. 配置Haproxy
 
