@@ -51,9 +51,10 @@ version: ["1.0.0"]
 <tr><td class="text-center">5</td><td>level_id</td><td>integer</td><td class="text-center">否</td><td>学历层次ID</td><td>code_gb.academic_levels</td>  </tr>
 <tr><td class="text-center">6</td><td>major_id</td><td>bigint</td><td class="text-center">是</td><td>适用专业ID</td><td>edu_base.majors</td>  </tr>
 <tr><td class="text-center">7</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>edu_base.projects</td>  </tr>
-<tr><td class="text-center">8</td><td>std_type_id</td><td>integer</td><td class="text-center">是</td><td>学生类别ID</td><td>edu_base.std_types</td>  </tr>
-<tr><td class="text-center">9</td><td>to_grade</td><td>varchar(10)</td><td class="text-center">否</td><td>截至年级</td><td></td>  </tr>
-<tr><td class="text-center">10</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
+<tr><td class="text-center">8</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
+<tr><td class="text-center">9</td><td>std_type_id</td><td>integer</td><td class="text-center">是</td><td>学生类别ID</td><td>edu_base.std_types</td>  </tr>
+<tr><td class="text-center">10</td><td>to_grade</td><td>varchar(10)</td><td class="text-center">否</td><td>截至年级</td><td></td>  </tr>
+<tr><td class="text-center">11</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>
 
 
@@ -176,7 +177,7 @@ version: ["1.0.0"]
 <tr><td class="text-center">5</td><td>exam_mode_id</td><td>integer</td><td class="text-center">否</td><td>考核方式ID</td><td>code_hb.exam_modes</td>  </tr>
 <tr><td class="text-center">6</td><td>group_id</td><td>bigint</td><td class="text-center">否</td><td>课程组ID</td><td>edu_program.major_course_groups</td>  </tr>
 <tr><td class="text-center">7</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">8</td><td>stage_id</td><td>integer</td><td class="text-center">否</td><td>日历阶段ID</td><td>edu_base.calendar_stages</td>  </tr>
+<tr><td class="text-center">8</td><td>stage_id</td><td>integer</td><td class="text-center">是</td><td>日历阶段ID</td><td>edu_base.calendar_stages</td>  </tr>
 <tr><td class="text-center">9</td><td>suggest_terms</td><td>integer</td><td class="text-center">否</td><td>建议修读学期</td><td></td>  </tr>
 <tr><td class="text-center">10</td><td>terms</td><td>integer</td><td class="text-center">否</td><td>开课学期</td><td></td>  </tr>
 <tr><td class="text-center">11</td><td>weekstate</td><td>bigint</td><td class="text-center">否</td><td>开课周</td><td></td>  </tr>
@@ -213,9 +214,9 @@ version: ["1.0.0"]
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>audit_state</td><td>integer</td><td class="text-center">否</td><td>审核状态</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效日期</td><td></td>  </tr>
+<tr><td class="text-center">3</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>开始日期</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>credits</td><td>float4</td><td class="text-center">否</td><td>要求学分</td><td></td>  </tr>
-<tr><td class="text-center">5</td><td>end_on</td><td>date</td><td class="text-center">否</td><td>失效日期</td><td></td>  </tr>
+<tr><td class="text-center">5</td><td>end_on</td><td>date</td><td class="text-center">否</td><td>结束日期</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>end_term</td><td>smallint</td><td class="text-center">否</td><td>结束学期</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>program_id</td><td>bigint</td><td class="text-center">否</td><td>专业培养方案ID</td><td>edu_program.programs</td>  </tr>
 <tr><td class="text-center">8</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
@@ -282,7 +283,7 @@ version: ["1.0.0"]
 <tr><td class="text-center">3</td><td>department_id</td><td>integer</td><td class="text-center">否</td><td>开课部门ID</td><td>base.departments</td>  </tr>
 <tr><td class="text-center">4</td><td>exam_mode_id</td><td>integer</td><td class="text-center">否</td><td>考核方式ID</td><td>code_hb.exam_modes</td>  </tr>
 <tr><td class="text-center">5</td><td>group_id</td><td>bigint</td><td class="text-center">否</td><td>公共共享课程组ID</td><td>edu_program.share_course_groups</td>  </tr>
-<tr><td class="text-center">6</td><td>stage_id</td><td>integer</td><td class="text-center">否</td><td>日历阶段ID</td><td>edu_base.calendar_stages</td>  </tr>
+<tr><td class="text-center">6</td><td>stage_id</td><td>integer</td><td class="text-center">是</td><td>日历阶段ID</td><td>edu_base.calendar_stages</td>  </tr>
 <tr><td class="text-center">7</td><td>terms</td><td>integer</td><td class="text-center">否</td><td>学期</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>weekstate</td><td>bigint</td><td class="text-center">否</td><td>开课周</td><td></td>  </tr>
 </table>
@@ -318,7 +319,7 @@ version: ["1.0.0"]
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效日期</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>end_on</td><td>date</td><td class="text-center">否</td><td>失效日期</td><td></td>  </tr>
+<tr><td class="text-center">3</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>from_grade</td><td>varchar(255)</td><td class="text-center">否</td><td>起始适用年级</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>level_id</td><td>integer</td><td class="text-center">否</td><td>培养层次ID</td><td>code_hb.education_levels</td>  </tr>
 <tr><td class="text-center">6</td><td>name</td><td>varchar(255)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
@@ -344,8 +345,9 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学生ID</td><td>edu_base.students</td>  </tr>
-<tr><td class="text-center">3</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
+<tr><td class="text-center">2</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
+<tr><td class="text-center">3</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学生ID</td><td>edu_base.students</td>  </tr>
+<tr><td class="text-center">4</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>
 
 
@@ -427,13 +429,14 @@ version: ["1.0.0"]
 <tr><td class="text-center">3</td><td>course_count</td><td>smallint</td><td class="text-center">否</td><td>要求课程门数</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>course_type_id</td><td>integer</td><td class="text-center">否</td><td>课程类别ID</td><td>edu_base.course_types</td>  </tr>
 <tr><td class="text-center">5</td><td>credits</td><td>float4</td><td class="text-center">否</td><td>要求学分</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>indexno</td><td>varchar(20)</td><td class="text-center">否</td><td>索引号</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>parent_id</td><td>bigint</td><td class="text-center">是</td><td>上级组ID</td><td>edu_program.std_course_groups</td>  </tr>
-<tr><td class="text-center">8</td><td>plan_id</td><td>bigint</td><td class="text-center">否</td><td>计划ID</td><td>edu_program.std_plans</td>  </tr>
-<tr><td class="text-center">9</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">10</td><td>sub_count</td><td>smallint</td><td class="text-center">否</td><td>要求完成组数</td><td></td>  </tr>
-<tr><td class="text-center">11</td><td>term_credits</td><td>varchar(255)</td><td class="text-center">否</td><td>学期学分分布</td><td></td>  </tr>
-<tr><td class="text-center">12</td><td>terms</td><td>integer</td><td class="text-center">否</td><td>开课学期</td><td></td>  </tr>
+<tr><td class="text-center">6</td><td>given_name</td><td>varchar(255)</td><td class="text-center">是</td><td>别名</td><td></td>  </tr>
+<tr><td class="text-center">7</td><td>indexno</td><td>varchar(20)</td><td class="text-center">否</td><td>索引号</td><td></td>  </tr>
+<tr><td class="text-center">8</td><td>parent_id</td><td>bigint</td><td class="text-center">是</td><td>上级组ID</td><td>edu_program.std_course_groups</td>  </tr>
+<tr><td class="text-center">9</td><td>plan_id</td><td>bigint</td><td class="text-center">否</td><td>计划ID</td><td>edu_program.std_plans</td>  </tr>
+<tr><td class="text-center">10</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
+<tr><td class="text-center">11</td><td>sub_count</td><td>smallint</td><td class="text-center">否</td><td>要求完成组数</td><td></td>  </tr>
+<tr><td class="text-center">12</td><td>term_credits</td><td>varchar(255)</td><td class="text-center">否</td><td>学期学分分布</td><td></td>  </tr>
+<tr><td class="text-center">13</td><td>terms</td><td>integer</td><td class="text-center">否</td><td>开课学期</td><td></td>  </tr>
 </table>
 
 
@@ -498,9 +501,9 @@ version: ["1.0.0"]
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>audit_state</td><td>integer</td><td class="text-center">否</td><td>审核状态</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效日期</td><td></td>  </tr>
+<tr><td class="text-center">3</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>开始日期</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>credits</td><td>float4</td><td class="text-center">否</td><td>要求学分</td><td></td>  </tr>
-<tr><td class="text-center">5</td><td>end_on</td><td>date</td><td class="text-center">否</td><td>失效日期</td><td></td>  </tr>
+<tr><td class="text-center">5</td><td>end_on</td><td>date</td><td class="text-center">否</td><td>结束日期</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>end_term</td><td>smallint</td><td class="text-center">否</td><td>结束学期</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>program_id</td><td>bigint</td><td class="text-center">否</td><td>专业培养方案ID</td><td>edu_program.programs</td>  </tr>
 <tr><td class="text-center">8</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>

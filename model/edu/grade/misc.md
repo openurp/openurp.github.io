@@ -33,6 +33,7 @@ version: ["1.0.0"]
 <tr><td class="text-center">5</td><td>passed</td><td>boolean</td><td class="text-center">否</td><td>是否通过</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>remark</td><td>varchar(50)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>scores</td><td>varchar(50)</td><td class="text-center">否</td><td>分数</td><td></td>  </tr>
+<tr><td class="text-center">8</td><td>terms</td><td>integer</td><td class="text-center">否</td><td>开课学期</td><td></td>  </tr>
 </table>
 
 
@@ -67,9 +68,10 @@ version: ["1.0.0"]
 <tr><td class="text-center">8</td><td>passed_count</td><td>integer</td><td class="text-center">否</td><td>完成门数</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>passed_credits</td><td>float4</td><td class="text-center">否</td><td>完成学分</td><td></td>  </tr>
 <tr><td class="text-center">10</td><td>plan_result_id</td><td>bigint</td><td class="text-center">否</td><td>计划审核结果ID</td><td>edu_grade.plan_audit_results</td>  </tr>
-<tr><td class="text-center">11</td><td>required_count</td><td>integer</td><td class="text-center">否</td><td>要求门数</td><td></td>  </tr>
-<tr><td class="text-center">12</td><td>required_credits</td><td>float4</td><td class="text-center">否</td><td>要求学分</td><td></td>  </tr>
-<tr><td class="text-center">13</td><td>sub_count</td><td>smallint</td><td class="text-center">否</td><td>要求完成子组数量</td><td></td>  </tr>
+<tr><td class="text-center">11</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
+<tr><td class="text-center">12</td><td>required_count</td><td>integer</td><td class="text-center">否</td><td>要求门数</td><td></td>  </tr>
+<tr><td class="text-center">13</td><td>required_credits</td><td>float4</td><td class="text-center">否</td><td>要求学分</td><td></td>  </tr>
+<tr><td class="text-center">14</td><td>sub_count</td><td>smallint</td><td class="text-center">否</td><td>要求完成子组数量</td><td></td>  </tr>
 </table>
 
 
@@ -139,7 +141,7 @@ version: ["1.0.0"]
 <tr><td class="text-center">9</td><td>required_credits</td><td>float4</td><td class="text-center">否</td><td>要求学分</td><td></td>  </tr>
 <tr><td class="text-center">10</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>edu_base.students</td>  </tr>
 <tr><td class="text-center">11</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
-<tr><td class="text-center">12</td><td>updates</td><td>varchar(500)</td><td class="text-center">否</td><td>更新内容</td><td></td>  </tr>
+<tr><td class="text-center">12</td><td>updates</td><td>varchar(500)</td><td class="text-center">是</td><td>更新内容</td><td></td>  </tr>
 </table>
 
 

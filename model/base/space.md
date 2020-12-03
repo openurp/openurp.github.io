@@ -106,16 +106,15 @@ version: ["0.0.2"]
 <tr><td class="text-center">2</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效日期</td><td></td>  </tr>
 <tr><td class="text-center">3</td><td>building_id</td><td>integer</td><td class="text-center">是</td><td>所在教学楼ID</td><td>base.buildings</td>  </tr>
 <tr><td class="text-center">4</td><td>campus_id</td><td>integer</td><td class="text-center">否</td><td>所在校区ID</td><td>base.campuses</td>  </tr>
-<tr><td class="text-center">5</td><td>capacity</td><td>integer</td><td class="text-center">否</td><td>实际容量</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>code</td><td>varchar(10)</td><td class="text-center">否</td><td>代码</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>department_id</td><td>integer</td><td class="text-center">是</td><td>管理部门ID</td><td>base.departments</td>  </tr>
-<tr><td class="text-center">8</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
-<tr><td class="text-center">9</td><td>floor_no</td><td>integer</td><td class="text-center">否</td><td>教室所处楼层</td><td></td>  </tr>
-<tr><td class="text-center">10</td><td>name</td><td>varchar(80)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
-<tr><td class="text-center">11</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">12</td><td>room_type_id</td><td>integer</td><td class="text-center">否</td><td>房间类型ID</td><td>code_hb.room_types</td>  </tr>
-<tr><td class="text-center">13</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校ID</td><td>base.schools</td>  </tr>
-<tr><td class="text-center">14</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
+<tr><td class="text-center">5</td><td>code</td><td>varchar(10)</td><td class="text-center">否</td><td>代码</td><td></td>  </tr>
+<tr><td class="text-center">6</td><td>department_id</td><td>integer</td><td class="text-center">是</td><td>管理部门ID</td><td>base.departments</td>  </tr>
+<tr><td class="text-center">7</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
+<tr><td class="text-center">8</td><td>floor_no</td><td>integer</td><td class="text-center">否</td><td>教室所处楼层</td><td></td>  </tr>
+<tr><td class="text-center">9</td><td>name</td><td>varchar(80)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
+<tr><td class="text-center">10</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
+<tr><td class="text-center">11</td><td>room_type_id</td><td>integer</td><td class="text-center">否</td><td>房间类型ID</td><td>code_hb.room_types</td>  </tr>
+<tr><td class="text-center">12</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校ID</td><td>base.schools</td>  </tr>
+<tr><td class="text-center">13</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>
 
   * 表格中唯一约束

@@ -6,7 +6,7 @@ title: SQL
 
 ### platform
 
-init
+初始化
 
  * [0-schemas.sql](/model/ddl/platform/0-schemas.sql) 
  * [1-tables.sql](/model/ddl/platform/1-tables.sql) 
@@ -16,7 +16,7 @@ init
  * [6-comments.sql](/model/ddl/platform/6-comments.sql)
  * [7-auxiliaries.sql](/model/ddl/platform/7-auxiliaries.sql)
 
-migrate
+版本迁移
  
  * [0.3.4_0.4.0.sql](/model/ddl/platform/migrate/0.3.4_0.4.0.sql)
  * [0.3.0_0.3.4.sql](/model/ddl/platform/migrate/0.3.0_0.3.4.sql)
@@ -32,17 +32,23 @@ migrate
 
 ### openurp
 
-init
+ 初始化
 
  * [0-schemas.sql](/model/ddl/openurp/0-schemas.sql) 
  * [1-tables.sql](/model/ddl/openurp/1-tables.sql) 
- * [2-constraints.sql](/model/ddl/openurp/2-constraints.sql)
+ * [2-keys.sql](/model/ddl/openurp/2-keys.sql)
  * [3-indices.sql](/model/ddl/openurp/3-indices.sql)
- * [5-comments.sql](/model/ddl/openurp/5-comments.sql)
- * [6-auxiliaries.sql](/model/ddl/openurp/6-auxiliaries.sql)
+ * [4-constraints.sql](/model/ddl/openurp/4-constraints.sql)
+ * [6-comments.sql](/model/ddl/openurp/6-comments.sql)
+ * [7-auxiliaries.sql](/model/ddl/openurp/7-auxiliaries.sql)
 
- migrate
- 
+ 种子数据
+ * [seed.sql](/model/ddl/openurp/seed.sql)
+
+ 版本迁移
+
+ * [0.18.1_0.19.0.sql](/model/ddl/openurp/migrate/0.18.1_0.19.0.sql) 
+ * [0.16.1_0.18.1.sql](/model/ddl/openurp/migrate/0.16.1_0.18.1.sql)  
  * [0.15.0_0.16.1.sql](/model/ddl/openurp/migrate/0.15.0_0.16.1.sql) 
  * [0.11.0_0.12.0.sql](/model/ddl/openurp/migrate/0.11.0_0.12.0.sql) 
  * [0.1.2_0.1.3.sql](/model/ddl/openurp/migrate/0.1.2_0.1.3.sql) 

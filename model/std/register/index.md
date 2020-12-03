@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 课程信息 
-description: "课程信息"
-categories: [model-1.0.0]
-version: ["1.0.0"]
+title: 报到注册 
+description: "报到注册"
+categories: [model-0.0.1]
+version: ["0.0.1"]
 ---
 {% include JB/setup %}
 
@@ -13,11 +13,11 @@ version: ["1.0.0"]
   * [1.1 表格一览](index.html#表格一览)
 
 ##### 2. 具体模块明细
-* [2.1 课程信息](misc.html)
+* [2.1 报到注册](misc.html)
 
 
 ### 表格一览
-数据库共计3个表，分别如下:
+数据库共计1个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>
@@ -28,13 +28,7 @@ version: ["1.0.0"]
   </tr>
   <tr>
     <td>1</td>
-    <td><a href="misc.html#表格-course_profiles-课程简介">course_profiles</a> 课程简介</td>
-    <td>3</td>
-    <td><a href="misc.html#表格-syllabuses-课程教学大纲">syllabuses</a> 课程教学大纲</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td><a href="misc.html#表格-syllabus_files-教学大纲附件">syllabus_files</a> 教学大纲附件</td>
+    <td><a href="misc.html#表格-registers-注册报到信息">registers</a> 注册报到信息</td>
     <td></td>
     <td></td>
   </tr>

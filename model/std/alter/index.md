@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 教材信息 
-description: "教材信息"
+title: 学籍异动 
+description: "学籍异动"
 categories: [model-0.0.1]
 version: ["0.0.1"]
 ---
@@ -13,11 +13,11 @@ version: ["0.0.1"]
   * [1.1 表格一览](index.html#表格一览)
 
 ##### 2. 具体模块明细
-* [2.1 核心部分](core.html)
+* [2.1 学籍异动](misc.html)
 
 
 ### 表格一览
-数据库共计4个表，分别如下:
+数据库共计2个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>
@@ -28,15 +28,9 @@ version: ["0.0.1"]
   </tr>
   <tr>
     <td>1</td>
-    <td><a href="core.html#表格-clazz_book_stats-课程教材订购汇总">clazz_book_stats</a> 课程教材订购汇总</td>
-    <td>3</td>
-    <td><a href="core.html#表格-materials_books-教材">materials_books</a> 教材</td>
-  </tr>
-  <tr>
+    <td><a href="misc.html#表格-std_alteration_items-学籍异动明细">std_alteration_items</a> 学籍异动明细</td>
     <td>2</td>
-    <td><a href="core.html#表格-materials-教材选用">materials</a> 教材选用</td>
-    <td>4</td>
-    <td><a href="core.html#表格-std_book_orders-教材征订单">std_book_orders</a> 教材征订单</td>
+    <td><a href="misc.html#表格-std_alterations-学籍异动">std_alterations</a> 学籍异动</td>
   </tr>
 </table>
 

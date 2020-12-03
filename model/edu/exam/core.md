@@ -29,7 +29,7 @@ version: ["0.0.1"]
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>begin_at</td><td>smallint</td><td class="text-center">否</td><td>开始时间</td><td></td>  </tr>
 <tr><td class="text-center">3</td><td>clazz_id</td><td>bigint</td><td class="text-center">否</td><td>教学任务ID</td><td>edu_clazz.clazzes</td>  </tr>
-<tr><td class="text-center">4</td><td>depart_arranged</td><td>boolean</td><td class="text-center">否</td><td>是否院系自主安排</td><td></td>  </tr>
+<tr><td class="text-center">4</td><td>depart_arranged</td><td>boolean</td><td class="text-center">是</td><td>是否院系自主安排</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>end_at</td><td>smallint</td><td class="text-center">否</td><td>结束时间</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>exam_on</td><td>date</td><td class="text-center">否</td><td>考试时间</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>exam_paper_no</td><td>varchar(255)</td><td class="text-center">是</td><td>试卷号</td><td></td>  </tr>
@@ -525,7 +525,7 @@ version: ["0.0.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>exclude_on</td><td>date</td><td class="text-center">否</td><td>exclude_on</td><td></td>  </tr>
+<tr><td class="text-center">1</td><td>exclude_on</td><td>date</td><td class="text-center">否</td><td>排除日期</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>invigilation_quota_id</td><td>bigint</td><td class="text-center">否</td><td>监考配额ID</td><td>edu_exam.invigilation_quotas</td>  </tr>
 </table>
 

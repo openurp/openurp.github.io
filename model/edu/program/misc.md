@@ -72,7 +72,7 @@ version: ["1.0.0"]
 <tr><td class="text-center">5</td><td>exam_mode_id</td><td>integer</td><td class="text-center">否</td><td>考核方式ID</td><td>code_hb.exam_modes</td>  </tr>
 <tr><td class="text-center">6</td><td>group_id</td><td>bigint</td><td class="text-center">否</td><td>课程组ID</td><td>edu_program.execution_course_groups</td>  </tr>
 <tr><td class="text-center">7</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">8</td><td>stage_id</td><td>integer</td><td class="text-center">否</td><td>日历阶段ID</td><td>edu_base.calendar_stages</td>  </tr>
+<tr><td class="text-center">8</td><td>stage_id</td><td>integer</td><td class="text-center">是</td><td>日历阶段ID</td><td>edu_base.calendar_stages</td>  </tr>
 <tr><td class="text-center">9</td><td>suggest_terms</td><td>integer</td><td class="text-center">否</td><td>建议修读学期</td><td></td>  </tr>
 <tr><td class="text-center">10</td><td>terms</td><td>integer</td><td class="text-center">否</td><td>开课学期</td><td></td>  </tr>
 <tr><td class="text-center">11</td><td>weekstate</td><td>bigint</td><td class="text-center">否</td><td>开课周</td><td></td>  </tr>
@@ -109,11 +109,11 @@ version: ["1.0.0"]
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>audit_state</td><td>integer</td><td class="text-center">否</td><td>审核状态</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效日期</td><td></td>  </tr>
+<tr><td class="text-center">3</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>开始日期</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>campus_id</td><td>integer</td><td class="text-center">是</td><td>校区信息ID</td><td>base.campuses</td>  </tr>
 <tr><td class="text-center">5</td><td>credits</td><td>float4</td><td class="text-center">否</td><td>要求学分</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>department_id</td><td>integer</td><td class="text-center">否</td><td>部门组织机构信息ID</td><td>base.departments</td>  </tr>
-<tr><td class="text-center">7</td><td>end_on</td><td>date</td><td class="text-center">否</td><td>失效日期</td><td></td>  </tr>
+<tr><td class="text-center">7</td><td>end_on</td><td>date</td><td class="text-center">否</td><td>结束日期</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>end_term</td><td>smallint</td><td class="text-center">否</td><td>结束学期</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>program_id</td><td>bigint</td><td class="text-center">否</td><td>专业培养方案ID</td><td>edu_program.programs</td>  </tr>
 <tr><td class="text-center">10</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
@@ -129,6 +129,66 @@ version: ["1.0.0"]
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
 <tr><td>idx_qgckajdcovnvbh5emipeorwqi</td><td>program_id&nbsp;</td><td>否</td>  </tr>
+</table>
+
+### 表格 program_doc_metas 培养方案章节定义
+
+  * 表格说明
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
+<tr><td>program_doc_metas</td><td>id</td><td>培养方案章节定义</td>  </tr>
+</table>
+
+  * 表格中的列
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
+<tr><td class="text-center">1</td><td>id</td><td>integer</td><td class="text-center">否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td class="text-center">2</td><td>indexno</td><td>varchar(255)</td><td class="text-center">否</td><td>章节编号</td><td></td>  </tr>
+<tr><td class="text-center">3</td><td>maxlength</td><td>integer</td><td class="text-center">否</td><td>最大长度</td><td></td>  </tr>
+<tr><td class="text-center">4</td><td>name</td><td>varchar(255)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
+<tr><td class="text-center">5</td><td>template_id</td><td>integer</td><td class="text-center">否</td><td>培养方案文档模板ID</td><td>edu_program.program_doc_templates</td>  </tr>
+</table>
+
+
+  * 表格的索引
+
+<table class="table table-bordered table-striped table-condensed">
+  <tr>
+<th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
+<tr><td>idx_d69hctw0adiwc375iducsqovm</td><td>template_id&nbsp;</td><td>否</td>  </tr>
+</table>
+
+### 表格 program_doc_sections 培养方案文档章节
+
+  * 表格说明
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
+<tr><td>program_doc_sections</td><td>id</td><td>培养方案文档章节</td>  </tr>
+</table>
+
+  * 表格中的列
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
+<tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
+<tr><td class="text-center">2</td><td>contents</td><td>varchar(10000)</td><td class="text-center">否</td><td>内容</td><td></td>  </tr>
+<tr><td class="text-center">3</td><td>doc_id</td><td>bigint</td><td class="text-center">否</td><td>培养方案文档ID</td><td>edu_program.program_docs</td>  </tr>
+<tr><td class="text-center">4</td><td>indexno</td><td>varchar(255)</td><td class="text-center">否</td><td>顺序号</td><td></td>  </tr>
+<tr><td class="text-center">5</td><td>name</td><td>varchar(255)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
+<tr><td class="text-center">6</td><td>parent_id</td><td>bigint</td><td class="text-center">是</td><td>培养方案文档章节ID</td><td>edu_program.program_doc_sections</td>  </tr>
+</table>
+
+
+  * 表格的索引
+
+<table class="table table-bordered table-striped table-condensed">
+  <tr>
+<th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
+<tr><td>idx_jfn7je4lfhja46qtvdeka1dut</td><td>parent_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_lkchplwh47vmakls9riujfgrw</td><td>doc_id&nbsp;</td><td>否</td>  </tr>
 </table>
 
 ### 表格 program_doc_templates 培养方案文档模板
@@ -151,17 +211,19 @@ version: ["1.0.0"]
 <tr><td class="text-center">5</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>level_id</td><td>integer</td><td class="text-center">否</td><td>培养层次ID</td><td>code_hb.education_levels</td>  </tr>
 <tr><td class="text-center">7</td><td>name</td><td>varchar(255)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
+<tr><td class="text-center">8</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>edu_base.projects</td>  </tr>
+<tr><td class="text-center">9</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>
 
 
 
-### 表格 program_doc_templates_std_types 培养方案文档对应学生类别
+### 表格 program_doc_templates_types 文档对应学生类别
 
   * 表格说明
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
-<tr><td>program_doc_templates_std_types</td><td>program_doc_template_id,std_type_id</td><td>培养方案文档对应学生类别</td>  </tr>
+<tr><td>program_doc_templates_types</td><td>program_doc_template_id,std_type_id</td><td>文档对应学生类别</td>  </tr>
 </table>
 
   * 表格中的列
@@ -178,7 +240,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_mrc5rlhqh7si6flloul2on6l7</td><td>program_doc_template_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_q0vt9i2ql8fjenu8ldm8fm5wu</td><td>program_doc_template_id&nbsp;</td><td>否</td>  </tr>
 </table>
 
 ### 表格 program_docs 培养方案文档

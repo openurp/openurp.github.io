@@ -141,11 +141,11 @@ version: ["0.0.1"]
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>acquired_credits</td><td>float4</td><td class="text-center">否</td><td>获得学分</td><td></td>  </tr>
 <tr><td class="text-center">3</td><td>batch</td><td>integer</td><td class="text-center">否</td><td>批次</td><td></td>  </tr>
-<tr><td class="text-center">4</td><td>education_result_id</td><td>integer</td><td class="text-center">否</td><td>毕结业情况ID</td><td>code_gb.education_results</td>  </tr>
+<tr><td class="text-center">4</td><td>education_result_id</td><td>integer</td><td class="text-center">是</td><td>毕结业情况ID</td><td>code_gb.education_results</td>  </tr>
 <tr><td class="text-center">5</td><td>elected_credits</td><td>float4</td><td class="text-center">否</td><td>修读学分</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>graduate_comments</td><td>varchar(500)</td><td class="text-center">是</td><td>毕业备注</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>locked</td><td>boolean</td><td class="text-center">否</td><td>锁定毕业审核结果</td><td></td>  </tr>
-<tr><td class="text-center">8</td><td>passed</td><td>boolean</td><td class="text-center">否</td><td>是否通过毕业审核</td><td></td>  </tr>
+<tr><td class="text-center">8</td><td>passed</td><td>boolean</td><td class="text-center">是</td><td>是否通过毕业审核</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>published</td><td>boolean</td><td class="text-center">否</td><td>是否已发布</td><td></td>  </tr>
 <tr><td class="text-center">10</td><td>required_credits</td><td>float4</td><td class="text-center">否</td><td>要求学分</td><td></td>  </tr>
 <tr><td class="text-center">11</td><td>session_id</td><td>bigint</td><td class="text-center">否</td><td>毕业批次ID</td><td>edu_graduation.graduate_sessions</td>  </tr>

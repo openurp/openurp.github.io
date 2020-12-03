@@ -110,17 +110,16 @@ version: ["1.0.0"]
 <tr><td class="text-center">21</td><td>has_makeup</td><td>boolean</td><td class="text-center">否</td><td>是否有补考</td><td></td>  </tr>
 <tr><td class="text-center">22</td><td>lang_type_id</td><td>integer</td><td class="text-center">否</td><td>授课语言类型ID</td><td>code_hb.teach_lang_types</td>  </tr>
 <tr><td class="text-center">23</td><td>locked</td><td>boolean</td><td class="text-center">否</td><td>是否锁定上限</td><td></td>  </tr>
-<tr><td class="text-center">24</td><td>material_id</td><td>bigint</td><td class="text-center">是</td><td>教材选用ID</td><td>edu_clazz.materials</td>  </tr>
-<tr><td class="text-center">25</td><td>name</td><td>varchar(500)</td><td class="text-center">否</td><td>教学班名称</td><td></td>  </tr>
-<tr><td class="text-center">26</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>edu_base.projects</td>  </tr>
-<tr><td class="text-center">27</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">28</td><td>reserved</td><td>integer</td><td class="text-center">否</td><td>保留人数</td><td></td>  </tr>
-<tr><td class="text-center">29</td><td>room_type_id</td><td>integer</td><td class="text-center">否</td><td>教室类型ID</td><td>code_hb.classroom_types</td>  </tr>
-<tr><td class="text-center">30</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>教学日历ID</td><td>edu_base.semesters</td>  </tr>
-<tr><td class="text-center">31</td><td>subject</td><td>varchar(255)</td><td class="text-center">是</td><td>主题</td><td></td>  </tr>
-<tr><td class="text-center">32</td><td>teach_depart_id</td><td>integer</td><td class="text-center">否</td><td>开课院系ID</td><td>base.departments</td>  </tr>
-<tr><td class="text-center">33</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
-<tr><td class="text-center">34</td><td>weekstate</td><td>bigint</td><td class="text-center">否</td><td>周状态</td><td></td>  </tr>
+<tr><td class="text-center">24</td><td>name</td><td>varchar(500)</td><td class="text-center">否</td><td>教学班名称</td><td></td>  </tr>
+<tr><td class="text-center">25</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>edu_base.projects</td>  </tr>
+<tr><td class="text-center">26</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
+<tr><td class="text-center">27</td><td>reserved</td><td>integer</td><td class="text-center">否</td><td>保留人数</td><td></td>  </tr>
+<tr><td class="text-center">28</td><td>room_type_id</td><td>integer</td><td class="text-center">否</td><td>教室类型ID</td><td>code_hb.classroom_types</td>  </tr>
+<tr><td class="text-center">29</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>教学日历ID</td><td>edu_base.semesters</td>  </tr>
+<tr><td class="text-center">30</td><td>subject</td><td>varchar(255)</td><td class="text-center">是</td><td>主题</td><td></td>  </tr>
+<tr><td class="text-center">31</td><td>teach_depart_id</td><td>integer</td><td class="text-center">否</td><td>开课院系ID</td><td>base.departments</td>  </tr>
+<tr><td class="text-center">32</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
+<tr><td class="text-center">33</td><td>weekstate</td><td>bigint</td><td class="text-center">否</td><td>周状态</td><td></td>  </tr>
 </table>
 
   * 表格中唯一约束
@@ -138,6 +137,32 @@ version: ["1.0.0"]
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
 <tr><td>idx_erjg7aasw8glnxx3lrmvmrmqs</td><td>project_id&nbsp;teach_depart_id&nbsp;</td><td>否</td>  </tr>
 <tr><td>idx_2nu751wwcosaoh3kd2a36ycdj</td><td>group_id&nbsp;</td><td>否</td>  </tr>
+</table>
+
+### 表格 clazzes_ability_rates 要求课程能力等级
+
+  * 表格说明
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
+<tr><td>clazzes_ability_rates</td><td>clazz_id,course_ability_rate_id</td><td>要求课程能力等级</td>  </tr>
+</table>
+
+  * 表格中的列
+
+<table class="table table-bordered table-striped table-condensed">
+<tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
+<tr><td class="text-center">1</td><td>clazz_id</td><td>bigint</td><td class="text-center">否</td><td>教学任务ID</td><td>edu_clazz.clazzes</td>  </tr>
+<tr><td class="text-center">2</td><td>course_ability_rate_id</td><td>integer</td><td class="text-center">否</td><td>课程能力等级ID</td><td>edu_base.course_ability_rates</td>  </tr>
+</table>
+
+
+  * 表格的索引
+
+<table class="table table-bordered table-striped table-condensed">
+  <tr>
+<th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
+<tr><td>idx_dtwnr7ysxuukruvulscomb6on</td><td>clazz_id&nbsp;</td><td>否</td>  </tr>
 </table>
 
 ### 表格 clazzes_tags 教学任务标签
@@ -172,7 +197,7 @@ version: ["1.0.0"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
-<tr><td>clazzes_teachers</td><td>clazz_id,idx,teacher_id</td><td>授课教师</td>  </tr>
+<tr><td>clazzes_teachers</td><td>clazz_id,teacher_id,idx</td><td>授课教师</td>  </tr>
 </table>
 
   * 表格中的列
@@ -180,7 +205,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>clazz_id</td><td>bigint</td><td class="text-center">否</td><td>教学任务ID</td><td>edu_clazz.clazzes</td>  </tr>
-<tr><td class="text-center">2</td><td>idx</td><td>integer</td><td class="text-center">否</td><td></td><td></td>  </tr>
+<tr><td class="text-center">2</td><td>idx</td><td>integer</td><td class="text-center">否</td><td>index no</td><td></td>  </tr>
 <tr><td class="text-center">3</td><td>teacher_id</td><td>bigint</td><td class="text-center">否</td><td>教师信息ID</td><td>edu_base.teachers</td>  </tr>
 </table>
 

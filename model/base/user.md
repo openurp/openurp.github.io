@@ -206,12 +206,14 @@ version: ["0.0.2"]
 <tr><td class="text-center">4</td><td>code</td><td>varchar(30)</td><td class="text-center">否</td><td>人员帐号</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>department_id</td><td>integer</td><td class="text-center">否</td><td>所在部门ID</td><td>base.departments</td>  </tr>
 <tr><td class="text-center">6</td><td>email</td><td>varchar(80)</td><td class="text-center">是</td><td>邮箱</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
-<tr><td class="text-center">8</td><td>mobile</td><td>varchar(15)</td><td class="text-center">是</td><td>电话</td><td></td>  </tr>
-<tr><td class="text-center">9</td><td>name</td><td>varchar(80)</td><td class="text-center">否</td><td>姓名</td><td></td>  </tr>
-<tr><td class="text-center">10</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">11</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校ID</td><td>base.schools</td>  </tr>
-<tr><td class="text-center">12</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
+<tr><td class="text-center">7</td><td>en_name</td><td>varchar(255)</td><td class="text-center">是</td><td>英文名</td><td></td>  </tr>
+<tr><td class="text-center">8</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
+<tr><td class="text-center">9</td><td>gender_id</td><td>integer</td><td class="text-center">否</td><td>性别ID</td><td>code_gb.genders</td>  </tr>
+<tr><td class="text-center">10</td><td>mobile</td><td>varchar(15)</td><td class="text-center">是</td><td>电话</td><td></td>  </tr>
+<tr><td class="text-center">11</td><td>name</td><td>varchar(80)</td><td class="text-center">否</td><td>姓名</td><td></td>  </tr>
+<tr><td class="text-center">12</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
+<tr><td class="text-center">13</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校ID</td><td>base.schools</td>  </tr>
+<tr><td class="text-center">14</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>
 
   * 表格中唯一约束

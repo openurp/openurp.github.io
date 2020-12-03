@@ -72,9 +72,6 @@ alter table edu_base.teachers add constraint fk_25tvrvw3ww2p7mbt62abrbwev foreig
 alter table edu_base.teachers drop constraint uk_oa2tjed13a1wvudv8ce1b71fg cascade;
 alter table edu_base.teachers add constraint uk_cd1k6xwg9jqtiwx9ybnxpmoh9 unique (user_id);
 
-drop index org.beangle.data.jdbc.meta.Database@78123e82.idx_cd1k6xwg9jqtiwx9ybnxpmoh9;
-drop index org.beangle.data.jdbc.meta.Database@78123e82.idx_r30fs0xbsofmfg75gw6gnvq1n;
-
 alter table edu_base.teaching_groups add column project_id integer;
 alter table edu_base.teaching_groups alter project_id set not null;
 alter table edu_base.teaching_groups add constraint fk_kkdwqyjk5wby463hfv6kb8yw9 foreign key (project_id) references edu_base.projects (id);
