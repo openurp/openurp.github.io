@@ -76,7 +76,7 @@ alter table code_hb.uncheckin_reasons set schema code;
 alter table code_hb.unregistered_reasons set schema code;
 alter table code_hb.visa_types set schema code;
 alter table code_hb.work_statuses set schema code;
-create schema base;
+
 alter table edu_base.book_award_types set schema base;
 alter table edu_base.book_types set schema base;
 alter table edu_base.calendar_stages set schema base;
