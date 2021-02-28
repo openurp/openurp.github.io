@@ -11,7 +11,7 @@ version: ["1.0.0"]
 
 
 * Openurp API 升级
-  - 执行[0.19.0_0.20.0.sql](/model/ddl/openurp/migrate/0.19.0_0.20.0.sql)
+  - 执行[0.19.0_0.20.1.sql](/model/ddl/openurp/migrate/0.19.0_0.20.1.sql)
 
 * Openurp 应用
   - 原有部署的base-adminapp，更换成base-webapp，部署在/base上下文

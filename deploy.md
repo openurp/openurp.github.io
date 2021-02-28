@@ -23,5 +23,5 @@ group: navigation
 * [openurp升级0.16.1](/deploy/update/openurp_0.16.1.html)
 * [openurp升级0.18.1](/deploy/update/openurp_0.18.1.html)
 * [openurp升级0.19.0](/deploy/update/openurp_0.19.0.html)
-* [openurp升级0.20.0](/deploy/update/openurp_0.20.0.html)
+* [openurp升级0.20.1](/deploy/update/openurp_0.20.1.html)
 
