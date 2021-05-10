@@ -12,7 +12,9 @@ version: ["1.0.0"]
 #### Platform 升级
 
   - 在server.xml中更改platform版本为0.5.13
-  - 则执行如下sql
+  - 在网页上注册模板维护(/admin/config/template）和在配置（/admin/config/reconfig）两个资源及其对应的菜单
+  - 将这两个菜单的权限分配给超级管理员。
+  - platform数据内部,则执行如下sql
 
 {% highlight sql %}
     create table cfg.templates (id bigint not null, file_size integer not null, file_path varchar(255) not null, app_id integer not null, media_type varchar(255) not null, name varchar(255) not null, updated_at timestamp not null);
@@ -22,3 +24,4 @@ version: ["1.0.0"]
     alter table cfg.templates add constraint pk_tn6q8qe5k2nn1buqoxagrxnbg primary key (id);
     alter table cfg.templates add constraint uk_grb4brw28cd2iar8ehk5y4g9v unique (app_id,name);
 {% endhighlight %}
+
