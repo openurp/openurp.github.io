@@ -17,6 +17,7 @@ group: navigation
 * [平台升级0.5.4](/deploy/update/platform_0.5.4.html)
 * [平台升级0.5.5](/deploy/update/platform_0.5.5.html)
 * [平台升级0.5.7](/deploy/update/platform_0.5.7.html)
+* [平台升级0.5.13](/deploy/update/platform_0.5.13.html)
 
 
 * [openurp升级0.3.14](/deploy/update/openurp_0.3.14.html)
