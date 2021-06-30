@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report title="数据库设计说明">
   <system name="成绩信息" version="1.0.0"/>
-  <database xml="../database.xml" schema="edu_grade"/>
+  <database xml="../database.xml" schema="edu" subSystem="grade"/>
   <pages template="jekyll" extension=".md">
     <page name="index" />
     <page name="module" iterable="true"/>
   </pages>
 
   <modules>
-    <module name="xb" title="校标" tables="xb_*"/>
-    <module name="grade" title="学生成绩" tables="exam_grade*,course_grade*,ga_grade*,grade_rate*,std_gpas,std_semester_gpas,std_year_gpas">
+    <module name="course" title="学生成绩">
       <image name="grades" title="学生成绩" tables="exam_grades,course_grades,ga_grades"/>
     </module>
+    <module name="plan" title="计划完成"/>
+    <module name="process" title="过程性成绩"/>
+    <module name="moral" title="德育成绩"/>
     <module name="misc" title="其他" tables="*"/>
   </modules>
 </report>
