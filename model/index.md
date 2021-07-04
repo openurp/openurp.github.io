@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 数据模型<sup>0.19.0</sup>
+title: 数据模型<sup>0.23.0</sup>
 header: 数据模型
 group: navigation
 ---
@@ -16,13 +16,12 @@ group: navigation
 
 ##### 2. 代码和人员信息
 
-* [代码-国标GBCode](/model/code/gb/index.html)
-* [代码-行标HBCode](/model/code/hb/index.html)
+* [代码](/model/code/index.html)
 
 ##### 3. 基础信息
 
 * [1. 基础信息 Base](/model/base/index.html)
-* [2. 教学信息 Edu.Base](/model/base/edu_base/index.html)
+* [2. 教学信息 Edu.Base](/model/base/edu/index.html)
 
 ##### 4. 教务管理
 

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report title="数据库设计说明">
   <system name="教学类基础信息" version="0.0.1"/>
-  <database xml="../database.xml" schema="edu_base" subSystem="base.edu"/>
+  <database xml="../database.xml" schema="base" subSystem="edu"/>
   <pages template="jekyll" extension=".md">
     <page name="index" />
     <page name="module" iterable="true"/>
   </pages>
 
   <modules>
-    <module name="core" title="核心部分" tables="adminclasses*,project*,courses*,course_hour*,majors*,major_journals*,direction*,program*,students*,student_state*">
-      <image name="adminclasses" title="行政班级" tables="adminclasses*"/>
+    <module name="core" title="核心部分" tables="squad*,project*,courses*,course_hour*,majors*,major_journals*,direction*,students*,student_state*">
+      <image name="squad" title="行政班级" tables="squad*"/>
       <image name="majors" title="专业" tables="major*,direction*"/>
       <image name="student" title="学生" tables="student*"/>
     </module>

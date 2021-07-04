@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report title="数据库设计说明">
+  <system name="基础代码" version="0.0.2"/>
+  <database xml="database.xml" schema="code"/>
+  <pages template="jekyll" extension=".md">
+    <page name="index" />
+    <page name="module" iterable="true"/>
+  </pages>
+
+  <modules>
+    <module name="asset" title="资产"/>
+    <module name="edu" title="教务"/>
+    <module name="geo" title="地理"/>
+    <module name="hr" title="人事"/>
+    <module name="job" title="就业"/>
+    <module name="person" title="人员"/>
+    <module name="sin" title="科研"/>
+    <module name="std" title="学生"/>
+  </modules>
+</report>
