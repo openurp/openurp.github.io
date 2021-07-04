@@ -12,10 +12,10 @@ version: ["1.0.0"]
 {:toc}
 
 
-### 关系图 1. 学生成绩
+### 关系图 1. 学生课程成绩
   * 关系图
 
-![学生成绩](images/grades.png)
+![学生课程成绩](images/grades.png)
 
 
 

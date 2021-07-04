@@ -9,7 +9,7 @@
 
   <modules>
     <module name="course" title="学生成绩">
-      <image name="grades" title="学生成绩" tables="exam_grades,course_grades,ga_grades"/>
+      <image name="grades" title="学生课程成绩" tables="exam_grades,course_grades,ga_grades"/>
     </module>
     <module name="plan" title="计划完成"/>
     <module name="process" title="过程性成绩"/>
