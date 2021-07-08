@@ -27,11 +27,11 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>clazz_id</td><td>bigint</td><td class="text-center">否</td><td>教学任务ID</td><td>edu_clazz.clazzes</td>  </tr>
+<tr><td class="text-center">2</td><td>clazz_id</td><td>bigint</td><td class="text-center">否</td><td>教学任务ID</td><td>edu.clazzes</td>  </tr>
 <tr><td class="text-center">3</td><td>stat_at</td><td>timestamp</td><td class="text-center">否</td><td>汇总时间</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>std_count</td><td>integer</td><td class="text-center">否</td><td>学生用数量</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>teacher_count</td><td>integer</td><td class="text-center">否</td><td>教师用数量</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>textbook_id</td><td>bigint</td><td class="text-center">否</td><td>教材ID</td><td>edu_base.textbooks</td>  </tr>
+<tr><td class="text-center">6</td><td>textbook_id</td><td>bigint</td><td class="text-center">否</td><td>教材ID</td><td>base.textbooks</td>  </tr>
 </table>
 
 
@@ -51,7 +51,7 @@ version: ["0.0.1"]
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>adoption</td><td>integer</td><td class="text-center">否</td><td>教材状态</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>clazz_id</td><td>bigint</td><td class="text-center">否</td><td>课程ID</td><td>edu_clazz.clazzes</td>  </tr>
+<tr><td class="text-center">3</td><td>clazz_id</td><td>bigint</td><td class="text-center">否</td><td>课程ID</td><td>edu.clazzes</td>  </tr>
 <tr><td class="text-center">4</td><td>materials</td><td>varchar(255)</td><td class="text-center">是</td><td>辅助资料</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>ordered</td><td>boolean</td><td class="text-center">否</td><td>教材已订购</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>passed</td><td>boolean</td><td class="text-center">是</td><td>是否通过</td><td></td>  </tr>
@@ -64,7 +64,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_l4su5whmw7vaxq0fvig5238b6</td><td>clazz_id&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_l4su5whmw7vaxq0fvig5238b6</td><td>clazz_id</td>  </tr>
 </table>
 
 
@@ -81,8 +81,8 @@ version: ["0.0.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>material_id</td><td>bigint</td><td class="text-center">否</td><td>教材选用ID</td><td>edu_textbook.materials</td>  </tr>
-<tr><td class="text-center">2</td><td>textbook_id</td><td>bigint</td><td class="text-center">否</td><td>教材ID</td><td>edu_base.textbooks</td>  </tr>
+<tr><td class="text-center">1</td><td>material_id</td><td>bigint</td><td class="text-center">否</td><td>教材选用ID</td><td>edu.materials</td>  </tr>
+<tr><td class="text-center">2</td><td>textbook_id</td><td>bigint</td><td class="text-center">否</td><td>教材ID</td><td>base.textbooks</td>  </tr>
 </table>
 
 
@@ -91,7 +91,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_oihxedgq4vkrng9e7qom6e89f</td><td>material_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_oihxedgq4vkrng9e7qom6e89f</td><td>material_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 std_book_orders 教材征订单
@@ -108,15 +108,15 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程基本信息ID</td><td>edu_base.courses</td>  </tr>
+<tr><td class="text-center">2</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程基本信息ID</td><td>base.courses</td>  </tr>
 <tr><td class="text-center">3</td><td>created_at</td><td>timestamp</td><td class="text-center">否</td><td>创建时间</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>crn</td><td>varchar(255)</td><td class="text-center">否</td><td>课程序号</td><td></td>  </tr>
-<tr><td class="text-center">5</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>edu_base.projects</td>  </tr>
-<tr><td class="text-center">6</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>学年学期ID</td><td>edu_base.semesters</td>  </tr>
-<tr><td class="text-center">7</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>edu_base.students</td>  </tr>
+<tr><td class="text-center">5</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>base.projects</td>  </tr>
+<tr><td class="text-center">6</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>学年学期ID</td><td>base.semesters</td>  </tr>
+<tr><td class="text-center">7</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>base.students</td>  </tr>
 <tr><td class="text-center">8</td><td>teach_depart_id</td><td>integer</td><td class="text-center">否</td><td>部门组织机构信息ID</td><td>base.departments</td>  </tr>
 <tr><td class="text-center">9</td><td>teacher_names</td><td>varchar(255)</td><td class="text-center">是</td><td>授课教师</td><td></td>  </tr>
-<tr><td class="text-center">10</td><td>textbook_id</td><td>bigint</td><td class="text-center">否</td><td>教材ID</td><td>edu_base.textbooks</td>  </tr>
+<tr><td class="text-center">10</td><td>textbook_id</td><td>bigint</td><td class="text-center">否</td><td>教材ID</td><td>base.textbooks</td>  </tr>
 <tr><td class="text-center">11</td><td>withdraw_at</td><td>timestamp</td><td class="text-center">是</td><td>撤销时间</td><td></td>  </tr>
 <tr><td class="text-center">12</td><td>withdrawed</td><td>boolean</td><td class="text-center">否</td><td>是否撤销</td><td></td>  </tr>
 </table>

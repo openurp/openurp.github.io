@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report title="数据库设计说明">
   <system name="报到注册" version="0.0.1"/>
-  <database xml="../database.xml" schema="std_register"/>
+  <database xml="../database.xml" schema="std" package="register"/>
   <pages template="jekyll" extension=".md">
     <page name="index" />
     <page name="module" iterable="true"/>

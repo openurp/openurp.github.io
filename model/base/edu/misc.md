@@ -12,12 +12,6 @@ version: ["0.0.1"]
 {:toc}
 
 
-### 关系图 1. 教师
-  * 关系图
-
-![教师](images/teacher.png)
-
-
 
 ### 表格 book_award_types 教材获奖类型
 
@@ -118,7 +112,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_9k89gny3vqpqyk7mkhuxg16fi</td><td>school_id&nbsp;code&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_9k89gny3vqpqyk7mkhuxg16fi</td><td>school_id,code</td>  </tr>
 </table>
 
 
@@ -159,7 +153,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_3rf701tm9q4qyua4q0ydybv95</td><td>code&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_3rf701tm9q4qyua4q0ydybv95</td><td>code</td>  </tr>
 </table>
 
 
@@ -186,7 +180,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_t7g19kn25v4jhn6darbfa2stp</td><td>classroom_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_t7g19kn25v4jhn6darbfa2stp</td><td>classroom_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 classrooms_projects 使用项目
@@ -212,7 +206,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_3y1hwcx0xh0apfawnr099698f</td><td>classroom_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_3y1hwcx0xh0apfawnr099698f</td><td>classroom_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 course_ability_rates 课程能力等级
@@ -324,7 +318,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_enrjhpjmn8iterehufbi0m2f6</td><td>setting_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_enrjhpjmn8iterehufbi0m2f6</td><td>setting_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 extern_students 外校学习经历
@@ -380,7 +374,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_3d8mbewqjbirn81bfhk47iwf5</td><td>major_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_3d8mbewqjbirn81bfhk47iwf5</td><td>major_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 school_lengths 学制
@@ -412,7 +406,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_a0nnh2q7pmjkwgdafxxn3xyhx</td><td>major_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_a0nnh2q7pmjkwgdafxxn3xyhx</td><td>major_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 semester_stages 学期阶段
@@ -442,7 +436,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_oaj7k1ifx24c5uno3e8xhi4c7</td><td>semester_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_oaj7k1ifx24c5uno3e8xhi4c7</td><td>semester_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 semesters 学年学期
@@ -474,7 +468,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_kd2xc25i3147f18f3i02rkisg</td><td>calendar_id&nbsp;code&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_kd2xc25i3147f18f3i02rkisg</td><td>calendar_id,code</td>  </tr>
 </table>
 
   * 表格的索引
@@ -482,7 +476,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_o7lu6fw6qehpr050je6d9rsa4</td><td>calendar_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_o7lu6fw6qehpr050je6d9rsa4</td><td>calendar_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 std_label_types 学生分类标签类型
@@ -589,71 +583,6 @@ version: ["0.0.1"]
 
 
 
-### 表格 teachers 教师信息
-
-  * 表格说明
-
-<table class="table table-bordered table-striped table-condensed">
-<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
-<tr><td>teachers</td><td>id</td><td>教师信息</td>  </tr>
-</table>
-
-  * 表格中的列
-
-<table class="table table-bordered table-striped table-condensed">
-<tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效日期</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>degree_id</td><td>integer</td><td class="text-center">是</td><td>学位ID</td><td>code.degrees</td>  </tr>
-<tr><td class="text-center">4</td><td>department_id</td><td>integer</td><td class="text-center">否</td><td>所在部门ID</td><td>base.departments</td>  </tr>
-<tr><td class="text-center">5</td><td>education_degree_id</td><td>integer</td><td class="text-center">是</td><td>学历(文化程度)ID</td><td>code.education_degrees</td>  </tr>
-<tr><td class="text-center">6</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>formal_hr</td><td>boolean</td><td class="text-center">否</td><td>是否在编</td><td></td>  </tr>
-<tr><td class="text-center">8</td><td>person_id</td><td>bigint</td><td class="text-center">是</td><td>人员信息ID</td><td>base.people</td>  </tr>
-<tr><td class="text-center">9</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">10</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校信息ID</td><td>base.schools</td>  </tr>
-<tr><td class="text-center">11</td><td>status_id</td><td>integer</td><td class="text-center">否</td><td>在职状态ID</td><td>code.work_statuses</td>  </tr>
-<tr><td class="text-center">12</td><td>teacher_type_id</td><td>integer</td><td class="text-center">否</td><td>教师类型ID</td><td>base.teacher_types</td>  </tr>
-<tr><td class="text-center">13</td><td>title_id</td><td>integer</td><td class="text-center">是</td><td>职称ID</td><td>code.professional_titles</td>  </tr>
-<tr><td class="text-center">14</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
-<tr><td class="text-center">15</td><td>user_id</td><td>bigint</td><td class="text-center">否</td><td>用户ID</td><td>base.users</td>  </tr>
-</table>
-
-  * 表格中唯一约束
-
-<table class="table table-bordered table-striped table-condensed">
-  <tr>
-<th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_cd1k6xwg9jqtiwx9ybnxpmoh9</td><td>user_id&nbsp;</td>  </tr>
-</table>
-
-
-### 表格 teachers_projects 所在项目
-
-  * 表格说明
-
-<table class="table table-bordered table-striped table-condensed">
-<tr><th style="background-color:#D0D3FF">表名</th><th style="background-color:#D0D3FF">主键</th><th style="background-color:#D0D3FF">注释</th>  </tr>
-<tr><td>teachers_projects</td><td>teacher_id,project_id</td><td>所在项目</td>  </tr>
-</table>
-
-  * 表格中的列
-
-<table class="table table-bordered table-striped table-condensed">
-<tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>base.projects</td>  </tr>
-<tr><td class="text-center">2</td><td>teacher_id</td><td>bigint</td><td class="text-center">否</td><td>教师信息ID</td><td>base.teachers</td>  </tr>
-</table>
-
-
-  * 表格的索引
-
-<table class="table table-bordered table-striped table-condensed">
-  <tr>
-<th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_swgo4qm8hl9fiixhbkynf4kmp</td><td>teacher_id&nbsp;</td><td>否</td>  </tr>
-</table>
-
 ### 表格 teaching_groups 教研室
 
   * 表格说明
@@ -683,7 +612,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_wtvrq9aup4j185u5y60wpx04</td><td>project_id&nbsp;code&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_wtvrq9aup4j185u5y60wpx04</td><td>project_id,code</td>  </tr>
 </table>
 
 
@@ -710,7 +639,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_kpw6oy9d7vq7egphmp4jfnwm2</td><td>teaching_group_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_kpw6oy9d7vq7egphmp4jfnwm2</td><td>teaching_group_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 textbooks 教材

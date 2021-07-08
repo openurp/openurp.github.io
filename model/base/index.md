@@ -16,7 +16,7 @@ version: ["0.0.2"]
 ##### 2. 具体模块明细
 * [2.1 空间相关](space.html)
 * [2.2 用户相关](user.html)
-
+* [2.3 其他](misc.html)
 
 ### 表格一览
 数据库共计10个表，分别如下:
@@ -42,21 +42,21 @@ version: ["0.0.2"]
   </tr>
   <tr>
     <td>3</td>
-    <td><a href="user.html#表格-department_categories-部门分类">department_categories</a> 部门分类</td>
+    <td><a href="user.html#表格-departments-部门组织机构信息">departments</a> 部门组织机构信息</td>
     <td>8</td>
     <td><a href="space.html#表格-schools-学校信息">schools</a> 学校信息</td>
   </tr>
   <tr>
     <td>4</td>
-    <td><a href="user.html#表格-departments-部门组织机构信息">departments</a> 部门组织机构信息</td>
+    <td><a href="user.html#表格-departments_campuses-部门对应校区">departments_campuses</a> 部门对应校区</td>
     <td>9</td>
-    <td><a href="user.html#表格-user_categories-人员分类">user_categories</a> 人员分类</td>
+    <td><a href="user.html#表格-users-通用人员信息">users</a> 通用人员信息</td>
   </tr>
   <tr>
     <td>5</td>
-    <td><a href="user.html#表格-departments_campuses-部门对应校区">departments_campuses</a> 部门对应校区</td>
+    <td><a href="misc.html#表格-extern_schools-校外教育机构">extern_schools</a> 校外教育机构</td>
     <td>10</td>
-    <td><a href="user.html#表格-users-通用人员信息">users</a> 通用人员信息</td>
+    <td><a href="misc.html#表格-versions-版本迁移日志">versions</a> 版本迁移日志</td>
   </tr>
 </table>
 

@@ -42,6 +42,6 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_bfpba713n2qqb5qegoxe9ifpq</td><td>std_id&nbsp;semester_id&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_bfpba713n2qqb5qegoxe9ifpq</td><td>std_id,semester_id</td>  </tr>
 </table>
 

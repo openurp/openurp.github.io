@@ -18,6 +18,12 @@ version: ["1.0.0"]
 ![学生课程成绩](images/grades.png)
 
 
+### 关系图 2. 学生绩点统计
+  * 关系图
+
+![学生绩点统计](images/gpa.png)
+
+
 
 ### 表格 course_grade_states 成绩状态
 
@@ -48,7 +54,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_14ecxgagb3kumjkrb1bxv86tw</td><td>clazz_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_14ecxgagb3kumjkrb1bxv86tw</td><td>clazz_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 course_grades 课程成绩实现
@@ -92,7 +98,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_xitxltysiibv3efvpe69hk1j</td><td>std_id&nbsp;course_id&nbsp;semester_id&nbsp;crn&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_xitxltysiibv3efvpe69hk1j</td><td>std_id,course_id,semester_id,crn</td>  </tr>
 </table>
 
   * 表格的索引
@@ -100,9 +106,9 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_4sj9rxcj7k0w4n33ijoi43yfw</td><td>std_id&nbsp;</td><td>否</td>  </tr>
-<tr><td>idx_slt78xg1vj372c8mh8a9chs4l</td><td>clazz_id&nbsp;</td><td>否</td>  </tr>
-<tr><td>idx_temwvr6v0fwgm0p56bik0h1wh</td><td>project_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_4sj9rxcj7k0w4n33ijoi43yfw</td><td>std_id</td><td>否</td>  </tr>
+<tr><td>idx_slt78xg1vj372c8mh8a9chs4l</td><td>clazz_id</td><td>否</td>  </tr>
+<tr><td>idx_temwvr6v0fwgm0p56bik0h1wh</td><td>project_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 exam_grade_states 考试成绩状态
@@ -134,7 +140,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_hbbjtria5w2yv76athjignsdk</td><td>grade_state_id&nbsp;grade_type_id&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_hbbjtria5w2yv76athjignsdk</td><td>grade_state_id,grade_type_id</td>  </tr>
 </table>
 
   * 表格的索引
@@ -142,7 +148,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_k9c9mutaa6jeye5w02bmskklp</td><td>grade_state_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_k9c9mutaa6jeye5w02bmskklp</td><td>grade_state_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 exam_grades 考试成绩
@@ -178,7 +184,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_ij6eu0s9mftmblpso35iwm796</td><td>course_grade_id&nbsp;grade_type_id&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_ij6eu0s9mftmblpso35iwm796</td><td>course_grade_id,grade_type_id</td>  </tr>
 </table>
 
   * 表格的索引
@@ -186,7 +192,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_otlslgc3imibs7quv0d0dqjb3</td><td>course_grade_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_otlslgc3imibs7quv0d0dqjb3</td><td>course_grade_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 ga_grade_states 总评成绩状态
@@ -217,7 +223,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_55c7tsme8v49y1o7tjn1r8vpe</td><td>grade_state_id&nbsp;grade_type_id&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_55c7tsme8v49y1o7tjn1r8vpe</td><td>grade_state_id,grade_type_id</td>  </tr>
 </table>
 
   * 表格的索引
@@ -225,7 +231,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_1lirrcdr4lcwbe5iju3f82jsb</td><td>grade_state_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_1lirrcdr4lcwbe5iju3f82jsb</td><td>grade_state_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 ga_grades 总评成绩
@@ -262,7 +268,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_6l1n05tqq55sh661e6s1s12vm</td><td>course_grade_id&nbsp;grade_type_id&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_6l1n05tqq55sh661e6s1s12vm</td><td>course_grade_id,grade_type_id</td>  </tr>
 </table>
 
   * 表格的索引
@@ -270,7 +276,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_2h8ijcy7d6yg7t44byw2rn1i7</td><td>course_grade_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_2h8ijcy7d6yg7t44byw2rn1i7</td><td>course_grade_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 std_gpas 学生成绩绩点统计
@@ -302,7 +308,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_1pgtli4u8gcx191biigqq6mty</td><td>std_id&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_1pgtli4u8gcx191biigqq6mty</td><td>std_id</td>  </tr>
 </table>
 
 
@@ -334,7 +340,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_54djya8v8f1shu5uutr9e555e</td><td>std_gpa_id&nbsp;semester_id&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_54djya8v8f1shu5uutr9e555e</td><td>std_gpa_id,semester_id</td>  </tr>
 </table>
 
   * 表格的索引
@@ -342,7 +348,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_oi064e8gd1lg81fdcrvgp4p2a</td><td>std_gpa_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_oi064e8gd1lg81fdcrvgp4p2a</td><td>std_gpa_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 std_year_gpas 学生成绩每学期统计
@@ -373,7 +379,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_e0src4xf9uskqtilum6e01344</td><td>std_gpa_id&nbsp;school_year&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_e0src4xf9uskqtilum6e01344</td><td>std_gpa_id,school_year</td>  </tr>
 </table>
 
   * 表格的索引
@@ -381,5 +387,5 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_k2it4d6hlqi69f22ht73l2ogb</td><td>std_gpa_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_k2it4d6hlqi69f22ht73l2ogb</td><td>std_gpa_id</td><td>否</td>  </tr>
 </table>

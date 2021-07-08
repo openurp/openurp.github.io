@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report title="数据库设计说明">
   <system name="成绩信息" version="1.0.0"/>
-  <database xml="../database.xml" schema="edu" subSystem="grade"/>
+  <database xml="../database.xml" schema="edu" package="grade"/>
   <pages template="jekyll" extension=".md">
     <page name="index" />
     <page name="module" iterable="true"/>
@@ -10,9 +10,14 @@
   <modules>
     <module name="course" title="学生成绩">
       <image name="grades" title="学生课程成绩" tables="exam_grades,course_grades,ga_grades"/>
+      <image name="gpa" title="学生绩点统计" tables="edu.*gpas"/>
     </module>
-    <module name="plan" title="计划完成"/>
-    <module name="process" title="过程性成绩"/>
+    <module name="plan" title="计划完成">
+      <image name="audit" title="计划完成情况结构" tables="edu.*audit_results"/>
+    </module>
+    <module name="process" title="过程性成绩">
+      <image name="process" title="过程性成绩结构" tables="edu.process*"/>
+    </module>
     <module name="moral" title="德育成绩"/>
     <module name="misc" title="其他" tables="*"/>
   </modules>

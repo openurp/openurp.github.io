@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report title="数据库设计说明">
   <system name="学籍异动" version="0.0.1"/>
-  <database xml="../database.xml" schema="std_alter"/>
+  <database xml="../database.xml" schema="std" package="alter"/>
   <pages template="jekyll" extension=".md">
     <page name="index" />
     <page name="module" iterable="true"/>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report title="数据库设计说明">
+  <system name="毕业审核信息" version="0.0.1"/>
+  <database xml="../database.xml" schema="std" package="graduation"/>
+  <pages template="jekyll" extension=".md">
+    <page name="index" />
+    <page name="module" iterable="true"/>
+  </pages>
+
+  <modules>
+    <module name="core" title="核心部分" tables="*">
+      <image name="result" title="毕业和学位审核" tables="graduate_*,degree_*"/>
+    </module>
+  </modules>
+</report>

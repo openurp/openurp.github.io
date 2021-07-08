@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report title="数据库设计说明">
   <system name="转专业" version="0.0.1"/>
-  <database xml="../database.xml" schema="std_transfer"/>
+  <database xml="../database.xml" schema="std" package="transfer"/>
   <pages template="jekyll" extension=".md">
     <page name="index" />
     <page name="module" iterable="true"/>
@@ -9,6 +9,7 @@
 
   <modules>
     <module name="misc" title="转专业" tables="*">
+      <image name="transfer" title="转专业申请结构" tables="std.transfer_*"/>
     </module>
   </modules>
 </report>

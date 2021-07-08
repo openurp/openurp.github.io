@@ -27,9 +27,9 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>rate_id</td><td>integer</td><td class="text-center">否</td><td>课程能力等级ID</td><td>edu_base.course_ability_rates</td>  </tr>
+<tr><td class="text-center">2</td><td>rate_id</td><td>integer</td><td class="text-center">否</td><td>课程能力等级ID</td><td>base.course_ability_rates</td>  </tr>
 <tr><td class="text-center">3</td><td>score</td><td>float4</td><td class="text-center">是</td><td>分数</td><td></td>  </tr>
-<tr><td class="text-center">4</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>edu_base.students</td>  </tr>
+<tr><td class="text-center">4</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>base.students</td>  </tr>
 <tr><td class="text-center">5</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>
 

@@ -62,5 +62,5 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_t24fq5hvjtdmsv2i9ivvk1vbt</td><td>config_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_t24fq5hvjtdmsv2i9ivvk1vbt</td><td>config_id</td><td>否</td>  </tr>
 </table>

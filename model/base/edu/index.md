@@ -151,13 +151,13 @@ version: ["0.0.1"]
     <td>21</td>
     <td><a href="core.html#表格-direction_journals-专业方向建设过程">direction_journals</a> 专业方向建设过程</td>
     <td>47</td>
-    <td><a href="misc.html#表格-teachers-教师信息">teachers</a> 教师信息</td>
+    <td><a href="core.html#表格-teachers-教师信息">teachers</a> 教师信息</td>
   </tr>
   <tr>
     <td>22</td>
     <td><a href="core.html#表格-directions-方向信息 专业领域">directions</a> 方向信息 专业领域</td>
     <td>48</td>
-    <td><a href="misc.html#表格-teachers_projects-所在项目">teachers_projects</a> 所在项目</td>
+    <td><a href="core.html#表格-teachers_projects-所在项目">teachers_projects</a> 所在项目</td>
   </tr>
   <tr>
     <td>23</td>

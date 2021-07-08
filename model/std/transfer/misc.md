@@ -12,6 +12,12 @@ version: ["0.0.1"]
 {:toc}
 
 
+### 关系图 1. 转专业申请结构
+  * 关系图
+
+![转专业申请结构](images/transfer.png)
+
+
 
 ### 表格 transfer_applies 转专业申请
 
@@ -33,24 +39,24 @@ version: ["0.0.1"]
 <tr><td class="text-center">5</td><td>depart_opinion</td><td>varchar(255)</td><td class="text-center">是</td><td>院系面试意见</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>email</td><td>varchar(255)</td><td class="text-center">否</td><td>联系邮箱</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>from_depart_id</td><td>integer</td><td class="text-center">否</td><td>转出院系ID</td><td>base.departments</td>  </tr>
-<tr><td class="text-center">8</td><td>from_direction_id</td><td>bigint</td><td class="text-center">是</td><td>转出专业方向ID</td><td>edu_base.directions</td>  </tr>
+<tr><td class="text-center">8</td><td>from_direction_id</td><td>bigint</td><td class="text-center">是</td><td>转出专业方向ID</td><td>base.directions</td>  </tr>
 <tr><td class="text-center">9</td><td>from_grade</td><td>varchar(255)</td><td class="text-center">否</td><td>转出年级</td><td></td>  </tr>
-<tr><td class="text-center">10</td><td>from_major_id</td><td>bigint</td><td class="text-center">否</td><td>转出专业ID</td><td>edu_base.majors</td>  </tr>
-<tr><td class="text-center">11</td><td>from_squad_id</td><td>bigint</td><td class="text-center">是</td><td>转出班级ID</td><td>edu_base.squads</td>  </tr>
+<tr><td class="text-center">10</td><td>from_major_id</td><td>bigint</td><td class="text-center">否</td><td>转出专业ID</td><td>base.majors</td>  </tr>
+<tr><td class="text-center">11</td><td>from_squad_id</td><td>bigint</td><td class="text-center">是</td><td>转出班级ID</td><td>base.squads</td>  </tr>
 <tr><td class="text-center">12</td><td>gpa</td><td>float4</td><td class="text-center">否</td><td>平均绩点</td><td></td>  </tr>
 <tr><td class="text-center">13</td><td>major_gpa</td><td>float4</td><td class="text-center">否</td><td>专业课GPA</td><td></td>  </tr>
 <tr><td class="text-center">14</td><td>mobile</td><td>varchar(255)</td><td class="text-center">否</td><td>联系电话</td><td></td>  </tr>
-<tr><td class="text-center">15</td><td>option_id</td><td>bigint</td><td class="text-center">否</td><td>选择的招生专业ID</td><td>std_transfer.transfer_options</td>  </tr>
+<tr><td class="text-center">15</td><td>option_id</td><td>bigint</td><td class="text-center">否</td><td>选择的招生专业ID</td><td>std.transfer_options</td>  </tr>
 <tr><td class="text-center">16</td><td>other_gpa</td><td>float4</td><td class="text-center">否</td><td>专业课外GPA</td><td></td>  </tr>
 <tr><td class="text-center">17</td><td>passed</td><td>boolean</td><td class="text-center">是</td><td>是否通过</td><td></td>  </tr>
 <tr><td class="text-center">18</td><td>reason</td><td>varchar(255)</td><td class="text-center">否</td><td>申请理由</td><td></td>  </tr>
 <tr><td class="text-center">19</td><td>score</td><td>float4</td><td class="text-center">是</td><td>考核分数</td><td></td>  </tr>
-<tr><td class="text-center">20</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>edu_base.students</td>  </tr>
+<tr><td class="text-center">20</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>base.students</td>  </tr>
 <tr><td class="text-center">21</td><td>to_depart_id</td><td>integer</td><td class="text-center">否</td><td>转入院系ID</td><td>base.departments</td>  </tr>
-<tr><td class="text-center">22</td><td>to_direction_id</td><td>bigint</td><td class="text-center">是</td><td>转入方向ID</td><td>edu_base.directions</td>  </tr>
+<tr><td class="text-center">22</td><td>to_direction_id</td><td>bigint</td><td class="text-center">是</td><td>转入方向ID</td><td>base.directions</td>  </tr>
 <tr><td class="text-center">23</td><td>to_grade</td><td>varchar(255)</td><td class="text-center">是</td><td>转入年级</td><td></td>  </tr>
-<tr><td class="text-center">24</td><td>to_major_id</td><td>bigint</td><td class="text-center">否</td><td>转入专业ID</td><td>edu_base.majors</td>  </tr>
-<tr><td class="text-center">25</td><td>to_squad_id</td><td>bigint</td><td class="text-center">是</td><td>转入班级ID</td><td>edu_base.squads</td>  </tr>
+<tr><td class="text-center">24</td><td>to_major_id</td><td>bigint</td><td class="text-center">否</td><td>转入专业ID</td><td>base.majors</td>  </tr>
+<tr><td class="text-center">25</td><td>to_squad_id</td><td>bigint</td><td class="text-center">是</td><td>转入班级ID</td><td>base.squads</td>  </tr>
 <tr><td class="text-center">26</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 <tr><td class="text-center">27</td><td>written_score</td><td>float4</td><td class="text-center">是</td><td>笔试分数</td><td></td>  </tr>
 </table>
@@ -78,14 +84,14 @@ version: ["0.0.1"]
 <tr><td class="text-center">6</td><td>contact_info</td><td>varchar(255)</td><td class="text-center">是</td><td>联络方式</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>current_count</td><td>integer</td><td class="text-center">否</td><td>报名人数</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>depart_id</td><td>integer</td><td class="text-center">否</td><td>部门组织机构信息ID</td><td>base.departments</td>  </tr>
-<tr><td class="text-center">9</td><td>direction_id</td><td>bigint</td><td class="text-center">是</td><td>方向信息 专业领域ID</td><td>edu_base.directions</td>  </tr>
+<tr><td class="text-center">9</td><td>direction_id</td><td>bigint</td><td class="text-center">是</td><td>方向信息 专业领域ID</td><td>base.directions</td>  </tr>
 <tr><td class="text-center">10</td><td>exam_addr</td><td>varchar(255)</td><td class="text-center">是</td><td>考核地址</td><td></td>  </tr>
 <tr><td class="text-center">11</td><td>exam_on</td><td>date</td><td class="text-center">是</td><td>考核日期</td><td></td>  </tr>
-<tr><td class="text-center">12</td><td>major_id</td><td>bigint</td><td class="text-center">否</td><td>专业ID</td><td>edu_base.majors</td>  </tr>
+<tr><td class="text-center">12</td><td>major_id</td><td>bigint</td><td class="text-center">否</td><td>专业ID</td><td>base.majors</td>  </tr>
 <tr><td class="text-center">13</td><td>manager_id</td><td>bigint</td><td class="text-center">是</td><td>负责联络的老师ID</td><td>base.users</td>  </tr>
 <tr><td class="text-center">14</td><td>plan_count</td><td>integer</td><td class="text-center">否</td><td>计划人数</td><td></td>  </tr>
 <tr><td class="text-center">15</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">16</td><td>scheme_id</td><td>bigint</td><td class="text-center">否</td><td>转专业招生方案ID</td><td>std_transfer.transfer_schemes</td>  </tr>
+<tr><td class="text-center">16</td><td>scheme_id</td><td>bigint</td><td class="text-center">否</td><td>转专业招生方案ID</td><td>std.transfer_schemes</td>  </tr>
 <tr><td class="text-center">17</td><td>written_content</td><td>varchar(255)</td><td class="text-center">是</td><td>笔试内容</td><td></td>  </tr>
 <tr><td class="text-center">18</td><td>written_percent</td><td>integer</td><td class="text-center">否</td><td>笔试分数占总分比例</td><td></td>  </tr>
 </table>
@@ -96,7 +102,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_pv31fi3fkfu1vs1s0forsx0fk</td><td>scheme_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_pv31fi3fkfu1vs1s0forsx0fk</td><td>scheme_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 transfer_schemes 转专业招生方案
@@ -121,9 +127,9 @@ version: ["0.0.1"]
 <tr><td class="text-center">7</td><td>edit_end_at</td><td>timestamp</td><td class="text-center">否</td><td>院系编辑计划结束时间</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>name</td><td>varchar(255)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>notice_path</td><td>varchar(255)</td><td class="text-center">是</td><td>附件路径</td><td></td>  </tr>
-<tr><td class="text-center">10</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>edu_base.projects</td>  </tr>
+<tr><td class="text-center">10</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>base.projects</td>  </tr>
 <tr><td class="text-center">11</td><td>published</td><td>boolean</td><td class="text-center">否</td><td>发布招生方案</td><td></td>  </tr>
-<tr><td class="text-center">12</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>学年学期ID</td><td>edu_base.semesters</td>  </tr>
+<tr><td class="text-center">12</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>学年学期ID</td><td>base.semesters</td>  </tr>
 <tr><td class="text-center">13</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>
 
@@ -144,7 +150,7 @@ version: ["0.0.1"]
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>included</td><td>boolean</td><td class="text-center">否</td><td>包含还是禁止</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>scheme_id</td><td>bigint</td><td class="text-center">否</td><td>转专业招生方案ID</td><td>std_transfer.transfer_schemes</td>  </tr>
+<tr><td class="text-center">3</td><td>scheme_id</td><td>bigint</td><td class="text-center">否</td><td>转专业招生方案ID</td><td>std.transfer_schemes</td>  </tr>
 </table>
 
 
@@ -153,7 +159,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_i8ly5hbcvk7jigvo8lk7byghv</td><td>scheme_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_i8ly5hbcvk7jigvo8lk7byghv</td><td>scheme_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 transfer_scopes_grades 年级范围
@@ -169,7 +175,7 @@ version: ["0.0.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>transfer_scope_id</td><td>bigint</td><td class="text-center">否</td><td>招生学生范围ID</td><td>std_transfer.transfer_scopes</td>  </tr>
+<tr><td class="text-center">1</td><td>transfer_scope_id</td><td>bigint</td><td class="text-center">否</td><td>招生学生范围ID</td><td>std.transfer_scopes</td>  </tr>
 <tr><td class="text-center">2</td><td>value_</td><td>varchar(255)</td><td class="text-center">否</td><td>年级范围</td><td></td>  </tr>
 </table>
 
@@ -179,7 +185,7 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_jtbvyq3f1ct6o8cavnk1yp514</td><td>transfer_scope_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_jtbvyq3f1ct6o8cavnk1yp514</td><td>transfer_scope_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 transfer_scopes_majors 专业列表
@@ -195,8 +201,8 @@ version: ["0.0.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>major_id</td><td>bigint</td><td class="text-center">否</td><td>专业ID</td><td>edu_base.majors</td>  </tr>
-<tr><td class="text-center">2</td><td>transfer_scope_id</td><td>bigint</td><td class="text-center">否</td><td>招生学生范围ID</td><td>std_transfer.transfer_scopes</td>  </tr>
+<tr><td class="text-center">1</td><td>major_id</td><td>bigint</td><td class="text-center">否</td><td>专业ID</td><td>base.majors</td>  </tr>
+<tr><td class="text-center">2</td><td>transfer_scope_id</td><td>bigint</td><td class="text-center">否</td><td>招生学生范围ID</td><td>std.transfer_scopes</td>  </tr>
 </table>
 
 
@@ -205,5 +211,5 @@ version: ["0.0.1"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_mhtbekv1er9p7w7nu640ye9en</td><td>transfer_scope_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_mhtbekv1er9p7w7nu640ye9en</td><td>transfer_scope_id</td><td>否</td>  </tr>
 </table>

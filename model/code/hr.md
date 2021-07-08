@@ -68,7 +68,7 @@ version: ["0.0.2"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_pkni877r20i1vkg4n2jk2lb31</td><td>parent_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_pkni877r20i1vkg4n2jk2lb31</td><td>parent_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 staff_types 教职工类别
@@ -101,7 +101,7 @@ version: ["0.0.2"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_bqnq6ihum5omb2520bavufwbs</td><td>parent_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_bqnq6ihum5omb2520bavufwbs</td><td>parent_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 work_statuses 在职状态

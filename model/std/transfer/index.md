@@ -11,10 +11,10 @@ version: ["0.0.1"]
 
 ##### 1. 数据库对象列表
   * [1.1 表格一览](index.html#表格一览)
+  * [1.2 模块关系图](index.html#模块关系图)
 
 ##### 2. 具体模块明细
 * [2.1 转专业](misc.html)
-
 
 ### 表格一览
 数据库共计6个表，分别如下:
@@ -45,4 +45,13 @@ version: ["0.0.1"]
     <td><a href="misc.html#表格-transfer_scopes_majors-专业列表">transfer_scopes_majors</a> 专业列表</td>
   </tr>
 </table>
+
+### 模块关系图
+
+
+#### 1. 转专业申请结构
+  * 关系图
+
+![转专业申请结构](images/transfer.png)
+
 

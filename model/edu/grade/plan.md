@@ -12,6 +12,12 @@ version: ["1.0.0"]
 {:toc}
 
 
+### 关系图 1. 计划完成情况结构
+  * 关系图
+
+![计划完成情况结构](images/audit.png)
+
+
 
 ### 表格 course_audit_results 课程审核结果
 
@@ -42,7 +48,7 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_n27g9imaanyl2kggxag56rvhs</td><td>group_result_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_n27g9imaanyl2kggxag56rvhs</td><td>group_result_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 group_audit_results 组审核结果
@@ -80,8 +86,8 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">索引名</th><th style="background-color:#D0D3FF">索引字段</th><th style="background-color:#D0D3FF">是否唯一</th>  </tr>
-<tr><td>idx_9xfmxfqyoevwocv474u0tq2m3</td><td>plan_result_id&nbsp;</td><td>否</td>  </tr>
-<tr><td>idx_a2dxk9q7074dj9m1085a82me7</td><td>parent_id&nbsp;</td><td>否</td>  </tr>
+<tr><td>idx_9xfmxfqyoevwocv474u0tq2m3</td><td>plan_result_id</td><td>否</td>  </tr>
+<tr><td>idx_a2dxk9q7074dj9m1085a82me7</td><td>parent_id</td><td>否</td>  </tr>
 </table>
 
 ### 表格 plan_audit_results 计划审核结果
@@ -116,6 +122,6 @@ version: ["1.0.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_f6f86yl0ja9p2dveh9syviq2x</td><td>std_id&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_f6f86yl0ja9p2dveh9syviq2x</td><td>std_id</td>  </tr>
 </table>
 

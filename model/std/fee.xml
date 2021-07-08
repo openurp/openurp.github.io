@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report title="数据库设计说明">
+  <system name="学费信息" version="0.0.1"/>
+  <database xml="../database.xml" schema="std" package="fee"/>
+  <pages template="jekyll" extension=".md">
+    <page name="index" />
+    <page name="module" iterable="true"/>
+  </pages>
+
+  <modules>
+    <module name="misc" title="费用信息" tables="*">
+    </module>
+  </modules>
+</report>

@@ -34,7 +34,7 @@ version: ["0.0.2"]
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>integer</td><td class="text-center">否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效日期</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>building_type_id</td><td>integer</td><td class="text-center">是</td><td>建筑物类型ID</td><td>code_hb.building_types</td>  </tr>
+<tr><td class="text-center">3</td><td>building_type_id</td><td>integer</td><td class="text-center">是</td><td>建筑物类型ID</td><td>code.building_types</td>  </tr>
 <tr><td class="text-center">4</td><td>campus_id</td><td>integer</td><td class="text-center">否</td><td>所在校区ID</td><td>base.campuses</td>  </tr>
 <tr><td class="text-center">5</td><td>code</td><td>varchar(10)</td><td class="text-center">否</td><td>代码</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>en_name</td><td>varchar(100)</td><td class="text-center">是</td><td>英文名称</td><td></td>  </tr>
@@ -51,7 +51,7 @@ version: ["0.0.2"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_57bnctn8fdawxdyp9lpaxbgjt</td><td>school_id&nbsp;code&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_57bnctn8fdawxdyp9lpaxbgjt</td><td>school_id,code</td>  </tr>
 </table>
 
 
@@ -85,7 +85,7 @@ version: ["0.0.2"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_iyq5494wgreojxq596lo7iijs</td><td>school_id&nbsp;code&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_iyq5494wgreojxq596lo7iijs</td><td>school_id,code</td>  </tr>
 </table>
 
 
@@ -112,7 +112,7 @@ version: ["0.0.2"]
 <tr><td class="text-center">8</td><td>floor_no</td><td>integer</td><td class="text-center">否</td><td>教室所处楼层</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>name</td><td>varchar(80)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
 <tr><td class="text-center">10</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">11</td><td>room_type_id</td><td>integer</td><td class="text-center">否</td><td>房间类型ID</td><td>code_hb.room_types</td>  </tr>
+<tr><td class="text-center">11</td><td>room_type_id</td><td>integer</td><td class="text-center">否</td><td>房间类型ID</td><td>code.room_types</td>  </tr>
 <tr><td class="text-center">12</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校ID</td><td>base.schools</td>  </tr>
 <tr><td class="text-center">13</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>
@@ -122,7 +122,7 @@ version: ["0.0.2"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th style="background-color:#D0D3FF">序号</th><th style="background-color:#D0D3FF">约束名</th><th style="background-color:#D0D3FF">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_b5l9ebt0gr0vn3qv9qtl0ii71</td><td>school_id&nbsp;code&nbsp;</td>  </tr>
+<tr><td>1</td><td>uk_b5l9ebt0gr0vn3qv9qtl0ii71</td><td>school_id,code</td>  </tr>
 </table>
 
 
@@ -143,7 +143,7 @@ version: ["0.0.2"]
 <tr><td class="text-center">2</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效日期</td><td></td>  </tr>
 <tr><td class="text-center">3</td><td>code</td><td>varchar(10)</td><td class="text-center">否</td><td>代码</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
-<tr><td class="text-center">5</td><td>institution_id</td><td>integer</td><td class="text-center">否</td><td>研究机构ID</td><td>code_hb.institutions</td>  </tr>
+<tr><td class="text-center">5</td><td>institution_id</td><td>integer</td><td class="text-center">否</td><td>研究机构ID</td><td>code.institutions</td>  </tr>
 <tr><td class="text-center">6</td><td>logo_url</td><td>varchar(255)</td><td class="text-center">否</td><td>Logo URL</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>name</td><td>varchar(50)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>short_name</td><td>varchar(255)</td><td class="text-center">是</td><td>简称</td><td></td>  </tr>
