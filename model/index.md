@@ -20,7 +20,7 @@ group: navigation
 
 ##### 3. 基础信息
 
-* [1. 基础信息 Base](/model/base/index.html)
+* [1. 基础信息 Base.Common](/model/base/common/index.html)
 * [2. 教学基础 Base.Edu](/model/base/edu/index.html)
 * [2. 学生基础 Base.Std](/model/base/std/index.html)
 
