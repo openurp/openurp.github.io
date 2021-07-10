@@ -2,8 +2,8 @@
 layout: page
 title: 人事基本信息 
 description: "人事基本信息"
-categories: [model-0.0.2]
-version: ["0.0.2"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
 
@@ -16,7 +16,7 @@ version: ["0.0.2"]
 * [2.1 基本信息](info.html)
 
 ### 表格一览
-数据库共计8个表，分别如下:
+Schema hr.base下共计8个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>

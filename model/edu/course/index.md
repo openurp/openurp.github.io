@@ -2,8 +2,8 @@
 layout: page
 title: 课程信息 
 description: "课程信息"
-categories: [model-1.0.0]
-version: ["1.0.0"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
 
@@ -16,7 +16,7 @@ version: ["1.0.0"]
 * [2.1 课程信息](misc.html)
 
 ### 表格一览
-数据库共计3个表，分别如下:
+Schema edu.course下共计3个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>

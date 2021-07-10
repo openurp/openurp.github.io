@@ -2,8 +2,8 @@
 layout: page
 title: 学生类基础信息 所有表格
 description: "学生类基础信息所有表格"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
  目  录

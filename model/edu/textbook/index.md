@@ -2,8 +2,8 @@
 layout: page
 title: 教材信息 
 description: "教材信息"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
 
@@ -16,7 +16,7 @@ version: ["0.0.1"]
 * [2.1 核心部分](core.html)
 
 ### 表格一览
-数据库共计4个表，分别如下:
+Schema edu.textbook下共计4个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>

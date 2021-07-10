@@ -2,8 +2,8 @@
 layout: page
 title: 校外考试 证书成绩
 description: "校外考试证书成绩"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
  目  录

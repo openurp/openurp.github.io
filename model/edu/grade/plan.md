@@ -2,8 +2,8 @@
 layout: page
 title: 成绩信息 计划完成
 description: "成绩信息计划完成"
-categories: [model-1.0.0]
-version: ["1.0.0"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
  目  录

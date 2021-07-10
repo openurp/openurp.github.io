@@ -2,8 +2,8 @@
 layout: page
 title: 成绩信息 
 description: "成绩信息"
-categories: [model-1.0.0]
-version: ["1.0.0"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
 
@@ -21,7 +21,7 @@ version: ["1.0.0"]
 * [2.5 其他](misc.html)
 
 ### 表格一览
-数据库共计20个表，分别如下:
+Schema edu.grade下共计20个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>

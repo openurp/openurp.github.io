@@ -2,8 +2,8 @@
 layout: page
 title: 工作量信息 
 description: "工作量信息"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
 
@@ -16,7 +16,7 @@ version: ["0.0.1"]
 * [2.1 工作量](core.html)
 
 ### 表格一览
-数据库共计3个表，分别如下:
+Schema hr.workload下共计3个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>

@@ -2,8 +2,8 @@
 layout: page
 title: 学生信息 
 description: "学生信息"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
 
@@ -16,7 +16,7 @@ version: ["0.0.1"]
 * [2.1 学生信息](misc.html)
 
 ### 表格一览
-数据库共计9个表，分别如下:
+Schema std.info下共计9个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>

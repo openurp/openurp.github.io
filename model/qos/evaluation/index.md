@@ -2,8 +2,8 @@
 layout: page
 title: 评教信息 
 description: "评教信息"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
 
@@ -23,7 +23,7 @@ version: ["0.0.1"]
 * [2.7 其他](misc.html)
 
 ### 表格一览
-数据库共计35个表，分别如下:
+Schema qos.evaluation下共计35个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>

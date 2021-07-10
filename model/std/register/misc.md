@@ -2,8 +2,8 @@
 layout: page
 title: 报到注册 报到注册
 description: "报到注册报到注册"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
  目  录

@@ -2,8 +2,8 @@
 layout: page
 title: 人事基本信息 基本信息
 description: "人事基本信息基本信息"
-categories: [model-0.0.2]
-version: ["0.0.2"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
  目  录

@@ -2,8 +2,8 @@
 layout: page
 title: 学生信息 学生信息
 description: "学生信息学生信息"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
  目  录

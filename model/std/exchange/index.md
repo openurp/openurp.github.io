@@ -2,8 +2,8 @@
 layout: page
 title: 校外学习 
 description: "校外学习"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
 
@@ -16,7 +16,7 @@ version: ["0.0.1"]
 * [2.1 校外学习](misc.html)
 
 ### 表格一览
-数据库共计6个表，分别如下:
+Schema std.exchange下共计6个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>

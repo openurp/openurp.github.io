@@ -2,8 +2,8 @@
 layout: page
 title: 基础信息 
 description: "基础信息"
-categories: [model-0.0.2]
-version: ["0.0.2"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
 
@@ -19,7 +19,7 @@ version: ["0.0.2"]
 * [2.3 其他](misc.html)
 
 ### 表格一览
-数据库共计10个表，分别如下:
+Schema base.common下共计10个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>

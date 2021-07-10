@@ -2,8 +2,8 @@
 layout: page
 title: 评教信息 评教明细
 description: "评教信息评教明细"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
  目  录

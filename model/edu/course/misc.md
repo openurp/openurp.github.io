@@ -2,8 +2,8 @@
 layout: page
 title: 课程信息 课程信息
 description: "课程信息课程信息"
-categories: [model-1.0.0]
-version: ["1.0.0"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
  目  录

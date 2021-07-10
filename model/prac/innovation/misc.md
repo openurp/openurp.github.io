@@ -2,8 +2,8 @@
 layout: page
 title: 创新创业 创新创业
 description: "创新创业创新创业"
-categories: [model-1.0.0]
-version: ["1.0.0"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
  目  录

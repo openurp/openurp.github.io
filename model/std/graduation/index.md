@@ -2,8 +2,8 @@
 layout: page
 title: 毕业审核信息 
 description: "毕业审核信息"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
 
@@ -17,7 +17,7 @@ version: ["0.0.1"]
 * [2.1 核心部分](core.html)
 
 ### 表格一览
-数据库共计6个表，分别如下:
+Schema std.graduation下共计6个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>

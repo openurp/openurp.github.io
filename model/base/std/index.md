@@ -2,8 +2,8 @@
 layout: page
 title: 学生类基础信息 
 description: "学生类基础信息"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
 
@@ -16,7 +16,7 @@ version: ["0.0.1"]
 * [2.1 所有表格](core.html)
 
 ### 表格一览
-数据库共计2个表，分别如下:
+Schema base.std下共计2个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>

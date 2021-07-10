@@ -2,8 +2,8 @@
 layout: page
 title: 培养方案 
 description: "培养方案"
-categories: [model-1.0.0]
-version: ["1.0.0"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
 
@@ -18,7 +18,7 @@ version: ["1.0.0"]
 * [2.2 其他](misc.html)
 
 ### 表格一览
-数据库共计25个表，分别如下:
+Schema edu.program下共计25个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>

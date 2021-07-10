@@ -2,8 +2,8 @@
 layout: page
 title: 评奖评优 荣誉称号
 description: "评奖评优荣誉称号"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
  目  录

@@ -2,8 +2,8 @@
 layout: page
 title: 学费信息 费用信息
 description: "学费信息费用信息"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
  目  录

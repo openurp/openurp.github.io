@@ -2,8 +2,8 @@
 layout: page
 title: 教学类基础信息 核心部分
 description: "教学类基础信息核心部分"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
  目  录

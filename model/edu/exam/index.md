@@ -2,8 +2,8 @@
 layout: page
 title: 考务管理 
 description: "考务管理"
-categories: [model-0.0.1]
-version: ["0.0.1"]
+categories: [model-0.23.1]
+version: ["0.23.1"]
 ---
 {% include JB/setup %}
 
@@ -18,7 +18,7 @@ version: ["0.0.1"]
 * [2.2 毕业补考](makeup.html)
 
 ### 表格一览
-数据库共计20个表，分别如下:
+Schema edu.exam下共计20个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>
