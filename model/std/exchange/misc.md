@@ -31,7 +31,7 @@ version: ["0.23.1"]
 <tr><td class="text-center">3</td><td>audit_state</td><td>integer</td><td class="text-center">否</td><td>审核状态</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>course_name</td><td>varchar(255)</td><td class="text-center">否</td><td>课程名称</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>credits</td><td>float4</td><td class="text-center">否</td><td>学分</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>extern_student_id</td><td>bigint</td><td class="text-center">否</td><td>外校学习经历ID</td><td>           <a href="/base/edu/misc.html#表格-extern_students-外校学习经历">base.extern_students</a>
+<tr><td class="text-center">6</td><td>extern_student_id</td><td>bigint</td><td class="text-center">否</td><td>外校学习经历ID</td><td>           <a href="/model/base/edu/misc.html#表格-extern_students-外校学习经历">base.extern_students</a>
 </td>  </tr>
 <tr><td class="text-center">7</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>score_text</td><td>varchar(10)</td><td class="text-center">否</td><td>成绩字面值</td><td></td>  </tr>
@@ -53,9 +53,9 @@ version: ["0.23.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程基本信息ID</td><td>           <a href="/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
+<tr><td class="text-center">1</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程基本信息ID</td><td>           <a href="/model/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
 </td>  </tr>
-<tr><td class="text-center">2</td><td>exchange_grade_id</td><td>bigint</td><td class="text-center">否</td><td>校外成绩ID</td><td>           <a href="/std/exchange/misc.html#表格-exchange_grades-校外成绩">std.exchange_grades</a>
+<tr><td class="text-center">2</td><td>exchange_grade_id</td><td>bigint</td><td class="text-center">否</td><td>校外成绩ID</td><td>           <a href="/model/std/exchange/misc.html#表格-exchange_grades-校外成绩">std.exchange_grades</a>
 </td>  </tr>
 </table>
 
@@ -85,7 +85,7 @@ version: ["0.23.1"]
 <tr><td class="text-center">2</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效日期</td><td></td>  </tr>
 <tr><td class="text-center">3</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>name</td><td>varchar(255)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
-<tr><td class="text-center">5</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>           <a href="/base/edu/core.html#表格-projects-项目">base.projects</a>
+<tr><td class="text-center">5</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>           <a href="/model/base/edu/core.html#表格-projects-项目">base.projects</a>
 </td>  </tr>
 </table>
 
@@ -104,9 +104,9 @@ version: ["0.23.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>exchange_program_id</td><td>bigint</td><td class="text-center">否</td><td>交换生计划ID</td><td>           <a href="/std/exchange/misc.html#表格-exchange_programs-交换生计划">std.exchange_programs</a>
+<tr><td class="text-center">1</td><td>exchange_program_id</td><td>bigint</td><td class="text-center">否</td><td>交换生计划ID</td><td>           <a href="/model/std/exchange/misc.html#表格-exchange_programs-交换生计划">std.exchange_programs</a>
 </td>  </tr>
-<tr><td class="text-center">2</td><td>extern_school_id</td><td>integer</td><td class="text-center">否</td><td>校外教育机构ID</td><td>           <a href="/base/common/misc.html#表格-extern_schools-校外教育机构">base.extern_schools</a>
+<tr><td class="text-center">2</td><td>extern_school_id</td><td>integer</td><td class="text-center">否</td><td>校外教育机构ID</td><td>           <a href="/model/base/common/misc.html#表格-extern_schools-校外教育机构">base.extern_schools</a>
 </td>  </tr>
 </table>
 
@@ -137,7 +137,7 @@ version: ["0.23.1"]
 <tr><td class="text-center">3</td><td>audit_state</td><td>integer</td><td class="text-center">否</td><td>审核状态</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>credits</td><td>float4</td><td class="text-center">否</td><td>申请冲抵的外校课程学分总计</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>exemption_credits</td><td>float4</td><td class="text-center">否</td><td>冲抵本校课程的学分总计</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>extern_student_id</td><td>bigint</td><td class="text-center">否</td><td>外校学习经历ID</td><td>           <a href="/base/edu/misc.html#表格-extern_students-外校学习经历">base.extern_students</a>
+<tr><td class="text-center">6</td><td>extern_student_id</td><td>bigint</td><td class="text-center">否</td><td>外校学习经历ID</td><td>           <a href="/model/base/edu/misc.html#表格-extern_students-外校学习经历">base.extern_students</a>
 </td>  </tr>
 <tr><td class="text-center">7</td><td>transcript_path</td><td>varchar(255)</td><td class="text-center">是</td><td>成绩单附件路径</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
@@ -169,7 +169,7 @@ version: ["0.23.1"]
 <tr><td class="text-center">2</td><td>exempted</td><td>float4</td><td class="text-center">否</td><td>已免修学分数</td><td></td>  </tr>
 <tr><td class="text-center">3</td><td>max_value</td><td>float4</td><td class="text-center">否</td><td>免修学分总和的最大值</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">5</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>           <a href="/base/edu/core.html#表格-students-学籍信息实现">base.students</a>
+<tr><td class="text-center">5</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>           <a href="/model/base/edu/core.html#表格-students-学籍信息实现">base.students</a>
 </td>  </tr>
 <tr><td class="text-center">6</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>

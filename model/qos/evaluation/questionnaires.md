@@ -35,7 +35,7 @@ version: ["0.23.1"]
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>name</td><td>varchar(50)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
 <tr><td class="text-center">3</td><td>oppo_val</td><td>float4</td><td class="text-center">否</td><td>倾向性权重 必须在0和1之间</td><td></td>  </tr>
-<tr><td class="text-center">4</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>           <a href="/base/edu/core.html#表格-projects-项目">base.projects</a>
+<tr><td class="text-center">4</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>           <a href="/model/base/edu/core.html#表格-projects-项目">base.projects</a>
 </td>  </tr>
 </table>
 
@@ -56,7 +56,7 @@ version: ["0.23.1"]
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>name</td><td>varchar(50)</td><td class="text-center">否</td><td>选项名</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>option_group_id</td><td>bigint</td><td class="text-center">否</td><td>选项组ID</td><td>           <a href="/qos/evaluation/questionnaires.html#表格-option_groups-选项组">qos.option_groups</a>
+<tr><td class="text-center">3</td><td>option_group_id</td><td>bigint</td><td class="text-center">否</td><td>选项组ID</td><td>           <a href="/model/qos/evaluation/questionnaires.html#表格-option_groups-选项组">qos.option_groups</a>
 </td>  </tr>
 <tr><td class="text-center">4</td><td>proportion</td><td>float4</td><td class="text-center">否</td><td>选项所占比重（权重）</td><td></td>  </tr>
 </table>
@@ -89,7 +89,7 @@ version: ["0.23.1"]
 <tr><td class="text-center">4</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效时间</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>name</td><td>varchar(50)</td><td class="text-center">否</td><td>中文名称</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>priority</td><td>integer</td><td class="text-center">否</td><td>优先级 ,越大越靠前</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>           <a href="/base/edu/core.html#表格-projects-项目">base.projects</a>
+<tr><td class="text-center">7</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>           <a href="/model/base/edu/core.html#表格-projects-项目">base.projects</a>
 </td>  </tr>
 <tr><td class="text-center">8</td><td>remark</td><td>varchar(100)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
@@ -113,11 +113,11 @@ version: ["0.23.1"]
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效时间</td><td></td>  </tr>
 <tr><td class="text-center">3</td><td>create_by</td><td>varchar(255)</td><td class="text-center">否</td><td>创建者</td><td></td>  </tr>
-<tr><td class="text-center">4</td><td>depart_id</td><td>integer</td><td class="text-center">否</td><td>创建部门ID</td><td>           <a href="/base/common/user.html#表格-departments-部门组织机构信息">base.departments</a>
+<tr><td class="text-center">4</td><td>depart_id</td><td>integer</td><td class="text-center">否</td><td>创建部门ID</td><td>           <a href="/model/base/common/user.html#表格-departments-部门组织机构信息">base.departments</a>
 </td>  </tr>
 <tr><td class="text-center">5</td><td>description</td><td>varchar(500)</td><td class="text-center">否</td><td>简单描述</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效时间</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>           <a href="/base/edu/core.html#表格-projects-项目">base.projects</a>
+<tr><td class="text-center">7</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>           <a href="/model/base/edu/core.html#表格-projects-项目">base.projects</a>
 </td>  </tr>
 <tr><td class="text-center">8</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>title</td><td>varchar(200)</td><td class="text-center">否</td><td>问卷标题</td><td></td>  </tr>
@@ -139,9 +139,9 @@ version: ["0.23.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>question_id</td><td>bigint</td><td class="text-center">否</td><td>评教问题ID</td><td>           <a href="/qos/evaluation/questionnaires.html#表格-questions-评教问题">qos.questions</a>
+<tr><td class="text-center">1</td><td>question_id</td><td>bigint</td><td class="text-center">否</td><td>评教问题ID</td><td>           <a href="/model/qos/evaluation/questionnaires.html#表格-questions-评教问题">qos.questions</a>
 </td>  </tr>
-<tr><td class="text-center">2</td><td>questionnaire_id</td><td>bigint</td><td class="text-center">否</td><td>评教问卷ID</td><td>           <a href="/qos/evaluation/questionnaires.html#表格-questionnaires-评教问卷">qos.questionnaires</a>
+<tr><td class="text-center">2</td><td>questionnaire_id</td><td>bigint</td><td class="text-center">否</td><td>评教问卷ID</td><td>           <a href="/model/qos/evaluation/questionnaires.html#表格-questionnaires-评教问卷">qos.questionnaires</a>
 </td>  </tr>
 </table>
 
@@ -171,15 +171,15 @@ version: ["0.23.1"]
 <tr><td class="text-center">2</td><td>addition</td><td>boolean</td><td class="text-center">否</td><td>是否附加题</td><td></td>  </tr>
 <tr><td class="text-center">3</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效时间</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>contents</td><td>varchar(400)</td><td class="text-center">否</td><td>问题内容</td><td></td>  </tr>
-<tr><td class="text-center">5</td><td>depart_id</td><td>integer</td><td class="text-center">否</td><td>问题所对应的使用部门ID</td><td>           <a href="/base/common/user.html#表格-departments-部门组织机构信息">base.departments</a>
+<tr><td class="text-center">5</td><td>depart_id</td><td>integer</td><td class="text-center">否</td><td>问题所对应的使用部门ID</td><td>           <a href="/model/base/common/user.html#表格-departments-部门组织机构信息">base.departments</a>
 </td>  </tr>
 <tr><td class="text-center">6</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效时间</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>option_group_id</td><td>bigint</td><td class="text-center">否</td><td>选项组ID</td><td>           <a href="/qos/evaluation/questionnaires.html#表格-option_groups-选项组">qos.option_groups</a>
+<tr><td class="text-center">7</td><td>option_group_id</td><td>bigint</td><td class="text-center">否</td><td>选项组ID</td><td>           <a href="/model/qos/evaluation/questionnaires.html#表格-option_groups-选项组">qos.option_groups</a>
 </td>  </tr>
 <tr><td class="text-center">8</td><td>priority</td><td>integer</td><td class="text-center">否</td><td>优先级</td><td></td>  </tr>
-<tr><td class="text-center">9</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>           <a href="/base/edu/core.html#表格-projects-项目">base.projects</a>
+<tr><td class="text-center">9</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>           <a href="/model/base/edu/core.html#表格-projects-项目">base.projects</a>
 </td>  </tr>
-<tr><td class="text-center">10</td><td>question_type_id</td><td>bigint</td><td class="text-center">否</td><td>问题类型ID</td><td>           <a href="/qos/evaluation/questionnaires.html#表格-question_types-问题类型">qos.question_types</a>
+<tr><td class="text-center">10</td><td>question_type_id</td><td>bigint</td><td class="text-center">否</td><td>问题类型ID</td><td>           <a href="/model/qos/evaluation/questionnaires.html#表格-question_types-问题类型">qos.question_types</a>
 </td>  </tr>
 <tr><td class="text-center">11</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>注释</td><td></td>  </tr>
 <tr><td class="text-center">12</td><td>score</td><td>float4</td><td class="text-center">否</td><td>分值</td><td></td>  </tr>

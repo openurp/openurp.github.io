@@ -45,19 +45,19 @@ version: ["0.23.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>department_id</td><td>integer</td><td class="text-center">是</td><td>院系ID</td><td>           <a href="/base/common/user.html#表格-departments-部门组织机构信息">base.departments</a>
+<tr><td class="text-center">2</td><td>department_id</td><td>integer</td><td class="text-center">是</td><td>院系ID</td><td>           <a href="/model/base/common/user.html#表格-departments-部门组织机构信息">base.departments</a>
 </td>  </tr>
-<tr><td class="text-center">3</td><td>direction_id</td><td>bigint</td><td class="text-center">是</td><td>适用方向ID</td><td>           <a href="/base/edu/core.html#表格-directions-方向信息 专业领域">base.directions</a>
+<tr><td class="text-center">3</td><td>direction_id</td><td>bigint</td><td class="text-center">是</td><td>适用方向ID</td><td>           <a href="/model/base/edu/core.html#表格-directions-方向信息 专业领域">base.directions</a>
 </td>  </tr>
 <tr><td class="text-center">4</td><td>from_grade</td><td>varchar(10)</td><td class="text-center">否</td><td>起始年级</td><td></td>  </tr>
-<tr><td class="text-center">5</td><td>level_id</td><td>integer</td><td class="text-center">否</td><td>学历层次ID</td><td>           <a href="/code/edu.html#表格-academic_levels-学历层次">code.academic_levels</a>
+<tr><td class="text-center">5</td><td>level_id</td><td>integer</td><td class="text-center">否</td><td>学历层次ID</td><td>           <a href="/model/code/edu.html#表格-academic_levels-学历层次">code.academic_levels</a>
 </td>  </tr>
-<tr><td class="text-center">6</td><td>major_id</td><td>bigint</td><td class="text-center">是</td><td>适用专业ID</td><td>           <a href="/base/edu/core.html#表格-majors-专业">base.majors</a>
+<tr><td class="text-center">6</td><td>major_id</td><td>bigint</td><td class="text-center">是</td><td>适用专业ID</td><td>           <a href="/model/base/edu/core.html#表格-majors-专业">base.majors</a>
 </td>  </tr>
-<tr><td class="text-center">7</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>           <a href="/base/edu/core.html#表格-projects-项目">base.projects</a>
+<tr><td class="text-center">7</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>           <a href="/model/base/edu/core.html#表格-projects-项目">base.projects</a>
 </td>  </tr>
 <tr><td class="text-center">8</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">9</td><td>std_type_id</td><td>integer</td><td class="text-center">是</td><td>学生类别ID</td><td>           <a href="/base/edu/misc.html#表格-std_types-学生类别">base.std_types</a>
+<tr><td class="text-center">9</td><td>std_type_id</td><td>integer</td><td class="text-center">是</td><td>学生类别ID</td><td>           <a href="/model/base/edu/misc.html#表格-std_types-学生类别">base.std_types</a>
 </td>  </tr>
 <tr><td class="text-center">10</td><td>to_grade</td><td>varchar(10)</td><td class="text-center">否</td><td>截至年级</td><td></td>  </tr>
 <tr><td class="text-center">11</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
@@ -85,9 +85,9 @@ version: ["0.23.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程基本信息ID</td><td>           <a href="/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
+<tr><td class="text-center">1</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程基本信息ID</td><td>           <a href="/model/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
 </td>  </tr>
-<tr><td class="text-center">2</td><td>major_alternative_course_id</td><td>bigint</td><td class="text-center">否</td><td>专业替代课程ID</td><td>           <a href="/edu/program/plan.html#表格-major_alt_courses-专业替代课程">edu.major_alt_courses</a>
+<tr><td class="text-center">2</td><td>major_alternative_course_id</td><td>bigint</td><td class="text-center">否</td><td>专业替代课程ID</td><td>           <a href="/model/edu/program/plan.html#表格-major_alt_courses-专业替代课程">edu.major_alt_courses</a>
 </td>  </tr>
 </table>
 
@@ -113,9 +113,9 @@ version: ["0.23.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程基本信息ID</td><td>           <a href="/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
+<tr><td class="text-center">1</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程基本信息ID</td><td>           <a href="/model/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
 </td>  </tr>
-<tr><td class="text-center">2</td><td>major_alternative_course_id</td><td>bigint</td><td class="text-center">否</td><td>专业替代课程ID</td><td>           <a href="/edu/program/plan.html#表格-major_alt_courses-专业替代课程">edu.major_alt_courses</a>
+<tr><td class="text-center">2</td><td>major_alternative_course_id</td><td>bigint</td><td class="text-center">否</td><td>专业替代课程ID</td><td>           <a href="/model/edu/program/plan.html#表格-major_alt_courses-专业替代课程">edu.major_alt_courses</a>
 </td>  </tr>
 </table>
 
@@ -144,16 +144,16 @@ version: ["0.23.1"]
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>auto_addup</td><td>boolean</td><td class="text-center">否</td><td>自动累加学分</td><td></td>  </tr>
 <tr><td class="text-center">3</td><td>course_count</td><td>smallint</td><td class="text-center">否</td><td>要求课程门数</td><td></td>  </tr>
-<tr><td class="text-center">4</td><td>course_type_id</td><td>integer</td><td class="text-center">否</td><td>课程类别ID</td><td>           <a href="/base/edu/misc.html#表格-course_types-课程类别">base.course_types</a>
+<tr><td class="text-center">4</td><td>course_type_id</td><td>integer</td><td class="text-center">否</td><td>课程类别ID</td><td>           <a href="/model/base/edu/misc.html#表格-course_types-课程类别">base.course_types</a>
 </td>  </tr>
 <tr><td class="text-center">5</td><td>credits</td><td>float4</td><td class="text-center">否</td><td>要求学分</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>direction_id</td><td>bigint</td><td class="text-center">是</td><td>该组针对的专业方向ID</td><td>           <a href="/base/edu/core.html#表格-directions-方向信息 专业领域">base.directions</a>
+<tr><td class="text-center">6</td><td>direction_id</td><td>bigint</td><td class="text-center">是</td><td>该组针对的专业方向ID</td><td>           <a href="/model/base/edu/core.html#表格-directions-方向信息 专业领域">base.directions</a>
 </td>  </tr>
 <tr><td class="text-center">7</td><td>given_name</td><td>varchar(100)</td><td class="text-center">是</td><td>自定义别名</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>indexno</td><td>varchar(20)</td><td class="text-center">否</td><td>索引号</td><td></td>  </tr>
-<tr><td class="text-center">9</td><td>parent_id</td><td>bigint</td><td class="text-center">是</td><td>上级组ID</td><td>           <a href="/edu/program/plan.html#表格-major_course_groups-专业计划课程组">edu.major_course_groups</a>
+<tr><td class="text-center">9</td><td>parent_id</td><td>bigint</td><td class="text-center">是</td><td>上级组ID</td><td>           <a href="/model/edu/program/plan.html#表格-major_course_groups-专业计划课程组">edu.major_course_groups</a>
 </td>  </tr>
-<tr><td class="text-center">10</td><td>plan_id</td><td>bigint</td><td class="text-center">否</td><td>计划ID</td><td>           <a href="/edu/program/plan.html#表格-major_plans-专业培养计划">edu.major_plans</a>
+<tr><td class="text-center">10</td><td>plan_id</td><td>bigint</td><td class="text-center">否</td><td>计划ID</td><td>           <a href="/model/edu/program/plan.html#表格-major_plans-专业培养计划">edu.major_plans</a>
 </td>  </tr>
 <tr><td class="text-center">11</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">12</td><td>sub_count</td><td>smallint</td><td class="text-center">否</td><td>要求完成组数</td><td></td>  </tr>
@@ -186,16 +186,16 @@ version: ["0.23.1"]
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>compulsory</td><td>boolean</td><td class="text-center">否</td><td>是否必修</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程ID</td><td>           <a href="/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
+<tr><td class="text-center">3</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程ID</td><td>           <a href="/model/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
 </td>  </tr>
-<tr><td class="text-center">4</td><td>department_id</td><td>integer</td><td class="text-center">否</td><td>开课部门ID</td><td>           <a href="/base/common/user.html#表格-departments-部门组织机构信息">base.departments</a>
+<tr><td class="text-center">4</td><td>department_id</td><td>integer</td><td class="text-center">否</td><td>开课部门ID</td><td>           <a href="/model/base/common/user.html#表格-departments-部门组织机构信息">base.departments</a>
 </td>  </tr>
-<tr><td class="text-center">5</td><td>exam_mode_id</td><td>integer</td><td class="text-center">否</td><td>考核方式ID</td><td>           <a href="/code/edu.html#表格-exam_modes-考核方式">code.exam_modes</a>
+<tr><td class="text-center">5</td><td>exam_mode_id</td><td>integer</td><td class="text-center">否</td><td>考核方式ID</td><td>           <a href="/model/code/edu.html#表格-exam_modes-考核方式">code.exam_modes</a>
 </td>  </tr>
-<tr><td class="text-center">6</td><td>group_id</td><td>bigint</td><td class="text-center">否</td><td>课程组ID</td><td>           <a href="/edu/program/plan.html#表格-major_course_groups-专业计划课程组">edu.major_course_groups</a>
+<tr><td class="text-center">6</td><td>group_id</td><td>bigint</td><td class="text-center">否</td><td>课程组ID</td><td>           <a href="/model/edu/program/plan.html#表格-major_course_groups-专业计划课程组">edu.major_course_groups</a>
 </td>  </tr>
 <tr><td class="text-center">7</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">8</td><td>stage_id</td><td>integer</td><td class="text-center">是</td><td>日历阶段ID</td><td>           <a href="/base/edu/misc.html#表格-calendar_stages-日历阶段">base.calendar_stages</a>
+<tr><td class="text-center">8</td><td>stage_id</td><td>integer</td><td class="text-center">是</td><td>日历阶段ID</td><td>           <a href="/model/base/edu/misc.html#表格-calendar_stages-日历阶段">base.calendar_stages</a>
 </td>  </tr>
 <tr><td class="text-center">9</td><td>suggest_terms</td><td>integer</td><td class="text-center">否</td><td>建议修读学期</td><td></td>  </tr>
 <tr><td class="text-center">10</td><td>terms</td><td>integer</td><td class="text-center">否</td><td>开课学期</td><td></td>  </tr>
@@ -237,7 +237,7 @@ version: ["0.23.1"]
 <tr><td class="text-center">4</td><td>credits</td><td>float4</td><td class="text-center">否</td><td>要求学分</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>end_on</td><td>date</td><td class="text-center">否</td><td>结束日期</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>end_term</td><td>smallint</td><td class="text-center">否</td><td>结束学期</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>program_id</td><td>bigint</td><td class="text-center">否</td><td>专业培养方案ID</td><td>           <a href="/edu/program/misc.html#表格-programs-专业培养方案">edu.programs</a>
+<tr><td class="text-center">7</td><td>program_id</td><td>bigint</td><td class="text-center">否</td><td>专业培养方案ID</td><td>           <a href="/model/edu/program/misc.html#表格-programs-专业培养方案">edu.programs</a>
 </td>  </tr>
 <tr><td class="text-center">8</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>start_term</td><td>smallint</td><td class="text-center">否</td><td>起始学期</td><td></td>  </tr>
@@ -267,16 +267,16 @@ version: ["0.23.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>course_ability_rate_id</td><td>integer</td><td class="text-center">是</td><td>要求能力等级ID</td><td>           <a href="/base/edu/misc.html#表格-course_ability_rates-课程能力等级">base.course_ability_rates</a>
+<tr><td class="text-center">2</td><td>course_ability_rate_id</td><td>integer</td><td class="text-center">是</td><td>要求能力等级ID</td><td>           <a href="/model/base/edu/misc.html#表格-course_ability_rates-课程能力等级">base.course_ability_rates</a>
 </td>  </tr>
-<tr><td class="text-center">3</td><td>course_type_id</td><td>integer</td><td class="text-center">否</td><td>课程类别ID</td><td>           <a href="/base/edu/misc.html#表格-course_types-课程类别">base.course_types</a>
+<tr><td class="text-center">3</td><td>course_type_id</td><td>integer</td><td class="text-center">否</td><td>课程类别ID</td><td>           <a href="/model/base/edu/misc.html#表格-course_types-课程类别">base.course_types</a>
 </td>  </tr>
 <tr><td class="text-center">4</td><td>indexno</td><td>varchar(255)</td><td class="text-center">否</td><td>顺序号</td><td></td>  </tr>
-<tr><td class="text-center">5</td><td>language_id</td><td>integer</td><td class="text-center">是</td><td>要求外语语种ID</td><td>           <a href="/code/edu.html#表格-languages-语种">code.languages</a>
+<tr><td class="text-center">5</td><td>language_id</td><td>integer</td><td class="text-center">是</td><td>要求外语语种ID</td><td>           <a href="/model/code/edu.html#表格-languages-语种">code.languages</a>
 </td>  </tr>
-<tr><td class="text-center">6</td><td>parent_id</td><td>bigint</td><td class="text-center">是</td><td>公共共享课程组ID</td><td>           <a href="/edu/program/plan.html#表格-share_course_groups-公共共享课程组">edu.share_course_groups</a>
+<tr><td class="text-center">6</td><td>parent_id</td><td>bigint</td><td class="text-center">是</td><td>公共共享课程组ID</td><td>           <a href="/model/edu/program/plan.html#表格-share_course_groups-公共共享课程组">edu.share_course_groups</a>
 </td>  </tr>
-<tr><td class="text-center">7</td><td>plan_id</td><td>bigint</td><td class="text-center">否</td><td>公共共享计划ID</td><td>           <a href="/edu/program/plan.html#表格-share_plans-公共共享计划">edu.share_plans</a>
+<tr><td class="text-center">7</td><td>plan_id</td><td>bigint</td><td class="text-center">否</td><td>公共共享计划ID</td><td>           <a href="/model/edu/program/plan.html#表格-share_plans-公共共享计划">edu.share_plans</a>
 </td>  </tr>
 </table>
 
@@ -304,15 +304,15 @@ version: ["0.23.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程基本信息ID</td><td>           <a href="/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
+<tr><td class="text-center">2</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程基本信息ID</td><td>           <a href="/model/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
 </td>  </tr>
-<tr><td class="text-center">3</td><td>department_id</td><td>integer</td><td class="text-center">否</td><td>开课部门ID</td><td>           <a href="/base/common/user.html#表格-departments-部门组织机构信息">base.departments</a>
+<tr><td class="text-center">3</td><td>department_id</td><td>integer</td><td class="text-center">否</td><td>开课部门ID</td><td>           <a href="/model/base/common/user.html#表格-departments-部门组织机构信息">base.departments</a>
 </td>  </tr>
-<tr><td class="text-center">4</td><td>exam_mode_id</td><td>integer</td><td class="text-center">否</td><td>考核方式ID</td><td>           <a href="/code/edu.html#表格-exam_modes-考核方式">code.exam_modes</a>
+<tr><td class="text-center">4</td><td>exam_mode_id</td><td>integer</td><td class="text-center">否</td><td>考核方式ID</td><td>           <a href="/model/code/edu.html#表格-exam_modes-考核方式">code.exam_modes</a>
 </td>  </tr>
-<tr><td class="text-center">5</td><td>group_id</td><td>bigint</td><td class="text-center">否</td><td>公共共享课程组ID</td><td>           <a href="/edu/program/plan.html#表格-share_course_groups-公共共享课程组">edu.share_course_groups</a>
+<tr><td class="text-center">5</td><td>group_id</td><td>bigint</td><td class="text-center">否</td><td>公共共享课程组ID</td><td>           <a href="/model/edu/program/plan.html#表格-share_course_groups-公共共享课程组">edu.share_course_groups</a>
 </td>  </tr>
-<tr><td class="text-center">6</td><td>stage_id</td><td>integer</td><td class="text-center">是</td><td>日历阶段ID</td><td>           <a href="/base/edu/misc.html#表格-calendar_stages-日历阶段">base.calendar_stages</a>
+<tr><td class="text-center">6</td><td>stage_id</td><td>integer</td><td class="text-center">是</td><td>日历阶段ID</td><td>           <a href="/model/base/edu/misc.html#表格-calendar_stages-日历阶段">base.calendar_stages</a>
 </td>  </tr>
 <tr><td class="text-center">7</td><td>terms</td><td>integer</td><td class="text-center">否</td><td>学期</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>weekstate</td><td>bigint</td><td class="text-center">否</td><td>开课周</td><td></td>  </tr>
@@ -351,10 +351,10 @@ version: ["0.23.1"]
 <tr><td class="text-center">2</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效日期</td><td></td>  </tr>
 <tr><td class="text-center">3</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>from_grade</td><td>varchar(255)</td><td class="text-center">否</td><td>起始适用年级</td><td></td>  </tr>
-<tr><td class="text-center">5</td><td>level_id</td><td>integer</td><td class="text-center">否</td><td>培养层次ID</td><td>           <a href="/code/edu.html#表格-education_levels-培养层次">code.education_levels</a>
+<tr><td class="text-center">5</td><td>level_id</td><td>integer</td><td class="text-center">否</td><td>培养层次ID</td><td>           <a href="/model/code/edu.html#表格-education_levels-培养层次">code.education_levels</a>
 </td>  </tr>
 <tr><td class="text-center">6</td><td>name</td><td>varchar(255)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>           <a href="/base/edu/core.html#表格-projects-项目">base.projects</a>
+<tr><td class="text-center">7</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>           <a href="/model/base/edu/core.html#表格-projects-项目">base.projects</a>
 </td>  </tr>
 <tr><td class="text-center">8</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>to_grade</td><td>varchar(255)</td><td class="text-center">否</td><td>截止适用年级</td><td></td>  </tr>
@@ -378,7 +378,7 @@ version: ["0.23.1"]
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学生ID</td><td>           <a href="/base/edu/core.html#表格-students-学籍信息实现">base.students</a>
+<tr><td class="text-center">3</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学生ID</td><td>           <a href="/model/base/edu/core.html#表格-students-学籍信息实现">base.students</a>
 </td>  </tr>
 <tr><td class="text-center">4</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>
@@ -405,9 +405,9 @@ version: ["0.23.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程基本信息ID</td><td>           <a href="/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
+<tr><td class="text-center">1</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程基本信息ID</td><td>           <a href="/model/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
 </td>  </tr>
-<tr><td class="text-center">2</td><td>std_alternative_course_id</td><td>bigint</td><td class="text-center">否</td><td>学生替代课程ID</td><td>           <a href="/edu/program/plan.html#表格-std_alt_courses-学生替代课程">edu.std_alt_courses</a>
+<tr><td class="text-center">2</td><td>std_alternative_course_id</td><td>bigint</td><td class="text-center">否</td><td>学生替代课程ID</td><td>           <a href="/model/edu/program/plan.html#表格-std_alt_courses-学生替代课程">edu.std_alt_courses</a>
 </td>  </tr>
 </table>
 
@@ -433,9 +433,9 @@ version: ["0.23.1"]
 
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程基本信息ID</td><td>           <a href="/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
+<tr><td class="text-center">1</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程基本信息ID</td><td>           <a href="/model/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
 </td>  </tr>
-<tr><td class="text-center">2</td><td>std_alternative_course_id</td><td>bigint</td><td class="text-center">否</td><td>学生替代课程ID</td><td>           <a href="/edu/program/plan.html#表格-std_alt_courses-学生替代课程">edu.std_alt_courses</a>
+<tr><td class="text-center">2</td><td>std_alternative_course_id</td><td>bigint</td><td class="text-center">否</td><td>学生替代课程ID</td><td>           <a href="/model/edu/program/plan.html#表格-std_alt_courses-学生替代课程">edu.std_alt_courses</a>
 </td>  </tr>
 </table>
 
@@ -464,14 +464,14 @@ version: ["0.23.1"]
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>auto_addup</td><td>boolean</td><td class="text-center">否</td><td>自动累加学分</td><td></td>  </tr>
 <tr><td class="text-center">3</td><td>course_count</td><td>smallint</td><td class="text-center">否</td><td>要求课程门数</td><td></td>  </tr>
-<tr><td class="text-center">4</td><td>course_type_id</td><td>integer</td><td class="text-center">否</td><td>课程类别ID</td><td>           <a href="/base/edu/misc.html#表格-course_types-课程类别">base.course_types</a>
+<tr><td class="text-center">4</td><td>course_type_id</td><td>integer</td><td class="text-center">否</td><td>课程类别ID</td><td>           <a href="/model/base/edu/misc.html#表格-course_types-课程类别">base.course_types</a>
 </td>  </tr>
 <tr><td class="text-center">5</td><td>credits</td><td>float4</td><td class="text-center">否</td><td>要求学分</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>given_name</td><td>varchar(255)</td><td class="text-center">是</td><td>别名</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>indexno</td><td>varchar(20)</td><td class="text-center">否</td><td>索引号</td><td></td>  </tr>
-<tr><td class="text-center">8</td><td>parent_id</td><td>bigint</td><td class="text-center">是</td><td>上级组ID</td><td>           <a href="/edu/program/plan.html#表格-std_course_groups-学生共享课程组">edu.std_course_groups</a>
+<tr><td class="text-center">8</td><td>parent_id</td><td>bigint</td><td class="text-center">是</td><td>上级组ID</td><td>           <a href="/model/edu/program/plan.html#表格-std_course_groups-学生共享课程组">edu.std_course_groups</a>
 </td>  </tr>
-<tr><td class="text-center">9</td><td>plan_id</td><td>bigint</td><td class="text-center">否</td><td>计划ID</td><td>           <a href="/edu/program/plan.html#表格-std_plans-个人计划">edu.std_plans</a>
+<tr><td class="text-center">9</td><td>plan_id</td><td>bigint</td><td class="text-center">否</td><td>计划ID</td><td>           <a href="/model/edu/program/plan.html#表格-std_plans-个人计划">edu.std_plans</a>
 </td>  </tr>
 <tr><td class="text-center">10</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">11</td><td>sub_count</td><td>smallint</td><td class="text-center">否</td><td>要求完成组数</td><td></td>  </tr>
@@ -504,9 +504,9 @@ version: ["0.23.1"]
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>compulsory</td><td>boolean</td><td class="text-center">否</td><td>是否必修</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程ID</td><td>           <a href="/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
+<tr><td class="text-center">3</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程ID</td><td>           <a href="/model/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
 </td>  </tr>
-<tr><td class="text-center">4</td><td>group_id</td><td>bigint</td><td class="text-center">否</td><td>课程组ID</td><td>           <a href="/edu/program/plan.html#表格-std_course_groups-学生共享课程组">edu.std_course_groups</a>
+<tr><td class="text-center">4</td><td>group_id</td><td>bigint</td><td class="text-center">否</td><td>课程组ID</td><td>           <a href="/model/edu/program/plan.html#表格-std_course_groups-学生共享课程组">edu.std_course_groups</a>
 </td>  </tr>
 <tr><td class="text-center">5</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>terms</td><td>integer</td><td class="text-center">否</td><td>开课学期</td><td></td>  </tr>
@@ -547,11 +547,11 @@ version: ["0.23.1"]
 <tr><td class="text-center">4</td><td>credits</td><td>float4</td><td class="text-center">否</td><td>要求学分</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>end_on</td><td>date</td><td class="text-center">否</td><td>结束日期</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>end_term</td><td>smallint</td><td class="text-center">否</td><td>结束学期</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>program_id</td><td>bigint</td><td class="text-center">否</td><td>专业培养方案ID</td><td>           <a href="/edu/program/misc.html#表格-programs-专业培养方案">edu.programs</a>
+<tr><td class="text-center">7</td><td>program_id</td><td>bigint</td><td class="text-center">否</td><td>专业培养方案ID</td><td>           <a href="/model/edu/program/misc.html#表格-programs-专业培养方案">edu.programs</a>
 </td>  </tr>
 <tr><td class="text-center">8</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>start_term</td><td>smallint</td><td class="text-center">否</td><td>起始学期</td><td></td>  </tr>
-<tr><td class="text-center">10</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学生ID</td><td>           <a href="/base/edu/core.html#表格-students-学籍信息实现">base.students</a>
+<tr><td class="text-center">10</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学生ID</td><td>           <a href="/model/base/edu/core.html#表格-students-学籍信息实现">base.students</a>
 </td>  </tr>
 <tr><td class="text-center">11</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>

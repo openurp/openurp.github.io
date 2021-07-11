@@ -115,14 +115,13 @@
       <module name="textbook" title="教材信息">
         <group name="core" title="核心部分" tables="*"/>
       </module>
+    </schema>
 
+    <schema name="std" title="学籍管理">
       <module name="alter" title="学籍异动" >
         <group name="misc" title="学籍异动" tables="*">
         </group>
       </module>
-    </schema>
-
-    <schema name="std" title="学籍管理">
       <module name="award" title="评奖评优">
         <group name="scholarship" title="奖学金" tables="scholarship_*">
           <image name="scholarship" title="奖学金" tables="scholarship_*"/>

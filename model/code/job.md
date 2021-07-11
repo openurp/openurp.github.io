@@ -29,7 +29,7 @@ version: ["0.23.1"]
 <tr><td class="text-center">1</td><td>id</td><td>integer</td><td class="text-center">否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效日期</td><td></td>  </tr>
 <tr><td class="text-center">3</td><td>code</td><td>varchar(20)</td><td class="text-center">否</td><td>代码</td><td></td>  </tr>
-<tr><td class="text-center">4</td><td>duty_type_id</td><td>integer</td><td class="text-center">否</td><td>行政职务类别ID</td><td>           <a href="/code/job.html#表格-duty_types-职务类别">code.duty_types</a>
+<tr><td class="text-center">4</td><td>duty_type_id</td><td>integer</td><td class="text-center">否</td><td>行政职务类别ID</td><td>           <a href="/model/code/job.html#表格-duty_types-职务类别">code.duty_types</a>
 </td>  </tr>
 <tr><td class="text-center">5</td><td>en_name</td><td>varchar(300)</td><td class="text-center">是</td><td>英文名称</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
@@ -158,7 +158,7 @@ version: ["0.23.1"]
 <tr><td class="text-center">3</td><td>code</td><td>varchar(20)</td><td class="text-center">否</td><td>代码</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>en_name</td><td>varchar(300)</td><td class="text-center">是</td><td>英文名称</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>grade_id</td><td>integer</td><td class="text-center">否</td><td>职称等级ID</td><td>           <a href="/code/job.html#表格-professional_grades-职称等级">code.professional_grades</a>
+<tr><td class="text-center">6</td><td>grade_id</td><td>integer</td><td class="text-center">否</td><td>职称等级ID</td><td>           <a href="/model/code/job.html#表格-professional_grades-职称等级">code.professional_grades</a>
 </td>  </tr>
 <tr><td class="text-center">7</td><td>name</td><td>varchar(100)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>

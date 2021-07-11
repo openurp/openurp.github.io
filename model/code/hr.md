@@ -57,7 +57,7 @@ version: ["0.23.1"]
 <tr><td class="text-center">4</td><td>en_name</td><td>varchar(300)</td><td class="text-center">是</td><td>英文名称</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>name</td><td>varchar(100)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>parent_id</td><td>integer</td><td class="text-center">否</td><td>上级来源ID</td><td>           <a href="/code/hr.html#表格-staff_source_types-教职工来源">code.staff_source_types</a>
+<tr><td class="text-center">7</td><td>parent_id</td><td>integer</td><td class="text-center">否</td><td>上级来源ID</td><td>           <a href="/model/code/hr.html#表格-staff_source_types-教职工来源">code.staff_source_types</a>
 </td>  </tr>
 <tr><td class="text-center">8</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>修改时间</td><td></td>  </tr>
@@ -91,7 +91,7 @@ version: ["0.23.1"]
 <tr><td class="text-center">4</td><td>en_name</td><td>varchar(300)</td><td class="text-center">是</td><td>英文名称</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>name</td><td>varchar(100)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>parent_id</td><td>integer</td><td class="text-center">否</td><td>上级类别ID</td><td>           <a href="/code/hr.html#表格-staff_types-教职工类别">code.staff_types</a>
+<tr><td class="text-center">7</td><td>parent_id</td><td>integer</td><td class="text-center">否</td><td>上级类别ID</td><td>           <a href="/model/code/hr.html#表格-staff_types-教职工类别">code.staff_types</a>
 </td>  </tr>
 <tr><td class="text-center">8</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>修改时间</td><td></td>  </tr>

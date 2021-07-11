@@ -13,10 +13,10 @@ version: ["0.23.1"]
   * [1.1 表格一览](index.html#表格一览)
 
 ##### 2. 具体模块明细
-* [2.1 学籍异动](misc.html)
+* [2.1 学籍异动](/std/alter/misc.html)
 
 ### 表格一览
-Schema std下共计2个表，分别如下:
+Schema std.alter下共计2个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>
@@ -27,9 +27,9 @@ Schema std下共计2个表，分别如下:
   </tr>
   <tr>
     <td>1</td>
-    <td><a href="misc.html#表格-std_alteration_items-学籍异动明细">std_alteration_items</a> 学籍异动明细</td>
+    <td><a href="/model/std/alter/misc.html#表格-std_alteration_items-学籍异动明细">std_alteration_items</a> 学籍异动明细</td>
     <td>2</td>
-    <td><a href="misc.html#表格-std_alterations-学籍异动">std_alterations</a> 学籍异动</td>
+    <td><a href="/model/std/alter/misc.html#表格-std_alterations-学籍异动">std_alterations</a> 学籍异动</td>
   </tr>
 </table>
 

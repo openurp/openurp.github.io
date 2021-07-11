@@ -27,7 +27,8 @@ version: ["0.23.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>alteration_id</td><td>bigint</td><td class="text-center">否</td><td>学籍异动ID</td><td>std.std_alterations</td>  </tr>
+<tr><td class="text-center">2</td><td>alteration_id</td><td>bigint</td><td class="text-center">否</td><td>学籍异动ID</td><td>           <a href="/model/std/alter/misc.html#表格-std_alterations-学籍异动">std.std_alterations</a>
+</td>  </tr>
 <tr><td class="text-center">3</td><td>meta</td><td>integer</td><td class="text-center">否</td><td>变动属性</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>newtext</td><td>varchar(255)</td><td class="text-center">是</td><td>变动后</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>newvalue</td><td>varchar(255)</td><td class="text-center">是</td><td>变动后值</td><td></td>  </tr>
@@ -58,15 +59,19 @@ version: ["0.23.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>alter_type_id</td><td>integer</td><td class="text-center">否</td><td>学籍异动类别ID</td><td>code.std_alter_types</td>  </tr>
+<tr><td class="text-center">2</td><td>alter_type_id</td><td>integer</td><td class="text-center">否</td><td>学籍异动类别ID</td><td>           <a href="/model/code/std.html#表格-std_alter_types-学籍异动类别">code.std_alter_types</a>
+</td>  </tr>
 <tr><td class="text-center">3</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>开始日期</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>code</td><td>varchar(255)</td><td class="text-center">否</td><td>代码</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>effective</td><td>boolean</td><td class="text-center">否</td><td>是否生效</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>end_on</td><td>date</td><td class="text-center">否</td><td>结束日期</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>reason_id</td><td>integer</td><td class="text-center">是</td><td>学籍异动原因ID</td><td>code.std_alter_reasons</td>  </tr>
+<tr><td class="text-center">7</td><td>reason_id</td><td>integer</td><td class="text-center">是</td><td>学籍异动原因ID</td><td>           <a href="/model/code/std.html#表格-std_alter_reasons-学籍异动原因">code.std_alter_reasons</a>
+</td>  </tr>
 <tr><td class="text-center">8</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">9</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>学年学期ID</td><td>base.semesters</td>  </tr>
-<tr><td class="text-center">10</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>base.students</td>  </tr>
+<tr><td class="text-center">9</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>学年学期ID</td><td>           <a href="/model/base/edu/misc.html#表格-semesters-学年学期">base.semesters</a>
+</td>  </tr>
+<tr><td class="text-center">10</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>           <a href="/model/base/edu/core.html#表格-students-学籍信息实现">base.students</a>
+</td>  </tr>
 <tr><td class="text-center">11</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>
 

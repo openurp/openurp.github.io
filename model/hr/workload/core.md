@@ -51,7 +51,7 @@ version: ["0.23.1"]
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>factor_exp</td><td>varchar(255)</td><td class="text-center">否</td><td>系数表达式</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>factor_id</td><td>bigint</td><td class="text-center">否</td><td>教学工作量系数ID</td><td>           <a href="/hr/workload/core.html#表格-capacity_factors-教学工作量系数">hr.capacity_factors</a>
+<tr><td class="text-center">3</td><td>factor_id</td><td>bigint</td><td class="text-center">否</td><td>教学工作量系数ID</td><td>           <a href="/model/hr/workload/core.html#表格-capacity_factors-教学工作量系数">hr.capacity_factors</a>
 </td>  </tr>
 <tr><td class="text-center">4</td><td>max_capacity</td><td>integer</td><td class="text-center">否</td><td>学生人数上限</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>min_capacity</td><td>integer</td><td class="text-center">否</td><td>学生人数下限</td><td></td>  </tr>
@@ -80,21 +80,21 @@ version: ["0.23.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>capacity_factor_id</td><td>bigint</td><td class="text-center">否</td><td>教学工作量系数ID</td><td>           <a href="/hr/workload/core.html#表格-capacity_factors-教学工作量系数">hr.capacity_factors</a>
+<tr><td class="text-center">2</td><td>capacity_factor_id</td><td>bigint</td><td class="text-center">否</td><td>教学工作量系数ID</td><td>           <a href="/model/hr/workload/core.html#表格-capacity_factors-教学工作量系数">hr.capacity_factors</a>
 </td>  </tr>
 <tr><td class="text-center">3</td><td>clazz_tags</td><td>varchar(255)</td><td class="text-center">否</td><td>任务标记</td><td></td>  </tr>
-<tr><td class="text-center">4</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程ID</td><td>           <a href="/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
+<tr><td class="text-center">4</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程ID</td><td>           <a href="/model/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
 </td>  </tr>
 <tr><td class="text-center">5</td><td>credit_hours</td><td>integer</td><td class="text-center">否</td><td>担任学时</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>crn</td><td>varchar(255)</td><td class="text-center">否</td><td>任务课程序号</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>factor</td><td>float4</td><td class="text-center">否</td><td>工作量系数</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>load_hours</td><td>float4</td><td class="text-center">否</td><td>折算课时</td><td></td>  </tr>
-<tr><td class="text-center">9</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>学期ID</td><td>           <a href="/base/edu/misc.html#表格-semesters-学年学期">base.semesters</a>
+<tr><td class="text-center">9</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>学期ID</td><td>           <a href="/model/base/edu/misc.html#表格-semesters-学年学期">base.semesters</a>
 </td>  </tr>
 <tr><td class="text-center">10</td><td>std_count</td><td>integer</td><td class="text-center">否</td><td>教学班人数</td><td></td>  </tr>
-<tr><td class="text-center">11</td><td>teacher_id</td><td>bigint</td><td class="text-center">否</td><td>教师信息ID</td><td>           <a href="/base/edu/core.html#表格-teachers-教师信息">base.teachers</a>
+<tr><td class="text-center">11</td><td>teacher_id</td><td>bigint</td><td class="text-center">否</td><td>教师信息ID</td><td>           <a href="/model/base/edu/core.html#表格-teachers-教师信息">base.teachers</a>
 </td>  </tr>
-<tr><td class="text-center">12</td><td>teacher_title_id</td><td>integer</td><td class="text-center">否</td><td>职称ID</td><td>           <a href="/code/job.html#表格-professional_titles-职称">code.professional_titles</a>
+<tr><td class="text-center">12</td><td>teacher_title_id</td><td>integer</td><td class="text-center">否</td><td>职称ID</td><td>           <a href="/model/code/job.html#表格-professional_titles-职称">code.professional_titles</a>
 </td>  </tr>
 </table>
 
