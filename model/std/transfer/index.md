@@ -14,7 +14,7 @@ version: ["0.23.1"]
   * [1.2 模块关系图](index.html#模块关系图)
 
 ##### 2. 具体模块明细
-* [2.1 转专业](misc.html)
+* [2.1 转专业](/std/transfer/misc.html)
 
 ### 表格一览
 Schema std.transfer下共计6个表，分别如下:
@@ -28,21 +28,21 @@ Schema std.transfer下共计6个表，分别如下:
   </tr>
   <tr>
     <td>1</td>
-    <td><a href="/std/transfer/misc.html#表格-transfer_applies-转专业申请">transfer_applies</a> 转专业申请</td>
+    <td><a href="/model/std/transfer/misc.html#表格-transfer_applies-转专业申请">transfer_applies</a> 转专业申请</td>
     <td>4</td>
-    <td><a href="/std/transfer/misc.html#表格-transfer_scopes-招生学生范围">transfer_scopes</a> 招生学生范围</td>
+    <td><a href="/model/std/transfer/misc.html#表格-transfer_scopes-招生学生范围">transfer_scopes</a> 招生学生范围</td>
   </tr>
   <tr>
     <td>2</td>
-    <td><a href="/std/transfer/misc.html#表格-transfer_options-转专业招收专业">transfer_options</a> 转专业招收专业</td>
+    <td><a href="/model/std/transfer/misc.html#表格-transfer_options-转专业招收专业">transfer_options</a> 转专业招收专业</td>
     <td>5</td>
-    <td><a href="/std/transfer/misc.html#表格-transfer_scopes_grades-年级范围">transfer_scopes_grades</a> 年级范围</td>
+    <td><a href="/model/std/transfer/misc.html#表格-transfer_scopes_grades-年级范围">transfer_scopes_grades</a> 年级范围</td>
   </tr>
   <tr>
     <td>3</td>
-    <td><a href="/std/transfer/misc.html#表格-transfer_schemes-转专业招生方案">transfer_schemes</a> 转专业招生方案</td>
+    <td><a href="/model/std/transfer/misc.html#表格-transfer_schemes-转专业招生方案">transfer_schemes</a> 转专业招生方案</td>
     <td>6</td>
-    <td><a href="/std/transfer/misc.html#表格-transfer_scopes_majors-专业列表">transfer_scopes_majors</a> 专业列表</td>
+    <td><a href="/model/std/transfer/misc.html#表格-transfer_scopes_majors-专业列表">transfer_scopes_majors</a> 专业列表</td>
   </tr>
 </table>
 

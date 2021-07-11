@@ -14,11 +14,11 @@ version: ["0.23.1"]
   * [1.2 模块关系图](index.html#模块关系图)
 
 ##### 2. 具体模块明细
-* [2.1 学生成绩](course.html)
-* [2.2 计划完成](plan.html)
-* [2.3 过程性成绩](process.html)
-* [2.4 德育成绩](moral.html)
-* [2.5 其他](misc.html)
+* [2.1 学生成绩](/edu/grade/course.html)
+* [2.2 计划完成](/edu/grade/plan.html)
+* [2.3 过程性成绩](/edu/grade/process.html)
+* [2.4 德育成绩](/edu/grade/moral.html)
+* [2.5 其他](/edu/grade/misc.html)
 
 ### 表格一览
 Schema edu.grade下共计20个表，分别如下:
@@ -32,63 +32,63 @@ Schema edu.grade下共计20个表，分别如下:
   </tr>
   <tr>
     <td>1</td>
-    <td><a href="/edu/grade/plan.html#表格-course_audit_results-课程审核结果">course_audit_results</a> 课程审核结果</td>
+    <td><a href="/model/edu/grade/plan.html#表格-course_audit_results-课程审核结果">course_audit_results</a> 课程审核结果</td>
     <td>11</td>
-    <td><a href="/edu/grade/moral.html#表格-moral_grades-德育成绩">moral_grades</a> 德育成绩</td>
+    <td><a href="/model/edu/grade/moral.html#表格-moral_grades-德育成绩">moral_grades</a> 德育成绩</td>
   </tr>
   <tr>
     <td>2</td>
-    <td><a href="/edu/grade/course.html#表格-course_grade_states-成绩状态">course_grade_states</a> 成绩状态</td>
+    <td><a href="/model/edu/grade/course.html#表格-course_grade_states-成绩状态">course_grade_states</a> 成绩状态</td>
     <td>12</td>
-    <td><a href="/edu/grade/plan.html#表格-plan_audit_results-计划审核结果">plan_audit_results</a> 计划审核结果</td>
+    <td><a href="/model/edu/grade/plan.html#表格-plan_audit_results-计划审核结果">plan_audit_results</a> 计划审核结果</td>
   </tr>
   <tr>
     <td>3</td>
-    <td><a href="/edu/grade/course.html#表格-course_grades-课程成绩实现">course_grades</a> 课程成绩实现</td>
+    <td><a href="/model/edu/grade/course.html#表格-course_grades-课程成绩实现">course_grades</a> 课程成绩实现</td>
     <td>13</td>
-    <td><a href="/edu/grade/process.html#表格-process_grade_states-平时总评成绩状态">process_grade_states</a> 平时总评成绩状态</td>
+    <td><a href="/model/edu/grade/process.html#表格-process_grade_states-平时总评成绩状态">process_grade_states</a> 平时总评成绩状态</td>
   </tr>
   <tr>
     <td>4</td>
-    <td><a href="/edu/grade/course.html#表格-exam_grade_states-考试成绩状态">exam_grade_states</a> 考试成绩状态</td>
+    <td><a href="/model/edu/grade/course.html#表格-exam_grade_states-考试成绩状态">exam_grade_states</a> 考试成绩状态</td>
     <td>14</td>
-    <td><a href="/edu/grade/process.html#表格-process_grade_states_percents-各类测试百分比">process_grade_states_percents</a> 各类测试百分比</td>
+    <td><a href="/model/edu/grade/process.html#表格-process_grade_states_percents-各类测试百分比">process_grade_states_percents</a> 各类测试百分比</td>
   </tr>
   <tr>
     <td>5</td>
-    <td><a href="/edu/grade/course.html#表格-exam_grades-考试成绩">exam_grades</a> 考试成绩</td>
+    <td><a href="/model/edu/grade/course.html#表格-exam_grades-考试成绩">exam_grades</a> 考试成绩</td>
     <td>15</td>
-    <td><a href="/edu/grade/process.html#表格-process_grades-平时过程总评成绩">process_grades</a> 平时过程总评成绩</td>
+    <td><a href="/model/edu/grade/process.html#表格-process_grades-平时过程总评成绩">process_grades</a> 平时过程总评成绩</td>
   </tr>
   <tr>
     <td>6</td>
-    <td><a href="/edu/grade/course.html#表格-ga_grade_states-总评成绩状态">ga_grade_states</a> 总评成绩状态</td>
+    <td><a href="/model/edu/grade/course.html#表格-ga_grade_states-总评成绩状态">ga_grade_states</a> 总评成绩状态</td>
     <td>16</td>
-    <td><a href="/edu/grade/process.html#表格-process_test_grades-平时测试成绩">process_test_grades</a> 平时测试成绩</td>
+    <td><a href="/model/edu/grade/process.html#表格-process_test_grades-平时测试成绩">process_test_grades</a> 平时测试成绩</td>
   </tr>
   <tr>
     <td>7</td>
-    <td><a href="/edu/grade/course.html#表格-ga_grades-总评成绩">ga_grades</a> 总评成绩</td>
+    <td><a href="/model/edu/grade/course.html#表格-ga_grades-总评成绩">ga_grades</a> 总评成绩</td>
     <td>17</td>
-    <td><a href="/edu/grade/process.html#表格-process_test_types-平时测试类型">process_test_types</a> 平时测试类型</td>
+    <td><a href="/model/edu/grade/process.html#表格-process_test_types-平时测试类型">process_test_types</a> 平时测试类型</td>
   </tr>
   <tr>
     <td>8</td>
-    <td><a href="/edu/grade/misc.html#表格-grade_rate_configs-成绩分级配置">grade_rate_configs</a> 成绩分级配置</td>
+    <td><a href="/model/edu/grade/misc.html#表格-grade_rate_configs-成绩分级配置">grade_rate_configs</a> 成绩分级配置</td>
     <td>18</td>
-    <td><a href="/edu/grade/course.html#表格-std_gpas-学生成绩绩点统计">std_gpas</a> 学生成绩绩点统计</td>
+    <td><a href="/model/edu/grade/course.html#表格-std_gpas-学生成绩绩点统计">std_gpas</a> 学生成绩绩点统计</td>
   </tr>
   <tr>
     <td>9</td>
-    <td><a href="/edu/grade/misc.html#表格-grade_rate_items-成绩分级配置项">grade_rate_items</a> 成绩分级配置项</td>
+    <td><a href="/model/edu/grade/misc.html#表格-grade_rate_items-成绩分级配置项">grade_rate_items</a> 成绩分级配置项</td>
     <td>19</td>
-    <td><a href="/edu/grade/course.html#表格-std_semester_gpas-学生成绩每学期统计">std_semester_gpas</a> 学生成绩每学期统计</td>
+    <td><a href="/model/edu/grade/course.html#表格-std_semester_gpas-学生成绩每学期统计">std_semester_gpas</a> 学生成绩每学期统计</td>
   </tr>
   <tr>
     <td>10</td>
-    <td><a href="/edu/grade/plan.html#表格-group_audit_results-组审核结果">group_audit_results</a> 组审核结果</td>
+    <td><a href="/model/edu/grade/plan.html#表格-group_audit_results-组审核结果">group_audit_results</a> 组审核结果</td>
     <td>20</td>
-    <td><a href="/edu/grade/course.html#表格-std_year_gpas-学生成绩每学期统计">std_year_gpas</a> 学生成绩每学期统计</td>
+    <td><a href="/model/edu/grade/course.html#表格-std_year_gpas-学生成绩每学期统计">std_year_gpas</a> 学生成绩每学期统计</td>
   </tr>
 </table>
 
