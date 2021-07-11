@@ -29,14 +29,18 @@ version: ["0.23.1"]
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>amount</td><td>integer</td><td class="text-center">否</td><td>应缴费用(分)</td><td></td>  </tr>
 <tr><td class="text-center">3</td><td>created_at</td><td>timestamp</td><td class="text-center">否</td><td>创建时间</td><td></td>  </tr>
-<tr><td class="text-center">4</td><td>depart_id</td><td>integer</td><td class="text-center">否</td><td>收费部门ID</td><td>base.departments</td>  </tr>
-<tr><td class="text-center">5</td><td>fee_type_id</td><td>integer</td><td class="text-center">否</td><td>收费类型ID</td><td>std.fee_types</td>  </tr>
+<tr><td class="text-center">4</td><td>depart_id</td><td>integer</td><td class="text-center">否</td><td>收费部门ID</td><td>           <a href="/base/common/user.html#表格-departments-部门组织机构信息">base.departments</a>
+</td>  </tr>
+<tr><td class="text-center">5</td><td>fee_type_id</td><td>integer</td><td class="text-center">否</td><td>收费类型ID</td><td>           <a href="/std/fee/misc.html#表格-fee_types-收费类型">std.fee_types</a>
+</td>  </tr>
 <tr><td class="text-center">6</td><td>invoice_code</td><td>varchar(255)</td><td class="text-center">是</td><td>发票号</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>pay_at</td><td>timestamp</td><td class="text-center">是</td><td>实缴时间</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>payed</td><td>integer</td><td class="text-center">否</td><td>实收(分)</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">10</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>学年学期ID</td><td>base.semesters</td>  </tr>
-<tr><td class="text-center">11</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>base.students</td>  </tr>
+<tr><td class="text-center">10</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>学年学期ID</td><td>           <a href="/base/edu/misc.html#表格-semesters-学年学期">base.semesters</a>
+</td>  </tr>
+<tr><td class="text-center">11</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>           <a href="/base/edu/core.html#表格-students-学籍信息实现">base.students</a>
+</td>  </tr>
 <tr><td class="text-center">12</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 <tr><td class="text-center">13</td><td>updated_by</td><td>varchar(255)</td><td class="text-center">否</td><td>修改人</td><td></td>  </tr>
 </table>
@@ -90,7 +94,8 @@ version: ["0.23.1"]
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>amount</td><td>integer</td><td class="text-center">否</td><td>金额（分）</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>bill_id</td><td>bigint</td><td class="text-center">否</td><td>账单ID</td><td>std.bills</td>  </tr>
+<tr><td class="text-center">3</td><td>bill_id</td><td>bigint</td><td class="text-center">否</td><td>账单ID</td><td>           <a href="/std/fee/misc.html#表格-bills-账单">std.bills</a>
+</td>  </tr>
 <tr><td class="text-center">4</td><td>channel</td><td>varchar(255)</td><td class="text-center">是</td><td>支付渠道</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>code</td><td>varchar(50)</td><td class="text-center">否</td><td>代码</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>created_at</td><td>timestamp</td><td class="text-center">否</td><td>创建时间</td><td></td>  </tr>
@@ -100,7 +105,8 @@ version: ["0.23.1"]
 <tr><td class="text-center">10</td><td>pay_url</td><td>varchar(500)</td><td class="text-center">否</td><td>支付地址</td><td></td>  </tr>
 <tr><td class="text-center">11</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">12</td><td>status</td><td>varchar(255)</td><td class="text-center">否</td><td>状态</td><td></td>  </tr>
-<tr><td class="text-center">13</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>base.students</td>  </tr>
+<tr><td class="text-center">13</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>           <a href="/base/edu/core.html#表格-students-学籍信息实现">base.students</a>
+</td>  </tr>
 </table>
 
   * 表格中唯一约束
@@ -127,11 +133,15 @@ version: ["0.23.1"]
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>integer</td><td class="text-center">否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>amount</td><td>integer</td><td class="text-center">否</td><td>对应的金额</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>department_id</td><td>integer</td><td class="text-center">是</td><td>部门组织机构信息ID</td><td>base.departments</td>  </tr>
-<tr><td class="text-center">4</td><td>fee_type_id</td><td>integer</td><td class="text-center">否</td><td>收费类型ID</td><td>std.fee_types</td>  </tr>
+<tr><td class="text-center">3</td><td>department_id</td><td>integer</td><td class="text-center">是</td><td>部门组织机构信息ID</td><td>           <a href="/base/common/user.html#表格-departments-部门组织机构信息">base.departments</a>
+</td>  </tr>
+<tr><td class="text-center">4</td><td>fee_type_id</td><td>integer</td><td class="text-center">否</td><td>收费类型ID</td><td>           <a href="/std/fee/misc.html#表格-fee_types-收费类型">std.fee_types</a>
+</td>  </tr>
 <tr><td class="text-center">5</td><td>from_grade</td><td>varchar(255)</td><td class="text-center">否</td><td>起始年级</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>level_id</td><td>integer</td><td class="text-center">否</td><td>培养层次ID</td><td>code.education_levels</td>  </tr>
-<tr><td class="text-center">7</td><td>major_id</td><td>bigint</td><td class="text-center">是</td><td>专业ID</td><td>base.majors</td>  </tr>
+<tr><td class="text-center">6</td><td>level_id</td><td>integer</td><td class="text-center">否</td><td>培养层次ID</td><td>           <a href="/code/edu.html#表格-education_levels-培养层次">code.education_levels</a>
+</td>  </tr>
+<tr><td class="text-center">7</td><td>major_id</td><td>bigint</td><td class="text-center">是</td><td>专业ID</td><td>           <a href="/base/edu/core.html#表格-majors-专业">base.majors</a>
+</td>  </tr>
 <tr><td class="text-center">8</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>to_grade</td><td>varchar(255)</td><td class="text-center">否</td><td>截止年级</td><td></td>  </tr>
 </table>

@@ -388,7 +388,7 @@
 <index name="idx_2cpvhk7d040sh5temf5afvht8" columns="course_id"/>
 </indexes>
 </table>
-<table name="department_categories" comment="部门分类@code">
+<table name="department_categories" comment="部门分类@common">
 <columns>
 <column name="id" type="integer" nullable="false" comment="非业务主键:auto_increment"/>
 <column name="begin_on" type="date" nullable="false" comment="生效日期"/>
@@ -1218,7 +1218,7 @@
 <foreign-key name="fk_n8jlm5qp6r5vedi81e77xjt64" column="project_id" referenced-table="base.projects" referenced-column="id"/>
 </foreign-keys>
 </table>
-<table name="user_categories" comment="人员分类@code">
+<table name="user_categories" comment="人员分类@common">
 <columns>
 <column name="id" type="integer" nullable="false" comment="非业务主键:auto_increment"/>
 <column name="begin_on" type="date" nullable="false" comment="生效日期"/>

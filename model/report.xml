@@ -9,14 +9,16 @@
 
   <schemas>
     <schema name="code" title="基础代码">
-      <group name="asset" title="资产"/>
-      <group name="edu" title="教务"/>
-      <group name="geo" title="地理"/>
-      <group name="hr" title="人事"/>
-      <group name="job" title="就业"/>
-      <group name="person" title="人员"/>
-      <group name="sin" title="科研"/>
-      <group name="std" title="学生"/>
+      <module title="基础代码">
+        <group name="asset" title="资产"/>
+        <group name="edu" title="教务"/>
+        <group name="geo" title="地理"/>
+        <group name="hr" title="人事"/>
+        <group name="job" title="就业"/>
+        <group name="person" title="人员"/>
+        <group name="sin" title="科研"/>
+        <group name="std" title="学生"/>
+      </module>
     </schema>
 
     <schema name="base" title="基础信息">

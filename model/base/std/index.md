@@ -27,9 +27,9 @@ Schema base.std下共计2个表，分别如下:
   </tr>
   <tr>
     <td>1</td>
-    <td><a href="core.html#表格-instructors-辅导员">instructors</a> 辅导员</td>
+    <td><a href="/base/std/core.html#表格-instructors-辅导员">instructors</a> 辅导员</td>
     <td>2</td>
-    <td><a href="core.html#表格-minor_majors-辅修专业">minor_majors</a> 辅修专业</td>
+    <td><a href="/base/std/core.html#表格-minor_majors-辅修专业">minor_majors</a> 辅修专业</td>
   </tr>
 </table>
 

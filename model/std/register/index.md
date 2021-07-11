@@ -27,7 +27,7 @@ Schema std.register下共计1个表，分别如下:
   </tr>
   <tr>
     <td>1</td>
-    <td><a href="misc.html#表格-registers-注册报到信息">registers</a> 注册报到信息</td>
+    <td><a href="/std/register/misc.html#表格-registers-注册报到信息">registers</a> 注册报到信息</td>
     <td></td>
     <td></td>
   </tr>

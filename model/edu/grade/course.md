@@ -39,9 +39,12 @@ version: ["0.23.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>clazz_id</td><td>bigint</td><td class="text-center">否</td><td>教学任务ID</td><td>edu.clazzes</td>  </tr>
-<tr><td class="text-center">3</td><td>grading_mode_id</td><td>integer</td><td class="text-center">否</td><td>成绩记录方式ID</td><td>code.grading_modes</td>  </tr>
-<tr><td class="text-center">4</td><td>inputer_id</td><td>bigint</td><td class="text-center">是</td><td>通用人员信息ID</td><td>base.users</td>  </tr>
+<tr><td class="text-center">2</td><td>clazz_id</td><td>bigint</td><td class="text-center">否</td><td>教学任务ID</td><td>           <a href="/edu/clazz/clazz.html#表格-clazzes-教学任务">edu.clazzes</a>
+</td>  </tr>
+<tr><td class="text-center">3</td><td>grading_mode_id</td><td>integer</td><td class="text-center">否</td><td>成绩记录方式ID</td><td>           <a href="/code/edu.html#表格-grading_modes-成绩记录方式">code.grading_modes</a>
+</td>  </tr>
+<tr><td class="text-center">4</td><td>inputer_id</td><td>bigint</td><td class="text-center">是</td><td>通用人员信息ID</td><td>           <a href="/base/common/user.html#表格-users-通用人员信息">base.users</a>
+</td>  </tr>
 <tr><td class="text-center">5</td><td>operator</td><td>varchar(100)</td><td class="text-center">否</td><td>操作者</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>score_precision</td><td>integer</td><td class="text-center">否</td><td>保留小数位</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>status</td><td>integer</td><td class="text-center">否</td><td>成绩状态</td><td></td>  </tr>
@@ -71,25 +74,34 @@ version: ["0.23.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>clazz_id</td><td>bigint</td><td class="text-center">是</td><td>教学任务ID</td><td>edu.clazzes</td>  </tr>
-<tr><td class="text-center">3</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程ID</td><td>base.courses</td>  </tr>
-<tr><td class="text-center">4</td><td>course_take_type_id</td><td>integer</td><td class="text-center">否</td><td>修读类别ID</td><td>code.course_take_types</td>  </tr>
-<tr><td class="text-center">5</td><td>course_type_id</td><td>integer</td><td class="text-center">否</td><td>课程类别ID</td><td>base.course_types</td>  </tr>
+<tr><td class="text-center">2</td><td>clazz_id</td><td>bigint</td><td class="text-center">是</td><td>教学任务ID</td><td>           <a href="/edu/clazz/clazz.html#表格-clazzes-教学任务">edu.clazzes</a>
+</td>  </tr>
+<tr><td class="text-center">3</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程ID</td><td>           <a href="/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
+</td>  </tr>
+<tr><td class="text-center">4</td><td>course_take_type_id</td><td>integer</td><td class="text-center">否</td><td>修读类别ID</td><td>           <a href="/code/edu.html#表格-course_take_types-修读类别">code.course_take_types</a>
+</td>  </tr>
+<tr><td class="text-center">5</td><td>course_type_id</td><td>integer</td><td class="text-center">否</td><td>课程类别ID</td><td>           <a href="/base/edu/misc.html#表格-course_types-课程类别">base.course_types</a>
+</td>  </tr>
 <tr><td class="text-center">6</td><td>created_at</td><td>timestamp</td><td class="text-center">否</td><td>创建时间</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>crn</td><td>varchar(20)</td><td class="text-center">否</td><td>课程序号</td><td></td>  </tr>
-<tr><td class="text-center">8</td><td>exam_mode_id</td><td>integer</td><td class="text-center">否</td><td>考核方式ID</td><td>code.exam_modes</td>  </tr>
+<tr><td class="text-center">8</td><td>exam_mode_id</td><td>integer</td><td class="text-center">否</td><td>考核方式ID</td><td>           <a href="/code/edu.html#表格-exam_modes-考核方式">code.exam_modes</a>
+</td>  </tr>
 <tr><td class="text-center">9</td><td>free_listening</td><td>boolean</td><td class="text-center">否</td><td>是否免听</td><td></td>  </tr>
 <tr><td class="text-center">10</td><td>gp</td><td>float4</td><td class="text-center">是</td><td>绩点</td><td></td>  </tr>
-<tr><td class="text-center">11</td><td>grading_mode_id</td><td>integer</td><td class="text-center">否</td><td>成绩记录方式ID</td><td>code.grading_modes</td>  </tr>
+<tr><td class="text-center">11</td><td>grading_mode_id</td><td>integer</td><td class="text-center">否</td><td>成绩记录方式ID</td><td>           <a href="/code/edu.html#表格-grading_modes-成绩记录方式">code.grading_modes</a>
+</td>  </tr>
 <tr><td class="text-center">12</td><td>operator</td><td>varchar(100)</td><td class="text-center">是</td><td>操作者</td><td></td>  </tr>
 <tr><td class="text-center">13</td><td>passed</td><td>boolean</td><td class="text-center">否</td><td>是否通过</td><td></td>  </tr>
-<tr><td class="text-center">14</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>base.projects</td>  </tr>
+<tr><td class="text-center">14</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>           <a href="/base/edu/core.html#表格-projects-项目">base.projects</a>
+</td>  </tr>
 <tr><td class="text-center">15</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">16</td><td>score</td><td>float4</td><td class="text-center">是</td><td>得分</td><td></td>  </tr>
 <tr><td class="text-center">17</td><td>score_text</td><td>varchar(5)</td><td class="text-center">是</td><td>得分字面值</td><td></td>  </tr>
-<tr><td class="text-center">18</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>学期ID</td><td>base.semesters</td>  </tr>
+<tr><td class="text-center">18</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>学期ID</td><td>           <a href="/base/edu/misc.html#表格-semesters-学年学期">base.semesters</a>
+</td>  </tr>
 <tr><td class="text-center">19</td><td>status</td><td>integer</td><td class="text-center">否</td><td>成绩状态</td><td></td>  </tr>
-<tr><td class="text-center">20</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学生ID</td><td>base.students</td>  </tr>
+<tr><td class="text-center">20</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学生ID</td><td>           <a href="/base/edu/core.html#表格-students-学籍信息实现">base.students</a>
+</td>  </tr>
 <tr><td class="text-center">21</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>
 
@@ -125,9 +137,12 @@ version: ["0.23.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>grade_state_id</td><td>bigint</td><td class="text-center">否</td><td>总成绩状态ID</td><td>edu.course_grade_states</td>  </tr>
-<tr><td class="text-center">3</td><td>grade_type_id</td><td>integer</td><td class="text-center">否</td><td>成绩类型ID</td><td>code.grade_types</td>  </tr>
-<tr><td class="text-center">4</td><td>grading_mode_id</td><td>integer</td><td class="text-center">否</td><td>成绩记录方式ID</td><td>code.grading_modes</td>  </tr>
+<tr><td class="text-center">2</td><td>grade_state_id</td><td>bigint</td><td class="text-center">否</td><td>总成绩状态ID</td><td>           <a href="/edu/grade/course.html#表格-course_grade_states-成绩状态">edu.course_grade_states</a>
+</td>  </tr>
+<tr><td class="text-center">3</td><td>grade_type_id</td><td>integer</td><td class="text-center">否</td><td>成绩类型ID</td><td>           <a href="/code/edu.html#表格-grade_types-成绩类型">code.grade_types</a>
+</td>  </tr>
+<tr><td class="text-center">4</td><td>grading_mode_id</td><td>integer</td><td class="text-center">否</td><td>成绩记录方式ID</td><td>           <a href="/code/edu.html#表格-grading_modes-成绩记录方式">code.grading_modes</a>
+</td>  </tr>
 <tr><td class="text-center">5</td><td>operator</td><td>varchar(100)</td><td class="text-center">否</td><td>操作者</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>score_percent</td><td>smallint</td><td class="text-center">是</td><td>百分比描述</td><td></td>  </tr>
@@ -165,11 +180,15 @@ version: ["0.23.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>course_grade_id</td><td>bigint</td><td class="text-center">否</td><td>对应的课程成绩ID</td><td>edu.course_grades</td>  </tr>
+<tr><td class="text-center">2</td><td>course_grade_id</td><td>bigint</td><td class="text-center">否</td><td>对应的课程成绩ID</td><td>           <a href="/edu/grade/course.html#表格-course_grades-课程成绩实现">edu.course_grades</a>
+</td>  </tr>
 <tr><td class="text-center">3</td><td>created_at</td><td>timestamp</td><td class="text-center">否</td><td>创建时间</td><td></td>  </tr>
-<tr><td class="text-center">4</td><td>exam_status_id</td><td>integer</td><td class="text-center">否</td><td>考试情况ID</td><td>code.exam_statuses</td>  </tr>
-<tr><td class="text-center">5</td><td>grade_type_id</td><td>integer</td><td class="text-center">否</td><td>成绩类型ID</td><td>code.grade_types</td>  </tr>
-<tr><td class="text-center">6</td><td>grading_mode_id</td><td>integer</td><td class="text-center">否</td><td>成绩记录方式ID</td><td>code.grading_modes</td>  </tr>
+<tr><td class="text-center">4</td><td>exam_status_id</td><td>integer</td><td class="text-center">否</td><td>考试情况ID</td><td>           <a href="/code/edu.html#表格-exam_statuses-考试情况">code.exam_statuses</a>
+</td>  </tr>
+<tr><td class="text-center">5</td><td>grade_type_id</td><td>integer</td><td class="text-center">否</td><td>成绩类型ID</td><td>           <a href="/code/edu.html#表格-grade_types-成绩类型">code.grade_types</a>
+</td>  </tr>
+<tr><td class="text-center">6</td><td>grading_mode_id</td><td>integer</td><td class="text-center">否</td><td>成绩记录方式ID</td><td>           <a href="/code/edu.html#表格-grading_modes-成绩记录方式">code.grading_modes</a>
+</td>  </tr>
 <tr><td class="text-center">7</td><td>operator</td><td>varchar(100)</td><td class="text-center">是</td><td>操作者</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>passed</td><td>boolean</td><td class="text-center">否</td><td>是否通过</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>score</td><td>float4</td><td class="text-center">是</td><td>得分</td><td></td>  </tr>
@@ -209,9 +228,12 @@ version: ["0.23.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>grade_state_id</td><td>bigint</td><td class="text-center">否</td><td>总成绩状态ID</td><td>edu.course_grade_states</td>  </tr>
-<tr><td class="text-center">3</td><td>grade_type_id</td><td>integer</td><td class="text-center">否</td><td>成绩类型ID</td><td>code.grade_types</td>  </tr>
-<tr><td class="text-center">4</td><td>grading_mode_id</td><td>integer</td><td class="text-center">否</td><td>成绩记录方式ID</td><td>code.grading_modes</td>  </tr>
+<tr><td class="text-center">2</td><td>grade_state_id</td><td>bigint</td><td class="text-center">否</td><td>总成绩状态ID</td><td>           <a href="/edu/grade/course.html#表格-course_grade_states-成绩状态">edu.course_grade_states</a>
+</td>  </tr>
+<tr><td class="text-center">3</td><td>grade_type_id</td><td>integer</td><td class="text-center">否</td><td>成绩类型ID</td><td>           <a href="/code/edu.html#表格-grade_types-成绩类型">code.grade_types</a>
+</td>  </tr>
+<tr><td class="text-center">4</td><td>grading_mode_id</td><td>integer</td><td class="text-center">否</td><td>成绩记录方式ID</td><td>           <a href="/code/edu.html#表格-grading_modes-成绩记录方式">code.grading_modes</a>
+</td>  </tr>
 <tr><td class="text-center">5</td><td>operator</td><td>varchar(100)</td><td class="text-center">否</td><td>操作者</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>remark</td><td>varchar(50)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>status</td><td>integer</td><td class="text-center">否</td><td>成绩状态</td><td></td>  </tr>
@@ -248,12 +270,15 @@ version: ["0.23.1"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th style="background-color:#D0D3FF" class="text-center">序号</th><th style="background-color:#D0D3FF">字段名</th><th style="background-color:#D0D3FF">字段类型</th><th style="background-color:#D0D3FF" class="text-center">是否可空</th><th style="background-color:#D0D3FF">描述</th><th style="background-color:#D0D3FF">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>course_grade_id</td><td>bigint</td><td class="text-center">否</td><td>对应的课程成绩ID</td><td>edu.course_grades</td>  </tr>
+<tr><td class="text-center">2</td><td>course_grade_id</td><td>bigint</td><td class="text-center">否</td><td>对应的课程成绩ID</td><td>           <a href="/edu/grade/course.html#表格-course_grades-课程成绩实现">edu.course_grades</a>
+</td>  </tr>
 <tr><td class="text-center">3</td><td>created_at</td><td>timestamp</td><td class="text-center">否</td><td>创建时间</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>delta</td><td>float4</td><td class="text-center">是</td><td>加减修正分</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>gp</td><td>float4</td><td class="text-center">是</td><td>绩点</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>grade_type_id</td><td>integer</td><td class="text-center">否</td><td>成绩类型ID</td><td>code.grade_types</td>  </tr>
-<tr><td class="text-center">7</td><td>grading_mode_id</td><td>integer</td><td class="text-center">否</td><td>成绩记录方式ID</td><td>code.grading_modes</td>  </tr>
+<tr><td class="text-center">6</td><td>grade_type_id</td><td>integer</td><td class="text-center">否</td><td>成绩类型ID</td><td>           <a href="/code/edu.html#表格-grade_types-成绩类型">code.grade_types</a>
+</td>  </tr>
+<tr><td class="text-center">7</td><td>grading_mode_id</td><td>integer</td><td class="text-center">否</td><td>成绩记录方式ID</td><td>           <a href="/code/edu.html#表格-grading_modes-成绩记录方式">code.grading_modes</a>
+</td>  </tr>
 <tr><td class="text-center">8</td><td>operator</td><td>varchar(100)</td><td class="text-center">是</td><td>操作者</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>passed</td><td>boolean</td><td class="text-center">否</td><td>是否通过</td><td></td>  </tr>
 <tr><td class="text-center">10</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
@@ -297,8 +322,10 @@ version: ["0.23.1"]
 <tr><td class="text-center">3</td><td>ga</td><td>float4</td><td class="text-center">否</td><td>平均分</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>gpa</td><td>float4</td><td class="text-center">否</td><td>总平均绩点</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>grade_count</td><td>integer</td><td class="text-center">否</td><td>门数</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>base.projects</td>  </tr>
-<tr><td class="text-center">7</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学生ID</td><td>base.students</td>  </tr>
+<tr><td class="text-center">6</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>           <a href="/base/edu/core.html#表格-projects-项目">base.projects</a>
+</td>  </tr>
+<tr><td class="text-center">7</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学生ID</td><td>           <a href="/base/edu/core.html#表格-students-学籍信息实现">base.students</a>
+</td>  </tr>
 <tr><td class="text-center">8</td><td>total_credits</td><td>float4</td><td class="text-center">否</td><td>总学分</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>
@@ -330,8 +357,10 @@ version: ["0.23.1"]
 <tr><td class="text-center">3</td><td>ga</td><td>float4</td><td class="text-center">否</td><td>平均分</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>gpa</td><td>float4</td><td class="text-center">否</td><td>总平均绩点</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>grade_count</td><td>integer</td><td class="text-center">否</td><td>门数</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>学期ID</td><td>base.semesters</td>  </tr>
-<tr><td class="text-center">7</td><td>std_gpa_id</td><td>bigint</td><td class="text-center">否</td><td>总体统计ID</td><td>edu.std_gpas</td>  </tr>
+<tr><td class="text-center">6</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>学期ID</td><td>           <a href="/base/edu/misc.html#表格-semesters-学年学期">base.semesters</a>
+</td>  </tr>
+<tr><td class="text-center">7</td><td>std_gpa_id</td><td>bigint</td><td class="text-center">否</td><td>总体统计ID</td><td>           <a href="/edu/grade/course.html#表格-std_gpas-学生成绩绩点统计">edu.std_gpas</a>
+</td>  </tr>
 <tr><td class="text-center">8</td><td>total_credits</td><td>float4</td><td class="text-center">否</td><td>总学分</td><td></td>  </tr>
 </table>
 
@@ -370,7 +399,8 @@ version: ["0.23.1"]
 <tr><td class="text-center">4</td><td>gpa</td><td>float4</td><td class="text-center">否</td><td>总平均绩点</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>grade_count</td><td>integer</td><td class="text-center">否</td><td>门数</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>school_year</td><td>varchar(255)</td><td class="text-center">否</td><td>学年</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>std_gpa_id</td><td>bigint</td><td class="text-center">否</td><td>总体统计ID</td><td>edu.std_gpas</td>  </tr>
+<tr><td class="text-center">7</td><td>std_gpa_id</td><td>bigint</td><td class="text-center">否</td><td>总体统计ID</td><td>           <a href="/edu/grade/course.html#表格-std_gpas-学生成绩绩点统计">edu.std_gpas</a>
+</td>  </tr>
 <tr><td class="text-center">8</td><td>total_credits</td><td>float4</td><td class="text-center">否</td><td>总学分</td><td></td>  </tr>
 </table>
 

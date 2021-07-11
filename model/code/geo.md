@@ -60,7 +60,8 @@ version: ["0.23.1"]
 <tr><td class="text-center">4</td><td>en_name</td><td>varchar(300)</td><td class="text-center">是</td><td>英文名称</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>name</td><td>varchar(100)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>parent_id</td><td>integer</td><td class="text-center">否</td><td>父类ID</td><td>code.divisions</td>  </tr>
+<tr><td class="text-center">7</td><td>parent_id</td><td>integer</td><td class="text-center">否</td><td>父类ID</td><td>           <a href="/code/geo.html#表格-divisions-行政区划">code.divisions</a>
+</td>  </tr>
 <tr><td class="text-center">8</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>updated_at</td><td>timestamp</td><td class="text-center">否</td><td>修改时间</td><td></td>  </tr>
 </table>
@@ -90,7 +91,8 @@ version: ["0.23.1"]
 <tr><td class="text-center">1</td><td>id</td><td>integer</td><td class="text-center">否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效日期</td><td></td>  </tr>
 <tr><td class="text-center">3</td><td>code</td><td>varchar(20)</td><td class="text-center">否</td><td>代码</td><td></td>  </tr>
-<tr><td class="text-center">4</td><td>division_id</td><td>integer</td><td class="text-center">否</td><td>行政区划ID</td><td>code.divisions</td>  </tr>
+<tr><td class="text-center">4</td><td>division_id</td><td>integer</td><td class="text-center">否</td><td>行政区划ID</td><td>           <a href="/code/geo.html#表格-divisions-行政区划">code.divisions</a>
+</td>  </tr>
 <tr><td class="text-center">5</td><td>en_name</td><td>varchar(300)</td><td class="text-center">是</td><td>英文名称</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>jianpin</td><td>varchar(50)</td><td class="text-center">否</td><td>简拼</td><td></td>  </tr>

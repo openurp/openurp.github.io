@@ -28,21 +28,21 @@ Schema edu.extern下共计6个表，分别如下:
   </tr>
   <tr>
     <td>1</td>
-    <td><a href="certificate.html#表格-certificate_categories-校外考试种类">certificate_categories</a> 校外考试种类</td>
+    <td><a href="/edu/extern/certificate.html#表格-certificate_categories-校外考试种类">certificate_categories</a> 校外考试种类</td>
     <td>4</td>
-    <td><a href="certificate.html#表格-certificate_subjects-校外考试科目">certificate_subjects</a> 校外考试科目</td>
+    <td><a href="/edu/extern/certificate.html#表格-certificate_subjects-校外考试科目">certificate_subjects</a> 校外考试科目</td>
   </tr>
   <tr>
     <td>2</td>
-    <td><a href="certificate.html#表格-certificate_grades-考试成绩">certificate_grades</a> 考试成绩</td>
+    <td><a href="/edu/extern/certificate.html#表格-certificate_grades-考试成绩">certificate_grades</a> 考试成绩</td>
     <td>5</td>
-    <td><a href="extern.html#表格-extern_grades-校外成绩">extern_grades</a> 校外成绩</td>
+    <td><a href="/edu/extern/extern.html#表格-extern_grades-校外成绩">extern_grades</a> 校外成绩</td>
   </tr>
   <tr>
     <td>3</td>
-    <td><a href="certificate.html#表格-certificate_grades_courses-证书成绩认定结果">certificate_grades_courses</a> 证书成绩认定结果</td>
+    <td><a href="/edu/extern/certificate.html#表格-certificate_grades_courses-证书成绩认定结果">certificate_grades_courses</a> 证书成绩认定结果</td>
     <td>6</td>
-    <td><a href="extern.html#表格-extern_grades_courses-冲抵课程">extern_grades_courses</a> 冲抵课程</td>
+    <td><a href="/edu/extern/extern.html#表格-extern_grades_courses-冲抵课程">extern_grades_courses</a> 冲抵课程</td>
   </tr>
 </table>
 
