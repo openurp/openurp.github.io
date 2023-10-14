@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap styles -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Sticky Footer -->
+    <link href="{{ ASSET_PATH }}/bs-sticky-footer.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="{{ ASSET_PATH }}/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <!-- atom & rss feed -->
+    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+  </head>
+
+  <body>
+    <div id="wrap" class="fluid-container">
+      <nav class="navbar navbar navbar-expand-lg navbar-light bg-light" role="navigation" style="margin-bottom: 0px;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+            <ul class="navbar-nav">
+              {% assign pages_list = site.pages %}
+              {% assign group = 'navigation' %}
+              {% include JB/pages_list %}
+            </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        {{ content }}
+      </div>
+
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

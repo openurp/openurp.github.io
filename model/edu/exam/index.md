@@ -2,8 +2,8 @@
 layout: page
 title: 考务管理 
 description: "考务管理"
-categories: [model-0.23.1]
-version: ["0.23.1"]
+categories: [model-0.34.3]
+version: ["0.34.3"]
 ---
 {% include JB/setup %}
 
@@ -14,18 +14,18 @@ version: ["0.23.1"]
   * [1.2 模块关系图](index.html#模块关系图)
 
 ##### 2. 具体模块明细
-* [2.1 核心部分](/edu/exam/core.html)
-* [2.2 毕业补考](/edu/exam/makeup.html)
+* [2.1 核心部分](/model/edu/exam/core.html)
+* [2.2 毕业补考](/model/edu/exam/makeup.html)
 
 ### 表格一览
 Schema edu.exam下共计20个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>
-    <th style="background-color:#D0D3FF">序号</th>
-    <th style="background-color:#D0D3FF">表名/描述</th>
-    <th style="background-color:#D0D3FF">序号</th>
-    <th style="background-color:#D0D3FF">表名/描述</th>
+    <th class="info_header text-center">序号</th>
+    <th class="info_header">表名/描述</th>
+    <th class="info_header text-center">序号</th>
+    <th class="info_header">表名/描述</th>
   </tr>
   <tr>
     <td>1</td>
@@ -41,19 +41,19 @@ Schema edu.exam下共计20个表，分别如下:
   </tr>
   <tr>
     <td>3</td>
-    <td><a href="/model/edu/exam/core.html#表格-exam_alloc_settings-教室分配设置">exam_alloc_settings</a> 教室分配设置</td>
+    <td><a href="/model/edu/exam/core.html#表格-exam_groups-考试组">exam_groups</a> 考试组</td>
     <td>13</td>
     <td><a href="/model/edu/exam/makeup.html#表格-final_makeup_courses-毕业补考任务">final_makeup_courses</a> 毕业补考任务</td>
   </tr>
   <tr>
     <td>4</td>
-    <td><a href="/model/edu/exam/core.html#表格-exam_groups-考试组">exam_groups</a> 考试组</td>
+    <td><a href="/model/edu/exam/core.html#表格-exam_groups_rooms-考试组对应教室">exam_groups_rooms</a> 考试组对应教室</td>
     <td>14</td>
     <td><a href="/model/edu/exam/makeup.html#表格-final_makeup_courses_squads-行政班列表">final_makeup_courses_squads</a> 行政班列表</td>
   </tr>
   <tr>
     <td>5</td>
-    <td><a href="/model/edu/exam/core.html#表格-exam_groups_rooms-考试组对应教室">exam_groups_rooms</a> 考试组对应教室</td>
+    <td><a href="/model/edu/exam/core.html#表格-exam_notices-考试通知">exam_notices</a> 考试通知</td>
     <td>15</td>
     <td><a href="/model/edu/exam/makeup.html#表格-final_makeup_takers-清考名单">final_makeup_takers</a> 清考名单</td>
   </tr>

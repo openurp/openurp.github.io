@@ -2,8 +2,8 @@
 layout: page
 title: 评奖评优 
 description: "评奖评优"
-categories: [model-0.23.1]
-version: ["0.23.1"]
+categories: [model-0.34.3]
+version: ["0.34.3"]
 ---
 {% include JB/setup %}
 
@@ -14,21 +14,21 @@ version: ["0.23.1"]
   * [1.2 模块关系图](index.html#模块关系图)
 
 ##### 2. 具体模块明细
-* [2.1 奖学金](/std/award/scholarship.html)
-* [2.2 助学金](/std/award/stipend.html)
-* [2.3 困难补助](/std/award/subsidy.html)
-* [2.4 荣誉称号](/std/award/honor.html)
-* [2.5 其他](/std/award/misc.html)
+* [2.1 奖学金](/model/std/award/scholarship.html)
+* [2.2 助学金](/model/std/award/stipend.html)
+* [2.3 困难补助](/model/std/award/subsidy.html)
+* [2.4 荣誉称号](/model/std/award/honor.html)
+* [2.5 其他](/model/std/award/misc.html)
 
 ### 表格一览
 Schema std.award下共计15个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>
-    <th style="background-color:#D0D3FF">序号</th>
-    <th style="background-color:#D0D3FF">表名/描述</th>
-    <th style="background-color:#D0D3FF">序号</th>
-    <th style="background-color:#D0D3FF">表名/描述</th>
+    <th class="info_header text-center">序号</th>
+    <th class="info_header">表名/描述</th>
+    <th class="info_header text-center">序号</th>
+    <th class="info_header">表名/描述</th>
   </tr>
   <tr>
     <td>1</td>

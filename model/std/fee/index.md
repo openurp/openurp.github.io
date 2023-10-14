@@ -2,8 +2,8 @@
 layout: page
 title: 学费信息 
 description: "学费信息"
-categories: [model-0.23.1]
-version: ["0.23.1"]
+categories: [model-0.34.3]
+version: ["0.34.3"]
 ---
 {% include JB/setup %}
 
@@ -13,17 +13,17 @@ version: ["0.23.1"]
   * [1.1 表格一览](index.html#表格一览)
 
 ##### 2. 具体模块明细
-* [2.1 费用信息](/std/fee/misc.html)
+* [2.1 费用信息](/model/std/fee/misc.html)
 
 ### 表格一览
-Schema std.fee下共计4个表，分别如下:
+Schema std.fee下共计3个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>
-    <th style="background-color:#D0D3FF">序号</th>
-    <th style="background-color:#D0D3FF">表名/描述</th>
-    <th style="background-color:#D0D3FF">序号</th>
-    <th style="background-color:#D0D3FF">表名/描述</th>
+    <th class="info_header text-center">序号</th>
+    <th class="info_header">表名/描述</th>
+    <th class="info_header text-center">序号</th>
+    <th class="info_header">表名/描述</th>
   </tr>
   <tr>
     <td>1</td>
@@ -33,9 +33,9 @@ Schema std.fee下共计4个表，分别如下:
   </tr>
   <tr>
     <td>2</td>
-    <td><a href="/model/std/fee/misc.html#表格-fee_types-收费类型">fee_types</a> 收费类型</td>
-    <td>4</td>
-    <td><a href="/model/std/fee/misc.html#表格-tuition_configs-收费缺省值">tuition_configs</a> 收费缺省值</td>
+    <td><a href="/model/std/fee/misc.html#表格-debts-欠费信息">debts</a> 欠费信息</td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
 
