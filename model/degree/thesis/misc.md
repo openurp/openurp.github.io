@@ -2,8 +2,8 @@
 layout: page
 title: 毕业设计 毕业设计
 description: "毕业设计毕业设计"
-categories: [model-0.34.3]
-version: ["0.34.3"]
+categories: [model-0.34.5]
+version: ["0.34.5"]
 ---
 {% include JB/setup %}
  目  录
@@ -697,6 +697,14 @@ version: ["0.34.3"]
 <tr><td>1</td><td>uk_9wcnvhckvqrd0mclhi4y2cbjr</td><td>writer_id</td>  </tr>
 </table>
 
+<ul>
+  <li>表格的索引</li>
+</ul>
+<table class="table table-bordered table-striped table-condensed">
+  <tr>
+<th class="info_header">索引名</th><th class="info_header">索引字段</th><th class="info_header">是否唯一</th>  </tr>
+<tr><td>idx_9pvh5lmgs2d11b304e8jmqt8q</td><td>last_id</td><td>否</td>  </tr>
+</table>
   </div>
 </div>
 

@@ -2,8 +2,8 @@
 layout: page
 title: 基础信息 空间相关
 description: "基础信息空间相关"
-categories: [model-0.34.3]
-version: ["0.34.3"]
+categories: [model-0.34.5]
+version: ["0.34.5"]
 ---
 {% include JB/setup %}
  目  录
@@ -175,13 +175,20 @@ version: ["0.34.3"]
 <tr><th class="info_header text-center">序号</th><th class="info_header">字段名</th><th class="info_header">字段类型</th><th class="info_header text-center">是否可空</th><th class="info_header">描述</th><th class="info_header">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>integer</td><td class="text-center">否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效日期</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>code</td><td>varchar(10)</td><td class="text-center">否</td><td>代码</td><td></td>  </tr>
-<tr><td class="text-center">4</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
-<tr><td class="text-center">5</td><td>institution_id</td><td>integer</td><td class="text-center">否</td><td>研究机构ID</td><td>            <a href="/model/code/edu/all.html#表格-institutions-科研机构">code.institutions</a>
+<tr><td class="text-center">3</td><td>category_id</td><td>integer</td><td class="text-center">否</td><td>高校性质类别ID</td><td>            <a href="/model/code/edu/all.html#表格-institution_categories-高校性质类别">code.institution_categories</a>
 </td>  </tr>
-<tr><td class="text-center">6</td><td>logo_url</td><td>varchar(255)</td><td class="text-center">否</td><td>Logo URL</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>name</td><td>varchar(50)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
-<tr><td class="text-center">8</td><td>short_name</td><td>varchar(255)</td><td class="text-center">是</td><td>简称</td><td></td>  </tr>
+<tr><td class="text-center">4</td><td>code</td><td>varchar(10)</td><td class="text-center">否</td><td>代码</td><td></td>  </tr>
+<tr><td class="text-center">5</td><td>division_id</td><td>integer</td><td class="text-center">否</td><td>省份ID</td><td>            <a href="/model/code/geo/all.html#表格-divisions-行政区划">code.divisions</a>
+</td>  </tr>
+<tr><td class="text-center">6</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
+<tr><td class="text-center">7</td><td>identifier</td><td>varchar(10)</td><td class="text-center">是</td><td>标识码(10位)</td><td></td>  </tr>
+<tr><td class="text-center">8</td><td>institution_id</td><td>integer</td><td class="text-center">否</td><td>研究机构ID</td><td>            <a href="/model/code/edu/all.html#表格-institutions-科研机构">code.institutions</a>
+</td>  </tr>
+<tr><td class="text-center">9</td><td>logo_url</td><td>varchar(255)</td><td class="text-center">否</td><td>Logo URL</td><td></td>  </tr>
+<tr><td class="text-center">10</td><td>name</td><td>varchar(50)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
+<tr><td class="text-center">11</td><td>short_name</td><td>varchar(255)</td><td class="text-center">是</td><td>简称</td><td></td>  </tr>
+<tr><td class="text-center">12</td><td>superior_org</td><td>varchar(50)</td><td class="text-center">是</td><td>主管部门</td><td></td>  </tr>
+<tr><td class="text-center">13</td><td>uscc</td><td>varchar(18)</td><td class="text-center">是</td><td>统一信用代码</td><td></td>  </tr>
 </table>
 
 <ul>

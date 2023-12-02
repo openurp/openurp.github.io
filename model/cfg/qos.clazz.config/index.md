@@ -2,8 +2,8 @@
 layout: page
 title: 评教设置 
 description: "评教设置"
-categories: [model-0.34.3]
-version: ["0.34.3"]
+categories: [model-0.34.5]
+version: ["0.34.5"]
 ---
 {% include JB/setup %}
 

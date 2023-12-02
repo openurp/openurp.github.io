@@ -2,8 +2,8 @@
 layout: page
 title: 毕业审核信息 核心部分
 description: "毕业审核信息核心部分"
-categories: [model-0.34.3]
-version: ["0.34.3"]
+categories: [model-0.34.5]
+version: ["0.34.5"]
 ---
 {% include JB/setup %}
  目  录

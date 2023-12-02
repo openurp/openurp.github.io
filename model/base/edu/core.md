@@ -2,8 +2,8 @@
 layout: page
 title: 教学类基础信息 核心部分
 description: "教学类基础信息核心部分"
-categories: [model-0.34.3]
-version: ["0.34.3"]
+categories: [model-0.34.5]
+version: ["0.34.5"]
 ---
 {% include JB/setup %}
  目  录
@@ -187,6 +187,41 @@ version: ["0.34.3"]
   </div>
 </div>
 
+### 表格 courses_directions 面向专业方向
+<div class="card card-info">
+  <div class="card-header"><h5 id="table_base.courses_directions">表格base.courses_directions</h5></div>
+  <div class="card-body">
+<ul>
+  <li>表格说明</li>
+</ul>
+
+<table class="table table-bordered table-striped table-condensed ">
+<tr><th class="info_header">表名</th><th class="info_header">主键</th><th class="info_header" style="width:40%">注释</th>  </tr>
+<tr><td>base.courses_directions</td><td>course_id,direction_id</td><td>面向专业方向</td>  </tr>
+</table>
+<ul>
+  <li>表格中的列</li>
+</ul>
+<table class="table table-bordered table-striped table-condensed">
+<tr><th class="info_header text-center">序号</th><th class="info_header">字段名</th><th class="info_header">字段类型</th><th class="info_header text-center">是否可空</th><th class="info_header">描述</th><th class="info_header">引用表</th>  </tr>
+<tr><td class="text-center">1</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程基本信息ID</td><td>            <a href="/model/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
+</td>  </tr>
+<tr><td class="text-center">2</td><td>direction_id</td><td>bigint</td><td class="text-center">否</td><td>方向信息 专业领域ID</td><td>            <a href="/model/base/edu/core.html#表格-directions-方向信息 专业领域">base.directions</a>
+</td>  </tr>
+</table>
+
+
+<ul>
+  <li>表格的索引</li>
+</ul>
+<table class="table table-bordered table-striped table-condensed">
+  <tr>
+<th class="info_header">索引名</th><th class="info_header">索引字段</th><th class="info_header">是否唯一</th>  </tr>
+<tr><td>idx_nsr0sov8n153ey2nvko5wgxei</td><td>course_id</td><td>否</td>  </tr>
+</table>
+  </div>
+</div>
+
 ### 表格 courses_grading_modes 成绩记录方式
 <div class="card card-info">
   <div class="card-header"><h5 id="table_base.courses_grading_modes">表格base.courses_grading_modes</h5></div>
@@ -222,7 +257,7 @@ version: ["0.34.3"]
   </div>
 </div>
 
-### 表格 courses_majors 针对专业
+### 表格 courses_majors 面向专业
 <div class="card card-info">
   <div class="card-header"><h5 id="table_base.courses_majors">表格base.courses_majors</h5></div>
   <div class="card-body">
@@ -232,7 +267,7 @@ version: ["0.34.3"]
 
 <table class="table table-bordered table-striped table-condensed ">
 <tr><th class="info_header">表名</th><th class="info_header">主键</th><th class="info_header" style="width:40%">注释</th>  </tr>
-<tr><td>base.courses_majors</td><td>course_id,major_id</td><td>针对专业</td>  </tr>
+<tr><td>base.courses_majors</td><td>course_id,major_id</td><td>面向专业</td>  </tr>
 </table>
 <ul>
   <li>表格中的列</li>

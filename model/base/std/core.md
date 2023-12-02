@@ -2,8 +2,8 @@
 layout: page
 title: 学生类基础信息 所有表格
 description: "学生类基础信息所有表格"
-categories: [model-0.34.3]
-version: ["0.34.3"]
+categories: [model-0.34.5]
+version: ["0.34.5"]
 ---
 {% include JB/setup %}
  目  录
@@ -303,21 +303,22 @@ version: ["0.34.3"]
 <tr><th class="info_header text-center">序号</th><th class="info_header">字段名</th><th class="info_header">字段类型</th><th class="info_header text-center">是否可空</th><th class="info_header">描述</th><th class="info_header">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>batch_no</td><td>integer</td><td class="text-center">否</td><td>批次号</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>certificate_no</td><td>varchar(255)</td><td class="text-center">否</td><td>毕业证书编号</td><td></td>  </tr>
-<tr><td class="text-center">4</td><td>degree_award_on</td><td>date</td><td class="text-center">是</td><td>学位授予日期</td><td></td>  </tr>
-<tr><td class="text-center">5</td><td>degree_id</td><td>integer</td><td class="text-center">是</td><td>学位ID</td><td>            <a href="/model/code/edu/all.html#表格-degrees-学位">code.degrees</a>
+<tr><td class="text-center">3</td><td>certificate_no</td><td>varchar(100)</td><td class="text-center">否</td><td>毕业证书编号</td><td></td>  </tr>
+<tr><td class="text-center">4</td><td>certificate_seq_no</td><td>varchar(50)</td><td class="text-center">是</td><td>毕业证书序列号</td><td></td>  </tr>
+<tr><td class="text-center">5</td><td>degree_award_on</td><td>date</td><td class="text-center">是</td><td>学位授予日期</td><td></td>  </tr>
+<tr><td class="text-center">6</td><td>degree_id</td><td>integer</td><td class="text-center">是</td><td>学位ID</td><td>            <a href="/model/code/edu/all.html#表格-degrees-学位">code.degrees</a>
 </td>  </tr>
-<tr><td class="text-center">6</td><td>diploma_no</td><td>varchar(255)</td><td class="text-center">是</td><td>学位证书号</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>foreign_lang_passed_on</td><td>date</td><td class="text-center">是</td><td>外语通过年月</td><td></td>  </tr>
-<tr><td class="text-center">8</td><td>graduate_on</td><td>date</td><td class="text-center">否</td><td>毕结业日期</td><td></td>  </tr>
-<tr><td class="text-center">9</td><td>result_id</td><td>integer</td><td class="text-center">否</td><td>教育培训结果ID</td><td>            <a href="/model/code/edu/all.html#表格-education_results-教育培训结果">code.education_results</a>
+<tr><td class="text-center">7</td><td>diploma_no</td><td>varchar(100)</td><td class="text-center">是</td><td>学位证书号</td><td></td>  </tr>
+<tr><td class="text-center">8</td><td>foreign_lang_passed_on</td><td>date</td><td class="text-center">是</td><td>外语通过年月</td><td></td>  </tr>
+<tr><td class="text-center">9</td><td>graduate_on</td><td>date</td><td class="text-center">否</td><td>毕结业日期</td><td></td>  </tr>
+<tr><td class="text-center">10</td><td>result_id</td><td>integer</td><td class="text-center">否</td><td>教育培训结果ID</td><td>            <a href="/model/code/edu/all.html#表格-education_results-教育培训结果">code.education_results</a>
 </td>  </tr>
-<tr><td class="text-center">10</td><td>season_id</td><td>bigint</td><td class="text-center">否</td><td>毕业界别ID</td><td>            <a href="/model/base/std/core.html#表格-graduate_seasons-毕业界别">base.graduate_seasons</a>
+<tr><td class="text-center">11</td><td>season_id</td><td>bigint</td><td class="text-center">否</td><td>毕业界别ID</td><td>            <a href="/model/base/std/core.html#表格-graduate_seasons-毕业界别">base.graduate_seasons</a>
 </td>  </tr>
-<tr><td class="text-center">11</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>            <a href="/model/base/std/core.html#表格-students-学籍信息实现">base.students</a>
+<tr><td class="text-center">12</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学籍信息实现ID</td><td>            <a href="/model/base/std/core.html#表格-students-学籍信息实现">base.students</a>
 </td>  </tr>
-<tr><td class="text-center">12</td><td>updated_at</td><td>timestamptz</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
-<tr><td class="text-center">13</td><td>whereto_go_id</td><td>integer</td><td class="text-center">是</td><td>毕业去向ID</td><td>            <a href="/model/code/std/all.html#表格-whereto_goes-毕业去向">code.whereto_goes</a>
+<tr><td class="text-center">13</td><td>updated_at</td><td>timestamptz</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
+<tr><td class="text-center">14</td><td>whereto_go_id</td><td>integer</td><td class="text-center">是</td><td>毕业去向ID</td><td>            <a href="/model/code/std/all.html#表格-whereto_goes-毕业去向">code.whereto_goes</a>
 </td>  </tr>
 </table>
 

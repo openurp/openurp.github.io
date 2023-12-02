@@ -2,8 +2,8 @@
 layout: page
 title: 培养方案 培养计划
 description: "培养方案培养计划"
-categories: [model-0.34.3]
-version: ["0.34.3"]
+categories: [model-0.34.5]
+version: ["0.34.5"]
 ---
 {% include JB/setup %}
  目  录

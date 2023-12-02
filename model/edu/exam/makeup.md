@@ -2,8 +2,8 @@
 layout: page
 title: 考务管理 毕业补考
 description: "考务管理毕业补考"
-categories: [model-0.34.3]
-version: ["0.34.3"]
+categories: [model-0.34.5]
+version: ["0.34.5"]
 ---
 {% include JB/setup %}
  目  录

@@ -2,8 +2,8 @@
 layout: page
 title: 教室管理 核心部分
 description: "教室管理核心部分"
-categories: [model-0.34.3]
-version: ["0.34.3"]
+categories: [model-0.34.5]
+version: ["0.34.5"]
 ---
 {% include JB/setup %}
  目  录
@@ -37,7 +37,7 @@ version: ["0.34.3"]
 <tr><td class="text-center">4</td><td>app_id</td><td>bigint</td><td class="text-center">否</td><td>房间占用用户系统ID</td><td>            <a href="/model/edu/room/core.html#表格-room_occupy_apps-房间占用用户系统">edu.room_occupy_apps</a>
 </td>  </tr>
 <tr><td class="text-center">5</td><td>begin_at</td><td>smallint</td><td class="text-center">否</td><td>开始时间</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>comments</td><td>varchar(300)</td><td class="text-center">否</td><td>说明</td><td></td>  </tr>
+<tr><td class="text-center">6</td><td>comments</td><td>varchar(400)</td><td class="text-center">否</td><td>说明</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>end_at</td><td>smallint</td><td class="text-center">否</td><td>结束时间</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>room_id</td><td>bigint</td><td class="text-center">否</td><td>房间ID</td><td>            <a href="/model/base/edu/misc.html#表格-classrooms-教室">base.classrooms</a>
 </td>  </tr>
@@ -100,7 +100,7 @@ version: ["0.34.3"]
 <tr><td class="text-center">16</td><td>end_on</td><td>date</td><td class="text-center">否</td><td>结束日期</td><td></td>  </tr>
 <tr><td class="text-center">17</td><td>mobile</td><td>varchar(255)</td><td class="text-center">否</td><td>移动电话</td><td></td>  </tr>
 <tr><td class="text-center">18</td><td>require_multimedia</td><td>boolean</td><td class="text-center">否</td><td>是否使用多媒体设备</td><td></td>  </tr>
-<tr><td class="text-center">19</td><td>room_comment</td><td>varchar(255)</td><td class="text-center">是</td><td>借用场所要求</td><td></td>  </tr>
+<tr><td class="text-center">19</td><td>room_comment</td><td>varchar(1200)</td><td class="text-center">是</td><td>借用场所要求</td><td></td>  </tr>
 <tr><td class="text-center">20</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校信息ID</td><td>            <a href="/model/base/common/space.html#表格-schools-学校信息">base.schools</a>
 </td>  </tr>
 <tr><td class="text-center">21</td><td>speaker</td><td>varchar(255)</td><td class="text-center">否</td><td>主讲人</td><td></td>  </tr>

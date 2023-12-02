@@ -2,8 +2,8 @@
 layout: page
 title: 评奖评优 助学金
 description: "评奖评优助学金"
-categories: [model-0.34.3]
-version: ["0.34.3"]
+categories: [model-0.34.5]
+version: ["0.34.5"]
 ---
 {% include JB/setup %}
  目  录

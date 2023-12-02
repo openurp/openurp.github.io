@@ -2,8 +2,8 @@
 layout: page
 title: 校外学习 
 description: "校外学习"
-categories: [model-0.34.3]
-version: ["0.34.3"]
+categories: [model-0.34.5]
+version: ["0.34.5"]
 ---
 {% include JB/setup %}
 

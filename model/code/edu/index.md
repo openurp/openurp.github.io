@@ -2,8 +2,8 @@
 layout: page
 title: 教务 
 description: "教务"
-categories: [model-0.34.3]
-version: ["0.34.3"]
+categories: [model-0.34.5]
+version: ["0.34.5"]
 ---
 {% include JB/setup %}
 
@@ -16,7 +16,7 @@ version: ["0.34.3"]
 * [2.1 代码](/model/code/edu/all.html)
 
 ### 表格一览
-Schema code.edu下共计33个表，分别如下:
+Schema code.edu下共计34个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>
@@ -83,49 +83,49 @@ Schema code.edu下共计33个表，分别如下:
     <td>10</td>
     <td><a href="/model/code/edu/all.html#表格-discipline_catalogs-学科目录">discipline_catalogs</a> 学科目录</td>
     <td>27</td>
-    <td><a href="/model/code/edu/all.html#表格-institutions-科研机构">institutions</a> 科研机构</td>
+    <td><a href="/model/code/edu/all.html#表格-institution_categories-高校性质类别">institution_categories</a> 高校性质类别</td>
   </tr>
   <tr>
     <td>11</td>
     <td><a href="/model/code/edu/all.html#表格-discipline_categories-学科门类">discipline_categories</a> 学科门类</td>
     <td>28</td>
-    <td><a href="/model/code/edu/all.html#表格-language_abilities-语种熟练程度">language_abilities</a> 语种熟练程度</td>
+    <td><a href="/model/code/edu/all.html#表格-institutions-科研机构">institutions</a> 科研机构</td>
   </tr>
   <tr>
     <td>12</td>
     <td><a href="/model/code/edu/all.html#表格-disciplines-学科">disciplines</a> 学科</td>
     <td>29</td>
-    <td><a href="/model/code/edu/all.html#表格-languages-语种">languages</a> 语种</td>
+    <td><a href="/model/code/edu/all.html#表格-language_abilities-语种熟练程度">language_abilities</a> 语种熟练程度</td>
   </tr>
   <tr>
     <td>13</td>
     <td><a href="/model/code/edu/all.html#表格-edu_categories-教学类型">edu_categories</a> 教学类型</td>
     <td>30</td>
-    <td><a href="/model/code/edu/all.html#表格-study_types-学习形式">study_types</a> 学习形式</td>
+    <td><a href="/model/code/edu/all.html#表格-languages-语种">languages</a> 语种</td>
   </tr>
   <tr>
     <td>14</td>
     <td><a href="/model/code/edu/all.html#表格-education_degrees-学历(文化程度)">education_degrees</a> 学历(文化程度)</td>
     <td>31</td>
-    <td><a href="/model/code/edu/all.html#表格-teach_lang_types-授课语言类型">teach_lang_types</a> 授课语言类型</td>
+    <td><a href="/model/code/edu/all.html#表格-study_types-学习形式">study_types</a> 学习形式</td>
   </tr>
   <tr>
     <td>15</td>
     <td><a href="/model/code/edu/all.html#表格-education_levels-培养层次">education_levels</a> 培养层次</td>
     <td>32</td>
-    <td><a href="/model/code/edu/all.html#表格-teaching_methods-授课方式">teaching_methods</a> 授课方式</td>
+    <td><a href="/model/code/edu/all.html#表格-teach_lang_types-授课语言类型">teach_lang_types</a> 授课语言类型</td>
   </tr>
   <tr>
     <td>16</td>
     <td><a href="/model/code/edu/all.html#表格-education_modes-培养方式">education_modes</a> 培养方式</td>
     <td>33</td>
-    <td><a href="/model/code/edu/all.html#表格-teaching_natures-授课性质">teaching_natures</a> 授课性质</td>
+    <td><a href="/model/code/edu/all.html#表格-teaching_methods-授课方式">teaching_methods</a> 授课方式</td>
   </tr>
   <tr>
     <td>17</td>
     <td><a href="/model/code/edu/all.html#表格-education_results-教育培训结果">education_results</a> 教育培训结果</td>
-    <td></td>
-    <td></td>
+    <td>34</td>
+    <td><a href="/model/code/edu/all.html#表格-teaching_natures-授课性质">teaching_natures</a> 授课性质</td>
   </tr>
 </table>
 

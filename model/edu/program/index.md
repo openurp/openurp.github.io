@@ -2,8 +2,8 @@
 layout: page
 title: 培养方案 
 description: "培养方案"
-categories: [model-0.34.3]
-version: ["0.34.3"]
+categories: [model-0.34.5]
+version: ["0.34.5"]
 ---
 {% include JB/setup %}
 
