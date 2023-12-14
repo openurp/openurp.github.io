@@ -6,7 +6,7 @@ group: navigation
 ---
 {% include JB/setup %}
 
-模型版本0.34.3
+模型版本0.35.0
 ##### 1. 总体要求和schema划分
 
 * [总体要求](/model/overview.html)

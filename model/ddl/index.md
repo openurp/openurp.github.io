@@ -19,7 +19,7 @@ title: SQL
  * [seed.sql](/model/ddl/init/seed.sql)
 
  版本迁移
-
+ * [0.35.0.sql](/model/ddl/migrate/0.35.0.sql)
  * [0.34.3.sql](/model/ddl/migrate/0.34.3.sql)
  * [0.34.1.sql](/model/ddl/migrate/0.34.1.sql)
  * [0.34.0.sql](/model/ddl/migrate/0.34.0.sql)
