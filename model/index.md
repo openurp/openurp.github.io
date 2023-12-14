@@ -13,7 +13,6 @@ group: navigation
 * [Schema规划](/model/schema.html)
 * [ID生成](/model/nextid.html)
 * [分区策略](/model/partition.html)
-* [ddl](/model/ddl/index.html)
 
 ##### 2. 代码信息
 
