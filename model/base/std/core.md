@@ -2,8 +2,8 @@
 layout: page
 title: 学生类基础信息 所有表格
 description: "学生类基础信息所有表格"
-categories: [model-0.34.5]
-version: ["0.34.5"]
+categories: [model-0.35.0]
+version: ["0.35.0"]
 ---
 {% include JB/setup %}
  目  录
@@ -303,7 +303,7 @@ version: ["0.34.5"]
 <tr><th class="info_header text-center">序号</th><th class="info_header">字段名</th><th class="info_header">字段类型</th><th class="info_header text-center">是否可空</th><th class="info_header">描述</th><th class="info_header">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>batch_no</td><td>integer</td><td class="text-center">否</td><td>批次号</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>certificate_no</td><td>varchar(100)</td><td class="text-center">否</td><td>毕业证书编号</td><td></td>  </tr>
+<tr><td class="text-center">3</td><td>certificate_no</td><td>varchar(100)</td><td class="text-center">是</td><td>毕业证书编号</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>certificate_seq_no</td><td>varchar(50)</td><td class="text-center">是</td><td>毕业证书序列号</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>degree_award_on</td><td>date</td><td class="text-center">是</td><td>学位授予日期</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>degree_id</td><td>integer</td><td class="text-center">是</td><td>学位ID</td><td>            <a href="/model/code/edu/all.html#表格-degrees-学位">code.degrees</a>

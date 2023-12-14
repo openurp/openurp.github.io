@@ -2,8 +2,8 @@
 layout: page
 title: 校外考试 校外考试
 description: "校外考试校外考试"
-categories: [model-0.34.5]
-version: ["0.34.5"]
+categories: [model-0.35.0]
+version: ["0.35.0"]
 ---
 {% include JB/setup %}
  目  录
@@ -32,18 +32,14 @@ version: ["0.34.5"]
 <tr><th class="info_header text-center">序号</th><th class="info_header">字段名</th><th class="info_header">字段类型</th><th class="info_header text-center">是否可空</th><th class="info_header">描述</th><th class="info_header">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>begin_at</td><td>timestamptz</td><td class="text-center">否</td><td>开始时间</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>category_id</td><td>integer</td><td class="text-center">否</td><td>校外考试种类ID</td><td>            <a href="">edu.c_certificate_categories</a>
+<tr><td class="text-center">3</td><td>end_at</td><td>timestamptz</td><td class="text-center">否</td><td>结束时间</td><td></td>  </tr>
+<tr><td class="text-center">4</td><td>max_options</td><td>integer</td><td class="text-center">否</td><td>最大报名科目数</td><td></td>  </tr>
+<tr><td class="text-center">5</td><td>name</td><td>varchar(255)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
+<tr><td class="text-center">6</td><td>notice</td><td>varchar(255)</td><td class="text-center">否</td><td>通知</td><td></td>  </tr>
+<tr><td class="text-center">7</td><td>prediction</td><td>boolean</td><td class="text-center">否</td><td>是否预报名</td><td></td>  </tr>
+<tr><td class="text-center">8</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>            <a href="/model/base/common/misc.html#表格-projects-项目">base.projects</a>
 </td>  </tr>
-<tr><td class="text-center">4</td><td>code</td><td>varchar(255)</td><td class="text-center">否</td><td>代码</td><td></td>  </tr>
-<tr><td class="text-center">5</td><td>end_at</td><td>timestamptz</td><td class="text-center">否</td><td>结束时间</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>max_subject</td><td>integer</td><td class="text-center">否</td><td>最大报名科目数</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>name</td><td>varchar(255)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
-<tr><td class="text-center">8</td><td>notice</td><td>varchar(255)</td><td class="text-center">否</td><td>通知</td><td></td>  </tr>
-<tr><td class="text-center">9</td><td>opened</td><td>boolean</td><td class="text-center">否</td><td>在规定的时间段内,是否可以开放</td><td></td>  </tr>
-<tr><td class="text-center">10</td><td>prediction</td><td>boolean</td><td class="text-center">否</td><td>是否预报名</td><td></td>  </tr>
-<tr><td class="text-center">11</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>            <a href="/model/base/common/misc.html#表格-projects-项目">base.projects</a>
-</td>  </tr>
-<tr><td class="text-center">12</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>学年学期ID</td><td>            <a href="/model/base/common/time.html#表格-semesters-学年学期">base.semesters</a>
+<tr><td class="text-center">9</td><td>semester_id</td><td>integer</td><td class="text-center">否</td><td>学年学期ID</td><td>            <a href="/model/base/common/time.html#表格-semesters-学年学期">base.semesters</a>
 </td>  </tr>
 </table>
 
@@ -61,7 +57,7 @@ version: ["0.34.5"]
 
 <table class="table table-bordered table-striped table-condensed ">
 <tr><th class="info_header">表名</th><th class="info_header">主键</th><th class="info_header" style="width:40%">注释</th>  </tr>
-<tr><td>cfg.edu_cert_signup_exclusives</td><td>cert_signup_setting_id,certificate_subject_id</td><td>有冲突的科目</td>  </tr>
+<tr><td>cfg.edu_cert_signup_exclusives</td><td>cert_signup_setting_id,certificate_id</td><td>有冲突的科目</td>  </tr>
 </table>
 <ul>
   <li>表格中的列</li>
@@ -70,7 +66,7 @@ version: ["0.34.5"]
 <tr><th class="info_header text-center">序号</th><th class="info_header">字段名</th><th class="info_header">字段类型</th><th class="info_header text-center">是否可空</th><th class="info_header">描述</th><th class="info_header">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>cert_signup_setting_id</td><td>bigint</td><td class="text-center">否</td><td>资格考试报名科目设置ID</td><td>            <a href="/model/cfg/extern.config/all.html#表格-edu_cert_signup_settings-资格考试报名科目设置">cfg.edu_cert_signup_settings</a>
 </td>  </tr>
-<tr><td class="text-center">2</td><td>certificate_subject_id</td><td>integer</td><td class="text-center">否</td><td>校外考试科目ID</td><td>            <a href="">edu.c_certificate_subjects</a>
+<tr><td class="text-center">2</td><td>certificate_id</td><td>integer</td><td class="text-center">否</td><td>校外证书ID</td><td>            <a href="">edu.c_certificates</a>
 </td>  </tr>
 </table>
 
@@ -143,20 +139,20 @@ version: ["0.34.5"]
 <table class="table table-bordered table-striped table-condensed">
 <tr><th class="info_header text-center">序号</th><th class="info_header">字段名</th><th class="info_header">字段类型</th><th class="info_header text-center">是否可空</th><th class="info_header">描述</th><th class="info_header">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>config_id</td><td>bigint</td><td class="text-center">否</td><td>资格考试报名设置ID</td><td>            <a href="/model/cfg/extern.config/all.html#表格-edu_cert_signup_configs-资格考试报名设置">cfg.edu_cert_signup_configs</a>
+<tr><td class="text-center">2</td><td>certificate_id</td><td>integer</td><td class="text-center">否</td><td>校外证书ID</td><td>            <a href="">edu.c_certificates</a>
 </td>  </tr>
-<tr><td class="text-center">3</td><td>depends_on_id</td><td>integer</td><td class="text-center">是</td><td>报名时要求通过的科目ID</td><td>            <a href="">edu.c_certificate_subjects</a>
+<tr><td class="text-center">3</td><td>config_id</td><td>bigint</td><td class="text-center">否</td><td>资格考试报名设置ID</td><td>            <a href="/model/cfg/extern.config/all.html#表格-edu_cert_signup_configs-资格考试报名设置">cfg.edu_cert_signup_configs</a>
 </td>  </tr>
-<tr><td class="text-center">4</td><td>exam_begin_at</td><td>smallint</td><td class="text-center">否</td><td>考试开始时间</td><td></td>  </tr>
-<tr><td class="text-center">5</td><td>exam_end_at</td><td>smallint</td><td class="text-center">否</td><td>考试结束时间</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>exam_on</td><td>date</td><td class="text-center">是</td><td>考试日期</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>fee_of_material</td><td>integer</td><td class="text-center">否</td><td>要求材料费</td><td></td>  </tr>
-<tr><td class="text-center">8</td><td>fee_of_outline</td><td>integer</td><td class="text-center">否</td><td>要求考纲费</td><td></td>  </tr>
-<tr><td class="text-center">9</td><td>fee_of_signup</td><td>integer</td><td class="text-center">否</td><td>要求报名费</td><td></td>  </tr>
-<tr><td class="text-center">10</td><td>max_std</td><td>integer</td><td class="text-center">否</td><td>最大学生数(0或者null表示不限制)</td><td></td>  </tr>
-<tr><td class="text-center">11</td><td>re_exam_allowed</td><td>boolean</td><td class="text-center">否</td><td>通过后是否可以重考</td><td></td>  </tr>
-<tr><td class="text-center">12</td><td>subject_id</td><td>integer</td><td class="text-center">否</td><td>校外考试科目ID</td><td>            <a href="">edu.c_certificate_subjects</a>
+<tr><td class="text-center">4</td><td>depends_on_id</td><td>integer</td><td class="text-center">是</td><td>报名时要求通过的科目ID</td><td>            <a href="">edu.c_certificates</a>
 </td>  </tr>
+<tr><td class="text-center">5</td><td>exam_begin_at</td><td>smallint</td><td class="text-center">否</td><td>考试开始时间</td><td></td>  </tr>
+<tr><td class="text-center">6</td><td>exam_end_at</td><td>smallint</td><td class="text-center">否</td><td>考试结束时间</td><td></td>  </tr>
+<tr><td class="text-center">7</td><td>exam_on</td><td>date</td><td class="text-center">是</td><td>考试日期</td><td></td>  </tr>
+<tr><td class="text-center">8</td><td>fee_of_material</td><td>integer</td><td class="text-center">否</td><td>要求材料费</td><td></td>  </tr>
+<tr><td class="text-center">9</td><td>fee_of_outline</td><td>integer</td><td class="text-center">否</td><td>要求考纲费</td><td></td>  </tr>
+<tr><td class="text-center">10</td><td>fee_of_signup</td><td>integer</td><td class="text-center">否</td><td>要求报名费</td><td></td>  </tr>
+<tr><td class="text-center">11</td><td>max_std</td><td>integer</td><td class="text-center">否</td><td>最大学生数(0或者null表示不限制)</td><td></td>  </tr>
+<tr><td class="text-center">12</td><td>re_exam_allowed</td><td>boolean</td><td class="text-center">否</td><td>通过后是否可以重考</td><td></td>  </tr>
 </table>
 
 

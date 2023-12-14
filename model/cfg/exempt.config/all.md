@@ -2,8 +2,8 @@
 layout: page
 title: 免修配置 免修配置
 description: "免修配置免修配置"
-categories: [model-0.34.5]
-version: ["0.34.5"]
+categories: [model-0.35.0]
+version: ["0.35.0"]
 ---
 {% include JB/setup %}
  目  录
@@ -134,13 +134,13 @@ version: ["0.34.5"]
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>audit_depart_id</td><td>integer</td><td class="text-center">否</td><td>审核部门ID</td><td>            <a href="/model/base/common/user.html#表格-departments-部门组织机构信息">base.departments</a>
 </td>  </tr>
-<tr><td class="text-center">3</td><td>config_id</td><td>bigint</td><td class="text-center">否</td><td>校外考试免修设置ID</td><td>            <a href="/model/cfg/exempt.config/all.html#表格-edu_cert_exempt_configs-校外考试免修设置">cfg.edu_cert_exempt_configs</a>
+<tr><td class="text-center">3</td><td>certificate_id</td><td>integer</td><td class="text-center">否</td><td>校外证书ID</td><td>            <a href="">edu.c_certificates</a>
 </td>  </tr>
-<tr><td class="text-center">4</td><td>max_count</td><td>integer</td><td class="text-center">否</td><td>免修最大门数</td><td></td>  </tr>
-<tr><td class="text-center">5</td><td>min_score</td><td>float4</td><td class="text-center">是</td><td>最低分</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>subject_id</td><td>integer</td><td class="text-center">否</td><td>校外考试科目ID</td><td>            <a href="">edu.c_certificate_subjects</a>
+<tr><td class="text-center">4</td><td>config_id</td><td>bigint</td><td class="text-center">否</td><td>校外考试免修设置ID</td><td>            <a href="/model/cfg/exempt.config/all.html#表格-edu_cert_exempt_configs-校外考试免修设置">cfg.edu_cert_exempt_configs</a>
 </td>  </tr>
+<tr><td class="text-center">5</td><td>max_count</td><td>integer</td><td class="text-center">否</td><td>免修最大门数</td><td></td>  </tr>
+<tr><td class="text-center">6</td><td>min_score</td><td>float4</td><td class="text-center">是</td><td>最低分</td><td></td>  </tr>
+<tr><td class="text-center">7</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>valid_months</td><td>integer</td><td class="text-center">是</td><td>有效期长度，以月为单位</td><td></td>  </tr>
 </table>
 

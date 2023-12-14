@@ -2,8 +2,8 @@
 layout: page
 title: 校外考试 
 description: "校外考试"
-categories: [model-0.34.5]
-version: ["0.34.5"]
+categories: [model-0.35.0]
+version: ["0.35.0"]
 ---
 {% include JB/setup %}
 
@@ -28,13 +28,13 @@ Schema edu.extern下共计7个表，分别如下:
   </tr>
   <tr>
     <td>1</td>
-    <td><a href="error">c_certificate_categories</a> 校外考试种类</td>
+    <td><a href="error">c_certificate_categories</a> 校外证书类型</td>
     <td>5</td>
     <td><a href="/model/edu/extern/certificate.html#表格-certificate_grades_exempts-证书成绩免修课程">certificate_grades_exempts</a> 证书成绩免修课程</td>
   </tr>
   <tr>
     <td>2</td>
-    <td><a href="error">c_certificate_subjects</a> 校外考试科目</td>
+    <td><a href="error">c_certificates</a> 校外证书</td>
     <td>6</td>
     <td><a href="/model/edu/extern/extern.html#表格-extern_grades-校外成绩">extern_grades</a> 校外成绩</td>
   </tr>

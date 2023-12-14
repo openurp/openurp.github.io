@@ -2,8 +2,8 @@
 layout: page
 title: 成绩信息 计划完成
 description: "成绩信息计划完成"
-categories: [model-0.34.5]
-version: ["0.34.5"]
+categories: [model-0.35.0]
+version: ["0.35.0"]
 ---
 {% include JB/setup %}
  目  录
@@ -43,7 +43,7 @@ version: ["0.34.5"]
 <tr><td class="text-center">4</td><td>group_result_id</td><td>bigint</td><td class="text-center">否</td><td>组审核结果ID</td><td>            <a href="/model/edu/grade/plan.html#表格-group_audit_results-组审核结果">edu.group_audit_results</a>
 </td>  </tr>
 <tr><td class="text-center">5</td><td>passed</td><td>boolean</td><td class="text-center">否</td><td>是否通过</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>remark</td><td>varchar(100)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
+<tr><td class="text-center">6</td><td>remark</td><td>varchar(150)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>scores</td><td>varchar(50)</td><td class="text-center">否</td><td>分数</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>terms</td><td>integer</td><td class="text-center">否</td><td>开课学期</td><td></td>  </tr>
 </table>

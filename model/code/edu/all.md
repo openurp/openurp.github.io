@@ -2,8 +2,8 @@
 layout: page
 title: 教务 代码
 description: "教务代码"
-categories: [model-0.34.5]
-version: ["0.34.5"]
+categories: [model-0.35.0]
+version: ["0.35.0"]
 ---
 {% include JB/setup %}
  目  录

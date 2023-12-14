@@ -2,8 +2,8 @@
 layout: page
 title: 培养方案 其他
 description: "培养方案其他"
-categories: [model-0.34.5]
-version: ["0.34.5"]
+categories: [model-0.35.0]
+version: ["0.35.0"]
 ---
 {% include JB/setup %}
  目  录

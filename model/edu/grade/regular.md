@@ -2,8 +2,8 @@
 layout: page
 title: 成绩信息 过程性成绩
 description: "成绩信息过程性成绩"
-categories: [model-0.34.5]
-version: ["0.34.5"]
+categories: [model-0.35.0]
+version: ["0.35.0"]
 ---
 {% include JB/setup %}
  目  录

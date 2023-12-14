@@ -2,8 +2,8 @@
 layout: page
 title: 基础信息 空间相关
 description: "基础信息空间相关"
-categories: [model-0.34.5]
-version: ["0.34.5"]
+categories: [model-0.35.0]
+version: ["0.35.0"]
 ---
 {% include JB/setup %}
  目  录

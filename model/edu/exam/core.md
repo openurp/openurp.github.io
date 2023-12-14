@@ -2,8 +2,8 @@
 layout: page
 title: 考务管理 核心部分
 description: "考务管理核心部分"
-categories: [model-0.34.5]
-version: ["0.34.5"]
+categories: [model-0.35.0]
+version: ["0.35.0"]
 ---
 {% include JB/setup %}
  目  录

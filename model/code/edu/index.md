@@ -2,8 +2,8 @@
 layout: page
 title: 教务 
 description: "教务"
-categories: [model-0.34.5]
-version: ["0.34.5"]
+categories: [model-0.35.0]
+version: ["0.35.0"]
 ---
 {% include JB/setup %}
 

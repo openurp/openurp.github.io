@@ -2,8 +2,8 @@
 layout: page
 title: 自助打印 自助打印
 description: "自助打印自助打印"
-categories: [model-0.34.5]
-version: ["0.34.5"]
+categories: [model-0.35.0]
+version: ["0.35.0"]
 ---
 {% include JB/setup %}
  目  录

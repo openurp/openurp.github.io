@@ -2,8 +2,8 @@
 layout: page
 title: 就业 
 description: "就业"
-categories: [model-0.34.5]
-version: ["0.34.5"]
+categories: [model-0.35.0]
+version: ["0.35.0"]
 ---
 {% include JB/setup %}
 
