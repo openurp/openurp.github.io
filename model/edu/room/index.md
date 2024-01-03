@@ -2,8 +2,8 @@
 layout: page
 title: 教室管理 
 description: "教室管理"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
 

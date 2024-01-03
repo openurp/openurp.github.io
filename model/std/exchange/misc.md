@@ -2,8 +2,8 @@
 layout: page
 title: 校外学习 校外学习
 description: "校外学习校外学习"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录

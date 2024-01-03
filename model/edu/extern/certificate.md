@@ -2,8 +2,8 @@
 layout: page
 title: 校外考试 证书成绩
 description: "校外考试证书成绩"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录
@@ -48,7 +48,7 @@ version: ["0.35.0"]
 <tr><td class="text-center">12</td><td>status</td><td>integer</td><td class="text-center">否</td><td>状态</td><td></td>  </tr>
 <tr><td class="text-center">13</td><td>std_id</td><td>bigint</td><td class="text-center">否</td><td>学生ID</td><td>            <a href="/model/base/std/core.html#表格-students-学籍信息实现">base.students</a>
 </td>  </tr>
-<tr><td class="text-center">14</td><td>subject</td><td>varchar(255)</td><td class="text-center">是</td><td>科目</td><td></td>  </tr>
+<tr><td class="text-center">14</td><td>subject</td><td>varchar(80)</td><td class="text-center">是</td><td>科目</td><td></td>  </tr>
 <tr><td class="text-center">15</td><td>updated_at</td><td>timestamptz</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>
 

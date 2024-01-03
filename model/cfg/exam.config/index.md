@@ -2,8 +2,8 @@
 layout: page
 title: 考务管理 
 description: "考务管理"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
 
@@ -16,7 +16,7 @@ version: ["0.35.0"]
 * [2.1 考务管理](/model/cfg/exam.config/all.html)
 
 ### 表格一览
-Schema cfg.exam.config下共计1个表，分别如下:
+Schema cfg.exam.config下共计2个表，分别如下:
 
 <table class="table table-bordered table-striped table-condensed">
   <tr>
@@ -28,8 +28,8 @@ Schema cfg.exam.config下共计1个表，分别如下:
   <tr>
     <td>1</td>
     <td><a href="/model/cfg/exam.config/all.html#表格-edu_exam_alloc_settings-教室分配设置">edu_exam_alloc_settings</a> 教室分配设置</td>
-    <td></td>
-    <td></td>
+    <td>2</td>
+    <td><a href="/model/cfg/exam.config/all.html#表格-edu_exam_defer_settings-缓考设置">edu_exam_defer_settings</a> 缓考设置</td>
   </tr>
 </table>
 

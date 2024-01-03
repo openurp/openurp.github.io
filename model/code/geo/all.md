@@ -2,8 +2,8 @@
 layout: page
 title: 地理 代码
 description: "地理代码"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录

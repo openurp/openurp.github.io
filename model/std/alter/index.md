@@ -2,8 +2,8 @@
 layout: page
 title: 学籍异动 
 description: "学籍异动"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
 

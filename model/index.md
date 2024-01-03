@@ -6,7 +6,7 @@ group: navigation
 ---
 {% include JB/setup %}
 
-模型版本0.35.0
+模型版本0.36.0
 ##### 1. 总体要求和schema划分
 
 * [总体要求](/model/overview.html)
@@ -28,8 +28,10 @@ group: navigation
 ##### 3. 基础信息
 
 * [1. 基础信息](/model/base/common/index.html)
-* [2. 教学基础](/model/base/edu/index.html)
-* [3. 学生基础](/model/base/std/index.html)
+* [2. 基础-教学](/model/base/edu/index.html)
+* [3. 基础-学生](/model/base/std/index.html)
+* [4. 基础-教室](/model/base/space/index.html)
+* [4. 基础-教职工](/model/base/hr/index.html)
 
 ##### 4. 教务管理
 

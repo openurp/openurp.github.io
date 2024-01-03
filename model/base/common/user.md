@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 基础信息 用户相关
-description: "基础信息用户相关"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+title: 通用 用户相关
+description: "通用用户相关"
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录
@@ -49,7 +49,7 @@ version: ["0.35.0"]
 </td>  </tr>
 <tr><td class="text-center">10</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
 <tr><td class="text-center">11</td><td>research</td><td>boolean</td><td class="text-center">否</td><td>是否科研部门</td><td></td>  </tr>
-<tr><td class="text-center">12</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校ID</td><td>            <a href="/model/base/common/space.html#表格-schools-学校信息">base.schools</a>
+<tr><td class="text-center">12</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校ID</td><td>            <a href="/model/base/common/misc.html#表格-schools-学校信息">base.schools</a>
 </td>  </tr>
 <tr><td class="text-center">13</td><td>short_name</td><td>varchar(100)</td><td class="text-center">是</td><td>简称</td><td></td>  </tr>
 <tr><td class="text-center">14</td><td>teaching</td><td>boolean</td><td class="text-center">否</td><td>是否教学部门</td><td></td>  </tr>
@@ -93,7 +93,7 @@ version: ["0.35.0"]
 </ul>
 <table class="table table-bordered table-striped table-condensed">
 <tr><th class="info_header text-center">序号</th><th class="info_header">字段名</th><th class="info_header">字段类型</th><th class="info_header text-center">是否可空</th><th class="info_header">描述</th><th class="info_header">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>campus_id</td><td>integer</td><td class="text-center">否</td><td>校区信息ID</td><td>            <a href="/model/base/common/space.html#表格-campuses-校区信息">base.campuses</a>
+<tr><td class="text-center">1</td><td>campus_id</td><td>integer</td><td class="text-center">否</td><td>校区信息ID</td><td>            <a href="/model/base/common/misc.html#表格-campuses-校区信息">base.campuses</a>
 </td>  </tr>
 <tr><td class="text-center">2</td><td>department_id</td><td>integer</td><td class="text-center">否</td><td>部门组织机构信息ID</td><td>            <a href="/model/base/common/user.html#表格-departments-部门组织机构信息">base.departments</a>
 </td>  </tr>
@@ -137,7 +137,7 @@ version: ["0.35.0"]
 <tr><td class="text-center">6</td><td>country_id</td><td>integer</td><td class="text-center">是</td><td>国籍/地区ID</td><td>            <a href="/model/code/geo/all.html#表格-countries-国家地区">code.countries</a>
 </td>  </tr>
 <tr><td class="text-center">7</td><td>family_name</td><td>varchar(80)</td><td class="text-center">是</td><td>姓</td><td></td>  </tr>
-<tr><td class="text-center">8</td><td>formated_name</td><td>varchar(100)</td><td class="text-center">否</td><td>姓名</td><td></td>  </tr>
+<tr><td class="text-center">8</td><td>formatted_name</td><td>varchar(100)</td><td class="text-center">否</td><td>姓名</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>former_name</td><td>varchar(100)</td><td class="text-center">是</td><td>曾用名</td><td></td>  </tr>
 <tr><td class="text-center">10</td><td>gender_id</td><td>integer</td><td class="text-center">否</td><td>性别ID</td><td>            <a href="/model/code/person/all.html#表格-genders-性别">code.genders</a>
 </td>  </tr>
@@ -202,7 +202,7 @@ version: ["0.35.0"]
 <tr><td class="text-center">10</td><td>mobile</td><td>varchar(15)</td><td class="text-center">是</td><td>电话</td><td></td>  </tr>
 <tr><td class="text-center">11</td><td>name</td><td>varchar(80)</td><td class="text-center">否</td><td>姓名</td><td></td>  </tr>
 <tr><td class="text-center">12</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">13</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校ID</td><td>            <a href="/model/base/common/space.html#表格-schools-学校信息">base.schools</a>
+<tr><td class="text-center">13</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校ID</td><td>            <a href="/model/base/common/misc.html#表格-schools-学校信息">base.schools</a>
 </td>  </tr>
 <tr><td class="text-center">14</td><td>updated_at</td><td>timestamptz</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>

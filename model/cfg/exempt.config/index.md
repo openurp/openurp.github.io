@@ -2,8 +2,8 @@
 layout: page
 title: 免修配置 
 description: "免修配置"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
 
@@ -35,7 +35,7 @@ Schema cfg.exempt.config下共计4个表，分别如下:
     <td>2</td>
     <td><a href="/model/cfg/exempt.config/all.html#表格-edu_cert_exempt_configs_levels-培养层次">edu_cert_exempt_configs_levels</a> 培养层次</td>
     <td>4</td>
-    <td><a href="/model/cfg/exempt.config/all.html#表格-edu_cert_exempt_settings-校外考试免修科目设置">edu_cert_exempt_settings</a> 校外考试免修科目设置</td>
+    <td><a href="/model/cfg/exempt.config/all.html#表格-edu_cert_exempt_settings-校外证书免修科目设置">edu_cert_exempt_settings</a> 校外证书免修科目设置</td>
   </tr>
 </table>
 

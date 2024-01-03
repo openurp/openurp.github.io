@@ -2,8 +2,8 @@
 layout: page
 title: 创新创业 创新创业
 description: "创新创业创新创业"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录
@@ -35,7 +35,7 @@ version: ["0.35.0"]
 <tr><td class="text-center">3</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>开始日期</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>end_on</td><td>date</td><td class="text-center">否</td><td>结束日期</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>name</td><td>varchar(255)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校信息ID</td><td>            <a href="/model/base/common/space.html#表格-schools-学校信息">base.schools</a>
+<tr><td class="text-center">6</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校信息ID</td><td>            <a href="/model/base/common/misc.html#表格-schools-学校信息">base.schools</a>
 </td>  </tr>
 </table>
 
@@ -675,7 +675,7 @@ version: ["0.35.0"]
 <tr><td class="text-center">1</td><td>idx</td><td>integer</td><td class="text-center">否</td><td>index no</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>project_id</td><td>bigint</td><td class="text-center">否</td><td>项目ID</td><td>            <a href="/model/prac/innovation/misc.html#表格-inv_projects-项目">prac.inv_projects</a>
 </td>  </tr>
-<tr><td class="text-center">3</td><td>teacher_id</td><td>bigint</td><td class="text-center">否</td><td>教师信息ID</td><td>            <a href="/model/base/edu/core.html#表格-teachers-教师信息">base.teachers</a>
+<tr><td class="text-center">3</td><td>teacher_id</td><td>bigint</td><td class="text-center">否</td><td>教师信息ID</td><td>            <a href="/model/base/hr/core.html#表格-teachers-教师信息">base.teachers</a>
 </td>  </tr>
 </table>
 

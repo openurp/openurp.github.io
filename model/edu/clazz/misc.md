@@ -2,8 +2,8 @@
 layout: page
 title: 课程安排 其他
 description: "课程安排其他"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录
@@ -115,12 +115,12 @@ version: ["0.35.0"]
 <tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>begin_at</td><td>smallint</td><td class="text-center">否</td><td>开始时间</td><td></td>  </tr>
 <tr><td class="text-center">3</td><td>end_at</td><td>smallint</td><td class="text-center">否</td><td>结束时间</td><td></td>  </tr>
-<tr><td class="text-center">4</td><td>room_id</td><td>bigint</td><td class="text-center">是</td><td>教室ID</td><td>            <a href="/model/base/edu/misc.html#表格-classrooms-教室">base.classrooms</a>
+<tr><td class="text-center">4</td><td>room_id</td><td>bigint</td><td class="text-center">是</td><td>教室ID</td><td>            <a href="/model/base/space/core.html#表格-classrooms-教室">base.classrooms</a>
 </td>  </tr>
 <tr><td class="text-center">5</td><td>start_on</td><td>date</td><td class="text-center">否</td><td>开始日期</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>suggest_id</td><td>bigint</td><td class="text-center">否</td><td>排课建议ID</td><td>            <a href="/model/edu/clazz/misc.html#表格-schedule_suggests-排课建议">edu.schedule_suggests</a>
 </td>  </tr>
-<tr><td class="text-center">7</td><td>teacher_id</td><td>bigint</td><td class="text-center">是</td><td>教师信息ID</td><td>            <a href="/model/base/edu/core.html#表格-teachers-教师信息">base.teachers</a>
+<tr><td class="text-center">7</td><td>teacher_id</td><td>bigint</td><td class="text-center">是</td><td>教师信息ID</td><td>            <a href="/model/base/hr/core.html#表格-teachers-教师信息">base.teachers</a>
 </td>  </tr>
 <tr><td class="text-center">8</td><td>weekstate</td><td>bigint</td><td class="text-center">否</td><td>周状态</td><td></td>  </tr>
 </table>

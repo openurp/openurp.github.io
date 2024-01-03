@@ -2,8 +2,8 @@
 layout: page
 title: 教室管理 核心部分
 description: "教室管理核心部分"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录
@@ -39,7 +39,7 @@ version: ["0.35.0"]
 <tr><td class="text-center">5</td><td>begin_at</td><td>smallint</td><td class="text-center">否</td><td>开始时间</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>comments</td><td>varchar(400)</td><td class="text-center">否</td><td>说明</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>end_at</td><td>smallint</td><td class="text-center">否</td><td>结束时间</td><td></td>  </tr>
-<tr><td class="text-center">8</td><td>room_id</td><td>bigint</td><td class="text-center">否</td><td>房间ID</td><td>            <a href="/model/base/edu/misc.html#表格-classrooms-教室">base.classrooms</a>
+<tr><td class="text-center">8</td><td>room_id</td><td>bigint</td><td class="text-center">否</td><td>房间ID</td><td>            <a href="/model/base/space/core.html#表格-classrooms-教室">base.classrooms</a>
 </td>  </tr>
 <tr><td class="text-center">9</td><td>start_on</td><td>date</td><td class="text-center">否</td><td>开始日期</td><td></td>  </tr>
 <tr><td class="text-center">10</td><td>updated_at</td><td>timestamptz</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
@@ -93,7 +93,7 @@ version: ["0.35.0"]
 <tr><td class="text-center">11</td><td>audit_depart_id</td><td>integer</td><td class="text-center">否</td><td>归口审核部门ID</td><td>            <a href="/model/base/common/user.html#表格-departments-部门组织机构信息">base.departments</a>
 </td>  </tr>
 <tr><td class="text-center">12</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>开始日期</td><td></td>  </tr>
-<tr><td class="text-center">13</td><td>campus_id</td><td>integer</td><td class="text-center">否</td><td>校区信息ID</td><td>            <a href="/model/base/common/space.html#表格-campuses-校区信息">base.campuses</a>
+<tr><td class="text-center">13</td><td>campus_id</td><td>integer</td><td class="text-center">否</td><td>校区信息ID</td><td>            <a href="/model/base/common/misc.html#表格-campuses-校区信息">base.campuses</a>
 </td>  </tr>
 <tr><td class="text-center">14</td><td>depart_approved</td><td>boolean</td><td class="text-center">是</td><td>是否部门审核通过</td><td></td>  </tr>
 <tr><td class="text-center">15</td><td>email</td><td>varchar(255)</td><td class="text-center">是</td><td>电子邮件</td><td></td>  </tr>
@@ -101,7 +101,7 @@ version: ["0.35.0"]
 <tr><td class="text-center">17</td><td>mobile</td><td>varchar(255)</td><td class="text-center">否</td><td>移动电话</td><td></td>  </tr>
 <tr><td class="text-center">18</td><td>require_multimedia</td><td>boolean</td><td class="text-center">否</td><td>是否使用多媒体设备</td><td></td>  </tr>
 <tr><td class="text-center">19</td><td>room_comment</td><td>varchar(1200)</td><td class="text-center">是</td><td>借用场所要求</td><td></td>  </tr>
-<tr><td class="text-center">20</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校信息ID</td><td>            <a href="/model/base/common/space.html#表格-schools-学校信息">base.schools</a>
+<tr><td class="text-center">20</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校信息ID</td><td>            <a href="/model/base/common/misc.html#表格-schools-学校信息">base.schools</a>
 </td>  </tr>
 <tr><td class="text-center">21</td><td>speaker</td><td>varchar(255)</td><td class="text-center">否</td><td>主讲人</td><td></td>  </tr>
 <tr><td class="text-center">22</td><td>time_comment</td><td>varchar(255)</td><td class="text-center">是</td><td>借用时间要求</td><td></td>  </tr>
@@ -129,7 +129,7 @@ version: ["0.35.0"]
 </ul>
 <table class="table table-bordered table-striped table-condensed">
 <tr><th class="info_header text-center">序号</th><th class="info_header">字段名</th><th class="info_header">字段类型</th><th class="info_header text-center">是否可空</th><th class="info_header">描述</th><th class="info_header">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>classroom_id</td><td>bigint</td><td class="text-center">否</td><td>教室ID</td><td>            <a href="/model/base/edu/misc.html#表格-classrooms-教室">base.classrooms</a>
+<tr><td class="text-center">1</td><td>classroom_id</td><td>bigint</td><td class="text-center">否</td><td>教室ID</td><td>            <a href="/model/base/space/core.html#表格-classrooms-教室">base.classrooms</a>
 </td>  </tr>
 <tr><td class="text-center">2</td><td>room_apply_id</td><td>bigint</td><td class="text-center">否</td><td>教室借用ID</td><td>            <a href="/model/edu/room/core.html#表格-room_applies-教室借用">edu.room_applies</a>
 </td>  </tr>
@@ -206,7 +206,7 @@ version: ["0.35.0"]
 <tr><td class="text-center">3</td><td>end_at</td><td>smallint</td><td class="text-center">否</td><td>结束时间</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>            <a href="/model/base/common/misc.html#表格-projects-项目">base.projects</a>
 </td>  </tr>
-<tr><td class="text-center">5</td><td>room_id</td><td>bigint</td><td class="text-center">否</td><td>教室ID</td><td>            <a href="/model/base/edu/misc.html#表格-classrooms-教室">base.classrooms</a>
+<tr><td class="text-center">5</td><td>room_id</td><td>bigint</td><td class="text-center">否</td><td>教室ID</td><td>            <a href="/model/base/space/core.html#表格-classrooms-教室">base.classrooms</a>
 </td>  </tr>
 <tr><td class="text-center">6</td><td>start_on</td><td>date</td><td class="text-center">否</td><td>开始日期</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>updated_at</td><td>timestamptz</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>

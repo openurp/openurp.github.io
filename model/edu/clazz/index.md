@@ -2,8 +2,8 @@
 layout: page
 title: 课程安排 
 description: "课程安排"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
 

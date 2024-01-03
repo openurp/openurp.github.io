@@ -2,8 +2,8 @@
 layout: page
 title: 毕业设计 毕业设计
 description: "毕业设计毕业设计"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录
@@ -37,7 +37,7 @@ version: ["0.35.0"]
 <tr><td class="text-center">5</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>max_writers</td><td>bigint</td><td class="text-center">否</td><td>所带学生数</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>mobile</td><td>varchar(255)</td><td class="text-center">是</td><td>手机号码</td><td></td>  </tr>
-<tr><td class="text-center">8</td><td>teacher_id</td><td>bigint</td><td class="text-center">否</td><td>教师信息ID</td><td>            <a href="/model/base/edu/core.html#表格-teachers-教师信息">base.teachers</a>
+<tr><td class="text-center">8</td><td>teacher_id</td><td>bigint</td><td class="text-center">否</td><td>教师信息ID</td><td>            <a href="/model/base/hr/core.html#表格-teachers-教师信息">base.teachers</a>
 </td>  </tr>
 </table>
 
@@ -296,7 +296,7 @@ version: ["0.35.0"]
 <tr><td class="text-center">2</td><td>group_id</td><td>bigint</td><td class="text-center">否</td><td>答辩组ID</td><td>            <a href="/model/degree/thesis/misc.html#表格-defense_groups-答辩组">degree.defense_groups</a>
 </td>  </tr>
 <tr><td class="text-center">3</td><td>leader</td><td>boolean</td><td class="text-center">否</td><td>是否答辩主席</td><td></td>  </tr>
-<tr><td class="text-center">4</td><td>teacher_id</td><td>bigint</td><td class="text-center">否</td><td>教师信息ID</td><td>            <a href="/model/base/edu/core.html#表格-teachers-教师信息">base.teachers</a>
+<tr><td class="text-center">4</td><td>teacher_id</td><td>bigint</td><td class="text-center">否</td><td>教师信息ID</td><td>            <a href="/model/base/hr/core.html#表格-teachers-教师信息">base.teachers</a>
 </td>  </tr>
 </table>
 
@@ -1028,11 +1028,11 @@ version: ["0.35.0"]
 <tr><td class="text-center">3</td><td>advisor_score</td><td>integer</td><td class="text-center">是</td><td>指导教师得分</td><td></td>  </tr>
 <tr><td class="text-center">4</td><td>attitude_score</td><td>integer</td><td class="text-center">是</td><td>写作态度</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>cross_review_at</td><td>timestamptz</td><td class="text-center">是</td><td>交叉评阅时间</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>cross_review_manager_id</td><td>bigint</td><td class="text-center">是</td><td>交叉评阅负责人ID</td><td>            <a href="/model/base/edu/core.html#表格-teachers-教师信息">base.teachers</a>
+<tr><td class="text-center">6</td><td>cross_review_manager_id</td><td>bigint</td><td class="text-center">是</td><td>交叉评阅负责人ID</td><td>            <a href="/model/base/hr/core.html#表格-teachers-教师信息">base.teachers</a>
 </td>  </tr>
 <tr><td class="text-center">7</td><td>cross_review_opinion</td><td>varchar(2000)</td><td class="text-center">是</td><td>交叉评阅意见</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>cross_review_score</td><td>integer</td><td class="text-center">是</td><td>交叉评阅得分</td><td></td>  </tr>
-<tr><td class="text-center">9</td><td>cross_reviewer_id</td><td>bigint</td><td class="text-center">是</td><td>交叉评阅人ID</td><td>            <a href="/model/base/edu/core.html#表格-teachers-教师信息">base.teachers</a>
+<tr><td class="text-center">9</td><td>cross_reviewer_id</td><td>bigint</td><td class="text-center">是</td><td>交叉评阅人ID</td><td>            <a href="/model/base/hr/core.html#表格-teachers-教师信息">base.teachers</a>
 </td>  </tr>
 <tr><td class="text-center">10</td><td>defense_info_id</td><td>bigint</td><td class="text-center">是</td><td>答辩信息ID</td><td>            <a href="/model/degree/thesis/misc.html#表格-defense_infoes-答辩信息">degree.defense_infoes</a>
 </td>  </tr>

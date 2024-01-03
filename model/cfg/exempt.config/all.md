@@ -2,8 +2,8 @@
 layout: page
 title: 免修配置 免修配置
 description: "免修配置免修配置"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录
@@ -96,7 +96,7 @@ version: ["0.35.0"]
 </ul>
 <table class="table table-bordered table-striped table-condensed">
 <tr><th class="info_header text-center">序号</th><th class="info_header">字段名</th><th class="info_header">字段类型</th><th class="info_header text-center">是否可空</th><th class="info_header">描述</th><th class="info_header">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>cert_exempt_setting_id</td><td>bigint</td><td class="text-center">否</td><td>校外考试免修科目设置ID</td><td>            <a href="/model/cfg/exempt.config/all.html#表格-edu_cert_exempt_settings-校外考试免修科目设置">cfg.edu_cert_exempt_settings</a>
+<tr><td class="text-center">1</td><td>cert_exempt_setting_id</td><td>bigint</td><td class="text-center">否</td><td>校外证书免修科目设置ID</td><td>            <a href="/model/cfg/exempt.config/all.html#表格-edu_cert_exempt_settings-校外证书免修科目设置">cfg.edu_cert_exempt_settings</a>
 </td>  </tr>
 <tr><td class="text-center">2</td><td>course_id</td><td>bigint</td><td class="text-center">否</td><td>课程基本信息ID</td><td>            <a href="/model/base/edu/core.html#表格-courses-课程基本信息">base.courses</a>
 </td>  </tr>
@@ -114,7 +114,7 @@ version: ["0.35.0"]
   </div>
 </div>
 
-### 表格 edu_cert_exempt_settings 校外考试免修科目设置
+### 表格 edu_cert_exempt_settings 校外证书免修科目设置
 <div class="card card-info">
   <div class="card-header"><h5 id="table_cfg.edu_cert_exempt_settings">表格cfg.edu_cert_exempt_settings</h5></div>
   <div class="card-body">
@@ -124,7 +124,7 @@ version: ["0.35.0"]
 
 <table class="table table-bordered table-striped table-condensed ">
 <tr><th class="info_header">表名</th><th class="info_header">主键</th><th class="info_header" style="width:40%">注释</th>  </tr>
-<tr><td>cfg.edu_cert_exempt_settings</td><td>id</td><td>校外考试免修科目设置</td>  </tr>
+<tr><td>cfg.edu_cert_exempt_settings</td><td>id</td><td>校外证书免修科目设置</td>  </tr>
 </table>
 <ul>
   <li>表格中的列</li>
@@ -141,7 +141,9 @@ version: ["0.35.0"]
 <tr><td class="text-center">5</td><td>max_count</td><td>integer</td><td class="text-center">否</td><td>免修最大门数</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>min_score</td><td>float4</td><td class="text-center">是</td><td>最低分</td><td></td>  </tr>
 <tr><td class="text-center">7</td><td>remark</td><td>varchar(255)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
-<tr><td class="text-center">8</td><td>valid_months</td><td>integer</td><td class="text-center">是</td><td>有效期长度，以月为单位</td><td></td>  </tr>
+<tr><td class="text-center">8</td><td>score_expr</td><td>varchar(100)</td><td class="text-center">是</td><td>认定成绩表达式</td><td></td>  </tr>
+<tr><td class="text-center">9</td><td>subjects</td><td>varchar(500)</td><td class="text-center">是</td><td>证书内科目</td><td></td>  </tr>
+<tr><td class="text-center">10</td><td>valid_months</td><td>integer</td><td class="text-center">是</td><td>有效期长度，以月为单位</td><td></td>  </tr>
 </table>
 
 

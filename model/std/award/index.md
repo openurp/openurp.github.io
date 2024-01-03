@@ -2,8 +2,8 @@
 layout: page
 title: 评奖评优 
 description: "评奖评优"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
 

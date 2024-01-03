@@ -2,8 +2,8 @@
 layout: page
 title: 评奖评优 困难补助
 description: "评奖评优困难补助"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录

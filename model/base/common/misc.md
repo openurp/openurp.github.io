@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 基础信息 其他
-description: "基础信息其他"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+title: 通用 其他
+description: "通用其他"
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录
@@ -12,6 +12,48 @@ version: ["0.35.0"]
 {:toc}
 
 
+
+### 表格 campuses 校区信息
+<div class="card card-info">
+  <div class="card-header"><h5 id="table_base.campuses">表格base.campuses</h5></div>
+  <div class="card-body">
+<ul>
+  <li>表格说明</li>
+</ul>
+
+<table class="table table-bordered table-striped table-condensed ">
+<tr><th class="info_header">表名</th><th class="info_header">主键</th><th class="info_header" style="width:40%">注释</th>  </tr>
+<tr><td>base.campuses</td><td>id</td><td>校区信息</td>  </tr>
+</table>
+<ul>
+  <li>表格中的列</li>
+</ul>
+<table class="table table-bordered table-striped table-condensed">
+<tr><th class="info_header text-center">序号</th><th class="info_header">字段名</th><th class="info_header">字段类型</th><th class="info_header text-center">是否可空</th><th class="info_header">描述</th><th class="info_header">引用表</th>  </tr>
+<tr><td class="text-center">1</td><td>id</td><td>integer</td><td class="text-center">否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
+<tr><td class="text-center">2</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效日期</td><td></td>  </tr>
+<tr><td class="text-center">3</td><td>code</td><td>varchar(10)</td><td class="text-center">否</td><td>代码</td><td></td>  </tr>
+<tr><td class="text-center">4</td><td>en_name</td><td>varchar(100)</td><td class="text-center">是</td><td>英文名称</td><td></td>  </tr>
+<tr><td class="text-center">5</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
+<tr><td class="text-center">6</td><td>name</td><td>varchar(80)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
+<tr><td class="text-center">7</td><td>remark</td><td>varchar(200)</td><td class="text-center">是</td><td>备注</td><td></td>  </tr>
+<tr><td class="text-center">8</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校ID</td><td>            <a href="/model/base/common/misc.html#表格-schools-学校信息">base.schools</a>
+</td>  </tr>
+<tr><td class="text-center">9</td><td>short_name</td><td>varchar(100)</td><td class="text-center">是</td><td>简称</td><td></td>  </tr>
+<tr><td class="text-center">10</td><td>updated_at</td><td>timestamptz</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
+</table>
+
+<ul>
+  <li>表格中唯一约束</li>
+</ul>
+<table class="table table-bordered table-striped table-condensed">
+  <tr>
+<th class="info_header">序号</th><th class="info_header">约束名</th><th class="info_header">约束字段</th>  </tr>
+<tr><td>1</td><td>uk_iyq5494wgreojxq596lo7iijs</td><td>school_id,code</td>  </tr>
+</table>
+
+  </div>
+</div>
 
 ### 表格 extern_schools 校外教育机构
 <div class="card card-info">
@@ -136,7 +178,7 @@ version: ["0.35.0"]
 <tr><td class="text-center">7</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
 <tr><td class="text-center">8</td><td>minor</td><td>boolean</td><td class="text-center">否</td><td>是否辅修</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>name</td><td>varchar(100)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
-<tr><td class="text-center">10</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>适用学校ID</td><td>            <a href="/model/base/common/space.html#表格-schools-学校信息">base.schools</a>
+<tr><td class="text-center">10</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>适用学校ID</td><td>            <a href="/model/base/common/misc.html#表格-schools-学校信息">base.schools</a>
 </td>  </tr>
 <tr><td class="text-center">11</td><td>updated_at</td><td>timestamptz</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>
@@ -170,7 +212,7 @@ version: ["0.35.0"]
 </ul>
 <table class="table table-bordered table-striped table-condensed">
 <tr><th class="info_header text-center">序号</th><th class="info_header">字段名</th><th class="info_header">字段类型</th><th class="info_header text-center">是否可空</th><th class="info_header">描述</th><th class="info_header">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>campus_id</td><td>integer</td><td class="text-center">否</td><td>校区信息ID</td><td>            <a href="/model/base/common/space.html#表格-campuses-校区信息">base.campuses</a>
+<tr><td class="text-center">1</td><td>campus_id</td><td>integer</td><td class="text-center">否</td><td>校区信息ID</td><td>            <a href="/model/base/common/misc.html#表格-campuses-校区信息">base.campuses</a>
 </td>  </tr>
 <tr><td class="text-center">2</td><td>project_id</td><td>integer</td><td class="text-center">否</td><td>项目ID</td><td>            <a href="/model/base/common/misc.html#表格-projects-项目">base.projects</a>
 </td>  </tr>
@@ -363,9 +405,9 @@ version: ["0.35.0"]
   </div>
 </div>
 
-### 表格 staff_titles 职称信息
+### 表格 schools 学校信息
 <div class="card card-info">
-  <div class="card-header"><h5 id="table_base.staff_titles">表格base.staff_titles</h5></div>
+  <div class="card-header"><h5 id="table_base.schools">表格base.schools</h5></div>
   <div class="card-body">
 <ul>
   <li>表格说明</li>
@@ -373,83 +415,29 @@ version: ["0.35.0"]
 
 <table class="table table-bordered table-striped table-condensed ">
 <tr><th class="info_header">表名</th><th class="info_header">主键</th><th class="info_header" style="width:40%">注释</th>  </tr>
-<tr><td>base.staff_titles</td><td>id</td><td>职称信息</td>  </tr>
+<tr><td>base.schools</td><td>id</td><td>学校信息</td>  </tr>
 </table>
 <ul>
   <li>表格中的列</li>
 </ul>
 <table class="table table-bordered table-striped table-condensed">
 <tr><th class="info_header text-center">序号</th><th class="info_header">字段名</th><th class="info_header">字段类型</th><th class="info_header text-center">是否可空</th><th class="info_header">描述</th><th class="info_header">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
+<tr><td class="text-center">1</td><td>id</td><td>integer</td><td class="text-center">否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效日期</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
-<tr><td class="text-center">4</td><td>staff_id</td><td>bigint</td><td class="text-center">否</td><td>教职工ID</td><td>            <a href="/model/base/common/misc.html#表格-staffs-教职工信息">base.staffs</a>
+<tr><td class="text-center">3</td><td>category_id</td><td>integer</td><td class="text-center">否</td><td>高校性质类别ID</td><td>            <a href="/model/code/edu/all.html#表格-institution_categories-高校性质类别">code.institution_categories</a>
 </td>  </tr>
-<tr><td class="text-center">5</td><td>title_id</td><td>integer</td><td class="text-center">否</td><td>职称ID</td><td>            <a href="/model/code/job/all.html#表格-professional_titles-职称">code.professional_titles</a>
+<tr><td class="text-center">4</td><td>code</td><td>varchar(10)</td><td class="text-center">否</td><td>代码</td><td></td>  </tr>
+<tr><td class="text-center">5</td><td>division_id</td><td>integer</td><td class="text-center">否</td><td>省份ID</td><td>            <a href="/model/code/geo/all.html#表格-divisions-行政区划">code.divisions</a>
 </td>  </tr>
-</table>
-
-
-  </div>
-</div>
-
-### 表格 staffs 教职工信息
-<div class="card card-info">
-  <div class="card-header"><h5 id="table_base.staffs">表格base.staffs</h5></div>
-  <div class="card-body">
-<ul>
-  <li>表格说明</li>
-</ul>
-
-<table class="table table-bordered table-striped table-condensed ">
-<tr><th class="info_header">表名</th><th class="info_header">主键</th><th class="info_header" style="width:40%">注释</th>  </tr>
-<tr><td>base.staffs</td><td>id</td><td>教职工信息</td>  </tr>
-</table>
-<ul>
-  <li>表格中的列</li>
-</ul>
-<table class="table table-bordered table-striped table-condensed">
-<tr><th class="info_header text-center">序号</th><th class="info_header">字段名</th><th class="info_header">字段类型</th><th class="info_header text-center">是否可空</th><th class="info_header">描述</th><th class="info_header">引用表</th>  </tr>
-<tr><td class="text-center">1</td><td>id</td><td>bigint</td><td class="text-center">否</td><td>非业务主键:datetime</td><td></td>  </tr>
-<tr><td class="text-center">2</td><td>begin_on</td><td>date</td><td class="text-center">否</td><td>生效日期</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>birthday</td><td>date</td><td class="text-center">是</td><td>出生日期</td><td></td>  </tr>
-<tr><td class="text-center">4</td><td>code</td><td>varchar(20)</td><td class="text-center">否</td><td>代码</td><td></td>  </tr>
-<tr><td class="text-center">5</td><td>degree_award_by</td><td>varchar(255)</td><td class="text-center">是</td><td>最高学位授予单位</td><td></td>  </tr>
-<tr><td class="text-center">6</td><td>degree_id</td><td>integer</td><td class="text-center">是</td><td>学位ID</td><td>            <a href="/model/code/edu/all.html#表格-degrees-学位">code.degrees</a>
+<tr><td class="text-center">6</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
+<tr><td class="text-center">7</td><td>identifier</td><td>varchar(10)</td><td class="text-center">是</td><td>标识码(10位)</td><td></td>  </tr>
+<tr><td class="text-center">8</td><td>institution_id</td><td>integer</td><td class="text-center">否</td><td>研究机构ID</td><td>            <a href="/model/code/edu/all.html#表格-institutions-科研机构">code.institutions</a>
 </td>  </tr>
-<tr><td class="text-center">7</td><td>degree_level_id</td><td>integer</td><td class="text-center">是</td><td>最高学位ID</td><td>            <a href="/model/code/edu/all.html#表格-degree_levels-学位层次">code.degree_levels</a>
-</td>  </tr>
-<tr><td class="text-center">8</td><td>department_id</td><td>integer</td><td class="text-center">否</td><td>部门组织机构信息ID</td><td>            <a href="/model/base/common/user.html#表格-departments-部门组织机构信息">base.departments</a>
-</td>  </tr>
-<tr><td class="text-center">9</td><td>education_degree_id</td><td>integer</td><td class="text-center">是</td><td>最高学历ID</td><td>            <a href="/model/code/edu/all.html#表格-education_degrees-学历(文化程度)">code.education_degrees</a>
-</td>  </tr>
-<tr><td class="text-center">10</td><td>email</td><td>varchar(100)</td><td class="text-center">是</td><td>电子邮件</td><td></td>  </tr>
-<tr><td class="text-center">11</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
-<tr><td class="text-center">12</td><td>external_</td><td>boolean</td><td class="text-center">否</td><td>是否外聘</td><td></td>  </tr>
-<tr><td class="text-center">13</td><td>formal_hr</td><td>boolean</td><td class="text-center">否</td><td>是否在编</td><td></td>  </tr>
-<tr><td class="text-center">14</td><td>gender_id</td><td>integer</td><td class="text-center">否</td><td>性别ID</td><td>            <a href="/model/code/person/all.html#表格-genders-性别">code.genders</a>
-</td>  </tr>
-<tr><td class="text-center">15</td><td>homepage</td><td>varchar(200)</td><td class="text-center">是</td><td>个人主页</td><td></td>  </tr>
-<tr><td class="text-center">16</td><td>id_number</td><td>varchar(18)</td><td class="text-center">是</td><td>证件号码</td><td></td>  </tr>
-<tr><td class="text-center">17</td><td>id_type_id</td><td>integer</td><td class="text-center">是</td><td>证件类型ID</td><td>            <a href="/model/code/person/all.html#表格-id_types-证件类型">code.id_types</a>
-</td>  </tr>
-<tr><td class="text-center">18</td><td>mobile</td><td>varchar(20)</td><td class="text-center">是</td><td>联系手机</td><td></td>  </tr>
-<tr><td class="text-center">19</td><td>name</td><td>varchar(100)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
-<tr><td class="text-center">20</td><td>nation_id</td><td>integer</td><td class="text-center">是</td><td>民族ID</td><td>            <a href="/model/code/person/all.html#表格-nations-民族">code.nations</a>
-</td>  </tr>
-<tr><td class="text-center">21</td><td>organization</td><td>varchar(200)</td><td class="text-center">是</td><td>全职工作单位</td><td></td>  </tr>
-<tr><td class="text-center">22</td><td>parttime</td><td>boolean</td><td class="text-center">否</td><td>是否兼职</td><td></td>  </tr>
-<tr><td class="text-center">23</td><td>political_status_id</td><td>integer</td><td class="text-center">是</td><td>政治面貌ID</td><td>            <a href="/model/code/person/all.html#表格-political_statuses-政治面貌">code.political_statuses</a>
-</td>  </tr>
-<tr><td class="text-center">24</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校信息ID</td><td>            <a href="/model/base/common/space.html#表格-schools-学校信息">base.schools</a>
-</td>  </tr>
-<tr><td class="text-center">25</td><td>staff_type_id</td><td>integer</td><td class="text-center">否</td><td>教职工类别ID</td><td>            <a href="/model/code/hr/all.html#表格-staff_types-教职工类别">code.staff_types</a>
-</td>  </tr>
-<tr><td class="text-center">26</td><td>status_id</td><td>integer</td><td class="text-center">否</td><td>在职状态ID</td><td>            <a href="/model/code/hr/all.html#表格-work_statuses-在职状态">code.work_statuses</a>
-</td>  </tr>
-<tr><td class="text-center">27</td><td>title_id</td><td>integer</td><td class="text-center">是</td><td>最高职称ID</td><td>            <a href="/model/code/job/all.html#表格-professional_titles-职称">code.professional_titles</a>
-</td>  </tr>
-<tr><td class="text-center">28</td><td>updated_at</td><td>timestamptz</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
+<tr><td class="text-center">9</td><td>logo_url</td><td>varchar(255)</td><td class="text-center">否</td><td>Logo URL</td><td></td>  </tr>
+<tr><td class="text-center">10</td><td>name</td><td>varchar(50)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
+<tr><td class="text-center">11</td><td>short_name</td><td>varchar(255)</td><td class="text-center">是</td><td>简称</td><td></td>  </tr>
+<tr><td class="text-center">12</td><td>superior_org</td><td>varchar(50)</td><td class="text-center">是</td><td>主管部门</td><td></td>  </tr>
+<tr><td class="text-center">13</td><td>uscc</td><td>varchar(18)</td><td class="text-center">是</td><td>统一信用代码</td><td></td>  </tr>
 </table>
 
 <ul>
@@ -458,7 +446,7 @@ version: ["0.35.0"]
 <table class="table table-bordered table-striped table-condensed">
   <tr>
 <th class="info_header">序号</th><th class="info_header">约束名</th><th class="info_header">约束字段</th>  </tr>
-<tr><td>1</td><td>uk_ksaq070k32jb6aey065dd9xv0</td><td>school_id,code</td>  </tr>
+<tr><td>1</td><td>schools_code_key</td><td>code</td>  </tr>
 </table>
 
   </div>

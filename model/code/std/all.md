@@ -2,8 +2,8 @@
 layout: page
 title: 学生 代码
 description: "学生代码"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录

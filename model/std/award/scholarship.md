@@ -2,8 +2,8 @@
 layout: page
 title: 评奖评优 奖学金
 description: "评奖评优奖学金"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录

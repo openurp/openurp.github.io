@@ -2,8 +2,8 @@
 layout: page
 title: 学生信息 学生信息
 description: "学生信息学生信息"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录
@@ -235,7 +235,7 @@ version: ["0.35.0"]
 <tr><td class="text-center">32</td><td>study_on</td><td>date</td><td class="text-center">否</td><td>入学日期</td><td></td>  </tr>
 <tr><td class="text-center">33</td><td>study_type_id</td><td>integer</td><td class="text-center">否</td><td>学习形式ID</td><td>            <a href="/model/code/edu/all.html#表格-study_types-学习形式">code.study_types</a>
 </td>  </tr>
-<tr><td class="text-center">34</td><td>tutor_id</td><td>bigint</td><td class="text-center">是</td><td>教师信息ID</td><td>            <a href="/model/base/edu/core.html#表格-teachers-教师信息">base.teachers</a>
+<tr><td class="text-center">34</td><td>tutor_id</td><td>bigint</td><td class="text-center">是</td><td>教师信息ID</td><td>            <a href="/model/base/hr/core.html#表格-teachers-教师信息">base.teachers</a>
 </td>  </tr>
 </table>
 

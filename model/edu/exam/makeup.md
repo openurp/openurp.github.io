@@ -2,8 +2,8 @@
 layout: page
 title: 考务管理 毕业补考
 description: "考务管理毕业补考"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录
@@ -49,7 +49,7 @@ version: ["0.35.0"]
 </td>  </tr>
 <tr><td class="text-center">8</td><td>status</td><td>integer</td><td class="text-center">否</td><td>成绩录入状态</td><td></td>  </tr>
 <tr><td class="text-center">9</td><td>std_count</td><td>integer</td><td class="text-center">否</td><td>学生人数</td><td></td>  </tr>
-<tr><td class="text-center">10</td><td>teacher_id</td><td>bigint</td><td class="text-center">是</td><td>阅卷老师ID</td><td>            <a href="/model/base/edu/core.html#表格-teachers-教师信息">base.teachers</a>
+<tr><td class="text-center">10</td><td>teacher_id</td><td>bigint</td><td class="text-center">是</td><td>阅卷老师ID</td><td>            <a href="/model/base/hr/core.html#表格-teachers-教师信息">base.teachers</a>
 </td>  </tr>
 </table>
 

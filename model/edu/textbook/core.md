@@ -2,8 +2,8 @@
 layout: page
 title: 教材信息 核心部分
 description: "教材信息核心部分"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录

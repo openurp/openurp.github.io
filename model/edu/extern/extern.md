@@ -2,8 +2,8 @@
 layout: page
 title: 校外考试 外校成绩
 description: "校外考试外校成绩"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录

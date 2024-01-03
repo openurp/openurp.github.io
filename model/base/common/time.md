@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 基础信息 时间相关
-description: "基础信息时间相关"
-categories: [model-0.35.0]
-version: ["0.35.0"]
+title: 通用 时间相关
+description: "通用时间相关"
+categories: [model-0.36.0]
+version: ["0.36.0"]
 ---
 {% include JB/setup %}
  目  录
@@ -38,7 +38,7 @@ version: ["0.35.0"]
 <tr><th class="info_header text-center">序号</th><th class="info_header">字段名</th><th class="info_header">字段类型</th><th class="info_header text-center">是否可空</th><th class="info_header">描述</th><th class="info_header">引用表</th>  </tr>
 <tr><td class="text-center">1</td><td>id</td><td>integer</td><td class="text-center">否</td><td>非业务主键:auto_increment</td><td></td>  </tr>
 <tr><td class="text-center">2</td><td>name</td><td>varchar(100)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
-<tr><td class="text-center">3</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校信息ID</td><td>            <a href="/model/base/common/space.html#表格-schools-学校信息">base.schools</a>
+<tr><td class="text-center">3</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校信息ID</td><td>            <a href="/model/base/common/misc.html#表格-schools-学校信息">base.schools</a>
 </td>  </tr>
 <tr><td class="text-center">4</td><td>vacation</td><td>boolean</td><td class="text-center">否</td><td>是否假期</td><td></td>  </tr>
 </table>
@@ -70,7 +70,7 @@ version: ["0.35.0"]
 <tr><td class="text-center">4</td><td>end_on</td><td>date</td><td class="text-center">是</td><td>失效日期</td><td></td>  </tr>
 <tr><td class="text-center">5</td><td>first_weekday</td><td>integer</td><td class="text-center">否</td><td>每周开始时间</td><td></td>  </tr>
 <tr><td class="text-center">6</td><td>name</td><td>varchar(80)</td><td class="text-center">否</td><td>名称</td><td></td>  </tr>
-<tr><td class="text-center">7</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校ID</td><td>            <a href="/model/base/common/space.html#表格-schools-学校信息">base.schools</a>
+<tr><td class="text-center">7</td><td>school_id</td><td>integer</td><td class="text-center">否</td><td>学校ID</td><td>            <a href="/model/base/common/misc.html#表格-schools-学校信息">base.schools</a>
 </td>  </tr>
 <tr><td class="text-center">8</td><td>updated_at</td><td>timestamptz</td><td class="text-center">否</td><td>更新时间</td><td></td>  </tr>
 </table>
