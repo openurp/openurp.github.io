@@ -13,8 +13,6 @@ cd into the `openurp.github.io` directory, and build by:
     jekyll serve
 
 The generated site is available at `http://localhost:4000`
-
-
 ## License ##
 
 All documentation contained in this repository is licensed by[GNU Free Documentation License](http://www.gnu.org/copyleft/fdl.html).

@@ -1,0 +1,46 @@
+comments
+comment on table cfg.edu_room_apply_reserved_times is '借用保留时间@room.config';
+comment on column cfg.edu_room_apply_reserved_times.id is '非业务主键:datetime';
+comment on column cfg.edu_room_apply_reserved_times.begin_on is '开始日期';
+comment on column cfg.edu_room_apply_reserved_times.building_id is '楼房建筑物ID';
+comment on column cfg.edu_room_apply_reserved_times.campus_id is '校区信息ID';
+comment on column cfg.edu_room_apply_reserved_times.end_on is '结束日期';
+comment on column cfg.edu_room_apply_reserved_times.remark is '说明';
+comment on column cfg.edu_room_apply_reserved_times.school_id is '学校信息ID';
+comment on column cfg.edu_cert_exempt_settings.certificate_id is '校外证书ID';
+comment on column cfg.edu_cert_signup_exclusives.certificate_id is '校外证书ID';
+comment on column cfg.edu_cert_signup_settings.certificate_id is '校外证书ID';
+comment on table edu.c_certificates is '校外证书@extern.code';
+comment on column edu.c_certificates.id is '非业务主键:code';
+comment on column edu.c_certificates.begin_on is '生效日期';
+comment on column edu.c_certificates.category_id is '证书类型ID';
+comment on column edu.c_certificates.code is '代码';
+comment on column edu.c_certificates.en_name is '英文名称';
+comment on column edu.c_certificates.end_on is '失效日期';
+comment on column edu.c_certificates.institution_code is '教育机构代码';
+comment on column edu.c_certificates.institution_name is '教育机构名称';
+comment on column edu.c_certificates.name is '名称';
+comment on column edu.c_certificates.remark is '备注';
+comment on column edu.c_certificates.updated_at is '修改时间';
+comment on table edu.std_leaves is '学生请假@attendance';
+comment on column edu.std_leaves.id is '非业务主键:datetime';
+comment on column edu.std_leaves.begin_at is '开始时间';
+comment on column edu.std_leaves.end_at is '结束时间';
+comment on column edu.std_leaves.leave_type is '请假类型';
+comment on column edu.std_leaves.reason is '请假事由';
+comment on column edu.std_leaves.semester_id is '学年学期ID';
+comment on column edu.std_leaves.std_id is '学籍信息实现ID';
+comment on table edu.attendances is '学生出勤统计';
+comment on column edu.attendances.absent is '缺勤次数';
+comment on column edu.attendances.clazz_id is '教学任务ID';
+comment on column edu.attendances.late is '迟到早退次数';
+comment on column edu.attendances.present is '出勤次数';
+comment on column edu.attendances.leave is '请假次数';
+comment on table edu.c_certificate_categories is '校外证书类型';
+comment on column edu.cert_exempt_applies.certificate_id is '校外证书ID';
+comment on column edu.cert_signups.certificate_id is '校外证书ID';
+comment on column edu.certificate_grades.certificate_id is '校外证书ID';
+comment on column edu.certificate_grades.semester_id is '学年学期ID';
+comment on column edu.certificate_grades.subject is '科目';
+
+{% endhighlight %}

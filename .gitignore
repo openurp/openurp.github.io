@@ -1,5 +1,10 @@
 *~
 .*
-
-# jykyll build output directies
 _site
+node_modules
+dist
+cache
+.temp
+.DS_Store
+.vitepress/cache
+.idea

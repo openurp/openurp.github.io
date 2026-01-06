@@ -1,10 +1,3 @@
----
-layout: page
-title: 部署
-header: 部署
-group: navigation
----
-{% include JB/setup %}
 
 ### 部署软件
 * [准备环境](/deploy/env.html)
