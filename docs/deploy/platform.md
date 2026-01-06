@@ -28,7 +28,7 @@ home=~/.ems</Options>
     <Deployment webapp="micdn.asset" on="micdn_asset"  path="/static"/>
   </Deployments>
 </Sas>
-{% endhighlight %}
+```
 
 ### 2. 配置static
 
@@ -40,7 +40,7 @@ home=~/.ems</Options>
 
 修改asset.xml的文件内容如下:
 
-{% highlight xml %}
+```xml
 <asset base="/home/openurp/.ems/static">
   <repository remote="https://repo1.maven.org/maven2" local="/home/openurp/.m2/repository"/>
   <contexts>
@@ -128,7 +128,7 @@ home=~/.ems</Options>
     </context>
   </contexts>
 </asset>
-{% endhighlight %}
+```
 
 通过scp或者winscp上传banner.jpg,bg.jgp,weixin.png图片。
 
@@ -168,7 +168,7 @@ home=~/.ems</Options>
     [openurp@centos8 ~]$ touch ~/.ems/platform/cas.xml
 
 将以下内容复制到文件cas.xml中.
-{% highlight xml %}
+```xml
 <?xml version="1.0"?>
 <app secret="openurp-platform-casapp">
   <resources>
@@ -189,7 +189,7 @@ home=~/.ems</Options>
     <login enableCaptcha="true"  forceHttps="false"></login>
   </config>
 </app>
-{% endhighlight %}
+```
 
 这里的password没有加密，如需要加密，则需要将加密的密文，写成?开头的字符串。
 
@@ -199,7 +199,7 @@ home=~/.ems</Options>
 
     [openurp@centos8 ~]$ touch ~/.ems/platform/portal.xml
 
-{% highlight xml %}
+```xml
 <?xml version="1.0"?>
 <app secret="openurp-portal-webapp">
   <resources>
@@ -213,13 +213,13 @@ home=~/.ems</Options>
     </datasource>
   </resources>
 </app>
-{% endhighlight %}
+```
 
 4.3 建立ws数据源
 
     [openurp@centos8 ~]$ touch ~/.ems/platform/ws.xml
 
-{% highlight xml %}
+```xml
 <?xml version="1.0"?>
 <app secret="openurp-platform-ws">
   <resources>
@@ -233,13 +233,13 @@ home=~/.ems</Options>
     </datasource>
   </resources>
 </app>
-{% endhighlight %}
+```
 
 4.4 建立adminapp数据源
 
     [openurp@centos8 ~]$ touch ~/.ems/platform/adminapp.xml
 
-{% highlight xml %}
+```xml
 <?xml version="1.0"?>
 <app secret="openurp-platform-adminapp">
   <resources>
@@ -253,13 +253,13 @@ home=~/.ems</Options>
     </datasource>
   </resources>
 </app>
-{% endhighlight %}
+```
 
 4.5 建立userapp数据源
 
     [openurp@centos8 ~]$ touch ~/.ems/platform/userapp.xml
 
-{% highlight xml %}
+```xml
 <?xml version="1.0"?>
 <app secret="openurp-platform-userapp">
   <resources>
@@ -273,7 +273,7 @@ home=~/.ems</Options>
     </datasource>
   </resources>
 </app>
-{% endhighlight %}
+```
 
 ### 5. 配置openurp全局属性
 

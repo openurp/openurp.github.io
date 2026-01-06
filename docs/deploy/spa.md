@@ -33,7 +33,7 @@
 解压spa.zip到D:目录下，解压后出现D:\spa\conf等目录。
 编辑D:\spa\conf\spa.xml文件，如下
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Spa port="8888">
   <Server url="http://{spa_server}/edu/spa/student/"/>
@@ -43,7 +43,7 @@
 	<appKey>{应用KEY}</appKey>
   </CardDriver>
 </Spa>
-{% endhighlight %}
+```
 
 其中以下参数需要外部获得，再行填入：
 
