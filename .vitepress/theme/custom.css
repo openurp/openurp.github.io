@@ -125,6 +125,15 @@
   }
 }
 
+@media (min-width: 960px) {
+  .VPHero .text { font-size: 3rem; }
+  .VPHero .name { font-size: 3rem; }
+}
+@media (min-width: 1280px) {
+  .VPHero .text { font-size: 3.25 rem; }
+  .VPHero .name { font-size: 3.25 rem; }
+}
+
 body{
   font-size: 14px;
 }

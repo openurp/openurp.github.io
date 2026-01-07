@@ -26,7 +26,7 @@ export default defineConfig({
         items: [
           { text: '⚒️Dev', link: '/dev' },
           { text: '📈Model', link: '/model' },
-          { text: '📈Deploy', link: '/deploy' },
+          { text: '🚢Deploy', link: '/deploy' },
         ]
       }
     ],
