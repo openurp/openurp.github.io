@@ -1,0 +1,161 @@
+/* 全局基础样式调整：适配技术文档阅读习惯 */
+:root {
+  /* 调整默认字体大小（从 16px 改为 15px，更适合技术文档密集阅读） */
+  --vp-font-size-base: 15px;
+  /* 行间距优化（1.6 倍行高，提升长文本可读性） */
+  --vp-line-height-base: 1.6;
+  /* 内容区最大宽度（从默认 ~900px 扩展到 1200px，适配右侧 outline） */
+  --vp-layout-content-max-width: 1200px;
+  /* 左侧导航宽度（从 240px 调整为 260px，平衡内容区与导航） */
+  --vp-sidebar-width: 200px;
+  /* 右侧 outline 宽度（默认 200px，微调为 220px，避免挤压内容） */
+  --vp-outline-width: 220px;
+  --vp-layout-max-width: 100%;
+}
+
+/* 缩小页面左右默认边距（解决空白过多问题） */
+.vp-layout {
+  padding-left: clamp(1rem, 3vw, 2rem) !important; /* 左边距：最小1rem，最大2rem */
+  padding-right: clamp(1rem, 3vw, 2rem) !important; /* 右边距：同上，适配不同屏幕 */
+}
+
+/* 内容区字体细化：标题与正文区分更清晰 */
+/* 页面主标题（h1）：适度缩小，避免过于突兀 */
+.vp-doc h1 {
+  font-size: 1.8rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* 二级标题（h2）：优化层级感 */
+.vp-doc h2 {
+  font-size: 1.4rem !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  padding-top: 1rem !important;
+}
+
+/* 三级标题（h3）：适配技术文档频繁使用的子标题 */
+.vp-doc h3 {
+  font-size: 1.2rem !important;
+  margin-top: 1.8rem !important;
+  margin-bottom: 0.8rem !important;
+}
+
+/* 正文文本：优化字重和间距，减轻阅读压力 */
+.vp-doc p {
+  font-weight: 400 !important; /* 避免默认过粗 */
+  margin-bottom: 1rem !important; /* 段落间距适中 */
+  letter-spacing: 0.02em !important; /* 轻微字间距，提升可读性 */
+}
+
+/* 代码块优化（技术文档核心需求） */
+.vp-doc pre {
+  font-size: 0.95rem !important; /* 代码字体略小于正文，节省空间 */
+  line-height: 1.5 !important; /* 代码行间距紧凑，减少滚动 */
+  padding: 1rem !important;
+  border-radius: 6px !important;
+}
+
+.vp-doc code {
+  font-size: 0.9rem !important;
+}
+
+/* 链接颜色更醒目，hover 效果柔和 */
+.vp-doc a {
+  color: #2563eb !important; /* 蓝色链接，符合技术文档习惯 */
+  text-decoration: none !important;
+}
+.vp-doc a:hover {
+  color: #1d4ed8 !important;
+  text-decoration: underline !important;
+}
+.vp-doc ul, .vp-doc ol {
+  padding-left: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+.vp-doc li {
+  margin-bottom: 0.5rem !important;
+}
+.vp-doc table {
+  font-size: 0.95rem !important;
+  width: 100% !important;
+  border-collapse: collapse !important;
+}
+.vp-doc th, .vp-doc td {
+  padding: 0.8rem !important;
+}
+
+@media (min-width: 960px) {
+  .VPContent .VPDoc {
+    padding: 24px 16px 0;
+  }
+  .VPContent .VPDoc .content {
+    padding: 0 16px 64px;
+  }
+  .VPDoc .container .content .content-container {
+    max-width: unset;
+  }
+  .VPDoc .container .aside {
+    padding-left: 16px;
+  }
+}
+
+/* 响应式适配：小屏幕自动调整，避免布局错乱 */
+@media (max-width: 1280px) {
+  :root {
+    --vp-layout-content-max-width: 1000px; /* 中等屏幕缩小内容区宽度 */
+  }
+}
+
+@media (max-width: 960px) {
+  :root {
+    --vp-sidebar-width: 240px; /* 小屏幕缩小导航宽度 */
+    --vp-outline-width: 180px; /* 小屏幕缩小 outline 宽度 */
+  }
+}
+
+@media (max-width: 768px) {
+  /* 移动端隐藏 outline，内容区占满宽度 */
+  .vp-layout {
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+  }
+  :root {
+    --vp-layout-content-max-width: 100%; /* 移动端内容区全屏 */
+  }
+}
+
+body{
+  font-size: 14px;
+}
+.vp-doc a{
+  color: #337ab7 !important;
+}
+
+/*自定义css*/
+table.table-mini{
+  width: 100% !important;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+table.table-mini tbody {
+  width: 100%;
+  display: table;
+}
+
+table.table-mini td,
+table.table-mini th {
+  box-sizing: border-box;
+  padding: 5px 5px !important;
+  word-wrap: break-word;
+}
+
+.info_header {
+  color: #8a6d3b !important;
+  background-color: #fcf8e3 !important;
+  border-color: #faebcc !important;
+}
+.text-center {
+  text-align: center !important;
+}
