@@ -1,0 +1,1 @@
+import{_ as i,c as a,o as t,ae as n}from"./chunks/framework.DNjB2eFM.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"deploy/env.md","filePath":"deploy/env.md"}'),e={name:"deploy/env.md"};function p(l,s,h,r,o,k){return t(),a("div",null,[...s[0]||(s[0]=[n("",25)])])}const g=i(e,[["render",p]]);export{d as __pageData,g as default};

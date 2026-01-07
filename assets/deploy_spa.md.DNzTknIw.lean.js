@@ -1,0 +1,1 @@
+import{_ as i,c as a,o as l,ae as t}from"./chunks/framework.DNjB2eFM.js";const o=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"deploy/spa.md","filePath":"deploy/spa.md"}'),p={name:"deploy/spa.md"};function n(e,s,h,k,r,E){return l(),a("div",null,[...s[0]||(s[0]=[t("",17)])])}const g=i(p,[["render",n]]);export{o as __pageData,g as default};

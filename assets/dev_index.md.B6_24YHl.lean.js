@@ -1,0 +1,1 @@
+import{_ as a,c as t,o as d,ae as l}from"./chunks/framework.DNjB2eFM.js";const c=JSON.parse('{"title":"开发相关","description":"","frontmatter":{},"headers":[],"relativePath":"dev/index.md","filePath":"dev/index.md"}'),i={name:"dev/index.md"};function r(o,e,n,_,s,h){return d(),t("div",null,[...e[0]||(e[0]=[l("",2)])])}const f=a(i,[["render",r]]);export{c as __pageData,f as default};
