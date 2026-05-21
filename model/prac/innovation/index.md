@@ -1,87 +1,1809 @@
 
-#### 目 录
 
-##### 1. 数据库对象列表
-  * [1.1 表格一览](index.html#表格一览)
+# 实践教学 创新创业 表结构
 
-##### 2. 具体模块明细
-* [2.1 创新创业](/model/prac/innovation/misc.html)
+## 表格一览
 
-### 表格一览
-Schema prac.innovation下共计22个表，分别如下:
-
-<table class="table table-mini">
-  <tr>
-    <th class="info_header text-center">序号</th>
-    <th class="info_header">表名/描述</th>
-    <th class="info_header text-center">序号</th>
-    <th class="info_header">表名/描述</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_batches-创新批次">inv_batches</a> 创新批次</td>
-    <td>12</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_introes-项目介绍">inv_introes</a> 项目介绍</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_closure_review_details-结项评审明细">inv_closure_review_details</a> 结项评审明细</td>
-    <td>13</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_level_jounals-项目评级记录">inv_level_jounals</a> 项目评级记录</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_closure_review_groups-结项评审组">inv_closure_review_groups</a> 结项评审组</td>
-    <td>14</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_materials-项目材料">inv_materials</a> 项目材料</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_closure_review_groups_experts-评审专家">inv_closure_review_groups_experts</a> 评审专家</td>
-    <td>15</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_members-项目成员">inv_members</a> 项目成员</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_closure_reviews-结项评审">inv_closure_reviews</a> 结项评审</td>
-    <td>16</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_project_categories-项目分类">inv_project_categories</a> 项目分类</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_closures-结项">inv_closures</a> 结项</td>
-    <td>17</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_project_levels-项目等级">inv_project_levels</a> 项目等级</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_experts-评审专家">inv_experts</a> 评审专家</td>
-    <td>18</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_project_states-项目状态">inv_project_states</a> 项目状态</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_init_review_details-立项评审明细">inv_init_review_details</a> 立项评审明细</td>
-    <td>19</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_projects-项目">inv_projects</a> 项目</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_init_review_groups-立项评审组">inv_init_review_groups</a> 立项评审组</td>
-    <td>20</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_projects_instructors-指导老师">inv_projects_instructors</a> 指导老师</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_init_review_groups_experts-评审专家">inv_init_review_groups_experts</a> 评审专家</td>
-    <td>21</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_stage_types-项目阶段类型">inv_stage_types</a> 项目阶段类型</td>
-  </tr>
-  <tr>
-    <td>11</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_init_reviews-立项评审">inv_init_reviews</a> 立项评审</td>
-    <td>22</td>
-    <td><a href="/model/prac/innovation/misc.html#表格-inv_stages-项目阶段">inv_stages</a> 项目阶段</td>
-  </tr>
+<table class="table-mini">
+  <thead>
+    <tr>
+      <th class="info_header text-center" width="7%">序号</th>
+      <th class="info_header" width="43%">表名/描述</th>
+      <th class="info_header text-center" width="7%">序号</th>
+      <th class="info_header" width="43%">表名/描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td><a href="/model/prac/innovation.html#inv-batches">inv_batches</a> 创新批次</td>
+      <td class="text-center">13</td>
+      <td><a href="/model/prac/innovation.html#inv-level-jounals">inv_level_jounals</a> 项目评级记录</td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td><a href="/model/prac/innovation.html#inv-closure-review-details">inv_closure_review_details</a> 结项评审明细</td>
+      <td class="text-center">14</td>
+      <td><a href="/model/prac/innovation.html#inv-materials">inv_materials</a> 项目材料</td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td><a href="/model/prac/innovation.html#inv-closure-review-groups">inv_closure_review_groups</a> 结项评审组</td>
+      <td class="text-center">15</td>
+      <td><a href="/model/prac/innovation.html#inv-members">inv_members</a> 项目成员</td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td><a href="/model/prac/innovation.html#inv-closure-review-groups-experts">inv_closure_review_groups_experts</a> 评审专家</td>
+      <td class="text-center">16</td>
+      <td><a href="/model/prac/innovation.html#inv-project-categories">inv_project_categories</a> 项目分类</td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td><a href="/model/prac/innovation.html#inv-closure-reviews">inv_closure_reviews</a> 结项评审</td>
+      <td class="text-center">17</td>
+      <td><a href="/model/prac/innovation.html#inv-project-levels">inv_project_levels</a> 项目等级</td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td><a href="/model/prac/innovation.html#inv-closures">inv_closures</a> 结项</td>
+      <td class="text-center">18</td>
+      <td><a href="/model/prac/innovation.html#inv-project-states">inv_project_states</a> 项目状态</td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td><a href="/model/prac/innovation.html#inv-experts">inv_experts</a> 评审专家</td>
+      <td class="text-center">19</td>
+      <td><a href="/model/prac/innovation.html#inv-projects">inv_projects</a> 项目</td>
+    </tr>
+    <tr>
+      <td class="text-center">8</td>
+      <td><a href="/model/prac/innovation.html#inv-init-review-details">inv_init_review_details</a> 立项评审明细</td>
+      <td class="text-center">20</td>
+      <td><a href="/model/prac/innovation.html#inv-projects-instructors">inv_projects_instructors</a> 指导老师</td>
+    </tr>
+    <tr>
+      <td class="text-center">9</td>
+      <td><a href="/model/prac/innovation.html#inv-init-review-groups">inv_init_review_groups</a> 立项评审组</td>
+      <td class="text-center">21</td>
+      <td><a href="/model/prac/innovation.html#inv-promotion-defense-groups">inv_promotion_defense_groups</a> 推优答辩组</td>
+    </tr>
+    <tr>
+      <td class="text-center">10</td>
+      <td><a href="/model/prac/innovation.html#inv-init-review-groups-experts">inv_init_review_groups_experts</a> 评审专家</td>
+      <td class="text-center">22</td>
+      <td><a href="/model/prac/innovation.html#inv-promotion-defense-members">inv_promotion_defense_members</a> 推优答辩项目</td>
+    </tr>
+    <tr>
+      <td class="text-center">11</td>
+      <td><a href="/model/prac/innovation.html#inv-init-reviews">inv_init_reviews</a> 立项评审</td>
+      <td class="text-center">23</td>
+      <td><a href="/model/prac/innovation.html#inv-stage-types">inv_stage_types</a> 项目阶段类型</td>
+    </tr>
+    <tr>
+      <td class="text-center">12</td>
+      <td><a href="/model/prac/innovation.html#inv-introes">inv_introes</a> 项目介绍</td>
+      <td class="text-center">24</td>
+      <td><a href="/model/prac/innovation.html#inv-stages">inv_stages</a> 项目阶段</td>
+    </tr>
+  </tbody>
 </table>
 
+
+## 表格明细
+
+## inv_batches
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_batches 创新批次</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:auto_increment</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>archived</td>
+      <td>boolean</td>
+      <td class="text-center">否</td>
+      <td>是否归档</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>begin_on</td>
+      <td>date</td>
+      <td class="text-center">否</td>
+      <td>开始日期</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>end_on</td>
+      <td>date</td>
+      <td class="text-center">否</td>
+      <td>结束日期</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>name</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>名称</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>school_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>学校信息ID</td>
+      <td><a href="/model/base/user.html#schools">base.schools</a>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_closure_review_details
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_closure_review_details 结项评审明细</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">索引:&nbsp;</td>
+      <td>idx_685qcltuowforqswdtamn9twj(review_id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>comments</td>
+      <td>varchar(600)</td>
+      <td class="text-center">是</td>
+      <td>意见</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>expert_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>评审专家ID</td>
+      <td><a href="/model/prac/innovation.html#inv-experts">prac.inv_experts</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>level_id</td>
+      <td>integer</td>
+      <td class="text-center">是</td>
+      <td>项目等级ID</td>
+      <td><a href="/model/prac/innovation.html#inv-project-levels">prac.inv_project_levels</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>review_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>结项评审ID</td>
+      <td><a href="/model/prac/innovation.html#inv-closure-reviews">prac.inv_closure_reviews</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>score</td>
+      <td>float4</td>
+      <td class="text-center">是</td>
+      <td>分数</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>submited</td>
+      <td>boolean</td>
+      <td class="text-center">否</td>
+      <td>是否提交</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">8</td>
+      <td>updated_at</td>
+      <td>timestamptz</td>
+      <td class="text-center">否</td>
+      <td>更新时间</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_closure_review_groups
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_closure_review_groups 结项评审组</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>batch_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>创新批次ID</td>
+      <td><a href="/model/prac/innovation.html#inv-batches">prac.inv_batches</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>discipline_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>学科ID</td>
+      <td><a href="/model/code/all.html#disciplines">code.disciplines</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>name</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>名称</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_closure_review_groups_experts
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_closure_review_groups_experts 评审专家</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(closure_review_group_id,expert_id) </td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">索引:&nbsp;</td>
+      <td>idx_m2t7iuwlel6emr4vx22n4qehv(closure_review_group_id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>closure_review_group_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>结项评审组ID</td>
+      <td><a href="/model/prac/innovation.html#inv-closure-review-groups">prac.inv_closure_review_groups</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>expert_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>评审专家ID</td>
+      <td><a href="/model/prac/innovation.html#inv-experts">prac.inv_experts</a>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_closure_reviews
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_closure_reviews 结项评审</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>group_id</td>
+      <td>bigint</td>
+      <td class="text-center">是</td>
+      <td>结项评审组ID</td>
+      <td><a href="/model/prac/innovation.html#inv-closure-review-groups">prac.inv_closure_review_groups</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>project_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>项目ID</td>
+      <td><a href="/model/prac/innovation.html#inv-projects">prac.inv_projects</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>score</td>
+      <td>float4</td>
+      <td class="text-center">是</td>
+      <td>分数</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_closures
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_closures 结项</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>apply_exemption_reply</td>
+      <td>boolean</td>
+      <td class="text-center">否</td>
+      <td>是否申请免答辩</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>apply_reject_comment</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>免答辩不通过原因</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>exemption_confirmed</td>
+      <td>boolean</td>
+      <td class="text-center">是</td>
+      <td>免答辩是否审批通过</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>exemption_reason</td>
+      <td>varchar(200)</td>
+      <td class="text-center">是</td>
+      <td>免答辩理由</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>project_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>项目ID</td>
+      <td><a href="/model/prac/innovation.html#inv-projects">prac.inv_projects</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>reply_score</td>
+      <td>integer</td>
+      <td class="text-center">是</td>
+      <td>答辩分数</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">8</td>
+      <td>updated_at</td>
+      <td>timestamptz</td>
+      <td class="text-center">否</td>
+      <td>更新时间</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_experts
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_experts 评审专家</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>begin_on</td>
+      <td>date</td>
+      <td class="text-center">否</td>
+      <td>开始日期</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>code</td>
+      <td>varchar(20)</td>
+      <td class="text-center">否</td>
+      <td>代码</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>end_on</td>
+      <td>date</td>
+      <td class="text-center">否</td>
+      <td>结束日期</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>intro</td>
+      <td>varchar(300)</td>
+      <td class="text-center">是</td>
+      <td>简介</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>name</td>
+      <td>varchar(50)</td>
+      <td class="text-center">否</td>
+      <td>名称</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>password</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>密码</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_init_review_details
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_init_review_details 立项评审明细</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">索引:&nbsp;</td>
+      <td>idx_jt69c02pxw1fluu7c5bcjoj36(review_id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>comments</td>
+      <td>varchar(600)</td>
+      <td class="text-center">是</td>
+      <td>意见</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>expert_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>评审专家ID</td>
+      <td><a href="/model/prac/innovation.html#inv-experts">prac.inv_experts</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>passed</td>
+      <td>boolean</td>
+      <td class="text-center">是</td>
+      <td>是否同意立项</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>review_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>立项评审ID</td>
+      <td><a href="/model/prac/innovation.html#inv-init-reviews">prac.inv_init_reviews</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>score</td>
+      <td>float4</td>
+      <td class="text-center">是</td>
+      <td>分数</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>submited</td>
+      <td>boolean</td>
+      <td class="text-center">否</td>
+      <td>是否提交</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">8</td>
+      <td>updated_at</td>
+      <td>timestamptz</td>
+      <td class="text-center">否</td>
+      <td>更新时间</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_init_review_groups
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_init_review_groups 立项评审组</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>batch_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>创新批次ID</td>
+      <td><a href="/model/prac/innovation.html#inv-batches">prac.inv_batches</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>discipline_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>学科ID</td>
+      <td><a href="/model/code/all.html#disciplines">code.disciplines</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>name</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>名称</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_init_review_groups_experts
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_init_review_groups_experts 评审专家</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(init_review_group_id,expert_id) </td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">索引:&nbsp;</td>
+      <td>idx_2iin7gkfnols861113p379k4r(init_review_group_id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>expert_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>评审专家ID</td>
+      <td><a href="/model/prac/innovation.html#inv-experts">prac.inv_experts</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>init_review_group_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>立项评审组ID</td>
+      <td><a href="/model/prac/innovation.html#inv-init-review-groups">prac.inv_init_review_groups</a>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_init_reviews
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_init_reviews 立项评审</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>group_id</td>
+      <td>bigint</td>
+      <td class="text-center">是</td>
+      <td>立项评审组ID</td>
+      <td><a href="/model/prac/innovation.html#inv-init-review-groups">prac.inv_init_review_groups</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>project_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>项目ID</td>
+      <td><a href="/model/prac/innovation.html#inv-projects">prac.inv_projects</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>score</td>
+      <td>float4</td>
+      <td class="text-center">是</td>
+      <td>分数</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_introes
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_introes 项目介绍</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>innovations</td>
+      <td>varchar(300)</td>
+      <td class="text-center">否</td>
+      <td>创新点和难点</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>products</td>
+      <td>varchar(300)</td>
+      <td class="text-center">否</td>
+      <td>预期成果</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>project_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>项目ID</td>
+      <td><a href="/model/prac/innovation.html#inv-projects">prac.inv_projects</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>summaries</td>
+      <td>varchar(500)</td>
+      <td class="text-center">否</td>
+      <td>项目简介</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_level_jounals
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_level_jounals 项目评级记录</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">索引:&nbsp;</td>
+      <td>idx_buocfkkkiaei916q2ycuatltx(project_id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>award_year</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>年度</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>level_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>项目等级ID</td>
+      <td><a href="/model/prac/innovation.html#inv-project-levels">prac.inv_project_levels</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>project_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>项目ID</td>
+      <td><a href="/model/prac/innovation.html#inv-projects">prac.inv_projects</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>updated_at</td>
+      <td>timestamptz</td>
+      <td class="text-center">否</td>
+      <td>更新时间</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_materials
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_materials 项目材料</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">索引:&nbsp;</td>
+      <td>idx_4wi0894n7irbfriincwlb1v49(project_id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>file_name</td>
+      <td>varchar(200)</td>
+      <td class="text-center">否</td>
+      <td>文件名</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>file_path</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>路径</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>file_size</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>大小</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>project_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>项目ID</td>
+      <td><a href="/model/prac/innovation.html#inv-projects">prac.inv_projects</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>sha</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>sha摘要</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>stage_type_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>项目阶段类型ID</td>
+      <td><a href="/model/prac/innovation.html#inv-stage-types">prac.inv_stage_types</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">8</td>
+      <td>updated_at</td>
+      <td>timestamptz</td>
+      <td class="text-center">否</td>
+      <td>更新时间</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_members
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_members 项目成员</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) uk_nqejhpjmj9jdt59pxnaxsyf8a(project_id,std_id)</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">索引:&nbsp;</td>
+      <td>idx_jgmkdgcx6b45gje06wsrddoov(project_id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>duty</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>主要职责</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>email</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>电子邮件</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>hobby</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>擅长</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>phone</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>移动电话</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>project_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>项目ID</td>
+      <td><a href="/model/prac/innovation.html#inv-projects">prac.inv_projects</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>remark</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>备注</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">8</td>
+      <td>std_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>学生ID</td>
+      <td><a href="/model/base/edu.html#students">base.students</a>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_project_categories
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_project_categories 项目分类</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:auto_increment</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>code</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>代码</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>name</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>名称</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_project_levels
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_project_levels 项目等级</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:auto_increment</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>code</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>代码</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>name</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>名称</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_project_states
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_project_states 项目状态</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:auto_increment</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>code</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>代码</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>name</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>名称</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_projects
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_projects 项目</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>batch_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>创新批次ID</td>
+      <td><a href="/model/prac/innovation.html#inv-batches">prac.inv_batches</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>begin_on</td>
+      <td>date</td>
+      <td class="text-center">否</td>
+      <td>生效日期</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>category_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>项目分类ID</td>
+      <td><a href="/model/prac/innovation.html#inv-project-categories">prac.inv_project_categories</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>code</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>代码</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>department_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>部门组织机构信息ID</td>
+      <td><a href="/model/base/user.html#departments">base.departments</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>discipline_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>学科ID</td>
+      <td><a href="/model/code/all.html#disciplines">code.disciplines</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">8</td>
+      <td>end_on</td>
+      <td>date</td>
+      <td class="text-center">是</td>
+      <td>失效日期</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">9</td>
+      <td>funds</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>经费</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">10</td>
+      <td>intro_id</td>
+      <td>bigint</td>
+      <td class="text-center">是</td>
+      <td>项目介绍ID</td>
+      <td><a href="/model/prac/innovation.html#inv-introes">prac.inv_introes</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">11</td>
+      <td>level_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>项目等级ID</td>
+      <td><a href="/model/prac/innovation.html#inv-project-levels">prac.inv_project_levels</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">12</td>
+      <td>manager_id</td>
+      <td>bigint</td>
+      <td class="text-center">是</td>
+      <td>项目成员ID</td>
+      <td><a href="/model/prac/innovation.html#inv-members">prac.inv_members</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">13</td>
+      <td>remark</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>备注</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">14</td>
+      <td>state_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>项目状态ID</td>
+      <td><a href="/model/prac/innovation.html#inv-project-states">prac.inv_project_states</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">15</td>
+      <td>title</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>名称</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_projects_instructors
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_projects_instructors 指导老师</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(project_id,teacher_id,idx) </td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">索引:&nbsp;</td>
+      <td>idx_frrxd4jd7ukujwlkkhfixewsk(project_id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>idx</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>index no</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>project_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>项目ID</td>
+      <td><a href="/model/prac/innovation.html#inv-projects">prac.inv_projects</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>teacher_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>教师信息ID</td>
+      <td><a href="/model/base/user.html#teachers">base.teachers</a>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_promotion_defense_groups
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_promotion_defense_groups 推优答辩组</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>batch_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>创新批次ID</td>
+      <td><a href="/model/prac/innovation.html#inv-batches">prac.inv_batches</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>begin_at</td>
+      <td>smallint</td>
+      <td class="text-center">否</td>
+      <td>答辩开始时间</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>capacity</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>计划人数</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>defense_on</td>
+      <td>date</td>
+      <td class="text-center">否</td>
+      <td>答辩日期</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>end_at</td>
+      <td>smallint</td>
+      <td class="text-center">否</td>
+      <td>答辩结束时间</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>location</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>答辩地点</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">8</td>
+      <td>name</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>名称</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_promotion_defense_members
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_promotion_defense_members 推优答辩项目</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) uk_gouy23rxmvq3qpcbyfdphdthj(group_id,idx)</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">索引:&nbsp;</td>
+      <td>idx_b7p23pjlvtc8tseu6kp1vw66h(group_id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>group_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>推优答辩组ID</td>
+      <td><a href="/model/prac/innovation.html#inv-promotion-defense-groups">prac.inv_promotion_defense_groups</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>idx</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>答辩次序</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>project_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>项目ID</td>
+      <td><a href="/model/prac/innovation.html#inv-projects">prac.inv_projects</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>updated_at</td>
+      <td>timestamptz</td>
+      <td class="text-center">否</td>
+      <td>更新时间</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_stage_types
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_stage_types 项目阶段类型</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">索引:&nbsp;</td>
+      <td>idx_48xavf7sfkprspggdrro5we82(parent_id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:auto_increment</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>begin_on</td>
+      <td>date</td>
+      <td class="text-center">否</td>
+      <td>生效日期</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>code</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>代码</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>end_on</td>
+      <td>date</td>
+      <td class="text-center">是</td>
+      <td>失效日期</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>indexno</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>顺序号</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>name</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>名称</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>parent_id</td>
+      <td>integer</td>
+      <td class="text-center">是</td>
+      <td>项目阶段类型ID</td>
+      <td><a href="/model/prac/innovation.html#inv-stage-types">prac.inv_stage_types</a>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## inv_stages
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>prac.inv_stages 项目阶段</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">索引:&nbsp;</td>
+      <td>idx_ntjvah3rh2kfhrn2my4c2ye37(batch_id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:auto_increment</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>batch_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>创新批次ID</td>
+      <td><a href="/model/prac/innovation.html#inv-batches">prac.inv_batches</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>begin_at</td>
+      <td>timestamptz</td>
+      <td class="text-center">否</td>
+      <td>开始时间</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>end_at</td>
+      <td>timestamptz</td>
+      <td class="text-center">否</td>
+      <td>结束时间</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>notice_href</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>外部通知超链接</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>remark</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>备注</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>stage_type_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>项目阶段类型ID</td>
+      <td><a href="/model/prac/innovation.html#inv-stage-types">prac.inv_stage_types</a>      </td>
+    </tr>
+  </tbody>
+</table>

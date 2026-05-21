@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report title="数据结构说明" contextPath="/model">
+  <system name="OpenURP" version="v0.41.10"/>
+  <database xml="database.xml"/>
+
+   <pages template="markdown" extension=".md" >
+     <page name="index"/>
+   </pages>
+
+  <schemas>
+    <schema name="code" title="基础代码">
+      <module name="all" title="代码" tables="*" />
+    </schema>
+
+    <schema name="base" title="基础信息">
+      <module name="user" title="用户" tables="user*,depart*,people*,schools,staff*,mentor*,secretar*,president*,cadre*,tutor*,teacher*,teaching_offices">
+        <image name="teacher" title="教师" tables="teacher*,departments,users,people"/>
+        <image name="user" title="用户和部门" tables="users,departments"/>
+      </module>
+
+      <module name="time" title="学期和作息时间" tables="calendar*,semester*,*unit*,holiday*,time*,school_year*">
+        <image name="time" title="学期和作息时间" tables="calendars,semesters,time_settings,course_units"/>
+      </module>
+
+      <module name="resources" title="教室资源" tables="campuses,buildings,room*,lab*,device*,classroom*">
+        <image name="space" title="校区、教学楼、教室" tables="campuses,buildings,rooms"/>
+      </module>
+
+      <module name="edu" title="教学"
+             tables="squad*,project*,course*,major*,direction*,student*,grade*,extern*,graduate*,minor*,textbook*,theses*,versions,school_lengths,experiment*">
+        <image name="squad" title="行政班级" tables="squad*,majors,directions*,projects,departments,instructors*"/>
+        <image name="majors" title="专业" tables="major*,direction*,departments,school_length*"/>
+        <image name="student" title="学生" tables="student*,directions,majors,departments,users,people,squads"/>
+      </module>
+      <module name="misc" title="其他" tables="*"/>
+    </schema>
+
+    <schema name="edu" title="教务管理">
+      <module name="clazz" title="课程安排">
+        <image name="clazz" title="教学任务" tables="clazzes*,restriction*"/>
+        <image name="course_taker" title="学生修读课程" tables="course_taker*,clazzes,code.course_take_types,code.election_modes"/>
+        <image name="lesson" title="授课计划" tables="course_taker*,clazzes,subclazzes,lessons*,teaching_plan"/>
+        <image name="session" title="排课" tables="session*,teachers,classrooms"/>
+      </module>
+
+      <module name="course" title="课程信息"/>
+
+      <module name="exam" title="考务管理">
+        <image name="task" title="考试安排设置" tables="exam_modules*,exam_turns,exam_task*,exam_room_*"/>
+        <image name="activity" title="考试安排结果" tables="exam_takers,exam_rooms,exam_activities*,invigilations"/>
+        <image name="invigilation" title="监考设置" tables="invigilation*"/>
+        <image name="makeup" title="毕业补考结构" tables="final_makeup*"/>
+      </module>
+
+      <module name="extern" title="校外考试"/>
+      <module name="grade" title="成绩信息">
+        <image name="grades" title="学生课程成绩" tables="exam_grades,course_grades,ga_grades"/>
+        <image name="gpa" title="学生绩点统计" tables="edu.*gpas"/>
+        <image name="audit" title="计划完成情况结构" tables="edu.*audit_results"/>
+        <image name="regular" title="过程性成绩结构" tables="edu.regular*"/>
+      </module>
+
+      <module name="program" title="培养方案">
+        <image name="major" title="专业培养计划及替代课程" tables="major*"/>
+        <image name="share" title="公共课计划" tables="share*"/>
+        <image name="std_plan" title="个人计划及替代课程" tables="std_alt*,std_plan*,std_course_module*"/>
+      </module>
+
+      <module name="room" title="教室管理"/>
+
+      <module name="textbook" title="教材信息"/>
+
+      <module name="workload" title="工作量信息"/>
+    </schema>
+
+    <schema name="std" title="学籍管理">
+      <module name="award" title="评奖评优">
+        <image name="scholarship" title="奖学金" tables="scholarship_*"/>
+        <image name="stipend" title="助学金" tables="stipend_*"/>
+        <image name="subsidy" title="困难补助" tables="subsidy_*"/>
+        <image name="honor" title="荣誉称号" tables="honor_*"/>
+      </module>
+
+      <module name="exchange" title="校外学习">
+      </module>
+
+      <module name="fee" title="学费信息"/>
+
+      <module name="graduation" title="毕业审核信息">
+        <module name="graduation" >
+          <image name="result" title="毕业和学位审核" tables="graduate_*,degree_*"/>
+        </module>
+      </module>
+
+      <module name="info" title="学生信息"/>
+
+      <module name="alter" title="学籍异动"/>
+
+      <module name="register" title="报到注册"/>
+
+      <module name="transfer" title="转专业">
+        <image name="transfer" title="转专业申请结构" tables="std.transfer_*"/>
+      </module>
+    </schema>
+
+    <schema name="qos" title="教学质量">
+      <module name="base" title="评教信息">
+        <image name="questionnaires" title="问卷" tables="options,option_modules,questions,questionnaires,questionnaires_questions"/>
+      </module>
+      <module name="base" title="课程评教"/>
+      <module name="department" title="部门评教"/>
+    </schema>
+
+    <schema name="prac" title="实践教学">
+      <module name="innovation" title="创新创业">
+      </module>
+      <module name="activity" title="实践课程">
+      </module>
+      <module name="ability" title="能力素质">
+      </module>
+      <module name="mandarin" title="普通话测试">
+      </module>
+    </schema>
+
+    <schema name="degree" title="学位">
+      <module name="thesis" title="毕业设计">
+      </module>
+    </schema>
+
+    <schema name="his" title="历史数据">
+      <module name="all" title="全部表格" tables="*"/>
+    </schema>
+    <schema name="log" title="系统日志">
+      <module name="all" title="全部日志" tables="*"/>
+    </schema>
+    <schema name="cfg" title="配置信息">
+      <module name="all" title="全部配置" tables="*"/>
+    </schema>
+    <schema name="flow" title="流程信息">
+      <module name="all" title="全部流程" tables="*"/>
+    </schema>
+  </schemas>
+</report>

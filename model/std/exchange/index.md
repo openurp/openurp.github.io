@@ -1,27 +1,135 @@
 
-#### 目 录
 
-##### 1. 数据库对象列表
-  * [1.1 表格一览](index.html#表格一览)
+# 学籍管理 校外学习 表结构
 
-##### 2. 具体模块明细
-* [2.1 校外学习](/model/std/exchange/misc.html)
+## 表格一览
 
-### 表格一览
-Schema std.exchange下共计2个表，分别如下:
-
-<table class="table table-mini">
-  <tr>
-    <th class="info_header text-center">序号</th>
-    <th class="info_header">表名/描述</th>
-    <th class="info_header text-center">序号</th>
-    <th class="info_header">表名/描述</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td><a href="/model/std/exchange/misc.html#表格-exchange_programs-交换生计划">exchange_programs</a> 交换生计划</td>
-    <td>2</td>
-    <td><a href="/model/std/exchange/misc.html#表格-exchange_programs_schools-交换生计划对应学校">exchange_programs_schools</a> 交换生计划对应学校</td>
-  </tr>
+<table class="table-mini">
+  <thead>
+    <tr>
+      <th class="info_header text-center" width="7%">序号</th>
+      <th class="info_header" width="43%">表名/描述</th>
+      <th class="info_header text-center" width="7%">序号</th>
+      <th class="info_header" width="43%">表名/描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td><a href="/model/std/exchange.html#exchange-programs">exchange_programs</a> 交换生计划</td>
+      <td class="text-center">2</td>
+      <td><a href="/model/std/exchange.html#exchange-programs-schools">exchange_programs_schools</a> 交换生计划对应学校</td>
+    </tr>
+  </tbody>
 </table>
 
+
+## 表格明细
+
+## exchange_programs
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>std.exchange_programs 交换生计划</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:auto_increment</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>begin_on</td>
+      <td>date</td>
+      <td class="text-center">否</td>
+      <td>生效日期</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>end_on</td>
+      <td>date</td>
+      <td class="text-center">是</td>
+      <td>失效日期</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>name</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>名称</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>project_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>项目ID</td>
+      <td><a href="/model/base/edu.html#projects">base.projects</a>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## exchange_programs_schools
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>std.exchange_programs_schools 交换生计划对应学校</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(exchange_program_id,extern_school_id) </td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">索引:&nbsp;</td>
+      <td>idx_66bod6jp4lk8p1u4c3cf6pix4(exchange_program_id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>exchange_program_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>交换生计划ID</td>
+      <td><a href="/model/std/exchange.html#exchange-programs">std.exchange_programs</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>extern_school_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>校外教育机构ID</td>
+      <td><a href="/model/base/edu.html#extern-schools">base.extern_schools</a>      </td>
+    </tr>
+  </tbody>
+</table>

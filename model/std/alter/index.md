@@ -1,27 +1,449 @@
 
-#### 目 录
 
-##### 1. 数据库对象列表
-  * [1.1 表格一览](index.html#表格一览)
+# 学籍管理 学籍异动 表结构
 
-##### 2. 具体模块明细
-* [2.1 学籍异动](/model/std/alter/misc.html)
+## 表格一览
 
-### 表格一览
-Schema std.alter下共计2个表，分别如下:
-
-<table class="table table-mini">
-  <tr>
-    <th class="info_header text-center">序号</th>
-    <th class="info_header">表名/描述</th>
-    <th class="info_header text-center">序号</th>
-    <th class="info_header">表名/描述</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td><a href="/model/std/alter/misc.html#表格-std_alteration_items-学籍异动明细">std_alteration_items</a> 学籍异动明细</td>
-    <td>2</td>
-    <td><a href="/model/std/alter/misc.html#表格-std_alterations-学籍异动">std_alterations</a> 学籍异动</td>
-  </tr>
+<table class="table-mini">
+  <thead>
+    <tr>
+      <th class="info_header text-center" width="7%">序号</th>
+      <th class="info_header" width="43%">表名/描述</th>
+      <th class="info_header text-center" width="7%">序号</th>
+      <th class="info_header" width="43%">表名/描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td><a href="/model/std/alter.html#std-alter-applies">std_alter_applies</a> 学籍异动申请</td>
+      <td class="text-center">3</td>
+      <td><a href="/model/std/alter.html#std-alteration-items">std_alteration_items</a> 学籍异动明细</td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td><a href="/model/std/alter.html#std-alter-apply-steps">std_alter_apply_steps</a> 异动申请审核步骤</td>
+      <td class="text-center">4</td>
+      <td><a href="/model/std/alter.html#std-alterations">std_alterations</a> 学籍异动</td>
+    </tr>
+  </tbody>
 </table>
 
+
+## 表格明细
+
+## std_alter_applies
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>std.std_alter_applies 学籍异动申请</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>alter_data_json</td>
+      <td>varchar(500)</td>
+      <td class="text-center">否</td>
+      <td>提交需要变更的数据</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>alter_from</td>
+      <td>date</td>
+      <td class="text-center">是</td>
+      <td>变动开始日期</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>alter_to</td>
+      <td>date</td>
+      <td class="text-center">是</td>
+      <td>变动结束日期</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>alter_type_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>学籍异动类别ID</td>
+      <td><a href="/model/code/all.html#std-alter-types">code.std_alter_types</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>apply_at</td>
+      <td>timestamptz</td>
+      <td class="text-center">否</td>
+      <td>申请时间</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>assignees</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>受理人账户</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">8</td>
+      <td>form_data_json</td>
+      <td>varchar(500)</td>
+      <td class="text-center">否</td>
+      <td>提交表单</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">9</td>
+      <td>passed</td>
+      <td>boolean</td>
+      <td class="text-center">是</td>
+      <td>是否通过</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">10</td>
+      <td>process_id</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>流程Id</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">11</td>
+      <td>reason</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>申请理由</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">12</td>
+      <td>remark</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>备注</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">13</td>
+      <td>status</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>状态</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">14</td>
+      <td>std_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>学生ID</td>
+      <td><a href="/model/base/edu.html#students">base.students</a>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## std_alter_apply_steps
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>std.std_alter_apply_steps 异动申请审核步骤</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">索引:&nbsp;</td>
+      <td>idx_hl7uwua6rl6ruchg64kc9kput(alter_apply_id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>alter_apply_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>学籍异动申请ID</td>
+      <td><a href="/model/std/alter.html#std-alter-applies">std.std_alter_applies</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>assignee_id</td>
+      <td>bigint</td>
+      <td class="text-center">是</td>
+      <td>受理人ID</td>
+      <td><a href="/model/base/user.html#users">base.users</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>audit_at</td>
+      <td>timestamptz</td>
+      <td class="text-center">是</td>
+      <td>审核时间</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>comments</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>审核意见</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>idx</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>审核顺序</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>name</td>
+      <td>varchar(255)</td>
+      <td class="text-center">否</td>
+      <td>名称</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">8</td>
+      <td>passed</td>
+      <td>boolean</td>
+      <td class="text-center">是</td>
+      <td>审核结果</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## std_alteration_items
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>std.std_alteration_items 学籍异动明细</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">索引:&nbsp;</td>
+      <td>idx_4ajhq7ycatuntfts147dl6sx6(alteration_id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>alteration_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>学籍异动ID</td>
+      <td><a href="/model/std/alter.html#std-alterations">std.std_alterations</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>meta</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>变动属性</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>newtext</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>变动后</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>newvalue</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>变动后值</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>oldtext</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>变动前</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>oldvalue</td>
+      <td>varchar(100)</td>
+      <td class="text-center">是</td>
+      <td>变动前值</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## std_alterations
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>std.std_alterations 学籍异动</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>alter_on</td>
+      <td>date</td>
+      <td class="text-center">否</td>
+      <td>变动日期</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>alter_type_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>学籍异动类别ID</td>
+      <td><a href="/model/code/all.html#std-alter-types">code.std_alter_types</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>doc_num</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>批准文号</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>effective</td>
+      <td>boolean</td>
+      <td class="text-center">否</td>
+      <td>是否生效</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>reason_id</td>
+      <td>integer</td>
+      <td class="text-center">是</td>
+      <td>学籍异动原因ID</td>
+      <td><a href="/model/code/all.html#std-alter-reasons">code.std_alter_reasons</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>remark</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>备注</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">8</td>
+      <td>semester_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>学年学期ID</td>
+      <td><a href="/model/base/time.html#semesters">base.semesters</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">9</td>
+      <td>std_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>学生ID</td>
+      <td><a href="/model/base/edu.html#students">base.students</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">10</td>
+      <td>updated_at</td>
+      <td>timestamptz</td>
+      <td class="text-center">否</td>
+      <td>更新时间</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>

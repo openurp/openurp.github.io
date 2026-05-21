@@ -146,10 +146,6 @@ table.table-mini{
   width: 100% !important;
   table-layout: fixed;
   border-collapse: collapse;
-}
-
-table.table-mini tbody {
-  width: 100%;
   display: table;
 }
 
@@ -160,11 +156,46 @@ table.table-mini th {
   word-wrap: break-word;
 }
 
+/*自定义css*/
+table.table-entity{
+  width: 100% !important;
+  table-layout: fixed;
+  border-collapse: collapse;
+  display: table;
+  margin:0px;
+}
+
+table.table-entity tr {
+  border-top: 1px solid #faebcc !important;
+  border-bottom: 1px solid #faebcc !important;
+}
+table.table-entity td,
+table.table-entity th {
+  box-sizing: border-box;
+  padding: 1px 1px !important;
+  word-wrap: break-word;
+  border:0px;
+}
+
 .info_header {
   color: #8a6d3b !important;
   background-color: #fcf8e3 !important;
   border-color: #faebcc !important;
+  font-weight: bold;
 }
+
 .text-center {
   text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+td.table-entity-title{
+  color: #8a6d3b !important;
+  background-color: #fcf8e3 !important;
+  border-color: #faebcc !important;
+  font-weight: bold;
+  text-align: right !important;
 }

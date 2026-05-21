@@ -1,27 +1,147 @@
 
-#### 目 录
 
-##### 1. 数据库对象列表
-  * [1.1 表格一览](index.html#表格一览)
+# 学籍管理 报到注册 表结构
 
-##### 2. 具体模块明细
-* [2.1 报到注册](/model/std/register/misc.html)
+## 表格一览
 
-### 表格一览
-Schema std.register下共计1个表，分别如下:
-
-<table class="table table-mini">
-  <tr>
-    <th class="info_header text-center">序号</th>
-    <th class="info_header">表名/描述</th>
-    <th class="info_header text-center">序号</th>
-    <th class="info_header">表名/描述</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td><a href="/model/std/register/misc.html#表格-registers-注册报到信息">registers</a> 注册报到信息</td>
-    <td></td>
-    <td></td>
-  </tr>
+<table class="table-mini">
+  <thead>
+    <tr>
+      <th class="info_header text-center" width="7%">序号</th>
+      <th class="info_header" width="43%">表名/描述</th>
+      <th class="info_header text-center" width="7%">序号</th>
+      <th class="info_header" width="43%">表名/描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td><a href="/model/std/register.html#registers">registers</a> 注册报到信息</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
 </table>
 
+
+## 表格明细
+
+## registers
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>std.registers 注册报到信息</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>checkin</td>
+      <td>boolean</td>
+      <td class="text-center">是</td>
+      <td>是否报到</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>operate_by</td>
+      <td>varchar(50)</td>
+      <td class="text-center">否</td>
+      <td>操作人</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>operate_ip</td>
+      <td>varchar(100)</td>
+      <td class="text-center">否</td>
+      <td>操作IP</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>register_at</td>
+      <td>timestamptz</td>
+      <td class="text-center">是</td>
+      <td>注册时间</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>registered</td>
+      <td>boolean</td>
+      <td class="text-center">是</td>
+      <td>是否注册</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>remark</td>
+      <td>varchar(50)</td>
+      <td class="text-center">是</td>
+      <td>备注</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">8</td>
+      <td>semester_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>学年学期ID</td>
+      <td><a href="/model/base/time.html#semesters">base.semesters</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">9</td>
+      <td>std_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>学生ID</td>
+      <td><a href="/model/base/edu.html#students">base.students</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">10</td>
+      <td>tuition_paid</td>
+      <td>boolean</td>
+      <td class="text-center">是</td>
+      <td>是否缴学费</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">11</td>
+      <td>uncheckin_reason_id</td>
+      <td>integer</td>
+      <td class="text-center">是</td>
+      <td>未报到原因ID</td>
+      <td><a href="/model/code/all.html#uncheckin-reasons">code.uncheckin_reasons</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">12</td>
+      <td>unregistered_reason_id</td>
+      <td>integer</td>
+      <td class="text-center">是</td>
+      <td>未注册原因ID</td>
+      <td><a href="/model/code/all.html#unregistered-reasons">code.unregistered_reasons</a>      </td>
+    </tr>
+  </tbody>
+</table>
