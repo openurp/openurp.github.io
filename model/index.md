@@ -5,7 +5,7 @@
 * [1. 基础-代码](/model/code/all/index.html)
 * [2. 基础-用户](/model/base/user/index.html)
 * [3. 基础-学期](/model/base/time/index.html)
-* [4. 基础-资源](/model/base/resource/index.html)
+* [4. 基础-资源](/model/base/resources/index.html)
 * [5. 基础-教学](/model/base/edu/index.html)
 
 ### 3. 教务管理
