@@ -125,7 +125,7 @@
       <td>bigint</td>
       <td class="text-center">否</td>
       <td>房间ID</td>
-      <td><a href="/model/base/resources.html#classrooms">base.classrooms</a>      </td>
+      <td><a href="/model/base/resource.html#classrooms">base.classrooms</a>      </td>
     </tr>
     <tr>
       <td class="text-center">9</td>
@@ -301,7 +301,7 @@
       <td>integer</td>
       <td class="text-center">否</td>
       <td>校区信息ID</td>
-      <td><a href="/model/base/resources.html#campuses">base.campuses</a>      </td>
+      <td><a href="/model/base/resource.html#campuses">base.campuses</a>      </td>
     </tr>
     <tr>
       <td class="text-center">14</td>
@@ -417,7 +417,7 @@
       <td>bigint</td>
       <td class="text-center">否</td>
       <td>教室ID</td>
-      <td><a href="/model/base/resources.html#classrooms">base.classrooms</a>      </td>
+      <td><a href="/model/base/resource.html#classrooms">base.classrooms</a>      </td>
     </tr>
     <tr>
       <td class="text-center">2</td>
@@ -557,7 +557,7 @@
       <td>bigint</td>
       <td class="text-center">否</td>
       <td>教室ID</td>
-      <td><a href="/model/base/resources.html#classrooms">base.classrooms</a>      </td>
+      <td><a href="/model/base/resource.html#classrooms">base.classrooms</a>      </td>
     </tr>
     <tr>
       <td class="text-center">6</td>

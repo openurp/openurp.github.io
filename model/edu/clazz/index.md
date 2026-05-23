@@ -266,7 +266,7 @@
       <td>bigint</td>
       <td class="text-center">否</td>
       <td>教室ID</td>
-      <td><a href="/model/base/resources.html#classrooms">base.classrooms</a>      </td>
+      <td><a href="/model/base/resource.html#classrooms">base.classrooms</a>      </td>
     </tr>
   </tbody>
 </table>
@@ -958,7 +958,7 @@
       <td>integer</td>
       <td class="text-center">否</td>
       <td>开课校区ID</td>
-      <td><a href="/model/base/resources.html#campuses">base.campuses</a>      </td>
+      <td><a href="/model/base/resource.html#campuses">base.campuses</a>      </td>
     </tr>
     <tr>
       <td class="text-center">3</td>
@@ -1574,7 +1574,7 @@
       <td>bigint</td>
       <td class="text-center">是</td>
       <td>教室ID</td>
-      <td><a href="/model/base/resources.html#classrooms">base.classrooms</a>      </td>
+      <td><a href="/model/base/resource.html#classrooms">base.classrooms</a>      </td>
     </tr>
     <tr>
       <td class="text-center">5</td>

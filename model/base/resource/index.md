@@ -16,33 +16,33 @@
   <tbody>
     <tr>
       <td class="text-center">1</td>
-      <td><a href="/model/base/resources.html#buildings">buildings</a> 楼房建筑物</td>
+      <td><a href="/model/base/resource.html#buildings">buildings</a> 楼房建筑物</td>
       <td class="text-center">6</td>
-      <td><a href="/model/base/resources.html#devices">devices</a> 教室设备</td>
+      <td><a href="/model/base/resource.html#devices">devices</a> 教室设备</td>
     </tr>
     <tr>
       <td class="text-center">2</td>
-      <td><a href="/model/base/resources.html#campuses">campuses</a> 校区信息</td>
+      <td><a href="/model/base/resource.html#campuses">campuses</a> 校区信息</td>
       <td class="text-center">7</td>
-      <td><a href="/model/base/resources.html#lab-centers">lab_centers</a> 实验中心</td>
+      <td><a href="/model/base/resource.html#lab-centers">lab_centers</a> 实验中心</td>
     </tr>
     <tr>
       <td class="text-center">3</td>
-      <td><a href="/model/base/resources.html#classrooms">classrooms</a> 教室</td>
+      <td><a href="/model/base/resource.html#classrooms">classrooms</a> 教室</td>
       <td class="text-center">8</td>
-      <td><a href="/model/base/resources.html#lab-centers-departs">lab_centers_departs</a> 实验中心-关联学院</td>
+      <td><a href="/model/base/resource.html#lab-centers-departs">lab_centers_departs</a> 实验中心-关联学院</td>
     </tr>
     <tr>
       <td class="text-center">4</td>
-      <td><a href="/model/base/resources.html#classrooms-departs">classrooms_departs</a> 使用部门</td>
+      <td><a href="/model/base/resource.html#classrooms-departs">classrooms_departs</a> 使用部门</td>
       <td class="text-center">9</td>
-      <td><a href="/model/base/resources.html#laboratories">laboratories</a> 实验室</td>
+      <td><a href="/model/base/resource.html#laboratories">laboratories</a> 实验室</td>
     </tr>
     <tr>
       <td class="text-center">5</td>
-      <td><a href="/model/base/resources.html#classrooms-projects">classrooms_projects</a> 使用项目</td>
+      <td><a href="/model/base/resource.html#classrooms-projects">classrooms_projects</a> 使用项目</td>
       <td class="text-center">10</td>
-      <td><a href="/model/base/resources.html#rooms">rooms</a> 房间</td>
+      <td><a href="/model/base/resource.html#rooms">rooms</a> 房间</td>
     </tr>
   </tbody>
 </table>
@@ -108,7 +108,7 @@
       <td>integer</td>
       <td class="text-center">否</td>
       <td>所在校区ID</td>
-      <td><a href="/model/base/resources.html#campuses">base.campuses</a>      </td>
+      <td><a href="/model/base/resource.html#campuses">base.campuses</a>      </td>
     </tr>
     <tr>
       <td class="text-center">5</td>
@@ -324,7 +324,7 @@
       <td>integer</td>
       <td class="text-center">是</td>
       <td>教学楼ID</td>
-      <td><a href="/model/base/resources.html#buildings">base.buildings</a>      </td>
+      <td><a href="/model/base/resource.html#buildings">base.buildings</a>      </td>
     </tr>
     <tr>
       <td class="text-center">4</td>
@@ -332,7 +332,7 @@
       <td>integer</td>
       <td class="text-center">否</td>
       <td>校区ID</td>
-      <td><a href="/model/base/resources.html#campuses">base.campuses</a>      </td>
+      <td><a href="/model/base/resource.html#campuses">base.campuses</a>      </td>
     </tr>
     <tr>
       <td class="text-center">5</td>
@@ -472,7 +472,7 @@
       <td>bigint</td>
       <td class="text-center">否</td>
       <td>教室ID</td>
-      <td><a href="/model/base/resources.html#classrooms">base.classrooms</a>      </td>
+      <td><a href="/model/base/resource.html#classrooms">base.classrooms</a>      </td>
     </tr>
     <tr>
       <td class="text-center">2</td>
@@ -516,7 +516,7 @@
       <td>bigint</td>
       <td class="text-center">否</td>
       <td>教室ID</td>
-      <td><a href="/model/base/resources.html#classrooms">base.classrooms</a>      </td>
+      <td><a href="/model/base/resource.html#classrooms">base.classrooms</a>      </td>
     </tr>
     <tr>
       <td class="text-center">2</td>
@@ -624,7 +624,7 @@
       <td>bigint</td>
       <td class="text-center">是</td>
       <td>教室ID</td>
-      <td><a href="/model/base/resources.html#classrooms">base.classrooms</a>      </td>
+      <td><a href="/model/base/resource.html#classrooms">base.classrooms</a>      </td>
     </tr>
     <tr>
       <td class="text-center">10</td>
@@ -764,7 +764,7 @@
       <td>bigint</td>
       <td class="text-center">否</td>
       <td>实验中心ID</td>
-      <td><a href="/model/base/resources.html#lab-centers">base.lab_centers</a>      </td>
+      <td><a href="/model/base/resource.html#lab-centers">base.lab_centers</a>      </td>
     </tr>
   </tbody>
 </table>
@@ -836,7 +836,7 @@
       <td>bigint</td>
       <td class="text-center">是</td>
       <td>教室ID</td>
-      <td><a href="/model/base/resources.html#classrooms">base.classrooms</a>      </td>
+      <td><a href="/model/base/resource.html#classrooms">base.classrooms</a>      </td>
     </tr>
     <tr>
       <td class="text-center">7</td>
@@ -908,7 +908,7 @@
       <td>integer</td>
       <td class="text-center">是</td>
       <td>所在教学楼ID</td>
-      <td><a href="/model/base/resources.html#buildings">base.buildings</a>      </td>
+      <td><a href="/model/base/resource.html#buildings">base.buildings</a>      </td>
     </tr>
     <tr>
       <td class="text-center">4</td>
@@ -916,7 +916,7 @@
       <td>integer</td>
       <td class="text-center">否</td>
       <td>所在校区ID</td>
-      <td><a href="/model/base/resources.html#campuses">base.campuses</a>      </td>
+      <td><a href="/model/base/resource.html#campuses">base.campuses</a>      </td>
     </tr>
     <tr>
       <td class="text-center">5</td>

@@ -228,7 +228,7 @@
     </tr>
     <tr>
       <td class="text-center">5</td>
-      <td>discription</td>
+      <td>description</td>
       <td>varchar(255)</td>
       <td class="text-center">是</td>
       <td>荣誉称号描述</td>
@@ -324,7 +324,7 @@
     </tr>
     <tr>
       <td class="text-center">5</td>
-      <td>discription</td>
+      <td>description</td>
       <td>varchar(255)</td>
       <td class="text-center">是</td>
       <td>等级描述</td>
@@ -668,7 +668,7 @@
     </tr>
     <tr>
       <td class="text-center">6</td>
-      <td>discription</td>
+      <td>description</td>
       <td>varchar(255)</td>
       <td class="text-center">是</td>
       <td>奖学金描述</td>
@@ -772,7 +772,7 @@
     </tr>
     <tr>
       <td class="text-center">5</td>
-      <td>discription</td>
+      <td>description</td>
       <td>varchar(255)</td>
       <td class="text-center">是</td>
       <td>等级描述</td>
@@ -1004,7 +1004,7 @@
     </tr>
     <tr>
       <td class="text-center">6</td>
-      <td>discription</td>
+      <td>description</td>
       <td>varchar(255)</td>
       <td class="text-center">是</td>
       <td>助学金描述</td>
@@ -1100,7 +1100,7 @@
     </tr>
     <tr>
       <td class="text-center">5</td>
-      <td>discription</td>
+      <td>description</td>
       <td>varchar(255)</td>
       <td class="text-center">是</td>
       <td>等级描述</td>
@@ -1260,7 +1260,7 @@
     </tr>
     <tr>
       <td class="text-center">5</td>
-      <td>discription</td>
+      <td>description</td>
       <td>varchar(255)</td>
       <td class="text-center">是</td>
       <td>困难补助描述</td>
@@ -1348,7 +1348,7 @@
     </tr>
     <tr>
       <td class="text-center">5</td>
-      <td>discription</td>
+      <td>description</td>
       <td>varchar(255)</td>
       <td class="text-center">是</td>
       <td>等级描述</td>

@@ -165,10 +165,6 @@ table.table-entity{
   margin:0px;
 }
 
-table.table-entity tr {
-  border-top: 1px solid #faebcc !important;
-  border-bottom: 1px solid #faebcc !important;
-}
 table.table-entity td,
 table.table-entity th {
   box-sizing: border-box;

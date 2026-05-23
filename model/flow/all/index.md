@@ -17,50 +17,62 @@
     <tr>
       <td class="text-center">1</td>
       <td><a href="/model/flow/all.html#edu-cert-exempt-applies">edu_cert_exempt_applies</a> 校外证书成绩申请</td>
-      <td class="text-center">9</td>
-      <td><a href="/model/flow/all.html#edu-new-course-applies">edu_new_course_applies</a> 新开课程申请</td>
-    </tr>
-    <tr>
-      <td class="text-center">2</td>
-      <td><a href="/model/flow/all.html#edu-cert-exempt-applies-courses">edu_cert_exempt_applies_courses</a> 免修课程</td>
-      <td class="text-center">10</td>
-      <td><a href="/model/flow/all.html#edu-new-course-applies-tags">edu_new_course_applies_tags</a> 标签</td>
-    </tr>
-    <tr>
-      <td class="text-center">3</td>
-      <td><a href="/model/flow/all.html#edu-course-alt-applies">edu_course_alt_applies</a> 课程替代申请</td>
       <td class="text-center">11</td>
       <td><a href="/model/flow/all.html#edu-new-course-apply-hours">edu_new_course_apply_hours</a> 新开课程课时</td>
     </tr>
     <tr>
-      <td class="text-center">4</td>
-      <td><a href="/model/flow/all.html#edu-course-alt-applies-news">edu_course_alt_applies_news</a> 课程替代申请-新课程</td>
+      <td class="text-center">2</td>
+      <td><a href="/model/flow/all.html#edu-cert-exempt-applies-courses">edu_cert_exempt_applies_courses</a> 免修课程</td>
       <td class="text-center">12</td>
       <td><a href="/model/flow/all.html#edu-new-course-categories">edu_new_course_categories</a> 新开课程分类</td>
     </tr>
     <tr>
-      <td class="text-center">5</td>
-      <td><a href="/model/flow/all.html#edu-course-alt-applies-olds">edu_course_alt_applies_olds</a> 课程替代申请-原课程</td>
+      <td class="text-center">3</td>
+      <td><a href="/model/flow/all.html#edu-course-alt-applies">edu_course_alt_applies</a> 课程替代申请</td>
       <td class="text-center">13</td>
       <td><a href="/model/flow/all.html#edu-new-course-departs">edu_new_course_departs</a> 新开课程院系编码</td>
     </tr>
     <tr>
-      <td class="text-center">6</td>
-      <td><a href="/model/flow/all.html#edu-course-type-change-applies">edu_course_type_change_applies</a> 课程类别变更申请</td>
+      <td class="text-center">4</td>
+      <td><a href="/model/flow/all.html#edu-course-alt-applies-news">edu_course_alt_applies_news</a> 课程替代申请-新课程</td>
       <td class="text-center">14</td>
       <td><a href="/model/flow/all.html#flow-types">flow_types</a> 业务类型</td>
     </tr>
     <tr>
-      <td class="text-center">7</td>
-      <td><a href="/model/flow/all.html#edu-exam-defer-applies">edu_exam_defer_applies</a> 考试延期申请</td>
+      <td class="text-center">5</td>
+      <td><a href="/model/flow/all.html#edu-course-alt-applies-olds">edu_course_alt_applies_olds</a> 课程替代申请-原课程</td>
       <td class="text-center">15</td>
       <td><a href="/model/flow/all.html#prac-ability-credit-applies">prac_ability_credit_applies</a> 学生能力证书学分申请</td>
     </tr>
     <tr>
-      <td class="text-center">8</td>
-      <td><a href="/model/flow/all.html#edu-extern-exempt-applies">edu_extern_exempt_applies</a> 外校成绩免修申请</td>
+      <td class="text-center">6</td>
+      <td><a href="/model/flow/all.html#edu-course-type-change-applies">edu_course_type_change_applies</a> 课程类别变更申请</td>
       <td class="text-center">16</td>
       <td><a href="/model/flow/all.html#process-logs">process_logs</a> 审核日志</td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td><a href="/model/flow/all.html#edu-exam-defer-applies">edu_exam_defer_applies</a> 考试延期申请</td>
+      <td class="text-center">17</td>
+      <td><a href="/model/flow/all.html#std-grad-bachelor2nd-applies">std_grad_bachelor2nd_applies</a> 毕业学生二学位申请</td>
+    </tr>
+    <tr>
+      <td class="text-center">8</td>
+      <td><a href="/model/flow/all.html#edu-extern-exempt-applies">edu_extern_exempt_applies</a> 外校成绩免修申请</td>
+      <td class="text-center">18</td>
+      <td><a href="/model/flow/all.html#std-grad-complete-applies">std_grad_complete_applies</a> 结业申请</td>
+    </tr>
+    <tr>
+      <td class="text-center">9</td>
+      <td><a href="/model/flow/all.html#edu-new-course-applies">edu_new_course_applies</a> 新开课程申请</td>
+      <td class="text-center">19</td>
+      <td><a href="/model/flow/all.html#std-grad-defer-applies">std_grad_defer_applies</a> 延期申请</td>
+    </tr>
+    <tr>
+      <td class="text-center">10</td>
+      <td><a href="/model/flow/all.html#edu-new-course-applies-tags">edu_new_course_applies_tags</a> 标签</td>
+      <td class="text-center">20</td>
+      <td><a href="/model/flow/all.html#std-grad-degree-applies">std_grad_degree_applies</a> 学位申请</td>
     </tr>
   </tbody>
 </table>
@@ -1495,6 +1507,462 @@
       <td>timestamptz</td>
       <td class="text-center">否</td>
       <td>更新时间</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## std_grad_bachelor2nd_applies
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>flow.std_grad_bachelor2nd_applies 毕业学生二学位申请</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>batch_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>毕业批次ID</td>
+      <td><a href="/model/std/graduation.html#graduate-batches">std.graduate_batches</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>gpa</td>
+      <td>float4</td>
+      <td class="text-center">否</td>
+      <td>平均绩点</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>grade_detail</td>
+      <td>varchar(3000)</td>
+      <td class="text-center">否</td>
+      <td>成绩明细</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>std_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>学生ID</td>
+      <td><a href="/model/base/edu.html#students">base.students</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>updated_at</td>
+      <td>timestamptz</td>
+      <td class="text-center">否</td>
+      <td>更新时间</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## std_grad_complete_applies
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>flow.std_grad_complete_applies 结业申请</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) uk_ngk5gkm4resrf5lqrltl7o7ls(batch_id,std_id)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>batch_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>毕业批次ID</td>
+      <td><a href="/model/std/graduation.html#graduate-batches">std.graduate_batches</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>college_opinion</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>院系意见</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>college_passed</td>
+      <td>boolean</td>
+      <td class="text-center">是</td>
+      <td>院系是否通过</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>datas</td>
+      <td>jsonb</td>
+      <td class="text-center">否</td>
+      <td>其他申请数据</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>mobile</td>
+      <td>varchar(15)</td>
+      <td class="text-center">是</td>
+      <td>联系手机</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>passed</td>
+      <td>boolean</td>
+      <td class="text-center">是</td>
+      <td>是否通过</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">8</td>
+      <td>reason</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>申请理由</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">9</td>
+      <td>std_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>学生ID</td>
+      <td><a href="/model/base/edu.html#students">base.students</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">10</td>
+      <td>std_sign_url</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>个人签名url</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">11</td>
+      <td>updated_at</td>
+      <td>timestamptz</td>
+      <td class="text-center">否</td>
+      <td>更新时间</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## std_grad_defer_applies
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>flow.std_grad_defer_applies 延期申请</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) uk_9ljuxmekeywd7euvl1n99cl0i(batch_id,std_id)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>batch_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>毕业批次ID</td>
+      <td><a href="/model/std/graduation.html#graduate-batches">std.graduate_batches</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>college_opinion</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>院系意见</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>college_passed</td>
+      <td>boolean</td>
+      <td class="text-center">是</td>
+      <td>院系是否通过</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>datas</td>
+      <td>jsonb</td>
+      <td class="text-center">否</td>
+      <td>其他申请数据</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>defer_grad_date</td>
+      <td>date</td>
+      <td class="text-center">否</td>
+      <td>申请延期到</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>mobile</td>
+      <td>varchar(15)</td>
+      <td class="text-center">是</td>
+      <td>联系手机</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">8</td>
+      <td>passed</td>
+      <td>boolean</td>
+      <td class="text-center">是</td>
+      <td>是否通过</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">9</td>
+      <td>plan_grad_date</td>
+      <td>date</td>
+      <td class="text-center">否</td>
+      <td>计划毕业日期</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">10</td>
+      <td>reason</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>申请理由</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">11</td>
+      <td>std_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>学生ID</td>
+      <td><a href="/model/base/edu.html#students">base.students</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">12</td>
+      <td>std_sign_url</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>个人签名url</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">13</td>
+      <td>updated_at</td>
+      <td>timestamptz</td>
+      <td class="text-center">否</td>
+      <td>更新时间</td>
+      <td>      </td>
+    </tr>
+  </tbody>
+</table>
+
+## std_grad_degree_applies
+
+<table class="table-entity">
+  <tbody>
+    <tr>
+      <td class="table-entity-title" width="15%">表名:&nbsp;</td>
+      <td>flow.std_grad_degree_applies 学位申请</td>
+    </tr>
+    <tr>
+      <td class="table-entity-title">唯一约束:&nbsp;</td>
+      <td>主键🔑(id) uk_o494jv59hx5tr80l6rl8snqqy(batch_id,std_id)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-entity">
+  <thead>
+    <tr>
+<th class="info_header text-center" width="7%">序号</th><th class="info_header" width="20%">字段名</th><th class="info_header" width="20%">字段类型</th><th class="info_header text-center" width="8%">是否可空</th><th class="info_header" width="25%">描述</th><th class="info_header" width="20%">引用表</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>非业务主键:datetime</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>batch_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>毕业批次ID</td>
+      <td><a href="/model/std/graduation.html#graduate-batches">std.graduate_batches</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>college_opinion</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>院系意见</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">4</td>
+      <td>college_passed</td>
+      <td>boolean</td>
+      <td class="text-center">是</td>
+      <td>院系是否通过</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">5</td>
+      <td>datas</td>
+      <td>jsonb</td>
+      <td class="text-center">否</td>
+      <td>其他申请数据</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">6</td>
+      <td>degree_id</td>
+      <td>integer</td>
+      <td class="text-center">否</td>
+      <td>学位ID</td>
+      <td><a href="/model/code/all.html#degrees">code.degrees</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">7</td>
+      <td>email</td>
+      <td>varchar(100)</td>
+      <td class="text-center">是</td>
+      <td>Email</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">8</td>
+      <td>gpa</td>
+      <td>float8</td>
+      <td class="text-center">否</td>
+      <td>GPA</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">9</td>
+      <td>mobile</td>
+      <td>varchar(15)</td>
+      <td class="text-center">是</td>
+      <td>联系手机</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">10</td>
+      <td>passed</td>
+      <td>boolean</td>
+      <td class="text-center">是</td>
+      <td>是否通过</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">11</td>
+      <td>reason</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>申请理由</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">12</td>
+      <td>std_id</td>
+      <td>bigint</td>
+      <td class="text-center">否</td>
+      <td>学生ID</td>
+      <td><a href="/model/base/edu.html#students">base.students</a>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">13</td>
+      <td>std_sign_url</td>
+      <td>varchar(255)</td>
+      <td class="text-center">是</td>
+      <td>个人签名url</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">14</td>
+      <td>updated_at</td>
+      <td>timestamptz</td>
+      <td class="text-center">否</td>
+      <td>更新时间</td>
+      <td>      </td>
+    </tr>
+    <tr>
+      <td class="text-center">15</td>
+      <td>wms</td>
+      <td>float8</td>
+      <td class="text-center">否</td>
+      <td>加权平均分</td>
       <td>      </td>
     </tr>
   </tbody>

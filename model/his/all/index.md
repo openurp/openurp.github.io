@@ -1091,7 +1091,7 @@
       <td>bigint</td>
       <td class="text-center">否</td>
       <td>房间ID</td>
-      <td><a href="/model/base/resources.html#classrooms">base.classrooms</a>      </td>
+      <td><a href="/model/base/resource.html#classrooms">base.classrooms</a>      </td>
     </tr>
     <tr>
       <td class="text-center">9</td>

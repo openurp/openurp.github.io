@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report title="数据结构说明" contextPath="/model">
-  <system name="OpenURP" version="v0.41.10"/>
+  <system name="OpenURP" version="1.4.0"/>
   <database xml="database.xml"/>
 
    <pages template="markdown" extension=".md" >
@@ -22,7 +22,7 @@
         <image name="time" title="学期和作息时间" tables="calendars,semesters,time_settings,course_units"/>
       </module>
 
-      <module name="resources" title="教室资源" tables="campuses,buildings,room*,lab*,device*,classroom*">
+      <module name="resource" title="教室资源" tables="campuses,buildings,room*,lab*,device*,classroom*">
         <image name="space" title="校区、教学楼、教室" tables="campuses,buildings,rooms"/>
       </module>
 
